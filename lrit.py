@@ -491,13 +491,11 @@ def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='lritproc',
                                      usage='%(prog)s [options] in_path out_path',
-                                     description='Process GOES LRIT files')
+                                     description='process GOES LRIT files')
     parser.add_argument('in_path',
-                        metavar='source',
                         type=str,
                         help='path to directory containing LRIT files', )
     parser.add_argument('out_path',
-                        metavar='dest',
                         type=str,
                         help='path to directory to put output files', )
     output_group = parser.add_argument_group('output arguments')
