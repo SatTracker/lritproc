@@ -1,9 +1,7 @@
-# *Nothing is ever Final
-
 import argparse
 from binascii import crc_hqx
 from datetime import datetime
-from os import listdir, makedirs, mkdir, path, remove, rename, rmdir
+from os import listdir, makedirs, path, remove, rename, rmdir
 from time import perf_counter
 from zipfile import ZipFile
 
@@ -11,12 +9,12 @@ import numpy as np
 from cv2 import cv2 as cv
 from pyexiv2 import Image, ImageData
 
-# -- Global constants --
+# -- Global Variables --
 dest_path = None
 source_path = None
+# -- Global Constants --
 days = (0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334)  # added dummy zero so that index = month
-days_ly = (0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305,
-           335)  # leap year days because that would be a nightmare to deal with 3 years from now
+days_ly = (0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335)  # leap year days because that would be a nightmare to deal with 3 years from now
 zip_magic = [0x50, 0x4B, 0x03, 0x04]
 gif87_magic = [0x47, 0x49, 0x46, 0x38, 0x37, 0x61]
 gif89_magic = [0x47, 0x49, 0x46, 0x38, 0x39, 0x61]
@@ -451,46 +449,6 @@ def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> s
     return "Success"
 
 
-def writeMiscFile(filename: str, file: np.array, headers: list[dict]) -> str:
-    """
-    Writes a file of unknown LRIT filetype to a directory for that unknown type
-
-    :param filename: the name of the file to write; directory and extension are determined automatically
-    :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
-    :return: string indicating success, skip, or specific error
-    """
-    file_type = headers[0]['file_type_code']
-    data_start = headers[0]['total_header_length']
-    if not path.exists(f"{dest_path}\\unknown-type-{file_type}"):
-        mkdir(f"{dest_path}\\unknown-type-{file_type}")
-    if path.exists(f"{dest_path}\\unknown-type-{file_type}\\{filename}.txt"):
-        return "Skipped"
-    else:
-        with open(f"{dest_path}\\unknown-type-{file_type}\\{filename}.txt", 'w', encoding='utf-8') as misc_file:
-            misc_file.write(f"""
-        ======================= WARNING =======================
-
-            This file is of unrecognized type {file_type}
-            and is most likely not text data. As this code
-            does not know how to parse this data, it has
-            been interpreted as text data. File is most
-            likely useless.
-
-        =======================================================
-        \n\n""")
-            misc_file.write(f"{filename}\n")
-            misc_file.write("==================== BEGIN HEADER ====================\n")
-            for head in headers:
-                misc_file.write(f"----- {head['type']} -----\n")
-                for k in head:
-                    if k != 'type':
-                        misc_file.write(f"\t{k}: {head[k]}\n")
-            misc_file.write("====================  END  HEADER ====================\n")
-            misc_file.write("".join([chr(i) for i in file[data_start:]]))
-    return "Success"
-
-
 def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
     """
     Writes an LRIT file to an appropriate directory, automatically determining filetype and compression.
@@ -572,7 +530,7 @@ if __name__ == '__main__':
                         action='store_true',
                         required=False)
     parser.add_argument('--mkdir',
-                        help="make output directory if it doesn't exist (not recommended)\nlazy bastard",
+                        help="make output directory if it doesn't exist (not recommended). lazy bastard",
                         action='store_true',
                         required=False)
     args = parser.parse_args()
