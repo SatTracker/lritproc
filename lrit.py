@@ -1,17 +1,20 @@
 import argparse
+from json import JSONEncoder
 from binascii import crc_hqx
 from datetime import datetime
-from os import listdir, makedirs, path, remove, rename, rmdir
+from os import listdir, makedirs, path, remove, rename, rmdir, scandir
 from time import perf_counter
 from zipfile import ZipFile
 
 import numpy as np
 from cv2 import cv2 as cv
 from pyexiv2 import Image, ImageData
+from send2trash import send2trash
 
 # -- Global Variables --
 dest_path = None
 source_path = None
+manifest_updates = []
 # -- Global Constants --
 days = (0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334)  # added dummy zero so that index = month
 days_ly = (0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335)  # leap year days because that would be a nightmare to deal with 3 years from now
@@ -193,18 +196,21 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
     if magic == 'gif87' or magic == 'gif89':
         if args:
             if not args.graphics:
-                return "Skipped"
+                return "Filetype not processed"
         timestamp = get_time_path(filename.split('-')[0])
-        filename = f"{timestamp}\\{filename.split('-')[1]}"
-        makedirs(f"{dest_path}\\Imagery\\{timestamp}", exist_ok=True)
-        if path.isdir(f"{dest_path}\\Imagery\\{filename}.gif"):
+        filename = filename.split('-')[1]
+        directory = f"{dest_path}\\Imagery\\{timestamp}"
+        makedirs(directory, exist_ok=True)
+        if path.isdir(f"{directory}\\{filename}.gif"):
             return "Skipped"
-        with open(f"{dest_path}\\Imagery\\{filename}.gif", 'wb') as gif_file:
+        with open(f"{directory}\\{filename}.gif", 'wb') as gif_file:
             gif_file.write(bytes(file[data_start:]))
+        if directory not in manifest_updates:
+            manifest_updates.append(directory)
         return "Success"
     if args:
         if not args.imagery:
-            return "Skipped"
+            return "Filetype not processed"
     seg = filename.split('-')
     timestamp = get_time_path(seg[3].split('_')[4][1:], month=False)
 
@@ -215,10 +221,13 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
     if sequence is None:
         shape = (structure['rows'], structure['columns'])
         file_img = np.reshape(file[data_start:], shape)
-        file_path = f"{dest_path}\\Imagery\\{timestamp}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split('_')[0]}-{seg[3].split('_')[4][1:]}.png"
+        directory = f"{dest_path}\\Imagery\\{timestamp}"
+        file_path = f"{directory}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split('_')[0]}-{seg[3].split('_')[4][1:]}.png"
         if path.exists(file_path):
             return "Skipped"
         else:
+            if directory not in manifest_updates:
+                manifest_updates.append(directory)
             cv.imwrite(file_path, file_img)
             return "Success"
     else:
@@ -227,7 +236,11 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
         sequence = [sequence]
         file = [file]
         headers = [headers]
-        file_path = f"{dest_path}\\Imagery\\{timestamp}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split('_')[0]}-{sequence[0]['image_id']}.png"
+        directory = f"{dest_path}\\Imagery\\{timestamp}"
+        try:
+            file_path = f"{directory}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split('_')[0]}-{seg[3].split('_')[3][1:]}-{sequence[0]['image_id']}.png"
+        except IndexError:
+            return f"Index Error"
         search_name = f"{'_'.join(filename.split('_')[:-1])}"
         chunks_towrite = [*range(sequence[0]['max_segments'])]
 
@@ -244,6 +257,8 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
                     chunks_towrite.remove(c)
             img = cv.imread(file_path, cv.IMREAD_GRAYSCALE)
         else:
+            if directory not in manifest_updates:
+                manifest_updates.append(directory)
             chunks = []
             img = np.zeros((sequence[0]['max_rows'], sequence[0]['max_columns']), dtype=np.uint8)
         chunks_found = []
@@ -288,7 +303,7 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
         cv.imwrite(file_path, img)
         comment = ",".join([str(c) for c in chunks])
         ImageData.modify_comment(Image(file_path), comment)
-    return f"Success"
+    return "Success"
 
 
 def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
@@ -300,12 +315,13 @@ def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
     :param headers: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
+    directory = None
     file_path = f"{dest_path}\\{filename}.txt"
     if filename[:23] != "GOES_EAST_Admin_message":
         parts = filename.split('_')
         timestamp = get_time_path(parts[4])
-        filename = f"Text\\{timestamp}\\{filename}"
-        file_path = f"{dest_path}\\{filename}.txt"
+        directory = f"{dest_path}\\Text\\{timestamp}"
+        file_path = f"{directory}\\{filename}.txt"
         if path.exists(file_path):
             return "Skipped"
 
@@ -325,6 +341,8 @@ def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
                     text_file.write(f"\t{k}: {head[k]}\n")
         text_file.write("====================  END  HEADER ====================\n")
         text_file.write("".join([chr(i) for i in file[data_start:]]))
+    if directory is not None and directory not in manifest_updates:
+        manifest_updates.append(directory)
     return "Success"
 
 
@@ -346,12 +364,12 @@ def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
         if block_id != 1:
             offset += block_length
     timestamp = bcd_to_time_path(file[offset + 0x0C:offset + 0x13])
-    filename = f"DCS\\{timestamp}\\{filename}.csv"
-    if path.exists(f"{dest_path}\\{filename}"):
+    directory = f"{dest_path}\\DCS\\{timestamp}"
+    if path.exists(f"{directory}\\{filename}.csv"):
         return "Skipped"
 
     # make date directories if necessary
-    makedirs(f"{dest_path}\\DCS\\{timestamp}", exist_ok=True)
+    makedirs(directory, exist_ok=True)
 
     dcs_header = {'filename': ''.join([chr(c) for c in file[data_start + 0:data_start + 32]]),
                   'file_size': int(''.join([chr(c & 0x7F) for c in file[data_start + 32: data_start + 40]])),
@@ -359,7 +377,7 @@ def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
                   'file_type': ''.join([chr(c) for c in file[data_start + 44:data_start + 48]])}
     # I don't check the CRC because I'm a chad like that.
     offset = 64 + data_start
-    with open(f"{dest_path}\\{filename}.csv", 'w', encoding='utf-8') as DCS_file:
+    with open(f"{directory}\\{filename}.csv", 'w', encoding='utf-8') as DCS_file:
         DCS_file.write(
             "size,seq_num,data_rate,platform,parity_error,ARM_flags,corrected_address,carrier_start,message_end,signal_strength,freq_offset,phs_noise,modulation_index,good_phs,channel,spacecraft,source_code,source_secondary,data,crc_ok\n"
         )
@@ -410,6 +428,8 @@ def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
                 # missed block
                 pass
             offset += block_length
+    if directory not in manifest_updates:
+        manifest_updates.append(directory)
     return "Success"
 
 
@@ -425,6 +445,7 @@ def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> s
     file_dir = f"{dest_path}\\tmp\\{filename}"
     makedirs(file_dir, exist_ok=True)
     data_start = headers[0]['total_header_length']
+    status = "Success"
     with open(f"{file_dir}.zip", 'wb') as zip_file:
         zip_file.write(bytes(file[data_start:]))
     with ZipFile(f"{file_dir}.zip") as zip_ref:
@@ -434,19 +455,21 @@ def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> s
         _, ext = unpacked.split('.')
         if args:
             if ext == 'TXT' and not args.text:
-                break
+                status = "Filetype not processed"
             elif not args.graphics:
-                break
+                status = "Filetype not processed"
         timestamp = get_time_path(unpacked.split('_')[4])
         output_dir = f"{dest_path}\\Text\\{timestamp}" if ext == 'TXT' else f"{dest_path}\\Imagery\\{timestamp}"
         makedirs(output_dir, exist_ok=True)
         if path.exists(f"{output_dir}\\{unpacked}"):
             remove(unpacked_dir)
-            break
+            continue
+        if output_dir not in manifest_updates:
+            manifest_updates.append(output_dir)
         rename(unpacked_dir, f"{output_dir}\\{unpacked}")
     remove(f"{file_dir}.zip")
     rmdir(file_dir)
-    return "Success"
+    return status
 
 
 def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
@@ -464,34 +487,80 @@ def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
     if magic == 'zip':
         if args:
             if not (args.text or args.graphics):
-                return "Skipped"
+                return "Filetype not processed"
         return writeCompressedFile(filename, file, headers)
     if file_type == 0:
         if args:
-            if not args.imagery or args.graphics:
-                return "Skipped"
+            if not (args.imagery or args.graphics):
+                return "Filetype not processed"
         # Image Data File (filename generated automatically, passed argument used for printing warnings)
         return writeImageFile(filename, file, headers)
     elif file_type == 2:
         if args:
             if not args.text:
-                return "Skipped"
+                return "Filetype not processed"
         # Alphanumeric Text File
         return writeTextFile(filename, file, headers)
     elif file_type == 130:
         if args:
             if not args.dcs:
-                return "Skipped"
+                return "Filetype not processed"
         # DCS File
         return writeDCSFile(filename, file, headers)
     else:
         return "Unrecognized file type"
 
 
+def writeManifest(manifest_dir: str):
+    encoder = JSONEncoder(indent=4)
+    split = manifest_dir.split('\\')
+    category = split[-4]
+    json_arr = []
+    for f in [*scandir(manifest_dir)]:
+        meta = {'filename': f.name, 'filesize': f.stat().st_size, 'timestamp': None, 'properties': {}}
+        if category == 'Imagery':
+            if f.name[:2] == 'OR':  # ABI Imagery
+                split = f.name.split('-')
+                meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], "%Y%j%H%M%S").timestamp())
+                meta['properties']['imageType'] = 'fulldisk' if split[2][-1] == 'F' else 'mesoscale'
+                meta['properties']['channel'] = None if split[2][:4] != 'CMIP' else split[3][3:]
+                meta['properties']['productID'] = split[2][:-1] if split[2][-1] == 'F' else split[2][:-2]
+            elif f.name[:1] == 'Z':  # NOAA Graphic
+                split = f.name.split('_')
+                meta['timestamp'] = int(datetime.strptime(split[4][:-1], "%Y%m%d%H%M%S").timestamp())
+                meta['properties']['t1'] = split[1][0]
+                meta['properties']['t2'] = split[1][1]
+                meta['properties']['a1'] = split[1][2]
+                meta['properties']['a2'] = split[1][3]
+                meta['properties']['ii'] = split[1][4:6]
+                meta['properties']['stationID'] = split[1][6:10]
+            else:  # Top of NOAA Hour Graphic
+                split = manifest_dir.split('\\')
+                meta['timestamp'] = int(datetime.strptime("".join([split[-3], split[-2], split[-1]]), "%Y%j%H").timestamp())
+                meta['properties'] = None
+        if category == 'Text':
+            split = f.name.split('_')
+            meta['timestamp'] = int(datetime.strptime(split[4][:-1], "%Y%m%d%H%M%S").timestamp())
+            meta['properties']['t1'] = split[1][0]
+            meta['properties']['t2'] = split[1][1]
+            meta['properties']['a1'] = split[1][2]
+            meta['properties']['a2'] = split[1][3]
+            meta['properties']['ii'] = split[1][4:6]
+            meta['properties']['stationID'] = split[1][6:10]
+        if category == 'DCS':
+            split = f.name.split('-')
+            meta['timestamp'] = int(datetime.strptime(split[1], "%y%j%H%M%S").timestamp())
+            meta['properties'] = None
+        json_arr.append(meta)
+    with open(f"{manifest_dir}\\manifest.json", 'w') as manifest:
+        manifest.write(encoder.encode(json_arr))
+
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(prog='lritproc',
                                      usage='%(prog)s [options] in_path out_path',
-                                     description='process GOES LRIT files')
+                                     description='process GOES LRIT files',
+                                     formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument('in_path',
                         type=str,
                         help='path to directory containing LRIT files', )
@@ -499,6 +568,8 @@ if __name__ == '__main__':
                         type=str,
                         help='path to directory to put output files', )
     output_group = parser.add_argument_group('output arguments')
+    remove_help_group = parser.add_argument_group('deletion options')
+    remove_group = remove_help_group.add_mutually_exclusive_group()
     output_group.add_argument('-t', '--text',
                               help='process files containing KWIN plaintext',
                               action='store_true',
@@ -531,6 +602,22 @@ if __name__ == '__main__':
                         help="make output directory if it doesn't exist (not recommended). lazy bastard",
                         action='store_true',
                         required=False)
+    remove_group.add_argument('--remove',
+                              help='remove all specified and successfully processed LRIT files',
+                              action='store_true',
+                              required=False)
+    remove_group.add_argument('--remove-unsafe',
+                              help='remove all specified and processed LRIT files',
+                              action='store_true',
+                              required=False)
+    remove_group.add_argument('--remove-nuclear',
+                              help='remove all LRIT files regardless of filetypes specified',
+                              action='store_true',
+                              required=False)
+    remove_help_group.add_argument('--recycle',
+                                   help='move deleted files to recycle bin instead of deleting them permanently',
+                                   action='store_true',
+                                   required=False)
     args = parser.parse_args()
     if not path.isdir(args.in_path):
         print(f"Source path '{args.in_path}' does not exist")
@@ -549,6 +636,7 @@ if __name__ == '__main__':
     if not (args.text | args.imagery | args.graphics | args.dcs):
         print(f"No output filetypes specified")
         exit(-1)
+
     source_path = str(args.in_path)
     dest_path = str(args.out_path)
     start = perf_counter()
@@ -558,12 +646,49 @@ if __name__ == '__main__':
         h = getHeaders(f)
         result = writeData(lrit_file.split('.')[0], f, h)
         f_end = perf_counter()
-        if ("Success", "Skipped").__contains__(result) and args.verbose:
-            print(f"processed {lrit_file} in {(f_end - f_start) * 1000:4.1f}ms - {result}")
+
+        # conditionally remove LRIT files based on remove arguments
+        if args.remove_nuclear:
+            if args.recycle:
+                send2trash(f"{source_path}\\{lrit_file}")
+            else:
+                remove(f"{source_path}\\{lrit_file}")
+        if args.remove_unsafe:
+            if result != "Filetype not processed":
+                if args.recycle:
+                    send2trash(f"{source_path}\\{lrit_file}")
+                else:
+                    remove(f"{source_path}\\{lrit_file}")
+        if args.remove:
+            if result in ("Success", "Skipped"):
+                if args.recycle:
+                    send2trash(f"{source_path}\\{lrit_file}")
+                else:
+                    remove(f"{source_path}\\{lrit_file}")
+
+        if result in ("Success", "Skipped", "Filetype not processed"):
+            if args.verbose:
+                print(f"Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}")
         elif not args.quiet:
-            print(f"Error for file {lrit_file}: {result}")
+            print(f"!!ERROR!! {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}")
     end = perf_counter()
     if not args.quiet:
-        print(f"all LRIT files successfully processed in {end - start:.4f} seconds")
+        print(f"All LRIT files successfully processed in {end - start:.4f} seconds")
     if path.isdir(f"{dest_path}\\tmp"):
         rmdir(f"{dest_path}\\tmp")
+
+    start = perf_counter()
+    for manifest_dir in manifest_updates:
+        f_start = perf_counter()
+        try:
+            writeManifest(manifest_dir)
+        except ValueError as e:
+            print(f"ValueError for {manifest_dir}; {e}")
+        f_end = perf_counter()
+        if args.verbose:
+            print(f"Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |")
+    end = perf_counter()
+    if not args.quiet:
+        print(f"All Manifests successfully generated in {end - start:.4f} seconds")
+
+# writeManifest([r"C:\Users\Joey\Documents\Data\Out\Text\2021\334\16"])
