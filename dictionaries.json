@@ -1,0 +1,4294 @@
+{
+    "cccc": {
+        "KABQ": {
+            "stationType": "WFO",
+            "center": "ALBUQUERQUE",
+            "CCC": "ABQ",
+            "City": "Albuquerque",
+            "State": "New Mexico"
+        },
+        "KABR": {
+            "stationType": "WFO",
+            "center": "ABERDEEN",
+            "CCC": "ABR",
+            "City": "Aberdeen",
+            "State": "South Dakota"
+        },
+        "KAKQ": {
+            "stationType": "WFO",
+            "center": "WAKEFIELD",
+            "CCC": "AKQ",
+            "City": "WakeField",
+            "State": "Virginia"
+        },
+        "KALR": {
+            "stationType": "RFC",
+            "center": "SOUTHEAST",
+            "CCC": "ALR",
+            "City": "Peachtree City",
+            "State": "Georgia"
+        },
+        "KALY": {
+            "stationType": "WFO",
+            "center": "ALBANY",
+            "CCC": "ALY",
+            "City": "Albany",
+            "State": "New York"
+        },
+        "KAMA": {
+            "stationType": "WFO",
+            "center": "AMARILLO",
+            "CCC": "AMA",
+            "City": "Amarillo",
+            "State": "Texas"
+        },
+        "KAPX": {
+            "stationType": "WFO",
+            "center": "North Central Lower Michigan",
+            "CCC": "APX",
+            "City": "Gaylord",
+            "State": "Michigan"
+        },
+        "KARX": {
+            "stationType": "WFO",
+            "center": "LA CROSSE",
+            "CCC": "ARX",
+            "City": "La Crosse",
+            "State": "Wisconsin"
+        },
+        "KBCQ": {
+            "stationType": "RHQ",
+            "center": "Central Region Headquarters",
+            "CCC": "BCQ",
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "KBGM": {
+            "stationType": "WFO",
+            "center": "BINGHAMTON",
+            "CCC": "BGM",
+            "City": "Johnson City",
+            "State": "New York"
+        },
+        "KBIS": {
+            "stationType": "WFO",
+            "center": "BISMARK",
+            "CCC": "BIS",
+            "City": "Bismarck",
+            "State": "North Dakota"
+        },
+        "KBMX": {
+            "stationType": "WFO",
+            "center": "BIRMINGHAM",
+            "CCC": "BMX",
+            "City": "Calera",
+            "State": "Alabama"
+        },
+        "KBOI": {
+            "stationType": "WFO",
+            "center": "BOISE",
+            "CCC": "BOI",
+            "City": "Boise",
+            "State": "Idaho"
+        },
+        "KBOU": {
+            "stationType": "WFO",
+            "center": "BOULDER",
+            "CCC": "BOU",
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "KBOX": {
+            "stationType": "WFO",
+            "center": "BOSTON",
+            "CCC": "BOX",
+            "City": "Taunton",
+            "State": "Massachusetts"
+        },
+        "KBRO": {
+            "stationType": "WFO",
+            "center": "BROWNSVILLE",
+            "CCC": "BRO",
+            "City": "Brownsville",
+            "State": "Texas"
+        },
+        "KBTV": {
+            "stationType": "WFO",
+            "center": "BURLINGTON",
+            "CCC": "BTV",
+            "City": "South Burlington",
+            "State": "Vermont"
+        },
+        "KBUF": {
+            "stationType": "WFO",
+            "center": "BUFFALO",
+            "CCC": "BUF",
+            "City": "Cheektowaga",
+            "State": "New York"
+        },
+        "KBYZ": {
+            "stationType": "WFO",
+            "center": "BILLINGS",
+            "CCC": "BYZ",
+            "City": "Billings",
+            "State": "Montana"
+        },
+        "KCAE": {
+            "stationType": "WFO",
+            "center": "COLUMBIA",
+            "CCC": "CAE",
+            "City": "West Columbia",
+            "State": "South Carolina"
+        },
+        "KCAR": {
+            "stationType": "WFO",
+            "center": "CARIBOU",
+            "CCC": "CAR",
+            "City": "Caribou",
+            "State": "Maine"
+        },
+        "KCHS": {
+            "stationType": "WFO",
+            "center": "CHARLESTON",
+            "CCC": "CHS",
+            "City": "Charleston",
+            "State": "South Carolina"
+        },
+        "KCLE": {
+            "stationType": "WFO",
+            "center": "CLEVELAND",
+            "CCC": "CLE",
+            "City": "Cleveland",
+            "State": "Ohio"
+        },
+        "KCRP": {
+            "stationType": "WFO",
+            "center": "CORPUS CHRISTI",
+            "CCC": "CRP",
+            "City": "Corpus Christi",
+            "State": "Texas"
+        },
+        "KCTP": {
+            "stationType": "WFO",
+            "center": "CENTRAL PENNSYLVANIA",
+            "CCC": "CTP",
+            "City": "State Collage",
+            "State": "Pennsylvania"
+        },
+        "KCYS": {
+            "stationType": "WFO",
+            "center": "CHEYENNE",
+            "CCC": "CYS",
+            "City": "Cheyenne",
+            "State": "Wyoming"
+        },
+        "KDDC": {
+            "stationType": "WFO",
+            "center": "DODGE CITY",
+            "CCC": "DDC",
+            "City": "Dodge City",
+            "State": "Kansas"
+        },
+        "KDLH": {
+            "stationType": "WFO",
+            "center": "DULUTH",
+            "CCC": "DLH",
+            "City": "Duluth",
+            "State": "Minnesota"
+        },
+        "KDMX": {
+            "stationType": "WFO",
+            "center": "DES MOINES",
+            "CCC": "DMX",
+            "City": "Johnston",
+            "State": "Iowa"
+        },
+        "KDTX": {
+            "stationType": "WFO",
+            "center": "DETROIT",
+            "CCC": "DTX",
+            "City": "White Lake",
+            "State": "Michigan"
+        },
+        "KDVN": {
+            "stationType": "WFO",
+            "center": "QUAD CITIES",
+            "CCC": "DVN",
+            "City": "Davenport",
+            "State": "Iowa"
+        },
+        "KEAX": {
+            "stationType": "WFO",
+            "center": "KANSAS CITY KANSAS",
+            "CCC": "EAX",
+            "City": "Pleasant Hill",
+            "State": "Missouri"
+        },
+        "KEHU": {
+            "stationType": "RHQ",
+            "center": "SOUTHERN REGION HQ.",
+            "CCC": "EHU",
+            "City": "Fort Worth",
+            "State": "Texas"
+        },
+        "KEKA": {
+            "stationType": "WFO",
+            "center": "EUREKA",
+            "CCC": "EKA",
+            "City": "Eureka",
+            "State": "California"
+        },
+        "KEPZ": {
+            "stationType": "WFO",
+            "center": "EL PASO",
+            "CCC": "EPZ",
+            "City": "Santa Teresa",
+            "State": "New Mexico"
+        },
+        "KEWX": {
+            "stationType": "WFO",
+            "center": "AUSTIN/SAN ANTONIO",
+            "CCC": "EWX",
+            "City": "New Braunfels",
+            "State": "Texas"
+        },
+        "KFFC": {
+            "stationType": "WFO",
+            "center": "ATLANTA",
+            "CCC": "FFC",
+            "City": "Peachtree City",
+            "State": "Georgia"
+        },
+        "KFGF": {
+            "stationType": "WFO",
+            "center": "GRAND FORKS",
+            "CCC": "FGF",
+            "City": "Grand Forks",
+            "State": "North Dakota"
+        },
+        "KFGZ": {
+            "stationType": "WFO",
+            "center": "FLAGSTAFF",
+            "CCC": "FGZ",
+            "City": "Bellemont",
+            "State": "Arizona"
+        },
+        "KFSD": {
+            "stationType": "WFO",
+            "center": "SIOUX FALLS",
+            "CCC": "FSD",
+            "City": "Sioux Falls",
+            "State": "South Dakota"
+        },
+        "KFWD": {
+            "stationType": "WFO",
+            "center": "DALLAS / FT. WORTH",
+            "CCC": "FWD",
+            "City": "Fort Worth",
+            "State": "Texas"
+        },
+        "KFWR": {
+            "stationType": "RFC",
+            "center": "WEST GULF DALLAS/Ft. Worth",
+            "CCC": "FWR",
+            "City": "Fort Worth",
+            "State": "Texas"
+        },
+        "KGGW": {
+            "stationType": "WFO",
+            "center": "GLASGOW",
+            "CCC": "GGW",
+            "City": "Glasgow",
+            "State": "Montana"
+        },
+        "KGID": {
+            "stationType": "WFO",
+            "center": "HASTINGS",
+            "CCC": "GID",
+            "City": "Hastings",
+            "State": "Nebraska"
+        },
+        "KGJT": {
+            "stationType": "WFO",
+            "center": "GRAND JUNCTION",
+            "CCC": "GJT",
+            "City": "Grand Junction",
+            "State": "Colorado"
+        },
+        "KGLD": {
+            "stationType": "WFO",
+            "center": "GOODLAND KANSAS",
+            "CCC": "GLD",
+            "City": "Goodland",
+            "State": "Kansas"
+        },
+        "KGRB": {
+            "stationType": "WFO",
+            "center": "GREEN BAY",
+            "CCC": "GRB",
+            "City": "Green Bay",
+            "State": "Wisconsin"
+        },
+        "KGRR": {
+            "stationType": "WFO",
+            "center": "GRAND RAPIDS",
+            "CCC": "GRR",
+            "City": "Grand Rapids",
+            "State": "Michigan"
+        },
+        "KGSP": {
+            "stationType": "WFO",
+            "center": "GREENVILLE/SPARTANBURG",
+            "CCC": "GSP",
+            "City": "Greer",
+            "State": "South Carolina"
+        },
+        "KGYX": {
+            "stationType": "WFO",
+            "center": "PORTLAND",
+            "CCC": "GYX",
+            "City": "Grey",
+            "State": "Maine"
+        },
+        "KHGX": {
+            "stationType": "WFO",
+            "center": "HOUSTON/GALVESTON",
+            "CCC": "HGX",
+            "City": "Dickinson",
+            "State": "Texas"
+        },
+        "KHNX": {
+            "stationType": "WFO",
+            "center": "SAN JOAQUIN VALLEY",
+            "CCC": "HNX",
+            "City": "Hanford",
+            "State": "California"
+        },
+        "KHUN": {
+            "stationType": "WFO",
+            "center": "HUNTSVILLE",
+            "CCC": "HUN",
+            "City": "Huntsville",
+            "State": "Alabama"
+        },
+        "KICT": {
+            "stationType": "WFO",
+            "center": "WICHITA",
+            "CCC": "ICT",
+            "City": "Wichita",
+            "State": "Kansas"
+        },
+        "KILM": {
+            "stationType": "WFO",
+            "center": "WILMINGTON",
+            "CCC": "ILM",
+            "City": "Wilmington",
+            "State": "North Carolina"
+        },
+        "KILN": {
+            "stationType": "WFO",
+            "center": "CINCINNATI",
+            "CCC": "ILN",
+            "City": "Wilmington",
+            "State": "Ohio"
+        },
+        "KILX": {
+            "stationType": "WFO",
+            "center": "CENTRAL ILLINIOS",
+            "CCC": "ILX",
+            "City": "Lincoln",
+            "State": "Illinois"
+        },
+        "KIND": {
+            "stationType": "WFO",
+            "center": "INDIANAPOLIS",
+            "CCC": "IND",
+            "City": "Indianapolis",
+            "State": "Indiana"
+        },
+        "KIWX": {
+            "stationType": "WFO",
+            "center": "NORTHERN INDIANA",
+            "CCC": "IWX",
+            "City": "Syracuse",
+            "State": "Indiana"
+        },
+        "KJAN": {
+            "stationType": "WFO",
+            "center": "JACKSON",
+            "CCC": "JAN",
+            "City": "Jackson",
+            "State": "Mississippi"
+        },
+        "KJAX": {
+            "stationType": "WFO",
+            "center": "JACKSONVILLE",
+            "CCC": "JAX",
+            "City": "Jacksonville",
+            "State": "Florida"
+        },
+        "KJKL": {
+            "stationType": "WFO",
+            "center": "JACKSON",
+            "CCC": "JKL",
+            "City": "Jackson",
+            "State": "Kentucky"
+        },
+        "KKEY": {
+            "stationType": "WFO",
+            "center": "KEY WEST",
+            "CCC": "KEY",
+            "City": "Key West",
+            "State": "Florida"
+        },
+        "KKRF": {
+            "stationType": "RFC",
+            "center": "KANSAS CITY KANSAS",
+            "CCC": "KRF",
+            "City": "Pleasant Hill",
+            "State": "Missouri"
+        },
+        "KLBF": {
+            "stationType": "WFO",
+            "center": "NORTH PLATTE",
+            "CCC": "LBF",
+            "City": "North Platte",
+            "State": "Nebraska"
+        },
+        "KLCH": {
+            "stationType": "WFO",
+            "center": "LAKE CHARLES",
+            "CCC": "LCH",
+            "City": "Lake Charles",
+            "State": "Louisianna"
+        },
+        "KLIX": {
+            "stationType": "WFO",
+            "center": "NEW ORLEANS/BATON ROUGE",
+            "CCC": "LIX",
+            "City": "Slidell",
+            "State": "Louisianna"
+        },
+        "KLKN": {
+            "stationType": "WFO",
+            "center": "ELKO",
+            "CCC": "LKN",
+            "City": "Elko",
+            "State": "Nevada"
+        },
+        "KLMK": {
+            "stationType": "WFO",
+            "center": "LOUISVILLE",
+            "CCC": "LMK",
+            "City": "Louisville",
+            "State": "Kentucky"
+        },
+        "KLOT": {
+            "stationType": "WFO",
+            "center": "CHICAGO",
+            "CCC": "LOT",
+            "City": "Romeoville",
+            "State": "Illinois"
+        },
+        "KLOX": {
+            "stationType": "WFO",
+            "center": "LOS ANGELES",
+            "CCC": "LOX",
+            "City": "Oxnard",
+            "State": "California"
+        },
+        "KLSX": {
+            "stationType": "WFO",
+            "center": "ST. LOUIS",
+            "CCC": "LSX",
+            "City": "St. Charles",
+            "State": "Missouri"
+        },
+        "KLUB": {
+            "stationType": "WFO",
+            "center": "LUBBOCK",
+            "CCC": "LUB",
+            "City": "Lubbock",
+            "State": "Texas"
+        },
+        "KLWX": {
+            "stationType": "WFO",
+            "center": "BALTIMORE MD./WASHINGTON D.C.",
+            "CCC": "LWX",
+            "City": "Sterling",
+            "State": "Virginia"
+        },
+        "KLZK": {
+            "stationType": "WFO",
+            "center": "LITTLE ROCK",
+            "CCC": "LZK",
+            "City": "North Little Rock",
+            "State": "Arkansas"
+        },
+        "KMAF": {
+            "stationType": "WFO",
+            "center": "MIDLAND/ODESSA",
+            "CCC": "MAF",
+            "City": "Midland",
+            "State": "Texas"
+        },
+        "KMEG": {
+            "stationType": "WFO",
+            "center": "MEMPHIS",
+            "CCC": "MEG",
+            "City": "Memphis",
+            "State": "Tennesse"
+        },
+        "KMFL": {
+            "stationType": "WFO",
+            "center": "MIAMI",
+            "CCC": "MFL",
+            "City": "Miami",
+            "State": "Florida"
+        },
+        "KMFR": {
+            "stationType": "WFO",
+            "center": "MEDFORD",
+            "CCC": "MFR",
+            "City": "Medford",
+            "State": "Oregon"
+        },
+        "KMHX": {
+            "stationType": "WFO",
+            "center": "MOREHEAD CITY",
+            "CCC": "MHX",
+            "City": "Newport",
+            "State": "North Carolina"
+        },
+        "KMKX": {
+            "stationType": "WFO",
+            "center": "MILWAUKEE",
+            "CCC": "MKX",
+            "City": "Dousman",
+            "State": "Wisconsin"
+        },
+        "KMLB": {
+            "stationType": "WFO",
+            "center": "MELBOURNE",
+            "CCC": "MLB",
+            "City": "Melbourne",
+            "State": "Florida"
+        },
+        "KMOB": {
+            "stationType": "WFO",
+            "center": "MOBILE",
+            "CCC": "MOB",
+            "City": "Mobile",
+            "State": "Alabama"
+        },
+        "KMPX": {
+            "stationType": "WFO",
+            "center": "MINNEAPOLIS",
+            "CCC": "MPX",
+            "City": "Chanhassen",
+            "State": "Minnesota"
+        },
+        "KMQT": {
+            "stationType": "WFO",
+            "center": "MARQUETTE",
+            "CCC": "MQT",
+            "City": "Negaunee",
+            "State": "Michigan"
+        },
+        "KMRX": {
+            "stationType": "WFO",
+            "center": "KNOXVILLE/TRI-CITIES",
+            "CCC": "MRX",
+            "City": "Morristown",
+            "State": "Tennesse"
+        },
+        "KMSO": {
+            "stationType": "WFO",
+            "center": "MISSOULA",
+            "CCC": "MSO",
+            "City": "Missoula",
+            "State": "Montana"
+        },
+        "KMSR": {
+            "stationType": "RFC",
+            "center": "NORTH CENTRAL",
+            "CCC": "MSR",
+            "City": "Chanhassen",
+            "State": "Minnesota"
+        },
+        "KMTR": {
+            "stationType": "WFO",
+            "center": "SAN FRANCISCO BAY AREA",
+            "CCC": "MTR",
+            "City": "Monterey",
+            "State": "California"
+        },
+        "KOAX": {
+            "stationType": "WFO",
+            "center": "OMAHA",
+            "CCC": "OAX",
+            "City": "Valley",
+            "State": "Nebraska"
+        },
+        "KOHX": {
+            "stationType": "WFO",
+            "center": "NASHVILLE",
+            "CCC": "OHX",
+            "City": "Old Hickory",
+            "State": "Tennesse"
+        },
+        "KOKX": {
+            "stationType": "WFO",
+            "center": "NEW YORK CITY",
+            "CCC": "OKX",
+            "City": "Upton",
+            "State": "New York"
+        },
+        "KORN": {
+            "stationType": "RFC",
+            "center": "LOWER MISSISSIPPI",
+            "CCC": "ORN",
+            "City": "Slidell",
+            "State": "Louisiana"
+        },
+        "KOTX": {
+            "stationType": "WFO",
+            "center": "SPOKANE",
+            "CCC": "OTX",
+            "City": "Spokane",
+            "State": "Washington"
+        },
+        "KOUN": {
+            "stationType": "WFO",
+            "center": "NORMAN",
+            "CCC": "OUN",
+            "City": "Norman",
+            "State": "Oklahoma"
+        },
+        "KPAH": {
+            "stationType": "WFO",
+            "center": "PADUCAH",
+            "CCC": "PAH",
+            "City": "West Paducah",
+            "State": "Kentucky"
+        },
+        "KPBZ": {
+            "stationType": "WFO",
+            "center": "PITTSBURGH",
+            "CCC": "PBZ",
+            "City": "Moon Township",
+            "State": "Pennsylvania"
+        },
+        "KPDT": {
+            "stationType": "WFO",
+            "center": "PENDLETON",
+            "CCC": "PDT",
+            "City": "Pendleton",
+            "State": "Oregon"
+        },
+        "KPHI": {
+            "stationType": "WFO",
+            "center": "PHILADELPHIA",
+            "CCC": "PHI",
+            "City": "Mt. Holly",
+            "State": "New Jersey"
+        },
+        "KPIH": {
+            "stationType": "WFO",
+            "center": "POCATELLO",
+            "CCC": "PIH",
+            "City": "Pocatello",
+            "State": "Idaho"
+        },
+        "KPQR": {
+            "stationType": "WFO",
+            "center": "PORTLAND",
+            "CCC": "PQR",
+            "City": "Portland",
+            "State": "Oregon"
+        },
+        "KPSR": {
+            "stationType": "WFO",
+            "center": "PHOENIX",
+            "CCC": "PSR",
+            "City": "Tempe",
+            "State": "Arizona"
+        },
+        "KPTR": {
+            "stationType": "RFC",
+            "center": "NORTHWEST",
+            "CCC": "PTR",
+            "City": "Portland",
+            "State": "Oregon"
+        },
+        "KPUB": {
+            "stationType": "WFO",
+            "center": "PUEBLO",
+            "CCC": "PUB",
+            "City": "Pueblo",
+            "State": "Colorado"
+        },
+        "KRAH": {
+            "stationType": "WFO",
+            "center": "RALEIGH/DURHAM",
+            "CCC": "RAH",
+            "City": "Raleigh",
+            "State": "North Carlonia"
+        },
+        "KREV": {
+            "stationType": "WFO",
+            "center": "RENO",
+            "CCC": "REV",
+            "City": "Reno",
+            "State": "Nevada"
+        },
+        "KRHA": {
+            "stationType": "RFC",
+            "center": "MIDDLE ATLANTIC",
+            "CCC": "RHA",
+            "City": "State Collage",
+            "State": "Pennsylvania"
+        },
+        "KRIW": {
+            "stationType": "WFO",
+            "center": "RIVERTON",
+            "CCC": "RIW",
+            "City": "Riverton",
+            "State": "Wyoming"
+        },
+        "KRLX": {
+            "stationType": "WFO",
+            "center": "CHARLESTON",
+            "CCC": "RLX",
+            "City": "Charleston",
+            "State": "West Virginia"
+        },
+        "KRNK": {
+            "stationType": "WFO",
+            "center": "ROANOKE",
+            "CCC": "RNK",
+            "City": "Blackburg",
+            "State": "Virginia"
+        },
+        "KRSA": {
+            "stationType": "RFC",
+            "center": "SACRAMENTO",
+            "CCC": "RSA",
+            "City": "Sacramento",
+            "State": "California"
+        },
+        "KSEW": {
+            "stationType": "WFO",
+            "center": "SEATTLE",
+            "CCC": "SEW",
+            "City": "Seattle",
+            "State": "Washington"
+        },
+        "KSGF": {
+            "stationType": "WFO",
+            "center": "SPRINGFIELD",
+            "CCC": "SGF",
+            "City": "Springfield",
+            "State": "Missouri"
+        },
+        "KSGX": {
+            "stationType": "WFO",
+            "center": "SAN DIEGO",
+            "CCC": "SGX",
+            "City": "San Diego",
+            "State": "California"
+        },
+        "KSHV": {
+            "stationType": "WFO",
+            "center": "SHREVEPORT",
+            "CCC": "SHV",
+            "City": "Shreveport",
+            "State": "Louisiana"
+        },
+        "KSJT": {
+            "stationType": "WFO",
+            "center": "SAN ANGELO",
+            "CCC": "SJT",
+            "City": "San Anglelo",
+            "State": "Texas"
+        },
+        "KSLC": {
+            "stationType": "WFO",
+            "center": "SALT LAKE CITY",
+            "CCC": "SLC",
+            "City": "Salt Lake City",
+            "State": "Utah"
+        },
+        "KSTO": {
+            "stationType": "WFO",
+            "center": "SACRAMENTO",
+            "CCC": "STO",
+            "City": "Sacramento",
+            "State": "California"
+        },
+        "KSTR": {
+            "stationType": "RFC",
+            "center": "SALT LAKE CITY",
+            "CCC": "STR",
+            "City": "Salt Lake City",
+            "State": "Utah"
+        },
+        "KTAE": {
+            "stationType": "WFO",
+            "center": "TALLAHASSEE",
+            "CCC": "TAE",
+            "City": "Tallahassee",
+            "State": "Florida"
+        },
+        "KTAR": {
+            "stationType": "RFC",
+            "center": "BOSTON",
+            "CCC": "TAR",
+            "City": "Taunton",
+            "State": "Massachusetts"
+        },
+        "KTBW": {
+            "stationType": "WFO",
+            "center": "TAMPA",
+            "CCC": "TBW",
+            "City": "Ruskin",
+            "State": "Florida"
+        },
+        "KTFX": {
+            "stationType": "WFO",
+            "center": "GREAT FALLS",
+            "CCC": "TFX",
+            "City": "Great Falls",
+            "State": "Montana"
+        },
+        "KTIR": {
+            "stationType": "RFC",
+            "center": "OHIO",
+            "CCC": "TIR",
+            "City": "Wilmington",
+            "State": "Ohio"
+        },
+        "KTOP": {
+            "stationType": "WFO",
+            "center": "TOPEKA",
+            "CCC": "TOP",
+            "City": "Topeka",
+            "State": "Kansas"
+        },
+        "KTSA": {
+            "stationType": "WFO",
+            "center": "TULSA",
+            "CCC": "TSA",
+            "City": "Tulsa",
+            "State": "Oklahoma"
+        },
+        "KTUA": {
+            "stationType": "RFC",
+            "center": "TULSA",
+            "CCC": "TUA",
+            "City": "Tulsa",
+            "State": "Oklahoma"
+        },
+        "KTWC": {
+            "stationType": "WFO",
+            "center": "TUCSON",
+            "CCC": "TWC",
+            "City": "Tucson",
+            "State": "Arizona"
+        },
+        "KUNR": {
+            "stationType": "WFO",
+            "center": "RAPID CITY",
+            "CCC": "UNR",
+            "City": "Rapid City",
+            "State": "South Dakota"
+        },
+        "KVEF": {
+            "stationType": "WFO",
+            "center": "LAS VEGAS",
+            "CCC": "VEF",
+            "City": "Las Vegas",
+            "State": "Nevada"
+        },
+        "KVHW": {
+            "stationType": "RHQ",
+            "center": "Western Region Headquarters",
+            "CCC": "VHW",
+            "City": "Salt Lake City",
+            "State": "Utah"
+        },
+        "KVUY": {
+            "stationType": "RHQ",
+            "center": "Eastern Region Headquarters",
+            "CCC": "VUY",
+            "City": "Bohemia",
+            "State": "New York"
+        },
+        "NSTU": {
+            "stationType": null,
+            "center": "Weater Service Office Pago Pago",
+            "CCC": "STU",
+            "City": "Pago Pago",
+            "State": "American Samoa"
+        },
+        "PACR": {
+            "stationType": "RFC",
+            "center": "ALASKA",
+            "CCC": "ACR",
+            "City": "Anchorage",
+            "State": "Alaska"
+        },
+        "PAFC": {
+            "stationType": "WFO",
+            "center": "ANCHORAGE",
+            "CCC": "AFC",
+            "City": "Anchorage",
+            "State": "Alaska"
+        },
+        "PAFG": {
+            "stationType": "WFO",
+            "center": "FAIRBANKS",
+            "CCC": "AFG",
+            "City": "Fairbanks",
+            "State": "Alaska"
+        },
+        "PAJK": {
+            "stationType": "WFO",
+            "center": "JUNEAU",
+            "CCC": "AJK",
+            "City": "Junea",
+            "State": "Alaska"
+        },
+        "PGUM": {
+            "stationType": "WFO",
+            "center": "TIYAN",
+            "CCC": "GUM",
+            "City": "Barrigada",
+            "State": "Guam"
+        },
+        "PHEB": {
+            "center": "Pacific Tsunami Warning Center (PTWC)",
+            "CCC": null,
+            "City": null,
+            "State": null
+        },
+        "PHFO": {
+            "stationType": "RHQ",
+            "center": "PACIFIC REGION HEADQUARTERS",
+            "CCC": "PBP",
+            "City": "Honolulu",
+            "State": "Hawaii"
+        },
+        "PHLI": {
+            "stationType": null,
+            "center": "DATA COLLECTION OFFICE LIHUE",
+            "CCC": "HLI",
+            "City": "Lihue/Kauai Island",
+            "State": "Hawaii"
+        },
+        "PHTO": {
+            "stationType": null,
+            "center": "DATA COLLECTION OFFICE HILO",
+            "CCC": "HTO",
+            "City": "Hilo",
+            "State": "Hawaii"
+        },
+        "PKMR": {
+            "stationType": null,
+            "center": "Weahter Service Office Majuro",
+            "CCC": "KMR",
+            "City": "Majuro",
+            "State": "Republic of the Marshall Islands"
+        },
+        "PVRH": {
+            "stationType": "RHQ",
+            "center": "ALASKA REGION HEADQUARTERS",
+            "CCC": "VRH",
+            "City": "Anchorage",
+            "State": "Alaska"
+        },
+        "PTKK": {
+            "stationType": null,
+            "center": "Weahter Service Office Chuuk",
+            "CCC": "TKK",
+            "City": "Chuuk",
+            "State": "Federated States of Micronesia"
+        },
+        "PTKR": {
+            "stationType": null,
+            "center": "Weahter Service Office Palau",
+            "CCC": "TKR",
+            "City": "Koror",
+            "State": "Republic of Palau"
+        },
+        "PTTP": {
+            "stationType": null,
+            "center": "Weahter Service Office Pohnpei",
+            "CCC": "TTP",
+            "City": "Pohnpei",
+            "State": "Federated States of Micronesia"
+        },
+        "PTYA": {
+            "stationType": null,
+            "center": "Weahter Service Office Yap",
+            "CCC": "TYA",
+            "City": "Yap",
+            "State": "Federated States of Micronesia"
+        },
+        "TJSJ": {
+            "stationType": "WFO",
+            "center": "SAN JUAN",
+            "CCC": "SJU",
+            "City": "Carolina",
+            "State": "Puerto Rico"
+        },
+        "ANCF": {
+            "stationType": null,
+            "center": "NETWORK CONTROL FACILITY",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "ARCN": {
+            "stationType": null,
+            "center": "ALASKA NCEP",
+            "CCC": null,
+            "City": "Anchorage",
+            "State": "Alaska"
+        },
+        "AWCN": {
+            "stationType": null,
+            "center": "AVIATION WEATHER CENTER NCEP",
+            "CCC": "AWCN",
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "BNCF": {
+            "stationType": null,
+            "center": "FAIRMONT WV",
+            "CCC": "BNCF",
+            "City": "Fairmont",
+            "State": "West Virginia"
+        },
+        "COMT": {
+            "stationType": null,
+            "center": "COMET WFO",
+            "CCC": "COMT",
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "CTBN": {
+            "stationType": null,
+            "center": "Contractor Testbed for NCEP",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "HPCN": {
+            "stationType": null,
+            "center": "NATIONAL CENTERS for ENVIRONMENT PREDICTION",
+            "CCC": "HPCN",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "NAPO": {
+            "stationType": null,
+            "center": "NATIONAL AWIPS PROGRAM OFFICE",
+            "CCC": "NAPO",
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NHCN": {
+            "stationType": null,
+            "center": "National Hurricane Center",
+            "CCC": "NHCN",
+            "City": "Miami",
+            "State": "Florida"
+        },
+        "NHCR": {
+            "stationType": null,
+            "center": "National Hurricane Center",
+            "CCC": "NHCR",
+            "City": "Miami",
+            "State": "Florida"
+        },
+        "NHCW": {
+            "stationType": null,
+            "center": "National Hurricane Center",
+            "CCC": "NHCW",
+            "City": "Miami",
+            "State": "Florida"
+        },
+        "NHDA": {
+            "stationType": null,
+            "center": "NATIONAL HEADQUATERS DEVELOPMENT FOA",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NHDR": {
+            "stationType": null,
+            "center": "NATIONAL HEADQUATERS DEVELOPMENT RFC",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NHDW": {
+            "stationType": null,
+            "center": "NATIONAL HEADQUATERS DEVELOPMENT WFO",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NHOR": {
+            "stationType": null,
+            "center": "NATIONAL HEADQUATERS DEVELOPMENT RFC",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NHOW": {
+            "stationType": null,
+            "center": "NATIONAL HEADQUATERS DEVELOPMENT WFO",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NMTR": {
+            "stationType": null,
+            "center": "NATIONAL MODERNIZATION TEST RFC",
+            "CCC": null,
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NMTW": {
+            "stationType": null,
+            "center": "NATIONAL MODERNIZATION AND TEST SYSTEM",
+            "CCC": "WFO",
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "NRS1": {
+            "stationType": null,
+            "center": "BOHEMIA NRS",
+            "CCC": "NRS1",
+            "City": "Bohemia",
+            "State": "New York"
+        },
+        "NRS2": {
+            "stationType": null,
+            "center": "DALLAS / FT. WORTH",
+            "CCC": "NRS2",
+            "City": "Fort Worth",
+            "State": "Texas"
+        },
+        "NRS3": {
+            "stationType": null,
+            "center": "KANSAS CITY NRS",
+            "CCC": "NRS3",
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "NRS4": {
+            "stationType": null,
+            "center": "SALT LAKE CITY NRS",
+            "CCC": "NRS4",
+            "City": "Salt Lake",
+            "State": "Utah"
+        },
+        "NRS5": {
+            "stationType": null,
+            "center": "DENVER NRS",
+            "CCC": "NRS5",
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "NRS6": {
+            "stationType": null,
+            "center": "BOULDER NRS",
+            "CCC": "NRS6",
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "NRS7": {
+            "stationType": null,
+            "center": "NATIONAL CLIMATIC DATA CENTER NCDC NRS",
+            "CCC": "NRS7",
+            "City": "Asheville",
+            "State": "North Carolina"
+        },
+        "NRS8": {
+            "stationType": null,
+            "center": "STORM PREDICTION CENTER NRS",
+            "CCC": "NRS8",
+            "City": "Norman",
+            "State": "Oklahoma"
+        },
+        "NRS9": {
+            "stationType": null,
+            "center": "NATIONAL OPERATIONAL HYDROLOGITIC REMOTE SENCING CENTER NRS",
+            "CCC": "NRS9",
+            "City": "Chanhassen",
+            "State": "Minnesota"
+        },
+        "NTBN": {
+            "stationType": null,
+            "center": "NATIONAL CENTERS for ENVIRONMENT PREDICTION",
+            "CCC": "NTBN",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "NTCA": {
+            "stationType": null,
+            "center": "KANSAS CITY NATIONAL TRAINING CENTER WFO",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "NTCB": {
+            "stationType": null,
+            "center": "KANSAS CITY NATIONAL TRAINING CENTER RFC",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "NTCC": {
+            "stationType": null,
+            "center": "KANSAS CITY NATIONAL TRAINING CENTER WFO",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "NTCD": {
+            "stationType": null,
+            "center": "KANSAS CITY NATIONAL TRAINING CENTER RFC",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "OPCN": {
+            "stationType": null,
+            "center": "NATIONAL CENTERS for ENVIRONMENTAL PREDICTION",
+            "CCC": null,
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "OSFW": {
+            "stationType": null,
+            "center": "OSF WFO",
+            "CCC": "OSF",
+            "City": "Norman",
+            "State": "Oklahoma"
+        },
+        "PTWC": {
+            "stationType": null,
+            "center": "Pacific Tsunami Warning Center",
+            "CCC": null,
+            "City": "Ewa Beach",
+            "State": "Hawaii"
+        },
+        "SFMG": {
+            "stationType": null,
+            "center": "SPACE FLIGHT METEOROLOGY GROUP WFO",
+            "CCC": "SFMG",
+            "City": "Houston",
+            "State": "Texas"
+        },
+        "SPCN": {
+            "stationType": null,
+            "center": "STORM PREDICTION CENTER",
+            "CCC": "SPCN",
+            "City": "Norman",
+            "State": "Oklahoma"
+        },
+        "SWPN": {
+            "stationType": null,
+            "center": "Space Weather NCEP",
+            "CCC": "SWPN",
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "TBDW": {
+            "stationType": null,
+            "center": "TESTBED Silver Spring",
+            "CCC": "TBDW",
+            "City": "Silver Spring",
+            "State": "Maryland"
+        },
+        "TOAX": {
+            "stationType": null,
+            "center": "TESTBED OMAHA SYSTEM",
+            "CCC": "TOAX",
+            "City": "Valley",
+            "State": "Nebraska"
+        },
+        "WNAW": {
+            "stationType": null,
+            "center": "AVIATION WEATHER CENTER",
+            "CCC": "WNAW",
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "KKCI": {
+            "center": "Aviation Weather Center",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "KMSC": {
+            "center": "Marshall Space Flight Center",
+            "CCC": null,
+            "City": "Huntsville",
+            "State": "Alabama"
+        },
+        "KMWI": {
+            "center": "USDA National Computer Center (NCC)",
+            "CCC": null,
+            "City": "Kansas City",
+            "State": "Missouri"
+        },
+        "KNAS": {
+            "center": "Jet Proportion Lab (JBL)",
+            "CCC": null,
+            "City": "Langely",
+            "State": "Virginia"
+        },
+        "KNEC": {
+            "center": "National Earthquake Center",
+            "CCC": null,
+            "City": "Golden",
+            "State": "Colorado"
+        },
+        "KNHC": {
+            "center": "Tropical Prediction Center",
+            "CCC": null,
+            "City": "Miami",
+            "State": "Florida"
+        },
+        "KNKA": {
+            "center": "FAA Weather Message Switching Center Replacement (WMSCR)",
+            "CCC": null,
+            "City": "Atlanta",
+            "State": "Georgia"
+        },
+        "KNWC": {
+            "center": "USN Fleet Numerical Meteorological and Oceanographic Center (FNMOC)",
+            "CCC": null,
+            "City": "Monterrey",
+            "State": "California"
+        },
+        "KOWP": {
+            "center": "National Water Center",
+            "CCC": null,
+            "City": null,
+            "State": null
+        },
+        "KPML": {
+            "center": "NOAA's Pacific Marine Environmental Laboratory",
+            "CCC": null,
+            "City": "Seattle",
+            "State": "Washington"
+        },
+        "KWAL": {
+            "center": "Wallops Island Earth Station",
+            "CCC": null,
+            "City": "Wallops Island",
+            "State": "Virginia"
+        },
+        "KWBC": {
+            "center": "GISC/RTH",
+            "CCC": null,
+            "City": "Washington",
+            "State": "District of Columbia"
+        },
+        "KWNB": {
+            "center": "National Data Buoy Center",
+            "CCC": null,
+            "City": "Southern",
+            "State": "Mississippi"
+        },
+        "KWNC": {
+            "center": "Climate Prediction Center",
+            "CCC": "NCEP",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "KWNE": {
+            "center": "Environmental Modeling Center",
+            "CCC": "NCEP",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "KWNH": {
+            "center": "Weather Prediction Center",
+            "CCC": "NCEP",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "KWNJ": {
+            "center": "Johnson Space Center",
+            "CCC": null,
+            "City": "Houston",
+            "State": "Texas"
+        },
+        "KWNM": {
+            "center": "Ocean Prediction Center",
+            "CCC": "NCEP",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "KWNO": {
+            "center": "NCEP Central Operations",
+            "CCC": "NCEP",
+            "City": "College Park",
+            "State": "Maryland"
+        },
+        "KWNP": {
+            "center": "Space Environment Center",
+            "CCC": null,
+            "City": "Boulder",
+            "State": "Colorado"
+        },
+        "KWNS": {
+            "center": "Storm Prediction Center",
+            "CCC": null,
+            "City": "Norman",
+            "State": "Oklahoma"
+        },
+        "PAAQ": {
+            "center": "National Tsunami Warning Center (NTWC)",
+            "CCC": null,
+            "City": "Palmer",
+            "State": "Alaska"
+        },
+        "PAWU": {
+            "center": "Alaskan Aviation Weather Unit",
+            "CCC": null,
+            "City": null,
+            "State": "Alaska"
+        },
+        "PGTW": {
+            "center": "Joint Typhoon Warning Center (JTWC)",
+            "CCC": null,
+            "City": null,
+            "State": null
+        }
+    },
+    "nnn": {
+        "18A": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "18 HOUR WINTEM"
+        },
+        "24A": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "24 HOUR WINTEM"
+        },
+        "30L": {
+            "TT": "FE",
+            "ii": "8i",
+            "description": "AVERAGE MONTHLY WEATHER OUTLOOK (LOCAL)"
+        },
+        "3HR": {
+            "TT": "FO",
+            "ii": "CE",
+            "description": "ROUTINE SPACE ENVIRONMENT PRODUCT ISSUED EVERY 3 HOURS"
+        },
+        "5TC": {
+            "TT": "AU",
+            "ii": "ce",
+            "description": "500 MILLIBAR TYPE CORRELATION"
+        },
+        "ABV": {
+            "TT": "UF",
+            "ii": "4i",
+            "description": "RAWINSONDE DATA ABOVE 100 MILLIBARS *"
+        },
+        "ADA": {
+            "TT": "NO",
+            "ii": "7i",
+            "description": "ALARM/ALERT ADMINISTRATIVE MSG (URGENT NOTIFICATION)"
+        },
+        "ADM": {
+            "TT": "NO",
+            "ii": "7i",
+            "description": "ALERT ADMINISTRATIVE MESSAGE"
+        },
+        "ADR": {
+            "TT": "NO/WO",
+            "ii": "4i",
+            "description": "NWS ADMINISTRATIVE MESSAGE (EXTERNAL)"
+        },
+        "ADV": {
+            "TT": "NW",
+            "ii": "CE",
+            "description": "GENERIC SPACE ENVIRONMENT ADVISORY"
+        },
+        "ADW": {
+            "TT": "NO",
+            "ii": "ce",
+            "description": "ADMINISTRATIVE MESSAGE FOR NWWS"
+        },
+        "ADX": {
+            "TT": "NT",
+            "ii": "4i",
+            "description": "ADMIN ALERT FOR NON-RECEIPT OF TRANSMISSION"
+        },
+        "AFD": {
+            "TT": "FX",
+            "ii": "6i",
+            "description": "AREA FORECAST DISCUSSION"
+        },
+        "AFM": {
+            "TT": "FO",
+            "ii": "5i",
+            "description": "AREA FORECAST MATRICES"
+        },
+        "AFP": {
+            "TT": "FL",
+            "ii": "4i",
+            "description": "AREA FORECAST PRODUCT"
+        },
+        "AGF": {
+            "TT": "FN",
+            "ii": "4i",
+            "description": "AGRICULTURAL FORECAST"
+        },
+        "AGO": {
+            "TT": "SH",
+            "ii": "4i",
+            "description": "AGRICULTURAL OBSERVATIONS"
+        },
+        "APG": {
+            "TT": "AE",
+            "ii": "ce",
+            "description": "AIR STAGNATION GUIDANCE NARRATIVE"
+        },
+        "ALM": {
+            "TT": "NW",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT ALARM"
+        },
+        "ALT": {
+            "TT": "WO",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT ALERT"
+        },
+        "AQA": {
+            "TT": "AE",
+            "ii": "7i",
+            "description": "AIR QUALITY ADVISORY"
+        },
+        "AQI": {
+            "TT": "AE",
+            "ii": "7i",
+            "description": "AIR QUALITY INDEX STATEMENT"
+        },
+        "ARP": {
+            "TT": "UA",
+            "ii": "ce/it",
+            "description": "AIREPS *"
+        },
+        "ASA": {
+            "TT": "AE",
+            "ii": "4i",
+            "description": "AIR STAGNATION ADVISORY"
+        },
+        "AVA": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "AVALANCHE WATCH"
+        },
+        "AVM": {
+            "TT": "NO",
+            "ii": "4i",
+            "description": "AVIATION VERIFICATION MATRIX"
+        },
+        "AVW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "AVALANCHE WARNING"
+        },
+        "AWG": {
+            "TT": "WO",
+            "ii": "ce",
+            "description": "NATIONAL ATTACK WARNING"
+        },
+        "AWO": {
+            "TT": "NO",
+            "ii": "9i",
+            "description": "AREA WEATHER OUTLOOK"
+        },
+        "AWS": {
+            "TT": "AW",
+            "ii": "8i",
+            "description": "AREA WEATHER SUMMARY"
+        },
+        "AWU": {
+            "TT": "FL",
+            "ii": "7i",
+            "description": "AREA WEATHER UPDATE"
+        },
+        "AWW": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "AIRPORT WEATHER WARNING"
+        },
+        "BLU": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "BLUE ALERT"
+        },
+        "BOY": {
+            "TT": "SS",
+            "ii": "8i/ce/it",
+            "description": "BUOY REPORTS - SYNOPTIC AND NON SYNOPTIC TIMES"
+        },
+        "CAE": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "CHILD ABDUCTION EMERGENCY"
+        },
+        "CAP": {
+            "TT": "XO",
+            "ii": "5i",
+            "description": "ALERT MESSAGES IN COMMON ALERTING PROTOCOL XML"
+        },
+        "CCF": {
+            "TT": "FP",
+            "ii": "4i",
+            "description": "CODED CITY FORECAST"
+        },
+        "CDW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "CIVIL DANGER WARNING"
+        },
+        "CEM": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "CIVIL EMERGENCY MESSAGE"
+        },
+        "CF6": {
+            "TT": "CX",
+            "ii": "5i",
+            "description": "WFO DAILY CLIMATE WEB PAGE MESSAGES"
+        },
+        "CFP": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "CONVECTIVE FORECAST PRODUCT"
+        },
+        "CFW": {
+            "TT": "WH",
+            "ii": "4i",
+            "description": "COASTAL FLOOD WARNINGS, WATCHES OR STATEMENTS"
+        },
+        "CGR": {
+            "TT": "SX",
+            "ii": "8i",
+            "description": "COAST GUARD SURFACE REPORT"
+        },
+        "CHG": {
+            "TT": "WT",
+            "ii": "0i/ce",
+            "description": "COMPUTER HURRICANE GUIDANCE"
+        },
+        "CLA": {
+            "TT": "CX",
+            "ii": "5i",
+            "description": "CLIMATOLOGICAL REPORT (ANNUAL)"
+        },
+        "CLI": {
+            "TT": "CD",
+            "ii": "4i",
+            "description": "CLIMATOLOGICAL REPORT (DAILY)"
+        },
+        "CLM": {
+            "TT": "CX",
+            "ii": "5i",
+            "description": "CLIMATOLOGICAL REPORT (MISC, INC MONTHLY REPORTS)"
+        },
+        "CLS": {
+            "TT": "CX",
+            "ii": "5i",
+            "description": "SEASONAL CLIMATE SUMMARY PRODUCTS"
+        },
+        "CMM": {
+            "TT": "CS",
+            "ii": "5i",
+            "description": "CODED CLIMATOLOGICAL MONTHLY MEANS"
+        },
+        "COD": {
+            "TT": "AS/FS",
+            "ii": "CE",
+            "description": "CODED ANALYSIS AND FORECASTS"
+        },
+        "CRF": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "CONTINGENCY RIVER FORECAST"
+        },
+        "CSC": {
+            "TT": "FP",
+            "ii": "it",
+            "description": "CANADIAN SELECTED CITIES FORECAST (FPCN12 CWAO)"
+        },
+        "CUR": {
+            "TT": "FX",
+            "ii": "CE",
+            "description": "ROUTINE SPACE ENVIRONMENT PRODUCTS ISSUED FOR CURRENT DATA"
+        },
+        "CWA": {
+            "TT": "WL",
+            "ii": "ce",
+            "description": "CENTER (CWSU) WEATHER ADVISORY"
+        },
+        "CWF": {
+            "TT": "FZ",
+            "ii": "5i",
+            "description": "COASTAL WATERS FORECAST"
+        },
+        "CWS": {
+            "TT": "WO",
+            "ii": "ce",
+            "description": "CENTER (CWSU) WEATHER STATEMENT"
+        },
+        "DAY": {
+            "TT": "AX/FX",
+            "ii": "CE",
+            "description": "ROUTINE SPACE ENVIRONMENT PRODUCT ISSUED DAILY"
+        },
+        "DAA": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "170  QPE ONE HOUR DIGITAL ACCUMULATION ARRAY ID 170/DAA DS.170aa"
+        },
+        "DGT": {
+            "TT": "AX",
+            "ii": "7i",
+            "description": "DROUGHT, INFORMATION STATEMENT"
+        },
+        "DHR": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "32 Digital Hybrid Scan Refl (DHR) Add No 32 10/hr RPCCDS & SBN DS.32dhr"
+        },
+        "DMO": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "PRACTICE/DEMO WARNING"
+        },
+        "DOD": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "174  QPE-PPS ONE HOUR ACCUMULATION DIFFERENCE ID 175/DOD DS.174od"
+        },
+        "DPA": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "81 Digital Precip Array (DPA) Add No 7 10/hr RPCCDS & SBN DS.81dpr"
+        },
+        "DPR": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "176  QPE INSTANTEANEOUS PRECIPITATION RATE ID 176/DPR DS.176pr"
+        },
+        "DSA": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "172  QPE DIGITAL STORM TOTAL ACCUMULATION ID 172/DSA DS.172dt"
+        },
+        "DSD": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "175  QPE-PPS STORM TOTAL ACCUMULATION DIFFERENCE ID 175/DSD DS.175sd"
+        },
+        "DSM": {
+            "TT": "CX",
+            "ii": "4i",
+            "description": "ASOS DAILY SUMMARY"
+        },
+        "DSP": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "138 Digital Storm Total Precip (STP) Add No 15 10/hr RPCCDS & SBN DS.138dp"
+        },
+        "DST": {
+            "TT": "CX",
+            "ii": "7i",
+            "description": "ASOS DAILY SUMMARY TEST"
+        },
+        "DSW": {
+            "TT": "WW",
+            "ii": "5i",
+            "description": "DUST STORM WARNING & DUST STORM ADVISORY"
+        },
+        "DU3": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "173  QPE USER SELECTABLE 3 HOUR ACCUMULATION ID 173/DUA DS.173u1"
+        },
+        "DU6": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "173  QPE USER SELECTABLE 24 HOUR ACCUMULATION ID 173/DUA DS.173u3"
+        },
+        "DVL": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "134  RADAR DIGITAL VERTICALLY INTEGRATED LIQUID ID 134/DVL Add No 7K 6-14/hr RPCCDS & SBN  DS.134il"
+        },
+        "EET": {
+            "TT": "SD",
+            "ii": "7i",
+            "description": "135  RADAR ENHANCED ECHO TOPS ID 135/EET  Add  No   3K  6-14/hr  RPCCDS & SBN  DS.135et"
+        },
+        "EFP": {
+            "TT": "FE",
+            "ii": "6i",
+            "description": "3 TO 5 DAY EXTENDED FORECAST"
+        },
+        "EOL": {
+            "TT": "FE",
+            "ii": "7i",
+            "description": "AVERAGE 6 TO 10 DAY WEATHER OUTLOOK (LOCAL)"
+        },
+        "EON": {
+            "TT": "FE",
+            "ii": "ce",
+            "description": "AVERAGE 6 TO 10 DAY WEATHER OUTLOOK (NATIONAL)"
+        },
+        "EQI": {
+            "TT": "SE",
+            "ii": "ii/ce",
+            "description": "EARTHQUAKE INFORMATION BULLETIN"
+        },
+        "EQR": {
+            "TT": "SE",
+            "ii": "6i",
+            "description": "EARTHQUAKE REPORT"
+        },
+        "EQW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "EARTHQUAKE WARNING"
+        },
+        "ESF": {
+            "TT": "FG",
+            "ii": "7i",
+            "description": "FLOOD POTENTIAL OUTLOOK"
+        },
+        "ESG": {
+            "TT": "FG",
+            "ii": "6i",
+            "description": "EXTENDED STREAMFLOW GUIDANCE"
+        },
+        "ESP": {
+            "TT": "FG",
+            "ii": "6i",
+            "description": "EXTENDED STREAMFLOW PREDICTION"
+        },
+        "ESS": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "WATER SUPPLY OUTLOOK"
+        },
+        "ETT": {
+            "TT": "AX",
+            "ii": "9i",
+            "description": "EVAPOTRANSPIRATION TABLE"
+        },
+        "EVI": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "EVACUATION IMMEDIATE"
+        },
+        "EWW": {
+            "TT": "WF",
+            "ii": "5i",
+            "description": "EXTREME WIND WARNING TEXT PRODUCTS"
+        },
+        "FA0": {
+            "TT": "FA",
+            "ii": "3i",
+            "description": "AVIATION AREA FORECAST (PACIFIC)"
+        },
+        "FA1": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (NORTHEAST U.S.)"
+        },
+        "FA2": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (SOUTHEAST U.S.)"
+        },
+        "FA3": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (NORTH CENTRAL U.S.)"
+        },
+        "FA4": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (SOUTH CENTRAL U.S.)"
+        },
+        "FA5": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (U.S. ROCKY MOUNTAINS)"
+        },
+        "FA6": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (U.S. WEST COAST)"
+        },
+        "FA7": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (JUNEAU, ALASKA)"
+        },
+        "FA8": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (ANCHORAGE, ALASKA)"
+        },
+        "FA9": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (FAIRBANKS, ALASKA)"
+        },
+        "FAK": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "ALASKAN MODEL OUTPUT STATISTICS (MOS) FORECAST"
+        },
+        "FAN": {
+            "TT": "FE",
+            "ii": "ce",
+            "description": "AVN BASED MOS GUIDANCE"
+        },
+        "FAV": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "AVIATION AREA FORECAST (FOR INTERNATIONALS ONLY)"
+        },
+        "FBP": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "AK FOUS 24,36,& 48-HR BOUNDARY LYR WINDS & PRECIP"
+        },
+        "FD0": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "24 HR FD WINDS ALOFT FCST (45,000 AND 53,000 FT)"
+        },
+        "FD1": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "6 HOUR WINDS ALOFT FORECAST"
+        },
+        "FD2": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "12 HOUR WINDS ALOFT FORECAST"
+        },
+        "FD3": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "24 HOUR WINDS ALOFT FORECAST"
+        },
+        "FD8": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "6 HOUR FD WINDS ALOFT FCST (45,000 AND 53,000 FT)"
+        },
+        "FD9": {
+            "TT": "FB",
+            "ii": "ce",
+            "description": "12 HR FD WINDS ALOFT FCST (45,000 AND 53,000 FT)"
+        },
+        "FDI": {
+            "TT": "FN",
+            "ii": "4i",
+            "description": "FIRE DANGER INDICES"
+        },
+        "FFA": {
+            "TT": "WG",
+            "ii": "6i",
+            "description": "FLASH FLOOD WATCH"
+        },
+        "FFG": {
+            "TT": "FO",
+            "ii": "6i",
+            "description": "FLASH FLOOD GUIDANCE"
+        },
+        "FFH": {
+            "TT": "FO",
+            "ii": "7i",
+            "description": "HEADWATER GUIDANCE"
+        },
+        "FFS": {
+            "TT": "WG",
+            "ii": "7i",
+            "description": "FLASH FLOOD STATEMENT"
+        },
+        "FFW": {
+            "TT": "WG",
+            "ii": "5i",
+            "description": "FLASH FLOOD WARNING"
+        },
+        "FLN": {
+            "TT": "FG",
+            "ii": "ce",
+            "description": "NATIONAL FLOOD SUMMARY"
+        },
+        "FLS": {
+            "TT": "WG",
+            "ii": "8i",
+            "description": "FLOOD STATEMENT"
+        },
+        "FLW": {
+            "TT": "WG",
+            "ii": "4i",
+            "description": "FLOOD WARNING"
+        },
+        "FMR": {
+            "TT": "FE",
+            "ii": "ce",
+            "description": "FORECAST MEDIUM RANGE GUIDANCE"
+        },
+        "FOF": {
+            "TT": "FD",
+            "ii": "ce",
+            "description": "UPPER WIND FALLOUT FORECAST"
+        },
+        "FOH": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "ETA FOUS FREEZING AND RELATIVE HUMIDITY"
+        },
+        "FRH": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "FOUS RELATIVE HUMIDITY/TEMPERATURE GUIDANCE"
+        },
+        "FRW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "FIRE WARNING"
+        },
+        "FSH": {
+            "TT": "NO",
+            "ii": "7i",
+            "description": "NATIONAL MARINE FISHERIES ADMINISTRATIVE SERVICE MESSAGE"
+        },
+        "FSS": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "URBAN AND SMALL STREAM FLOOD ADVISORY"
+        },
+        "FTJ": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "FOUS TRAJECTORY FORECAST"
+        },
+        "FTM": {
+            "TT": "NO",
+            "ii": "6i",
+            "description": "75 Free Text Message(FTM) Add No 0.3 < 1/day RPCCDS & SBN DS.75ftm"
+        },
+        "FTP": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "FOUS PROG MAX/MIN TEMP/POP GUIDANCE"
+        },
+        "FWA": {
+            "TT": "NO",
+            "ii": "8i",
+            "description": "FIRE WEATHER ADMINISTRATIVE MESSAGE"
+        },
+        "FWC": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "FOUS WIND/CLOUD GUIDANCE"
+        },
+        "FWD": {
+            "TT": "FN",
+            "ii": "ce",
+            "description": "FIRE WEATHER OUTLOOK DISCUSSION"
+        },
+        "FWE": {
+            "TT": "FE",
+            "ii": "4i",
+            "description": "EXTENDED FIRE WEATHER OUTLOOK"
+        },
+        "FWF": {
+            "TT": "FN",
+            "ii": "5i",
+            "description": "ROUTINE FIRE WX FCST(WITH/WITHOUT 6-10 DAY OUTLOOK)"
+        },
+        "FWL": {
+            "TT": "FN",
+            "ii": "8i",
+            "description": "LAND MANAGEMENT FORECASTS"
+        },
+        "FWM": {
+            "TT": "FN",
+            "ii": "8i",
+            "description": "MISCELLANEOUS FIRE WEATHER PRODUCT"
+        },
+        "FWN": {
+            "TT": "SH",
+            "ii": "8i",
+            "description": "FIRE WEATHER NOTIFICATION"
+        },
+        "FWO": {
+            "TT": "SH",
+            "ii": "6i",
+            "description": "FIRE WEATHER OBSERVATION"
+        },
+        "FWS": {
+            "TT": "FN",
+            "ii": "7i",
+            "description": "SUPPRESSION FORECAST"
+        },
+        "FWW": {
+            "TT": "FN",
+            "ii": "6i",
+            "description": "FIRE WEATHER WATCH"
+        },
+        "FZL": {
+            "TT": "UX",
+            "ii": "4i",
+            "description": "FREEZING LEVEL DATA (RADAT)"
+        },
+        "GLF": {
+            "TT": "FZ",
+            "ii": "6i",
+            "description": "GREAT LAKES FORECAST"
+        },
+        "GLO": {
+            "TT": "FZ",
+            "ii": "4i",
+            "description": "GREAT LAKES STORM OUTLOOK"
+        },
+        "GLS": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "GREAT LAKES STORM SUMMARY"
+        },
+        "GSM": {
+            "TT": "NX",
+            "ii": "6i",
+            "description": "2 General Status Message(GSM) Add No 0.1 Approx 5/day RPCCDS & SBN DS.p2gsm"
+        },
+        "HCM": {
+            "TT": "NG",
+            "ii": "8i",
+            "description": "HYDROMETEORLOGICAL COORDINATION MESSAGE"
+        },
+        "HD1": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD2": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD3": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD4": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD5": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD6": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD7": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD8": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HD9": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "RFC DERIVED QPF DATA PRODUCT"
+        },
+        "HDP": {
+            "TT": "AG",
+            "ii": "4i",
+            "description": "WSR-88D HOURLY DIGITAL PRECIPITATION ARRAY"
+        },
+        "HHC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "177  HYBRID SCAN HYDROMETEOR CLASSIFICATION ID 177/HHC DS.177hh"
+        },
+        "HLS": {
+            "TT": "WT",
+            "ii": "8i",
+            "description": "HURRICANE LOCAL STATEMENT"
+        },
+        "HMD": {
+            "TT": "AG",
+            "ii": "7i",
+            "description": "HYDROMETEOROLOGICAL DISCUSSION"
+        },
+        "HML": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "Hydro Obs/Forecasts from WFO/RFCs in XML Format"
+        },
+        "HMW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "HAZARDOUS MATERIALS WARNING"
+        },
+        "HP1": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP2": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP3": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP4": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP5": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP6": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP7": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP8": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HP9": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "RFC QPF VERIFICATION PRODUCT"
+        },
+        "HSF": {
+            "TT": "FZ",
+            "ii": "4i",
+            "description": "HIGH SEAS FORECAST"
+        },
+        "HWO": {
+            "TT": "FL",
+            "ii": "4i",
+            "description": "HAZARDOUS WEATHER OUTLOOK"
+        },
+        "HYD": {
+            "TT": "SX",
+            "ii": "5i",
+            "description": "DAILY HYDROMETEOROLOGICAL PRODUCTS"
+        },
+        "HYM": {
+            "TT": "CS",
+            "ii": "4i",
+            "description": "MONTHLY HYDROMETEOROLOGICAL PLAIN LANGUAGE PRODUCT"
+        },
+        "HYW": {
+            "TT": "CW",
+            "ii": "4i",
+            "description": "WEEKLY HYDROMETEOROLOGICAL PLAIN LANGUAGE PRODUCT"
+        },
+        "ICE": {
+            "TT": "FZ",
+            "ii": "8i",
+            "description": "ICE FORECAST"
+        },
+        "ICO": {
+            "TT": "FZ",
+            "ii": "8i",
+            "description": "ICE OUTLOOK"
+        },
+        "INI": {
+            "TT": "NO",
+            "ii": "5i",
+            "description": "ADMINISTR [NOUS51 KWBC]"
+        },
+        "IOB": {
+            "TT": "SV",
+            "ii": "4i",
+            "description": "ICE OBSERVATION"
+        },
+        "IRM": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "INTERIM RADAR MESSAGE 83/IRM"
+        },
+        "KPA": {
+            "TT": "NT",
+            "ii": "8i",
+            "description": "KEEP ALIVE MESSAGE"
+        },
+        "LAE": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "LOCAL AREA EMERGENCY"
+        },
+        "LAW": {
+            "TT": "SXVD",
+            "ii": "5i",
+            "description": "GREAT LAKES WEATHER OBSERVATION (SHIP SYNOP CODE)"
+        },
+        "LCO": {
+            "TT": "SX",
+            "ii": "5i",
+            "description": "LOCAL COOPERATIVE OBSERVATION"
+        },
+        "LEW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "LAW ENFORCEMENT WARNING"
+        },
+        "LFP": {
+            "TT": "FL",
+            "ii": "8i",
+            "description": "LOCAL FORECAST"
+        },
+        "LLS": {
+            "TT": "UX",
+            "ii": "5i",
+            "description": "LOW-LEVEL SOUNDING"
+        },
+        "LSH": {
+            "TT": "WH",
+            "ii": "6i",
+            "description": "LAKESHORE WARNING OR STATEMENT"
+        },
+        "LSR": {
+            "TT": "NW",
+            "ii": "5i",
+            "description": "LOCAL STORM REPORT"
+        },
+        "LTG": {
+            "TT": "SF",
+            "ii": "ce",
+            "description": "LIGHTNING DATA"
+        },
+        "MAN": {
+            "TT": "US",
+            "ii": "4i",
+            "description": "RAWINSONDE OBSERVATION MANDATORY LEVELS *"
+        },
+        "MAP": {
+            "TT": "AG",
+            "ii": "5i",
+            "description": "MEAN AREAL PRECIPITATION"
+        },
+        "MAV": {
+            "TT": "FO",
+            "ii": "ce",
+            "description": "MOS AVIATION-BASED GUIDANCE FROM AVN MODEL"
+        },
+        "MAW": {
+            "TT": "FZ",
+            "ii": "6i",
+            "description": "AMENDED MARINE FORECAST"
+        },
+        "MEF": {
+            "TT": "NZ",
+            "ii": "8i",
+            "description": "AFOS FORECAST VERIFICATION MATRIX"
+        },
+        "MET": {
+            "TT": "FO",
+            "ii": "4i",
+            "description": "ETA-BASED MOS ALPHANUMERIC MESSAGE"
+        },
+        "MEX": {
+            "TT": "FE",
+            "ii": "ce",
+            "description": "MOS EXTENDED-RANGE GUIDANCE FROM MRF MODEL"
+        },
+        "MIM": {
+            "TT": "AG",
+            "ii": "ce",
+            "description": "MARINE INTERPRETATION MESSAGE"
+        },
+        "MIS": {
+            "TT": "AX",
+            "ii": "4i",
+            "description": "MISCELLANEOUS LOCAL PRODUCT"
+        },
+        "MML": {
+            "TT": "LA",
+            "ii": "4i",
+            "description": "METAR FORMATTED SURFACE WEATHER OBSERVATION - XML FORMAT *"
+        },
+        "MON": {
+            "TT": "FO/FX",
+            "ii": "CE",
+            "description": "ROUTINE SPACE ENVIRONMENT PRODUCT ISSUED MONTHLY"
+        },
+        "MRM": {
+            "TT": "NO",
+            "ii": "8i",
+            "description": "MISSING RADAR MESSAGE (WSR-88D)"
+        },
+        "MRP": {
+            "TT": "AG",
+            "ii": "ce",
+            "description": "TECHNIQUES DEVELOPMENT LABORATORY MARINE PRODUCT"
+        },
+        "MSM": {
+            "TT": "CS",
+            "ii": "4i",
+            "description": "ASOS MONTHLY SUMMARY MESSAGE"
+        },
+        "MST": {
+            "TT": "CS",
+            "ii": "8i",
+            "description": "ASOS MONTHLY SUMMARY MESSAGE TEST"
+        },
+        "MTR": {
+            "TT": "SA",
+            "ii": "4i",
+            "description": "METAR FORMATTED SURFACE WEATHER OBSERVATION *"
+        },
+        "MTT": {
+            "TT": "SX",
+            "ii": "9i",
+            "description": "METAR TEST MESSAGE (ASOS) *"
+        },
+        "MVF": {
+            "TT": "FX",
+            "ii": "5i",
+            "description": "MARINE VERIFICATION CODED FORECAST"
+        },
+        "MWS": {
+            "TT": "FZ",
+            "ii": "7i",
+            "description": "MARINE WEATHER STATEMENT"
+        },
+        "MWW": {
+            "TT": "WH",
+            "ii": "7i",
+            "description": "MARINE WEATHER WARNING"
+        },
+        "N0C": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 0.4-0.8 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC  DS.161c0"
+        },
+        "N0H": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 0.4-0.8 HYDROMETEOR CLASS .13NM RES ID 165/DHC DS.165h0"
+        },
+        "N0K": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 0.4-0.8 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD  DS.163k0"
+        },
+        "N0M": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 0.4-0.8 MELTING LAYER ID 166/ML  DS.166m0"
+        },
+        "N0Q": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "94   RADAR 0.4-0.8 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR Add No 20K 6-14/hr RPCCDS & SBN DS.p94r0"
+        },
+        "N0R": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR .5 REFLECTIVITY .54NM RES 16 LEVELS ID 19/R"
+        },
+        "N0S": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR .5 STORM REL. VELOCITY .54NM RES 16 LVLS ID 56/SRM"
+        },
+        "N0U": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "99   RADAR 0.4-0.8 VELOCITY .13NM RES 256 LEVELS ID 99/DV Add No 55K 6-14/hr RPCCDS & SBN DS.p99v0"
+        },
+        "N0V": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR .5 VELOCITY .54NM RES 16 LEVELS ID 27/V"
+        },
+        "N0W": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "RADAR BASE RADIAL VELOCITY 25/V"
+        },
+        "N0X": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 0.4-0.8 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD DS.159x0"
+        },
+        "N0Z": {
+            "TT": "SD",
+            "ii": "3i",
+            "description": "RADAR .5 REFLECTIVITY 1.1NM RES 16 LEVELS ID 20/R"
+        },
+        "N1C": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 1.2-1.6 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC  DS.161c1"
+        },
+        "N1H": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 1.2-1.6 HYDROMETEOR CLASS .13NM RES ID 165/DHC DS.165h1"
+        },
+        "N1K": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 1.2-1.6 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD DS.163k1"
+        },
+        "N1M": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 1.2-1.6 MELTING LAYER ID 166/ML  DS.166m1"
+        },
+        "N1P": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "78 One Hour Precip (OHP) Add No 10 10/hr RPCCDS & SBN DS.78ohp"
+        },
+        "N1Q": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "94   RADAR 1.2-1.6 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR Add No 12K 6-14/hr RPCCDS & SBN DS.p94r1"
+        },
+        "N1R": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "RADAR 1.5 REFLECTIVITY .54NM RES 16 LEVELS ID 19/R"
+        },
+        "N1S": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 1.5 STORM REL. VELOCITY .54NM RES 16 LVLS ID 56/SRM"
+        },
+        "N1U": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "99   RADAR 1.2-1.6 VELOCITY .13NM RES 256 LEVELS ID 99/DV Add No 30K 6-14/hr RPCCDS & SBN DS.p99v1"
+        },
+        "N1V": {
+            "TT": "SD",
+            "ii": "7i",
+            "description": "RADAR 1.5 VELOCITY .54NM RES 16 LEVELS ID 27/V"
+        },
+        "N1X": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 1.2-1.6 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD  DS.159x1"
+        },
+        "N2C": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 2.1-2.6 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC DS.161c2"
+        },
+        "N2H": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 2.1-2.6 HYDROMETEOR CLASS .13NM RES ID 165/DHC DS.165h2"
+        },
+        "N2K": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 2.1-2.6 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD DS.163k2"
+        },
+        "N2M": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 2.1-2.6 MELTING LAYER ID 166/ML  DS.166m2"
+        },
+        "N2Q": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "94   RADAR 2.1-2.6 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR Add No 11K  6-14/hr RPCCDS & SBN DS.p94r2"
+        },
+        "N2R": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 2.4/2.5 REFLECTIVITY .54NM RES 16 LEVELS ID 19/R"
+        },
+        "N2S": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 2.4/2.5 STORM REL VLCTY .54NM RES 16 LVLS ID 56/SRM"
+        },
+        "N2U": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "99   RADAR 2.1-2.6 VELOCITY .13NM RES 256 LEVELS ID 99/DV Add No 27K  6-14/hr RPCCDS & SBN DS.p99v2"
+        },
+        "N2V": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 2.4/2.5 VELOCITY .54NM RES 16 LEVELS ID 27/V"
+        },
+        "N2X": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 2.1-2.6 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD DS.159x2"
+        },
+        "N3C": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 2.7-3.6 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC DS.161c3"
+        },
+        "N3H": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 2.7-3.6 HYDROMETEOR CLASS .13NM RES ID 165/DHC DS.165h3"
+        },
+        "N3K": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 2.7-3.6 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD DS.163k3"
+        },
+        "N3M": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 2.7-3.6 MELTING LAYER ID 166/ML  DS.166m3"
+        },
+        "N3P": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 3 HOUR PRECIPITATION ACCUMULATION 79/THP"
+        },
+        "N3Q": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "94   RADAR 2.7-3.6 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR Add No 10K 6-14/hr RPCCDS & SBN  DS.p94r3"
+        },
+        "N3R": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 3.4/3.5 REFLECTIVITY .54NM RES 16 LEVELS ID 19/R"
+        },
+        "N3S": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 3.4/3.5 STORM REL VLCTY .54NM RES 16 LVLS ID 56/SRM"
+        },
+        "N3U": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "99   RADAR 2.7-3.6 VELOCITY .13NM RES 256 LEVELS ID 99/DV  Add No 23K 6-14/hr RPCCDS & SBN  DS.p99v3"
+        },
+        "N3V": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR 3.4/3.5 VELOCITY .54NM RES 16 LEVELS ID 27/V"
+        },
+        "N3X": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 2.7-3.6 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD  DS.159x3"
+        },
+        "N6P": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "USER SELECTABLE PRECIPITATION 6 HOUR ACCUMULATION 31/USP"
+        },
+        "NAC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 0.9-1.1 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC  DS.161ca"
+        },
+        "NAH": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 0.9-1.1 HYDROMETEOR CLASS .13NM RES ID 165/DHC        DS.165ha"
+        },
+        "NAK": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 0.9-1.1 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD DS.163ka"
+        },
+        "NAM": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 0.9-1.1 MELTING LAYER ID 166/ML  DS.166ma"
+        },
+        "NAQ": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "94   RADAR 0.9-1.1 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR  Add  No   16K  6-14/hr  RPCCDS & SBN  DS.p94ra"
+        },
+        "NAU": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "99   RADAR 0.9-1.1 VELOCITY .13NM RES 256 LEVELS ID 99/DV  Add  No   47K  6-14/hr  RPCCDS & SBN  DS.p99va"
+        },
+        "NAX": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 0.9-1.1 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD  DS.159xa"
+        },
+        "NBC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161  RADAR 1.7-2.0 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC  DS.161cb"
+        },
+        "NBH": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165  RADAR 1.7-2.0 HYDROMETEOR CLASS .13NM RES ID 165/DHC        DS.165hb"
+        },
+        "NBK": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163  RADAR 1.7-2.0 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD DS.163kb"
+        },
+        "NBM": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166  RADAR 1.7-2.0 MELTING LAYER ID 166/ML  DS.166mb"
+        },
+        "NBQ": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "94   RADAR 1.7-2.0 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR  Add  No   11K  6-14/hr  RPCCDS & SBN  DS.p94rb"
+        },
+        "NBU": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "99   RADAR 1.7-2.0 VELOCITY .13NM RES 256 LEVELS ID 99/DV  Add  No   29K  6-14/hr  RPCCDS & SBN  DS.p99vb"
+        },
+        "NBX": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159  RADAR 1.7-2.0 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD  DS.159xb"
+        },
+        "NC1": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL (CFC) \u2013 SEGMENT 1"
+        },
+        "NC2": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL (CFC) \u2013 SEGMENT 2"
+        },
+        "NC3": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL (CFC) \u2013 SEGMENT 3"
+        },
+        "NC4": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL (CFC) \u2013 SEGMENT 4"
+        },
+        "NC5": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL (CFC) \u2013 SEGMENT 5"
+        },
+        "NCF": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "CLUTTER FILTER CONTROL"
+        },
+        "NCO": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR COMPOSITE REFLECTIVITY 2.2NM RES 8 LEVELS ID 36/CR"
+        },
+        "NCR": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "37 Composite Ref (CZ) Add No 20 10/hr RPCCDS & SBN DS.p37cr"
+        },
+        "NCZ": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR COMPOSITE REFLECTIVITY 2.2NM RES 16 LEVELS ID 38/CR"
+        },
+        "NET": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "41 Echo Tops (ET) Add No 1.5 10/hr RPCCDS & SBN DS.p41et"
+        },
+        "NHI": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "59 Hail Index (HI) Add No 3.2 10/hr RPCCDS DS.p59hi"
+        },
+        "NHL": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR HIGH LAYER COMPOSITE REFLECTIVITY MAX ID 90/LRM"
+        },
+        "NLA": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR LOW LAYER COMPOSITE REFLECTIVITY AP RMVD ID 67/ARP"
+        },
+        "NLL": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR LOW LAYER COMPOSITE REFLECTIVITY MAX ID 65/LRM"
+        },
+        "NMD": {
+            "TT": "SD",
+            "ii": "3i",
+            "description": "141 Mesocyclone (MD) Add No 2 10/hr RPCCDS & SBN DS.141md"
+        },
+        "NME": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "MESOCYCLONE 60/M"
+        },
+        "NML": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR MIDDLE LAYER COMPOSITE REFLECTIVITY MAX ID 66/LRM"
+        },
+        "NOW": {
+            "TT": "FP",
+            "ii": "7i",
+            "description": "SHORT TERM FORECAST"
+        },
+        "NPW": {
+            "TT": "WW",
+            "ii": "7i",
+            "description": "NON-PRECIPITATION WARNINGS, WATCHES, ADVISORIES"
+        },
+        "NSH": {
+            "TT": "FZ",
+            "ii": "5i",
+            "description": "NEARSHORE MARINE FORECAST"
+        },
+        "NSP": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "BASE SPECTRUM WIDTH 32NM .13NM X 1 DEG"
+        },
+        "NSS": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "STORM STRUCTURE 62/SS"
+        },
+        "NST": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "58 Storm Tracking Information (STI) Add No 3.5 10/hr RPCCDS DS.58sti"
+        },
+        "NSW": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "BASE SPECTRUM WIDTH 124NM .54NM X 1 DEG"
+        },
+        "NTP": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "80 Storm Total Precip (STP) Add No 11 10/hr RPCCDS & SBN DS.80stp"
+        },
+        "NTV": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "61 Tornadic Vortex Signature (TVS) Add No 2.1 10/hr RPCCDS DS.61tvs"
+        },
+        "NUP": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "RADAR USER SELECT PRECIPITATION ACCUMULATION 31/USP"
+        },
+        "NUW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "NUCLEAR POWER PLANT WARNING"
+        },
+        "NVL": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "57 Vert Integ Liq (VIL) Add No 1.3 10/hr RPCCDS & SBN DS.57vil"
+        },
+        "NVW": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "48 VAD Wind Profile (VWP) Add No 7.5 10/hr RPCCDS & SBN DS.48vwp"
+        },
+        "NWP": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "SEVERE WEATHER PROBABILITY 47/SWP"
+        },
+        "NXC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161 RADAR -0.5 to -0.1 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC"
+        },
+        "NXF": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "113 RADAR -0.5 to -0.1 POWER REMOVED CONTROL .13NM RES 13 LEVELS ID 113/PRC"
+        },
+        "NXH": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165 RADAR -0.5 to -0.1 HYDROMETEOR CLASS .13NM RES ID 165/DHC"
+        },
+        "NXK": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163 RADAR -0.5 to -0.1 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD"
+        },
+        "NXM": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166 RADAR -0.5 to -0.1 MELTING LAYER ID 166/ML"
+        },
+        "NXQ": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "94 RADAR -0.5 to -0.1 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR"
+        },
+        "NXU": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "99 RADAR -0.5 to -0.1 VELOCITY .13NM RES 256 LEVELS ID 99/DV"
+        },
+        "NXX": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159 RADAR -0.5 to -0.1 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD"
+        },
+        "NYC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161 RADAR 0.0-0.2 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC"
+        },
+        "NYF": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "113 RADAR 0.0-0.2 POWER REMOVED CONTROL .13NM RES 13 LEVELS ID 113/PRC"
+        },
+        "NYH": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165 RADAR 0.0-0.2 HYDROMETEOR CLASS .13NM RES ID 165/DHC"
+        },
+        "NYK": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163 RADAR 0.0-0.2 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD"
+        },
+        "NYM": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166 RADAR 0.0-0.2 MELTING LAYER ID 166/ML"
+        },
+        "NYQ": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "94 RADAR 0.0-0.2 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR"
+        },
+        "NYU": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "99 RADAR 0.0-0.2 VELOCITY .13NM RES 256 LEVELS ID 99/DV"
+        },
+        "NYX": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159 RADAR 0.0-0.2 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD"
+        },
+        "NZC": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "161 RADAR 0.3-0.4 CORR CFFCNT .13NM RES 256 LEVELS ID 161/DCC"
+        },
+        "NZF": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "113 RADAR 0.3-0.4 POWER REMOVED CONTROL .13NM RES 13 LEVELS ID 113/PRC"
+        },
+        "NZH": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "165 RADAR 0.3-0.4 HYDROMETEOR CLASS .13NM RES ID 165/DHC"
+        },
+        "NZK": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "163 RADAR 0.3-0.4 SPEC DIFF PHASE .13NM RES 256 LVLS ID 163/DKD"
+        },
+        "NZM": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "166 RADAR 0.3-0.4 MELTING LAYER ID 166/ML"
+        },
+        "NZQ": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "94 RADAR 0.3-0.4 REFLECTIVITY .54NM RES 256 LEVELS ID 94/DR"
+        },
+        "NZU": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "99 RADAR 0.3-0.4 VELOCITY .13NM RES 256 LEVELS ID 99/DV"
+        },
+        "NZX": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "159 RADAR 0.3-0.4 DIFF RFLCTVTY .13NM RES 256 LEVELS ID 159/DZD"
+        },
+        "OAV": {
+            "TT": "NO",
+            "ii": "5i",
+            "description": "OTHER AVIATION PRODUCTS"
+        },
+        "OCD": {
+            "TT": "AG",
+            "ii": "ce",
+            "description": "OCEANOGRAPHIC DATA"
+        },
+        "OEP": {
+            "TT": "NZ",
+            "ii": "70",
+            "description": "OPERATIONAL EVOLUTION PLAN"
+        },
+        "OFA": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "OFFSHORE AVIATION AREA FORECAST"
+        },
+        "OFF": {
+            "TT": "FZ",
+            "ii": "6i",
+            "description": "OFFSHORE FORECAST"
+        },
+        "OHA": {
+            "TT": "SD",
+            "ii": "8i",
+            "description": "169  QPE ONE HOUR ACCUMULATION 16 LEVELS ID 169/OHA  DS.169oh"
+        },
+        "OMR": {
+            "TT": "SX",
+            "ii": "8i",
+            "description": "OTHER MARINE PRODUCTS"
+        },
+        "OPU": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "OTHER PUBLIC PRODUCTS"
+        },
+        "OSB": {
+            "TT": "AG",
+            "ii": "4i",
+            "description": "OCEANOGRAPHIC SPECTRAL BULLETIN"
+        },
+        "OSO": {
+            "TT": "SX",
+            "ii": "5i",
+            "description": "OTHER SURFACE OBSERVATIONS"
+        },
+        "OSW": {
+            "TT": "AG",
+            "ii": "ce",
+            "description": "OCEAN SURFACE WINDS"
+        },
+        "OUA": {
+            "TT": "UX",
+            "ii": "8i",
+            "description": "OTHER UPPER AIR DATA"
+        },
+        "PAR": {
+            "TT": "NO",
+            "ii": "4i",
+            "description": "PERFORMANCE ACCOMPLISHMENT REPORT"
+        },
+        "PBF": {
+            "TT": "FN",
+            "ii": "7i",
+            "description": "PRESCRIBED BURN FORECAST"
+        },
+        "PFM": {
+            "TT": "FO",
+            "ii": "5i",
+            "description": "POINT FORECAST MATRICES"
+        },
+        "PFW": {
+            "TT": "FU",
+            "ii": "5i",
+            "description": "FIRE WEATHER POINT FORECAST MATRICES"
+        },
+        "PIB": {
+            "TT": "UP",
+            "ii": "4i",
+            "description": "PIBAL OBSERVATION *"
+        },
+        "PIR": {
+            "TT": "UA",
+            "ii": "ce",
+            "description": "PILOT REPORT *"
+        },
+        "PLS": {
+            "TT": "SXVD",
+            "ii": "8i",
+            "description": "PLAIN LANGUAGE SHIP REPORT"
+        },
+        "PMD": {
+            "TT": "FX",
+            "ii": "ce",
+            "description": "PROGNOSTIC METEOROLOGICAL DISCUSSION"
+        },
+        "PNS": {
+            "TT": "NO",
+            "ii": "4i",
+            "description": "PUBLIC INFORMATION STATEMENT"
+        },
+        "POE": {
+            "TT": "FX",
+            "ii": "ce",
+            "description": "PROBABILITY OF EXCEED"
+        },
+        "PRC": {
+            "TT": "UA",
+            "ii": "ce/it",
+            "description": "STATE PILOT REPORT COLLECTIVE"
+        },
+        "PRE": {
+            "TT": "FP/NZ",
+            "ii": "5/9i",
+            "description": "PRELIMINARY FORECASTS"
+        },
+        "PSH": {
+            "TT": "AC",
+            "ii": "7i",
+            "description": "POST STORM HURRICANE REPORT"
+        },
+        "PSM": {
+            "TT": "FX",
+            "ii": "ce",
+            "description": "PROGNOSTIC SNOW MELT"
+        },
+        "PTA": {
+            "TT": "SD",
+            "ii": "3i",
+            "description": "171  QPE STORM TOTAL ACCUMULATION 16 LEVELS ID 172/DSA  DS.171st"
+        },
+        "PTS": {
+            "TT": "WU",
+            "ii": "ce",
+            "description": "CONVECTIVE OUTLOOK AREAL OUTLINE"
+        },
+        "PVM": {
+            "TT": "FX",
+            "ii": "4i/ce",
+            "description": "PUBLIC VERIFICATION MATRIX"
+        },
+        "PWO": {
+            "TT": "WO",
+            "ii": "6i",
+            "description": "PUBLIC SEVERE WEATHER OUTLOOK"
+        },
+        "PWS": {
+            "TT": "FO",
+            "ii": "1i",
+            "description": "WIND SPEED PROBABILITIES"
+        },
+        "QCD": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "ASOS DAILY QUALITY CONTROL MESSAGE"
+        },
+        "QCH": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "ASOS HOURLY QUALITY CONTROL MESSAGE"
+        },
+        "QCM": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "ASOS MONTHLY QUALITY CONTROL MESSAGE"
+        },
+        "QCW": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "ASOS WEEKLY QUALITY CONTROL MESSAGE"
+        },
+        "QPF": {
+            "TT": "FS",
+            "ii": "ce",
+            "description": "QUANTITATIVE PRECIPITATION FORECAST"
+        },
+        "QPS": {
+            "TT": "FS",
+            "ii": "4i",
+            "description": "QUANTITATIVE PRECIPITATION STATEMENT"
+        },
+        "RBG": {
+            "TT": "P_",
+            "ii": "ce",
+            "description": "RED BOOK GRAPHIC **"
+        },
+        "RCM": {
+            "TT": "SD",
+            "ii": "4i",
+            "description": "WSR-88D RADAR CODED MESSAGE"
+        },
+        "RDF": {
+            "TT": "FO",
+            "ii": "5i",
+            "description": "REVISED DIGITAL FORECAST"
+        },
+        "RDG": {
+            "TT": "FO",
+            "ii": "4i",
+            "description": "REVISED DIGITAL GUIDANCE"
+        },
+        "REC": {
+            "TT": "SX",
+            "ii": "4i",
+            "description": "RECREATIONAL REPORT"
+        },
+        "RER": {
+            "TT": "SX",
+            "ii": "7i",
+            "description": "RECORD REPORT"
+        },
+        "RFD": {
+            "TT": "FN",
+            "ii": "6i",
+            "description": "RANGELAND FIRE DANGER FORECAST"
+        },
+        "RFR": {
+            "TT": "FR",
+            "ii": "4i",
+            "description": "ROUTE FORECAST"
+        },
+        "RFW": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "RED FLAG WARNING"
+        },
+        "RHW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "RADIOLOGICAL HAZARD WARNING"
+        },
+        "RMT": {
+            "TT": "NZ",
+            "ii": "9i",
+            "description": "REQUIRED MONTHLY TEST"
+        },
+        "ROB": {
+            "TT": "SD",
+            "ii": "ce",
+            "description": "RADAR OBSERVATION"
+        },
+        "RR1": {
+            "TT": "SR",
+            "ii": "5i",
+            "description": "HYDROLOGY METEOROLOGY DATA REPORT PART 1"
+        },
+        "RR2": {
+            "TT": "SR",
+            "ii": "5i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 2"
+        },
+        "RR3": {
+            "TT": "SR",
+            "ii": "5i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 3"
+        },
+        "RR4": {
+            "TT": "SR",
+            "ii": "5i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 4"
+        },
+        "RR5": {
+            "TT": "SR",
+            "ii": "5i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 5"
+        },
+        "RR6": {
+            "TT": "SR",
+            "ii": "6i",
+            "description": "ASOS SHEF PRECIP CRITERIA MESSAGE (COMMISSIONED)"
+        },
+        "RR7": {
+            "TT": "SR",
+            "ii": "7i",
+            "description": "ASOS SHEF HOURLY ROUTINE MESSAGE (COMMISSIONED)"
+        },
+        "RR8": {
+            "TT": "SR",
+            "ii": "8i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 8"
+        },
+        "RR9": {
+            "TT": "SR",
+            "ii": "8i",
+            "description": "HYDROLOGY-METEOROLOGY DATA REPORT PART 9"
+        },
+        "RRA": {
+            "TT": "SR",
+            "ii": "8i/ce",
+            "description": "AUTOMATED HYDROLOGIC OBSERVATION STA REPORT (AHOS)"
+        },
+        "RRC": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "SCS MANUAL SNOW COURSE DATA"
+        },
+        "RRM": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "MISCELLANEOUS HYDROLOGIC DATA"
+        },
+        "RRS": {
+            "TT": "SR",
+            "ii": "5i/ce",
+            "description": "SPECIAL AUTOMATED HYDROMET DATA REPORT"
+        },
+        "RRX": {
+            "TT": "SR",
+            "ii": "6i",
+            "description": "ASOS SHEF PRECIPITATION CRITERIA TEST MESSAGE"
+        },
+        "RRY": {
+            "TT": "SR",
+            "ii": "7i",
+            "description": "ASOS SHEF HOURLY ROUTINE TEST MESSAGE"
+        },
+        "RSD": {
+            "TT": "CX",
+            "ii": "8i",
+            "description": "DAILY SNOTEL DATA"
+        },
+        "RSL": {
+            "TT": "SD",
+            "ii": "4i",
+            "description": "152 Archive Status Product(ASP) Add No 3 3/day RPCCDS & SBN DS.152rs"
+        },
+        "RSM": {
+            "TT": "CS",
+            "ii": "8i",
+            "description": "MONTHLY SNOTEL DATA"
+        },
+        "RTP": {
+            "TT": "AS",
+            "ii": "6i",
+            "description": "REGIONAL MAX/MIN TEMP AND PRECIPITATION TABLE"
+        },
+        "RVA": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "RIVER SUMMARY"
+        },
+        "RVD": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "DAILY RIVER FORECASTS"
+        },
+        "RVF": {
+            "TT": "FG",
+            "ii": "5i",
+            "description": "RIVER FORECAST"
+        },
+        "RVI": {
+            "TT": "FI",
+            "ii": "4i",
+            "description": "RIVER ICE STATEMENT"
+        },
+        "RVM": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "MISCELLANEOUS RIVER PRODUCT"
+        },
+        "RVR": {
+            "TT": "FG",
+            "ii": "4i",
+            "description": "RIVER RECREATION STATEMENT"
+        },
+        "RVS": {
+            "TT": "FG",
+            "ii": "8i",
+            "description": "RIVER STATEMENT"
+        },
+        "RWO": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "RADAR SUPEROB"
+        },
+        "RWR": {
+            "TT": "AS",
+            "ii": "4i",
+            "description": "REGIONAL WEATHER ROUNDUP"
+        },
+        "RWS": {
+            "TT": "AW",
+            "ii": "8i",
+            "description": "REGIONAL WEATHER SUMMARY"
+        },
+        "RWT": {
+            "TT": "NZ",
+            "ii": "9i",
+            "description": "REQUIRED WEEKLY TEST"
+        },
+        "RZF": {
+            "TT": "FP",
+            "ii": "5i",
+            "description": "REGIONAL ZONE FORECAST"
+        },
+        "SAA": {
+            "TT": "tbd",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT ALERT ADVISORY"
+        },
+        "SAB": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "SNOW AVALANCHE BULLETIN"
+        },
+        "SAD": {
+            "TT": "AW",
+            "ii": "5i",
+            "description": "DAILY SURFACE AVIATION WEATHER SUMMARY"
+        },
+        "SAF": {
+            "TT": "FN",
+            "ii": "8i",
+            "description": "SPECI AGRI WX FCST/ADVISORY/FLYING FARMER FCST OUTLOOK"
+        },
+        "SAG": {
+            "TT": "FW",
+            "ii": "4i",
+            "description": "SNOW AVALANCHE GUIDANCE"
+        },
+        "SAM": {
+            "TT": "AW",
+            "ii": "6i",
+            "description": "MONTHLY SURFACE AVIATION WEATHER SUMMARY"
+        },
+        "SAT": {
+            "TT": "TB",
+            "ii": "ce",
+            "description": "GEODETIC SUBPOINT PREDICTIONS FOR GOES"
+        },
+        "SAW": {
+            "TT": "WW",
+            "ii": "6i",
+            "description": "PRELIM NOTICE OF WATCH & CANCELLATION MSG AVIATION)"
+        },
+        "SCC": {
+            "TT": "AC",
+            "ii": "6i/ce",
+            "description": "STORM SUMMARY"
+        },
+        "SCD": {
+            "TT": "CX",
+            "ii": "6i",
+            "description": "SUPPLEMENTARY CLIMATOLOGICAL DATA (ASOS)"
+        },
+        "SCN": {
+            "TT": "SX",
+            "ii": "5i",
+            "description": "SOIL CLIMATE ANALYSIS NETWORK DATA"
+        },
+        "SCP": {
+            "TT": "TC",
+            "ii": "ce",
+            "description": "SATELLITE CLOUD PRODUCT"
+        },
+        "SCS": {
+            "TT": "FP",
+            "ii": "4i",
+            "description": "SELECTED CITIES SUMMARY"
+        },
+        "SCV": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "SATELLITE AREAL EXTENT OF SNOW COVER"
+        },
+        "SDO": {
+            "TT": "SX",
+            "ii": "5i",
+            "description": "SUPPLEMENTARY DATA OBSERVATION (ASOS)"
+        },
+        "SDS": {
+            "TT": "FU",
+            "ii": "5i",
+            "description": "SPECIAL DISPERSION STATEMENT"
+        },
+        "SEL": {
+            "TT": "WW",
+            "ii": "6i",
+            "description": "SEVERE LOCAL STORM WATCH AND WATCH CANCELLATION MSG"
+        },
+        "SES": {
+            "TT": "tbd",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT SUMMARY"
+        },
+        "SEV": {
+            "TT": "WW",
+            "ii": "6i",
+            "description": "SPC WATCH POINT INFORMATION MESSAGE"
+        },
+        "SFD": {
+            "TT": "FX",
+            "ii": "7i",
+            "description": "STATE FORECAST DISCUSSION"
+        },
+        "SFP": {
+            "TT": "FP",
+            "ii": "6i",
+            "description": "STATE FORECAST"
+        },
+        "SFT": {
+            "TT": "FP",
+            "ii": "6i",
+            "description": "TABULAR STATE FORECAST"
+        },
+        "SGL": {
+            "TT": "UM",
+            "ii": "4i",
+            "description": "RAWINSONDE OBSERVATION SIGNIFICANT LEVELS *"
+        },
+        "SGW": {
+            "TT": "FA",
+            "ii": "ce",
+            "description": "PLAIN LANGUAGE SIGNIFICANT WEATHER FORECAST"
+        },
+        "SHI": {
+            "TT": "SI",
+            "ii": "ce/it",
+            "description": "SFC SHIP REPORT AT INTERMEDIATE SYNOPTIC TIME *"
+        },
+        "SHN": {
+            "TT": "SN",
+            "ii": "ce/it",
+            "description": "SURFACE SHIP REPORT AT NON-SYNOPTIC TIME *"
+        },
+        "SHP": {
+            "TT": "SM",
+            "ii": "ce/it",
+            "description": "SURFACE SHIP REPORT AT SYNOPTIC TIME *"
+        },
+        "SIG": {
+            "TT": "WS",
+            "ii": "ce/it",
+            "description": "INTERNATIONAL SIGMET / CONVECTIVE SIGMET"
+        },
+        "SIM": {
+            "TT": "AT",
+            "ii": "4i",
+            "description": "SATELLITE INTERPRETATION MESSAGE"
+        },
+        "SLS": {
+            "TT": "WW",
+            "ii": "6i",
+            "description": "SEVERE LOCAL STORM WATCH AND AREAL OUTLINE"
+        },
+        "SMA": {
+            "TT": "WW",
+            "ii": "4i",
+            "description": "MARINE SUBTROPICAL STORM ADVISORY"
+        },
+        "SMF": {
+            "TT": "FN",
+            "ii": "7i",
+            "description": "SMOKE MANAGEMENT WEATHER FORECAST"
+        },
+        "SML": {
+            "TT": "LS",
+            "ii": "ce/it",
+            "description": "AVIATION GENERAL WARNING (\u201cSIGMET\u201d)  - XML FORMAT"
+        },
+        "SMT": {
+            "TT": "SP",
+            "ii": "4i",
+            "description": "SPECIAL AVIATION WEATHER REPORTS (\u201cSPECI\u201d)"
+        },
+        "SMW": {
+            "TT": "WH",
+            "ii": "5i",
+            "description": "SPECIAL MARINE WARNING"
+        },
+        "SPD": {
+            "TT": "SD",
+            "ii": "6i",
+            "description": "82 Supplemental Precipitation Data (SPD) Add No 2.8 10/hr RPCCDS DS.82spd"
+        },
+        "SPE": {
+            "TT": "TX",
+            "ii": "ce",
+            "description": "SATELLITE PRECIPITATION ESTIMATES (TXUS20 KWBC)"
+        },
+        "SPF": {
+            "TT": "WT",
+            "ii": "7i/ce",
+            "description": "STORM STRIKE PROBABILITY BULLETIN(TPC)"
+        },
+        "SPL": {
+            "TT": "LP",
+            "ii": "4i",
+            "description": "SPECIAL AVIATION WEATHER REPORTS (\u201cSPECI\u201d) - XML FORMAT"
+        },
+        "SPS": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "SPECIAL WEATHER STATEMENT"
+        },
+        "SPW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "SHELTER IN PLACE WARNING"
+        },
+        "SQW": {
+            "TT": "WW",
+            "ii": "5i",
+            "description": "SNOW SQUALL WARNING"
+        },
+        "SRF": {
+            "TT": "FZ",
+            "ii": "5i",
+            "description": "SURF FORECAST"
+        },
+        "SSA": {
+            "TT": "tbd",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT SUMMARY ADVISORY"
+        },
+        "SSI": {
+            "TT": "SI",
+            "ii": "ce/it",
+            "description": "INTERMEDIATE SYNOPTIC HOUR SURFACE OBSERVATION *"
+        },
+        "SSM": {
+            "TT": "SM",
+            "ii": "ce/it",
+            "description": "MAIN SYNOPTIC HOUR SURFACE OBSERVATION *"
+        },
+        "SSN": {
+            "TT": "SN",
+            "ii": "ce/it",
+            "description": "NON STANDARD SYNOPTIC HOUR SURFACE OBSERVATION *"
+        },
+        "STA": {
+            "TT": "NW",
+            "ii": "6i",
+            "description": "NETWORK AND SEVERE WEATHER STATISTICAL SUMMARIES"
+        },
+        "STD": {
+            "TT": "AT",
+            "ii": "1i/ce",
+            "description": "SATELLITE TROPICAL DISTURBANCE RAINFALL ESTIMATES"
+        },
+        "STO": {
+            "TT": "SX",
+            "ii": "4i",
+            "description": "ROAD CONDITION REPORTS (STATE AGENCIES)"
+        },
+        "STP": {
+            "TT": "AS",
+            "ii": "5i",
+            "description": "STATE MAX/MIN TEMPERATURE AND PRECIPITATION TABLE"
+        },
+        "STQ": {
+            "TT": "BM",
+            "ii": "9i",
+            "description": "SPOT FORECAST REQUEST"
+        },
+        "STW": {
+            "TT": "WW",
+            "ii": "8i",
+            "description": "CANADIAN STORM WARNING"
+        },
+        "SVR": {
+            "TT": "WU",
+            "ii": "5i",
+            "description": "SEVERE THUNDERSTORM WARNING"
+        },
+        "SVS": {
+            "TT": "WW",
+            "ii": "5i",
+            "description": "SEVERE WEATHER STATEMENT"
+        },
+        "SWD": {
+            "TT": "tbd",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT WARNING ADVISORY"
+        },
+        "SWE": {
+            "TT": "SR",
+            "ii": "4i",
+            "description": "ESTIMATED SNOW WATER EQUIVALENT BY BASIN"
+        },
+        "SWL": {
+            "TT": "LN",
+            "ii": "ce/it",
+            "description": "SPACE WEATHER ADVISORY (SWXA) *  - XML FORMAT"
+        },
+        "SWO": {
+            "TT": "AC",
+            "ii": "5i/ce",
+            "description": "SEVERE STORM OUTLOOK NARRATIVE (AC)"
+        },
+        "SWS": {
+            "TT": "AW",
+            "ii": "4i",
+            "description": "STATE WEATHER SUMMARY"
+        },
+        "TAF": {
+            "TT": "FT",
+            "ii": "4i",
+            "description": "TERMINAL AERODROME FORECAST *"
+        },
+        "TAP": {
+            "TT": "FA",
+            "ii": "8i",
+            "description": "TERMINAL ALERTING PRODUCTS (AFOS LOCAL USE ONLY)"
+        },
+        "TAV": {
+            "TT": "FP",
+            "ii": "4i",
+            "description": "TRAVELERS FORECAST TABLE"
+        },
+        "TCA": {
+            "TT": "FK",
+            "ii": "4i",
+            "description": "TROPICAL CYCLONE ADVISORY"
+        },
+        "TCD": {
+            "TT": "WT",
+            "ii": "4i/ce",
+            "description": "TROPICAL CYCLONE DISCUSSION"
+        },
+        "TCE": {
+            "TT": "WT",
+            "ii": "5i/ce",
+            "description": "TROPICAL CYCLONE POSITION ESTIMATE"
+        },
+        "TCL": {
+            "TT": "LK",
+            "ii": "4i",
+            "description": "TROPICAL CYCLONE ADVISORIES - XML FORMAT"
+        },
+        "TCM": {
+            "TT": "WT",
+            "ii": "2i/ce",
+            "description": "MARINE/AVIATION TROPICAL CYCLONE ADVISORY"
+        },
+        "TCP": {
+            "TT": "WT",
+            "ii": "31/ce",
+            "description": "PUBLIC TROPICAL CYCLONE ADVISORY"
+        },
+        "TCS": {
+            "TT": "TX",
+            "ii": "4i/ce",
+            "description": "SATELLITE TROPICAL CYCLONE SUMMARY"
+        },
+        "TCU": {
+            "TT": "WT",
+            "ii": "6i/ce",
+            "description": "TROPICAL CYCLONE UPDATE"
+        },
+        "TCV": {
+            "TT": "WT",
+            "ii": "8i/ce",
+            "description": "TROPICAL CYCLONE VTEC"
+        },
+        "TCW": {
+            "TT": "",
+            "ii": "ce/it",
+            "description": "AVIATION TROPICAL CYCLONE WARNING (\u201cSIGMET\u201d)"
+        },
+        "TIB": {
+            "TT": "WE",
+            "ii": "ii/ce",
+            "description": "TSUNAMI INFORMATION BULLETIN"
+        },
+        "TID": {
+            "TT": "SO",
+            "ii": "4i",
+            "description": "TIDE REPORT"
+        },
+        "TLS": {
+            "TT": "WE",
+            "ii": "ii/ce",
+            "description": "TSUNAMI LOCAL STATEMENT"
+        },
+        "TMA": {
+            "TT": "SE",
+            "ii": "5i",
+            "description": "TSUNAMI TIDE/SEISMIC MESSAGE ACKNOWLEDGMENT"
+        },
+        "TML": {
+            "TT": "LT",
+            "ii": "4i",
+            "description": "TERMINAL AERODROME FORECAST  (VT = 12 hours) - XML FORMAT"
+        },
+        "TOE": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "911 TELEPHONE OUTAGE EMERGENCY"
+        },
+        "TOR": {
+            "TT": "WF",
+            "ii": "5i",
+            "description": "TORNADO WARNING"
+        },
+        "TPT": {
+            "TT": "SX",
+            "ii": "ce/it",
+            "description": "TEMPERATURE PRECIPITATION TABLE (NATL AND INTNL)"
+        },
+        "TR0": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "181 Reflectivity (Z) - 4bit Add No 25 10/hr RPCCDS & SBN DS.181r0"
+        },
+        "TR1": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "181 Reflectivity (Z) - 4bit Add No 14 10/hr RPCCDS & SBN DS.181r1"
+        },
+        "TR2": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "181 Reflectivity (Z) - 4bit Add No 12 10/hr RPCCDS & SBN DS.181r2"
+        },
+        "TSL": {
+            "TT": "LC",
+            "ii": "4i",
+            "description": "TERMINAL AERODROME FORECAST  (VT < 12 hours) - XML FORMAT"
+        },
+        "TSM": {
+            "TT": "SE",
+            "ii": "4i/ce",
+            "description": "TSUNAMI TIDE/SEISMIC MESSAGE"
+        },
+        "TST": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "TEST MESSAGE"
+        },
+        "TSU": {
+            "TT": "WE",
+            "ii": "4i/ce",
+            "description": "TSUNAMI WATCH/WARNING"
+        },
+        "TV0": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "182 Velocity (V) - 8bit Add No 90 10/hr RPCCDS & SBN DS.182v0"
+        },
+        "TV1": {
+            "TT": "SD",
+            "ii": "7i",
+            "description": "182 Velocity (V) - 8bit Add No 70 10/hr RPCCDS & SBN DS.182v1"
+        },
+        "TV2": {
+            "TT": "SD",
+            "ii": "7i",
+            "description": "182 Velocity (V) - 8bit Add No 45 10/hr RPCCDS & SBN DS.182v2"
+        },
+        "TVL": {
+            "TT": "FP",
+            "ii": "8i",
+            "description": "TRAVELERS FORECAST"
+        },
+        "TWB": {
+            "TT": "FR",
+            "ii": "4i",
+            "description": "TRANSCRIBED WEATHER BROADCAST *"
+        },
+        "TWD": {
+            "TT": "AC",
+            "ii": "4i/ce",
+            "description": "TROPICAL WEATHER DISCUSSION"
+        },
+        "TWL": {
+            "TT": "LY",
+            "ii": "ce/it",
+            "description": "AVIATION TROPICAL CYCLONE WARNING (\u201cSIGMET\u201d) - XML FORMAT"
+        },
+        "TWO": {
+            "TT": "AC",
+            "ii": "5i/ce",
+            "description": "TROPICAL WEATHER OUTLOOK AND SUMMARY"
+        },
+        "TWS": {
+            "TT": "AC",
+            "ii": "6i/ce",
+            "description": "TROPICAL WEATHER SUMMARY"
+        },
+        "TZ0": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "180 Reflectivity (Z) - 8bit Add No 25 10/hr RPCCDS & SBN DS.180z0"
+        },
+        "TZ1": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "180 Reflectivity (Z) - 8bit Add No 14 10/hr RPCCDS & SBN DS.180z1"
+        },
+        "TZ2": {
+            "TT": "SD",
+            "ii": "2i",
+            "description": "180 Reflectivity (Z) - 8bit Add No 12 10/hr RPCCDS & SBN DS.180z2"
+        },
+        "TZL": {
+            "TT": "SD",
+            "ii": "5i",
+            "description": "186 Reflectivity (Z) - Long Range - 8bit Add No 80 10/hr RPCCDS & SBN DS.186zl"
+        },
+        "UJX": {
+            "TT": "UJ",
+            "ii": "ce",
+            "description": "JSC UPPER AIR SOUNDINGS"
+        },
+        "ULG": {
+            "TT": "NX",
+            "ii": "4i",
+            "description": "UPPER AIR SITE PERFORMANCE & LOGISTICS MESSAGE"
+        },
+        "UVI": {
+            "TT": "AE",
+            "ii": "4i/ce",
+            "description": "ULTRAVIOLET INDEX"
+        },
+        "VAA": {
+            "TT": "FV",
+            "ii": "2i",
+            "description": "VOLCANIC ACTIVITY ADVISORY"
+        },
+        "VAW": {
+            "TT": "FV",
+            "ii": "ce/it",
+            "description": "AVIATION VOLCANIC ASH WARNING (\u201cSIGMET\u201d)"
+        },
+        "VER": {
+            "TT": "FX",
+            "ii": "8i",
+            "description": "FORECAST VERIFICATION STATISTICS"
+        },
+        "VFT": {
+            "TT": "NX",
+            "ii": "9i",
+            "description": "TERMINAL AERODROME FORECAST (TAF) VERIFICATION"
+        },
+        "VGP": {
+            "TT": "P_",
+            "ii": "ce",
+            "description": "VECTOR GRAPHIC **"
+        },
+        "VML": {
+            "TT": "LU",
+            "ii": "2i",
+            "description": "VOLCANIC ACTIVITY ADVISORY - XML FORMAT"
+        },
+        "VOW": {
+            "TT": "WO",
+            "ii": "4i",
+            "description": "VOLCANO WARNING"
+        },
+        "VWL": {
+            "TT": "LV",
+            "ii": "CE",
+            "description": "AVIATION VOLCANIC ASH WARNING (\u201cSIGMET\u201d)  - XML FORMAT"
+        },
+        "W0L": {
+            "TT": "LW",
+            "ii": "ce/it",
+            "description": "AIRMET (PACIFIC) - XML FORMAT"
+        },
+        "W1L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (NORTHEAST U.S.) - XML FORMAT"
+        },
+        "W2L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (SOUTHEAST U.S.) - XML FORMAT"
+        },
+        "W3L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (NORTH CENTRAL U.S.) - XML FORMAT"
+        },
+        "W4L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (SOUTH CENTRAL U.S.) - XML FORMAT"
+        },
+        "W5L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (U.S. ROCKY MOUNTAINS) - XML FORMAT"
+        },
+        "W6L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (U.S. WEST COAST) - XML FORMAT"
+        },
+        "W7L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (JUNEAU, ALASKA) - XML FORMAT"
+        },
+        "W8L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (ANCHORAGE, ALASKA) - XML FORMAT"
+        },
+        "W9L": {
+            "TT": "LW",
+            "ii": "ce",
+            "description": "AIRMET (FAIRBANKS, ALASKA) - XML FORMAT"
+        },
+        "WA0": {
+            "TT": "WA",
+            "ii": "ce/it",
+            "description": "AIRMET (PACIFIC)"
+        },
+        "WA1": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (NORTHEAST U.S.)"
+        },
+        "WA2": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (SOUTHEAST U.S.)"
+        },
+        "WA3": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (NORTH CENTRAL U.S.)"
+        },
+        "WA4": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (SOUTH CENTRAL U.S.)"
+        },
+        "WA5": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (U.S. ROCKY MOUNTAINS)"
+        },
+        "WA6": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (U.S. WEST COAST)"
+        },
+        "WA7": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (JUNEAU, ALASKA)"
+        },
+        "WA8": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (ANCHORAGE, ALASKA)"
+        },
+        "WA9": {
+            "TT": "WA",
+            "ii": "ce",
+            "description": "AIRMET (FAIRBANKS, ALASKA)"
+        },
+        "WAC": {
+            "TT": "WA",
+            "ii": "it",
+            "description": "AIRMET (CARIBBEAN)"
+        },
+        "WAL": {
+            "TT": "LW",
+            "ii": "it",
+            "description": "AIRMET (CARIBBEAN) - XML FORMAT"
+        },
+        "WAR": {
+            "TT": "WO",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT WARNING"
+        },
+        "WAT": {
+            "TT": "WO",
+            "ii": "CE",
+            "description": "SPACE ENVIRONMENT WATCH"
+        },
+        "WCL": {
+            "TT": "NW",
+            "ii": "6i",
+            "description": "WATCH CLEARANCE MESSAGE"
+        },
+        "WCN": {
+            "TT": "WW",
+            "ii": "6i",
+            "description": "WEATHER WATCH CLEARANCE NOTIFICATION"
+        },
+        "WCR": {
+            "TT": "AX",
+            "ii": "5i",
+            "description": "WEEKLY WEATHER AND CROP REPORT"
+        },
+        "WDA": {
+            "TT": "CX",
+            "ii": "7i",
+            "description": "WEEKLY DATA FOR AGRICULTURE"
+        },
+        "WEK": {
+            "TT": "FX",
+            "ii": "CE",
+            "description": "ROUTINE SPACE ENVIRONMENT PRODUCT ISSUED WEEKLY"
+        },
+        "WML": {
+            "TT": "LC",
+            "ii": "3i/ce",
+            "description": "TROPICAL CYCLONE SIGMET - XML FORMAT"
+        },
+        "WOU": {
+            "TT": "WO",
+            "ii": "6i",
+            "description": "SEVERE THUNDERSTORM WATCH OUTLINE UPDATE"
+        },
+        "WPD": {
+            "TT": "IU",
+            "ii": "ce",
+            "description": "WIND PROFILER DATA (BUFR CODE) **"
+        },
+        "WRK": {
+            "TT": "NZ",
+            "ii": "01-99",
+            "description": "LOCAL WORK FILE (ii IS CHOSEN BY SITE OR REGION)"
+        },
+        "WS1": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (NORTHEAST U.S.)"
+        },
+        "WS2": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (SOUTHEAST U.S.)"
+        },
+        "WS3": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (NORTH CENTRAL U.S.)"
+        },
+        "WS4": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (SOUTH CENTRAL U.S.)"
+        },
+        "WS5": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (U.S. ROCKY MOUNTAINS)"
+        },
+        "WS6": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (U.S. WEST COAST)"
+        },
+        "WS7": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (JUNEAU, ALASKA)"
+        },
+        "WS8": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (ANCHORAGE, ALASKA)"
+        },
+        "WS9": {
+            "TT": "WS",
+            "ii": "ce",
+            "description": "SIGMET (FAIRBANKS, ALASKA)"
+        },
+        "WST": {
+            "TT": "WC",
+            "ii": "3i/ce",
+            "description": "TROPICAL CYCLONE SIGMET"
+        },
+        "WSV": {
+            "TT": "WV",
+            "ii": "2i",
+            "description": "VOLCANIC ACTIVITY SIGMET"
+        },
+        "WSW": {
+            "TT": "WW",
+            "ii": "4i",
+            "description": "WINTER WEATHER WARNINGS, WATCHES, ADVISORIES"
+        },
+        "WTS": {
+            "TT": "NT",
+            "ii": "ce",
+            "description": "WARNING TEST MESSAGE FROM NCF"
+        },
+        "WVM": {
+            "TT": "NW",
+            "ii": "4i",
+            "description": "WARNING VERIFICATION MESSAGE"
+        },
+        "WWA": {
+            "TT": "WO",
+            "ii": "8i",
+            "description": "WATCH STATUS REPORT"
+        },
+        "WWP": {
+            "TT": "WW",
+            "ii": "4i/ce",
+            "description": "SEVERE THUNDERSTORM/TORNADO WATCH PROBABILITIES"
+        },
+        "ZFP": {
+            "TT": "FP",
+            "ii": "5i",
+            "description": "ZONE FORECAST PRODUCT"
+        }
+    }
+}
