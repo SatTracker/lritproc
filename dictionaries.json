@@ -1,5 +1,12 @@
 {
     "cccc": {
+        "default": {
+            "stationType": null,
+            "center": null,
+            "ccc": null,
+            "city": null,
+            "state": null
+        },
         "KABQ": {
             "stationType": "WFO",
             "center": "ALBUQUERQUE",
@@ -1475,6 +1482,11 @@
         }
     },
     "nnn": {
+        "default": {
+            "TT": null,
+            "ii": null,
+            "description": null
+        },
         "18A": {
             "TT": "FB",
             "ii": "ce",
@@ -3841,7 +3853,7 @@
             "description": "TROPICAL CYCLONE VTEC"
         },
         "TCW": {
-            "TT": "",
+            "TT": null,
             "ii": "ce/it",
             "description": "AVIATION TROPICAL CYCLONE WARNING (\u201cSIGMET\u201d)"
         },
@@ -4289,6 +4301,4664 @@
             "TT": "FP",
             "ii": "5i",
             "description": "ZONE FORECAST PRODUCT"
+        }
+    },
+    "awds": {
+        "default": {
+            "productIdentifier": null,
+            "nnn": null,
+            "priority": null,
+            "filename": null
+        },
+        "ABCN01KWBC": {
+            "productIdentifier": "ABCN01KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "STPTPTCN.TXT"
+        },
+        "ABNA26KWBC": {
+            "productIdentifier": "ABNA26KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "TCPNAMUS.TXT"
+        },
+        "ABNT20KNHC": {
+            "productIdentifier": "ABNT20KNHC",
+            "nnn": "TWO",
+            "priority": "2",
+            "filename": "HAWT20US.TXT"
+        },
+        "ABNT30KNHC": {
+            "productIdentifier": "ABNT30KNHC",
+            "nnn": "TWS",
+            "priority": "2",
+            "filename": "HAST30US.TXT"
+        },
+        "ABPW10PGTW": {
+            "productIdentifier": "ABPW10PGTW",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HWFW10US.TXT"
+        },
+        "ABPZ20KNHC": {
+            "productIdentifier": "ABPZ20KNHC",
+            "nnn": "TWO",
+            "priority": "2",
+            "filename": "HEWZ20US.TXT"
+        },
+        "ABPZ30KNHC": {
+            "productIdentifier": "ABPZ30KNHC",
+            "nnn": "TWS",
+            "priority": "2",
+            "filename": "HNSNHCUS.TXT"
+        },
+        "ABUS23KWBC": {
+            "productIdentifier": "ABUS23KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "NWX005US.TXT"
+        },
+        "ABUS24KWBC": {
+            "productIdentifier": "ABUS24KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "NWX002US.TXT"
+        },
+        "ABUS25KWBC": {
+            "productIdentifier": "ABUS25KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "NWX003US.TXT"
+        },
+        "ABXX06KWBC": {
+            "productIdentifier": "ABXX06KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "TCPINTUS.TXT"
+        },
+        "ABXX07KWBC": {
+            "productIdentifier": "ABXX07KWBC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "INTLATUS.TXT"
+        },
+        "ACCA62TJSJ": {
+            "productIdentifier": "ACCA62TJSJ",
+            "nnn": "TWO",
+            "priority": "2",
+            "filename": "HAWSPNUS.TXT"
+        },
+        "ACPN50PHFO": {
+            "productIdentifier": "ACPN50PHFO",
+            "nnn": "TWO",
+            "priority": "2",
+            "filename": "HNWA50US.TXT"
+        },
+        "ACPN60PHFO": {
+            "productIdentifier": "ACPN60PHFO",
+            "nnn": "TWS",
+            "priority": "2",
+            "filename": "HNSA60US.TXT"
+        },
+        "ACUS01KWNS": {
+            "productIdentifier": "ACUS01KWNS",
+            "nnn": "SWO",
+            "priority": "2",
+            "filename": "SWODY1US.TXT"
+        },
+        "ACUS02KWNS": {
+            "productIdentifier": "ACUS02KWNS",
+            "nnn": "SWO",
+            "priority": "2",
+            "filename": "SWODY2US.TXT"
+        },
+        "ACUS03KWNS": {
+            "productIdentifier": "ACUS03KWNS",
+            "nnn": "SWO",
+            "priority": "2",
+            "filename": "SWODY3US.TXT"
+        },
+        "ACUS11KWNS": {
+            "productIdentifier": "ACUS11KWNS",
+            "nnn": "SWO",
+            "priority": "2",
+            "filename": "SWOWKCUS.TXT"
+        },
+        "ACUS41KWBC": {
+            "productIdentifier": "ACUS41KWBC",
+            "nnn": "SCC",
+            "priority": "2",
+            "filename": "SCCNS1US.TXT"
+        },
+        "ACUS42KWBC": {
+            "productIdentifier": "ACUS42KWBC",
+            "nnn": "SCC",
+            "priority": "2",
+            "filename": "SCCNS2US.TXT"
+        },
+        "ACUS43KWBC": {
+            "productIdentifier": "ACUS43KWBC",
+            "nnn": "SCC",
+            "priority": "2",
+            "filename": "SCCNS3US.TXT"
+        },
+        "ACUS44KWBC": {
+            "productIdentifier": "ACUS44KWBC",
+            "nnn": "SCC",
+            "priority": "2",
+            "filename": "SCCNS4US.TXT"
+        },
+        "ACUS45KWBC": {
+            "productIdentifier": "ACUS45KWBC",
+            "nnn": "SCC",
+            "priority": "2",
+            "filename": "SCCNS5US.TXT"
+        },
+        "ACUS48KWNS": {
+            "productIdentifier": "ACUS48KWNS",
+            "nnn": "SWO",
+            "priority": "2",
+            "filename": "SWOD48US.TXT"
+        },
+        "AGNT40KWNM": {
+            "productIdentifier": "AGNT40KWNM",
+            "nnn": "MIM",
+            "priority": "2",
+            "filename": "MIMATNUS.TXT"
+        },
+        "AGPN40KWNM": {
+            "productIdentifier": "AGPN40KWNM",
+            "nnn": "MIM",
+            "priority": "2",
+            "filename": "MIMPACUS.TXT"
+        },
+        "ASPS20NFFN": {
+            "productIdentifier": "ASPS20NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "PACMSLUS.TXT"
+        },
+        "ATPQ40PGUM": {
+            "productIdentifier": "ATPQ40PGUM",
+            "nnn": "SIM",
+            "priority": "3",
+            "filename": "HWFT40US.TXT"
+        },
+        "AXNT20KNHC": {
+            "productIdentifier": "AXNT20KNHC",
+            "nnn": "TWD",
+            "priority": "2",
+            "filename": "HATT20US.TXT"
+        },
+        "AXPZ20KNHC": {
+            "productIdentifier": "AXPZ20KNHC",
+            "nnn": "TWD",
+            "priority": "2",
+            "filename": "HETNHCUS.TXT"
+        },
+        "BMBB91PAFC": {
+            "productIdentifier": "BMBB91PAFC",
+            "nnn": "STQ",
+            "priority": "2",
+            "filename": "STQAERAK.TXT"
+        },
+        "BMBB91PAFG": {
+            "productIdentifier": "BMBB91PAFG",
+            "nnn": "STQ",
+            "priority": "2",
+            "filename": "STQNSBAK.TXT"
+        },
+        "CXAK56PAJK": {
+            "productIdentifier": "CXAK56PAJK",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6KTNAK.TXT"
+        },
+        "CXUS54KEWX": {
+            "productIdentifier": "CXUS54KEWX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6EWXTX.TXT"
+        },
+        "CXUS54KHGX": {
+            "productIdentifier": "CXUS54KHGX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6HGXTX.TXT"
+        },
+        "CXUS54KLIX": {
+            "productIdentifier": "CXUS54KLIX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6LIXLA.TXT"
+        },
+        "CXUS51KALY": {
+            "productIdentifier": "CXUS51KALY",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6PSFMA.TXT"
+        },
+        "CXUS51KCTP": {
+            "productIdentifier": "CXUS51KCTP",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6CTPPA.TXT"
+        },
+        "CXUS51KGYX": {
+            "productIdentifier": "CXUS51KGYX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6GYXGA.TXT"
+        },
+        "CXUS51KLWX": {
+            "productIdentifier": "CXUS51KLWX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6LWXLA.TXT"
+        },
+        "CXUS53KDTX": {
+            "productIdentifier": "CXUS53KDTX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6DTXMI.TXT"
+        },
+        "CXUS53KPAH": {
+            "productIdentifier": "CXUS53KPAH",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6POFMO.TXT"
+        },
+        "CXUS54KSHV": {
+            "productIdentifier": "CXUS54KSHV",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6SHVAR.TXT"
+        },
+        "CXUS55KBYZ": {
+            "productIdentifier": "CXUS55KBYZ",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6BYZMT.TXT"
+        },
+        "CXUS56KLOX": {
+            "productIdentifier": "CXUS56KLOX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6LOXCA.TXT"
+        },
+        "CXUS56KOTX": {
+            "productIdentifier": "CXUS56KOTX",
+            "nnn": "CF6",
+            "priority": "4",
+            "filename": "CF6OTXWA.TXT"
+        },
+        "FAFJ40NFFN": {
+            "productIdentifier": "FAFJ40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFFFNFJ.TXT"
+        },
+        "FAKB40NFFN": {
+            "productIdentifier": "FAKB40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFFFNKI.TXT"
+        },
+        "FAKU40NFFN": {
+            "productIdentifier": "FAKU40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFU40CI.TXT"
+        },
+        "FAKU41NFFN": {
+            "productIdentifier": "FAKU41NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFU41CI.TXT"
+        },
+        "FASA31TTPP": {
+            "productIdentifier": "FASA31TTPP",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AFPTTPFM.TXT"
+        },
+        "FATO40NFFN": {
+            "productIdentifier": "FATO40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFFFNTG.TXT"
+        },
+        "FAZM40NFFN": {
+            "productIdentifier": "FAZM40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PAFFFNWS.TXT"
+        },
+        "FBNA13KWBC": {
+            "productIdentifier": "FBNA13KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA13US.TXT"
+        },
+        "FBNA14KWBC": {
+            "productIdentifier": "FBNA14KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA14US.TXT"
+        },
+        "FBNA23KWBC": {
+            "productIdentifier": "FBNA23KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA23US.TXT"
+        },
+        "FBNA24KWBC": {
+            "productIdentifier": "FBNA24KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA24US.TXT"
+        },
+        "FBNA25KWBC": {
+            "productIdentifier": "FBNA25KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA25US.TXT"
+        },
+        "FBNA26KWBC": {
+            "productIdentifier": "FBNA26KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA26US.TXT"
+        },
+        "FBNA27KWBC": {
+            "productIdentifier": "FBNA27KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA27US.TXT"
+        },
+        "FBNA28KWBC": {
+            "productIdentifier": "FBNA28KWBC",
+            "nnn": null,
+            "priority": "4",
+            "filename": "WINA28US.TXT"
+        },
+        "FGUS62KALR": {
+            "productIdentifier": "FGUS62KALR",
+            "nnn": "ESG",
+            "priority": "2",
+            "filename": "ESGHUNAL.TXT"
+        },
+        "FGUS64KORN": {
+            "productIdentifier": "FGUS64KORN",
+            "nnn": "ESG",
+            "priority": "2",
+            "filename": "ESGHUNAL.TXT"
+        },
+        "FKNT21KNHC": {
+            "productIdentifier": "FKNT21KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCANT1US.TXT"
+        },
+        "FKNT22KNHC": {
+            "productIdentifier": "FKNT22KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCANT2US.TXT"
+        },
+        "FKNT23KNHC": {
+            "productIdentifier": "FKNT23KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCANT3US.TXT"
+        },
+        "FKNT24KNHC": {
+            "productIdentifier": "FKNT24KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCANT4US.TXT"
+        },
+        "FKNT25KNHC": {
+            "productIdentifier": "FKNT25KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCANT5US.TXT"
+        },
+        "FKPA21PHFO": {
+            "productIdentifier": "FKPA21PHFO",
+            "nnn": "TCA",
+            "priority": "2",
+            "filename": "TCAA21US.TXT"
+        },
+        "FKPA22PHFO": {
+            "productIdentifier": "FKPA22PHFO",
+            "nnn": "TCA",
+            "priority": "2",
+            "filename": "TCAA22US.TXT"
+        },
+        "FKPA23PHFO": {
+            "productIdentifier": "FKPA23PHFO",
+            "nnn": "TCA",
+            "priority": "2",
+            "filename": "TCAA23US.TXT"
+        },
+        "FKPA24PHFO": {
+            "productIdentifier": "FKPA24PHFO",
+            "nnn": "TCA",
+            "priority": "2",
+            "filename": "TCAA24US.TXT"
+        },
+        "FKPA25PHFO": {
+            "productIdentifier": "FKPA25PHFO",
+            "nnn": "TCA",
+            "priority": "2",
+            "filename": "TCAA25US.TXT"
+        },
+        "FKPZ21KNHC": {
+            "productIdentifier": "FKPZ21KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "TCAPZ1US.TXT"
+        },
+        "FKPZ22KNHC": {
+            "productIdentifier": "FKPZ22KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "HNAPZ2US.TXT"
+        },
+        "FKPZ23KNHC": {
+            "productIdentifier": "FKPZ23KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "HNAPZ3US.TXT"
+        },
+        "FKPZ24KNHC": {
+            "productIdentifier": "FKPZ24KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "HNAPZ4US.TXT"
+        },
+        "FKPZ25KNHC": {
+            "productIdentifier": "FKPZ25KNHC",
+            "nnn": "TCA",
+            "priority": "1",
+            "filename": "HNAPZ5US.TXT"
+        },
+        "FNUS21KWNS": {
+            "productIdentifier": "FNUS21KWNS",
+            "nnn": "FWD",
+            "priority": "1",
+            "filename": "FWDDY1US.TXT"
+        },
+        "FNUS22KWNS": {
+            "productIdentifier": "FNUS22KWNS",
+            "nnn": "FWD",
+            "priority": "1",
+            "filename": "FWDDY2US.TXT"
+        },
+        "FNUS28KWNS": {
+            "productIdentifier": "FNUS28KWNS",
+            "nnn": "FWD",
+            "priority": "2",
+            "filename": "FWDD38US.TXT"
+        },
+        "FNUS38KWNS": {
+            "productIdentifier": "FNUS38KWNS",
+            "nnn": "PFW",
+            "priority": "2",
+            "filename": "PFWF38US.TXT"
+        },
+        "FOCN45CWWG": {
+            "productIdentifier": "FOCN45CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "NWXCANUS.TXT"
+        },
+        "FONT11KNHC": {
+            "productIdentifier": "FONT11KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSAT1US.TXT"
+        },
+        "FONT12KNHC": {
+            "productIdentifier": "FONT12KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSAT2US.TXT"
+        },
+        "FONT13KNHC": {
+            "productIdentifier": "FONT13KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSAT3US.TXT"
+        },
+        "FONT14KNHC": {
+            "productIdentifier": "FONT14KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSAT4US.TXT"
+        },
+        "FONT15KNHC": {
+            "productIdentifier": "FONT15KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSAT5US.TXT"
+        },
+        "FOPA11PHFO": {
+            "productIdentifier": "FOPA11PHFO",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSCP1US.TXT"
+        },
+        "FOPA12PHFO": {
+            "productIdentifier": "FOPA12PHFO",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSCP2US.TXT"
+        },
+        "FOPA13PHFO": {
+            "productIdentifier": "FOPA13PHFO",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSCP3US.TXT"
+        },
+        "FOPA14PHFO": {
+            "productIdentifier": "FOPA14PHFO",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSCP4US.TXT"
+        },
+        "FOPA15PHFO": {
+            "productIdentifier": "FOPA15PHFO",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSCP5US.TXT"
+        },
+        "FOPZ11KNHC": {
+            "productIdentifier": "FOPZ11KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSEP1US.TXT"
+        },
+        "FOPZ12KNHC": {
+            "productIdentifier": "FOPZ12KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSEP2US.TXT"
+        },
+        "FOPZ13KNHC": {
+            "productIdentifier": "FOPZ13KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSEP3US.TXT"
+        },
+        "FOPZ14KNHC": {
+            "productIdentifier": "FOPZ14KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSEP4US.TXT"
+        },
+        "FOPZ15KNHC": {
+            "productIdentifier": "FOPZ15KNHC",
+            "nnn": "PWS",
+            "priority": "2",
+            "filename": "PWSEP5US.TXT"
+        },
+        "FOUS11KWBC": {
+            "productIdentifier": "FOUS11KWBC",
+            "nnn": "QPF",
+            "priority": "2",
+            "filename": "NWXHSDUS.TXT"
+        },
+        "FOUS30KWBC": {
+            "productIdentifier": "FOUS30KWBC",
+            "nnn": "QPF",
+            "priority": "2",
+            "filename": "NWXQP2US.TXT"
+        },
+        "FPBA31MYNN": {
+            "productIdentifier": "FPBA31MYNN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPYNNBA.TXT"
+        },
+        "FPCN11CWHX": {
+            "productIdentifier": "FPCN11CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWHXCN.TXT"
+        },
+        "FPCN11CWNT": {
+            "productIdentifier": "FPCN11CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SFPN11CN.TXT"
+        },
+        "FPCN11CWTO": {
+            "productIdentifier": "FPCN11CWTO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPTO1CN.TXT"
+        },
+        "FPCN11CWUL": {
+            "productIdentifier": "FPCN11CWUL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWULCN.TXT"
+        },
+        "FPCN11CWVR": {
+            "productIdentifier": "FPCN11CWVR",
+            "nnn": null,
+            "priority": "3",
+            "filename": "SFPWVRCN.TXT"
+        },
+        "FPCN11CWWG": {
+            "productIdentifier": "FPCN11CWWG",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWWGCN.TXT"
+        },
+        "FPCN12CWNT": {
+            "productIdentifier": "FPCN12CWNT",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWNTCN.TXT"
+        },
+        "FPCN12CWWG": {
+            "productIdentifier": "FPCN12CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SFPWWGCN.TXT"
+        },
+        "FPCN13CWQB": {
+            "productIdentifier": "FPCN13CWQB",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWQBCN.TXT"
+        },
+        "FPCN13CWTO": {
+            "productIdentifier": "FPCN13CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWTOCN.TXT"
+        },
+        "FPCN14CWNT": {
+            "productIdentifier": "FPCN14CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SFPWNTCN.TXT"
+        },
+        "FPCN14CWWG": {
+            "productIdentifier": "FPCN14CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMWWGCN.TXT"
+        },
+        "FPCN14CWXK": {
+            "productIdentifier": "FPCN14CWXK",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWXKCN.TXT"
+        },
+        "FPCN15CWHX": {
+            "productIdentifier": "FPCN15CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWHXCN.TXT"
+        },
+        "FPCN15CWNT": {
+            "productIdentifier": "FPCN15CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWNTCN.TXT"
+        },
+        "FPCN20CWWG": {
+            "productIdentifier": "FPCN20CWWG",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWWGCN.TXT"
+        },
+        "FPCN48CWAO": {
+            "productIdentifier": "FPCN48CWAO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "UVIWAOCN.TXT"
+        },
+        "FPCN51CWNT": {
+            "productIdentifier": "FPCN51CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWNTCN.TXT"
+        },
+        "FPCN52CWNT": {
+            "productIdentifier": "FPCN52CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWNTCN.TXT"
+        },
+        "FPCN53CWNT": {
+            "productIdentifier": "FPCN53CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWNTCN.TXT"
+        },
+        "FPCN54CWHX": {
+            "productIdentifier": "FPCN54CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWHXCN.TXT"
+        },
+        "FPCN54CWNT": {
+            "productIdentifier": "FPCN54CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SFPWNTCN.TXT"
+        },
+        "FPCN54CWQB": {
+            "productIdentifier": "FPCN54CWQB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SFPWQBCN.TXT"
+        },
+        "FPCN54CWUL": {
+            "productIdentifier": "FPCN54CWUL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SFPWULCN.TXT"
+        },
+        "FPCN54CWVR": {
+            "productIdentifier": "FPCN54CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWVRCN.TXT"
+        },
+        "FPCN54CWWG": {
+            "productIdentifier": "FPCN54CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWWGCN.TXT"
+        },
+        "FPCN54CWXK": {
+            "productIdentifier": "FPCN54CWXK",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWXKCN.TXT"
+        },
+        "FPCN55CWNT": {
+            "productIdentifier": "FPCN55CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "EFPWNTCN.TXT"
+        },
+        "FPFJ40NFFN": {
+            "productIdentifier": "FPFJ40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNFJ.TXT"
+        },
+        "FPFW40NFFN": {
+            "productIdentifier": "FPFW40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNWF.TXT"
+        },
+        "FPKB40NFFN": {
+            "productIdentifier": "FPKB40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNKI.TXT"
+        },
+        "FPKU40NFFN": {
+            "productIdentifier": "FPKU40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSFFNCI.TXT"
+        },
+        "FPMS20WMKK": {
+            "productIdentifier": "FPMS20WMKK",
+            "nnn": null,
+            "priority": "2",
+            "filename": "INTMKKUS.TXT"
+        },
+        "FPNE40NFFN": {
+            "productIdentifier": "FPNE40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNUE.TXT"
+        },
+        "FPNW40NFFN": {
+            "productIdentifier": "FPNW40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNNU.TXT"
+        },
+        "FPTK40NFFN": {
+            "productIdentifier": "FPTK40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTK.TXT"
+        },
+        "FPTO40NFFN": {
+            "productIdentifier": "FPTO40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTG.TXT"
+        },
+        "FPTO40NFTF": {
+            "productIdentifier": "FPTO40NFTF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFTTG.TXT"
+        },
+        "FPTV40NFFN": {
+            "productIdentifier": "FPTV40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTU.TXT"
+        },
+        "FPUK71EGRR": {
+            "productIdentifier": "FPUK71EGRR",
+            "nnn": null,
+            "priority": "2",
+            "filename": "INTMETUK.TXT"
+        },
+        "FQNC40NWBB": {
+            "productIdentifier": "FQNC40NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFWBBNN.TXT"
+        },
+        "FQNT21EGRR": {
+            "productIdentifier": "FQNT21EGRR",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HFFGRRUS.TXT"
+        },
+        "FQPR01SPIM": {
+            "productIdentifier": "FQPR01SPIM",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HFFEP3US.TXT"
+        },
+        "FQPS01NFFN": {
+            "productIdentifier": "FQPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFFFNUS.TXT"
+        },
+        "FQPS43NZKL": {
+            "productIdentifier": "FQPS43NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFS43US.TXT"
+        },
+        "FQPS44NZKL": {
+            "productIdentifier": "FQPS44NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFS44US.TXT"
+        },
+        "FQPS45NZKL": {
+            "productIdentifier": "FQPS45NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFS45US.TXT"
+        },
+        "FQPS46NZKL": {
+            "productIdentifier": "FQPS46NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFS46US.TXT"
+        },
+        "FRPN31PHFO": {
+            "productIdentifier": "FRPN31PHFO",
+            "nnn": "RFR",
+            "priority": "1",
+            "filename": "RFRN31US.TXT"
+        },
+        "FSUS02KWBC": {
+            "productIdentifier": "FSUS02KWBC",
+            "nnn": "COD",
+            "priority": "2",
+            "filename": "CODSRPUS.TXT"
+        },
+        "FTAU31AMMC": {
+            "productIdentifier": "FTAU31AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFU31AU.TXT"
+        },
+        "FTAU31YBBN": {
+            "productIdentifier": "FTAU31YBBN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFU31AU.TXT"
+        },
+        "FTCA31KWBC": {
+            "productIdentifier": "FTCA31KWBC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFC31US.TXT"
+        },
+        "FTCA32KWBC": {
+            "productIdentifier": "FTCA32KWBC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFC32US.TXT"
+        },
+        "FTCA33KWBC": {
+            "productIdentifier": "FTCA33KWBC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFC33US.TXT"
+        },
+        "FTCA35KWBC": {
+            "productIdentifier": "FTCA35KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFC35US.TXT"
+        },
+        "FTCA41KWBC": {
+            "productIdentifier": "FTCA41KWBC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFC41US.TXT"
+        },
+        "FTCA45KWBC": {
+            "productIdentifier": "FTCA45KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFC45US.TXT"
+        },
+        "FTFJ31NFFN": {
+            "productIdentifier": "FTFJ31NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFJ31FJ.TXT"
+        },
+        "FTHA31KWBC": {
+            "productIdentifier": "FTHA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFA31HA.TXT"
+        },
+        "FTKB31NFFN": {
+            "productIdentifier": "FTKB31NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFB31KI.TXT"
+        },
+        "FTNC20NWCC": {
+            "productIdentifier": "FTNC20NWCC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFC20NN.TXT"
+        },
+        "FTNV01NVVV": {
+            "productIdentifier": "FTNV01NVVV",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFV01VU.TXT"
+        },
+        "FTNZ31NZKL": {
+            "productIdentifier": "FTNZ31NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFZ31NZ.TXT"
+        },
+        "FTPA31PHFO": {
+            "productIdentifier": "FTPA31PHFO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFHFOHI.TXT"
+        },
+        "FTPA32KWBC": {
+            "productIdentifier": "FTPA32KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFWBCFJ.TXT"
+        },
+        "FTPF21NTAA": {
+            "productIdentifier": "FTPF21NTAA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFF21FP.TXT"
+        },
+        "FTPQ31PGUM": {
+            "productIdentifier": "FTPQ31PGUM",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFGUMGU.TXT"
+        },
+        "FTPS31NFFN": {
+            "productIdentifier": "FTPS31NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS31AS.TXT"
+        },
+        "FTSA31KWBC": {
+            "productIdentifier": "FTSA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS31US.TXT"
+        },
+        "FTSA41KWBC": {
+            "productIdentifier": "FTSA41KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS41US.TXT"
+        },
+        "FTSR31WSSS": {
+            "productIdentifier": "FTSR31WSSS",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFR31SS.TXT"
+        },
+        "FTTV31NFFN": {
+            "productIdentifier": "FTTV31NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFV31TU.TXT"
+        },
+        "FTUS80KWBC": {
+            "productIdentifier": "FTUS80KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFALLUS.TXT"
+        },
+        "FVAU01ADRM": {
+            "productIdentifier": "FVAU01ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU01US.TXT"
+        },
+        "FVAU02ADRM": {
+            "productIdentifier": "FVAU02ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU02US.TXT"
+        },
+        "FVAU03ADRM": {
+            "productIdentifier": "FVAU03ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU03US.TXT"
+        },
+        "FVAU04ADRM": {
+            "productIdentifier": "FVAU04ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU04US.TXT"
+        },
+        "FVAU05ADRM": {
+            "productIdentifier": "FVAU05ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU05US.TXT"
+        },
+        "FVAU06ADRM": {
+            "productIdentifier": "FVAU06ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHU06US.TXT"
+        },
+        "FVCN01CWAO": {
+            "productIdentifier": "FVCN01CWAO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHN01US.TXT"
+        },
+        "FVCN02CWAO": {
+            "productIdentifier": "FVCN02CWAO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHN02US.TXT"
+        },
+        "FVCN03CWAO": {
+            "productIdentifier": "FVCN03CWAO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHN03US.TXT"
+        },
+        "FVCN04CWAO": {
+            "productIdentifier": "FVCN04CWAO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHN04US.TXT"
+        },
+        "FVFE01RJTD": {
+            "productIdentifier": "FVFE01RJTD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHE01US.TXT"
+        },
+        "FVPS01NZKL": {
+            "productIdentifier": "FVPS01NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHZ01US.TXT"
+        },
+        "FVPS02NZKL": {
+            "productIdentifier": "FVPS02NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHZ02US.TXT"
+        },
+        "FVXX20KNES": {
+            "productIdentifier": "FVXX20KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX20US.TXT"
+        },
+        "FVXX21KNES": {
+            "productIdentifier": "FVXX21KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX21US.TXT"
+        },
+        "FVXX22KNES": {
+            "productIdentifier": "FVXX22KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX22US.TXT"
+        },
+        "FVXX23KNES": {
+            "productIdentifier": "FVXX23KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX23US.TXT"
+        },
+        "FVXX24KNES": {
+            "productIdentifier": "FVXX24KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX24US.TXT"
+        },
+        "FVXX25KNES": {
+            "productIdentifier": "FVXX25KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX25US.TXT"
+        },
+        "FVXX26KNES": {
+            "productIdentifier": "FVXX26KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX26US.TXT"
+        },
+        "FVXX27KNES": {
+            "productIdentifier": "FVXX27KNES",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHX27US.TXT"
+        },
+        "FWUS45KABQ": {
+            "productIdentifier": "FWUS45KABQ",
+            "nnn": "SAG",
+            "priority": "3",
+            "filename": "SAGABQNM.TXT"
+        },
+        "FXCN31CWHX": {
+            "productIdentifier": "FXCN31CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN31CN.TXT"
+        },
+        "FXCN32CWHX": {
+            "productIdentifier": "FXCN32CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN32CN.TXT"
+        },
+        "FXCN33CWHX": {
+            "productIdentifier": "FXCN33CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN33CN.TXT"
+        },
+        "FXCN41CWHX": {
+            "productIdentifier": "FXCN41CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN41CN.TXT"
+        },
+        "FXCN42CWHX": {
+            "productIdentifier": "FXCN42CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN42CN.TXT"
+        },
+        "FXCN43CWHX": {
+            "productIdentifier": "FXCN43CWHX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "HADN43CN.TXT"
+        },
+        "FXPA41PHFO": {
+            "productIdentifier": "FXPA41PHFO",
+            "nnn": "MFM",
+            "priority": "2",
+            "filename": "MFMHFOHI.TXT"
+        },
+        "FXUS02KWNH": {
+            "productIdentifier": "FXUS02KWNH",
+            "nnn": "PRE",
+            "priority": "1",
+            "filename": "NWXPREUS.TXT"
+        },
+        "FXUS04KWBC": {
+            "productIdentifier": "FXUS04KWBC",
+            "nnn": "QPF",
+            "priority": "1",
+            "filename": "NWXQPFUS.TXT"
+        },
+        "FXZS60NSTU": {
+            "productIdentifier": "FXZS60NSTU",
+            "nnn": "AFD",
+            "priority": "1",
+            "filename": "AFDPPGAS.TXT"
+        },
+        "FZAK80PAFC": {
+            "productIdentifier": "FZAK80PAFC",
+            "nnn": "ICE",
+            "priority": "2",
+            "filename": "ICEAFCAK.TXT"
+        },
+        "FZNT01KWBC": {
+            "productIdentifier": "FZNT01KWBC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFAT1US.TXT"
+        },
+        "FZNT02KNHC": {
+            "productIdentifier": "FZNT02KNHC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFAT2US.TXT"
+        },
+        "FZPN01KWBC": {
+            "productIdentifier": "FZPN01KWBC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFEP1US.TXT"
+        },
+        "FZPN02KWBC": {
+            "productIdentifier": "FZPN02KWBC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFEPIUS.TXT"
+        },
+        "FZPN03KNHC": {
+            "productIdentifier": "FZPN03KNHC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFEP2US.TXT"
+        },
+        "FZPN04KNHC": {
+            "productIdentifier": "FZPN04KNHC",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFEP3US.TXT"
+        },
+        "FZPN40PHFO": {
+            "productIdentifier": "FZPN40PHFO",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFNP1US.TXT"
+        },
+        "FZPS40PHFO": {
+            "productIdentifier": "FZPS40PHFO",
+            "nnn": "HSF",
+            "priority": "2",
+            "filename": "HFFSP1US.TXT"
+        },
+        "FZUS51KBUF": {
+            "productIdentifier": "FZUS51KBUF",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHBUFUS.TXT"
+        },
+        "FZUS51KCLE": {
+            "productIdentifier": "FZUS51KCLE",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHCLEOH.TXT"
+        },
+        "FZUS53KAPX": {
+            "productIdentifier": "FZUS53KAPX",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHAPXUS.TXT"
+        },
+        "FZUS53KDLH": {
+            "productIdentifier": "FZUS53KDLH",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHDLHUS.TXT"
+        },
+        "FZUS53KDTX": {
+            "productIdentifier": "FZUS53KDTX",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHDTXUS.TXT"
+        },
+        "FZUS53KGRB": {
+            "productIdentifier": "FZUS53KGRB",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHGRBUS.TXT"
+        },
+        "FZUS53KGRR": {
+            "productIdentifier": "FZUS53KGRR",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHGRRUS.TXT"
+        },
+        "FZUS53KIWX": {
+            "productIdentifier": "FZUS53KIWX",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHIWXIN.TXT"
+        },
+        "FZUS53KLOT": {
+            "productIdentifier": "FZUS53KLOT",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHLOTUS.TXT"
+        },
+        "FZUS53KMKX": {
+            "productIdentifier": "FZUS53KMKX",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHMKXUS.TXT"
+        },
+        "FZUS53KMQT": {
+            "productIdentifier": "FZUS53KMQT",
+            "nnn": "NSH",
+            "priority": "2",
+            "filename": "NSHMQTUS.TXT"
+        },
+        "FZUS61KBUF": {
+            "productIdentifier": "FZUS61KBUF",
+            "nnn": "GLF",
+            "priority": "2",
+            "filename": "GLFBUFUS.TXT"
+        },
+        "FZUS61KCLE": {
+            "productIdentifier": "FZUS61KCLE",
+            "nnn": "GLF",
+            "priority": "2",
+            "filename": "GLFCLEUS.TXT"
+        },
+        "FZUS63KDTX": {
+            "productIdentifier": "FZUS63KDTX",
+            "nnn": "GLF",
+            "priority": "2",
+            "filename": "GLFDTXUS.TXT"
+        },
+        "FZUS63KMKX": {
+            "productIdentifier": "FZUS63KMKX",
+            "nnn": "GLF",
+            "priority": "2",
+            "filename": "GLFLOTUS.TXT"
+        },
+        "FZUS63KMQT": {
+            "productIdentifier": "FZUS63KMQT",
+            "nnn": "GLF",
+            "priority": "2",
+            "filename": "GLFMQTUS.TXT"
+        },
+        "NOUS42KNHC": {
+            "productIdentifier": "NOUS42KNHC",
+            "nnn": "REP",
+            "priority": "2",
+            "filename": "TSPODFUS.TXT"
+        },
+        "NOUS90KWBC": {
+            "productIdentifier": "NOUS90KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "FEEBAC1S.TXT"
+        },
+        "NOXX01KWBC": {
+            "productIdentifier": "NOXX01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "FEDBACUS.TXT"
+        },
+        "NOXX10KWBC": {
+            "productIdentifier": "NOXX10KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISX10US.TXT"
+        },
+        "NTXX98PAAQ": {
+            "productIdentifier": "NTXX98PAAQ",
+            "nnn": "TST",
+            "priority": "2",
+            "filename": "TSTPAQUS.TXT"
+        },
+        "NTXX98PHEB": {
+            "productIdentifier": "NTXX98PHEB",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TSTHEBUS.TXT"
+        },
+        "NWPS01NFFN": {
+            "productIdentifier": "NWPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSDS01US.TXT"
+        },
+        "NWUS20KWNS": {
+            "productIdentifier": "NWUS20KWNS",
+            "nnn": "STA",
+            "priority": "1",
+            "filename": "STADTSUS.TXT"
+        },
+        "NWUS21KWNS": {
+            "productIdentifier": "NWUS21KWNS",
+            "nnn": "STA",
+            "priority": "1",
+            "filename": "STAMTSUS.TXT"
+        },
+        "NWUS22KWNS": {
+            "productIdentifier": "NWUS22KWNS",
+            "nnn": "STA",
+            "priority": "1",
+            "filename": "STAHRYUS.TXT"
+        },
+        "NWUS23KWNS": {
+            "productIdentifier": "NWUS23KWNS",
+            "nnn": "STA",
+            "priority": "1",
+            "filename": "STSTIJUS.TXT"
+        },
+        "SAAU31AMMC": {
+            "productIdentifier": "SAAU31AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFU31AU.TXT"
+        },
+        "SACA31KWBC": {
+            "productIdentifier": "SACA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA32KWBC": {
+            "productIdentifier": "SACA32KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA33KWBC": {
+            "productIdentifier": "SACA33KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA35KWBC": {
+            "productIdentifier": "SACA35KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA41KWBC": {
+            "productIdentifier": "SACA41KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA42KWBC": {
+            "productIdentifier": "SACA42KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACA45KWBC": {
+            "productIdentifier": "SACA45KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN74CWAO": {
+            "productIdentifier": "SACN74CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN78CWAO": {
+            "productIdentifier": "SACN78CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN82CWAO": {
+            "productIdentifier": "SACN82CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN85CWAO": {
+            "productIdentifier": "SACN85CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN86CWAO": {
+            "productIdentifier": "SACN86CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SACN87CWAO": {
+            "productIdentifier": "SACN87CWAO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAHA31KWBC": {
+            "productIdentifier": "SAHA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA31HA.TXT"
+        },
+        "SAKA31PTKK": {
+            "productIdentifier": "SAKA31PTKK",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAKA31PTPN": {
+            "productIdentifier": "SAKA31PTPN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAKA31PTRO": {
+            "productIdentifier": "SAKA31PTRO",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAKA31PTSA": {
+            "productIdentifier": "SAKA31PTSA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAKA31PTYA": {
+            "productIdentifier": "SAKA31PTYA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAMH31PKMJ": {
+            "productIdentifier": "SAMH31PKMJ",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SANZ31NZKL": {
+            "productIdentifier": "SANZ31NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFZ31NZ.TXT"
+        },
+        "SAPA31KWBC": {
+            "productIdentifier": "SAPA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA31GU.TXT"
+        },
+        "SAPA32KWBC": {
+            "productIdentifier": "SAPA32KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA32GU.TXT"
+        },
+        "SAPS31NZKL": {
+            "productIdentifier": "SAPS31NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS31US.TXT"
+        },
+        "SASA31KWBC": {
+            "productIdentifier": "SASA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SASA41KWBC": {
+            "productIdentifier": "SASA41KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SATO31NFTF": {
+            "productIdentifier": "SATO31NFTF",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAF031TG.TXT"
+        },
+        "SAUS70KWBC": {
+            "productIdentifier": "SAUS70KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAUS80KWBC": {
+            "productIdentifier": "SAUS80KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "SAHOURLY.TXT"
+        },
+        "SAZM31NSFA": {
+            "productIdentifier": "SAZM31NSFA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFM31WS.TXT"
+        },
+        "SAZS31NSTU": {
+            "productIdentifier": "SAZS31NSTU",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS31AS.TXT"
+        },
+        "SIPS20NZKL": {
+            "productIdentifier": "SIPS20NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSS20NZ.TXT"
+        },
+        "SIPS21NZKL": {
+            "productIdentifier": "SIPS21NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSS21NZ.TXT"
+        },
+        "SITO21NFTF": {
+            "productIdentifier": "SITO21NFTF",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSO21TG.TXT"
+        },
+        "SMAU40AMMC": {
+            "productIdentifier": "SMAU40AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU40AU.TXT"
+        },
+        "SMCA01KWBC": {
+            "productIdentifier": "SMCA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MSAA01CA.TXT"
+        },
+        "SMCA02KWBC": {
+            "productIdentifier": "SMCA02KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MSAA02CA.TXT"
+        },
+        "SMFJ01NFFN": {
+            "productIdentifier": "SMFJ01NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSJ01FJ.TXT"
+        },
+        "SMFW01NWBB": {
+            "productIdentifier": "SMFW01NWBB",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSW01WF.TXT"
+        },
+        "SMKA01PTKK": {
+            "productIdentifier": "SMKA01PTKK",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA01FM.TXT"
+        },
+        "SMKA01PTYA": {
+            "productIdentifier": "SMKA01PTYA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA01FM.TXT"
+        },
+        "SMKB01NGTT": {
+            "productIdentifier": "SMKB01NGTT",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSB01KI.TXT"
+        },
+        "SMKU01NCRG": {
+            "productIdentifier": "SMKU01NCRG",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU01CI.TXT"
+        },
+        "SMNC01NWBB": {
+            "productIdentifier": "SMNC01NWBB",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSC01NN.TXT"
+        },
+        "SMNC02NWBB": {
+            "productIdentifier": "SMNC02NWBB",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSC02NN.TXT"
+        },
+        "SMNV01NVVV": {
+            "productIdentifier": "SMNV01NVVV",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSV01VU.TXT"
+        },
+        "SMNZ01NZKL": {
+            "productIdentifier": "SMNZ01NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSZ01NZ.TXT"
+        },
+        "SMPA01KWBC": {
+            "productIdentifier": "SMPA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA01US.TXT"
+        },
+        "SMPA01RJTD": {
+            "productIdentifier": "SMPA01RJTD",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA01JA.TXT"
+        },
+        "SMPA20KWBC": {
+            "productIdentifier": "SMPA20KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSA20US.TXT"
+        },
+        "SMPF01NTAA": {
+            "productIdentifier": "SMPF01NTAA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSF01FP.TXT"
+        },
+        "SMPS01NZKL": {
+            "productIdentifier": "SMPS01NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSS01UE.TXT"
+        },
+        "SMSO01AMMC": {
+            "productIdentifier": "SMSO01AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSO01SI.TXT"
+        },
+        "SMTO01NFTF": {
+            "productIdentifier": "SMTO01NFTF",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSO01TG.TXT"
+        },
+        "SMTO02NFTF": {
+            "productIdentifier": "SMTO02NFTF",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBS002TG.TXT"
+        },
+        "SMTV01NGFU": {
+            "productIdentifier": "SMTV01NGFU",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSV01TU.TXT"
+        },
+        "SMVE01NZKL": {
+            "productIdentifier": "SMVE01NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSE01NZ.TXT"
+        },
+        "SMZM01NSAP": {
+            "productIdentifier": "SMZM01NSAP",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSM01WS.TXT"
+        },
+        "SMZM01NSFA": {
+            "productIdentifier": "SMZM01NSFA",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSM01WS.TXT"
+        },
+        "SMZS01NSTU": {
+            "productIdentifier": "SMZS01NSTU",
+            "nnn": "SSM",
+            "priority": "2",
+            "filename": "OBSS01AS.TXT"
+        },
+        "SNAU01AMMC": {
+            "productIdentifier": "SNAU01AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU01AU.TXT"
+        },
+        "SNAU03AMMC": {
+            "productIdentifier": "SNAU03AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU03AU.TXT"
+        },
+        "SNAU44AMMC": {
+            "productIdentifier": "SNAU44AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU44AU.TXT"
+        },
+        "SNAU45AMMC": {
+            "productIdentifier": "SNAU45AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU45AU.TXT"
+        },
+        "SNAU46AMMC": {
+            "productIdentifier": "SNAU46AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU46AU.TXT"
+        },
+        "SNAU47AMMC": {
+            "productIdentifier": "SNAU47AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU47AU.TXT"
+        },
+        "SNAU49AMMC": {
+            "productIdentifier": "SNAU49AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU49AU.TXT"
+        },
+        "SNAU51AMMC": {
+            "productIdentifier": "SNAU51AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU51AU.TXT"
+        },
+        "SNAU54AMMC": {
+            "productIdentifier": "SNAU54AMMC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU54AU.TXT"
+        },
+        "SNAU80RJTD": {
+            "productIdentifier": "SNAU80RJTD",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSU80JA.TXT"
+        },
+        "SNNC80RJTD": {
+            "productIdentifier": "SNNC80RJTD",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSC80JA.TXT"
+        },
+        "SNPF80KWBC": {
+            "productIdentifier": "SNPF80KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSF80US.TXT"
+        },
+        "SOAK45KWBC": {
+            "productIdentifier": "SOAK45KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TIDWBCAK.TXT"
+        },
+        "SOUS64KWBC": {
+            "productIdentifier": "SOUS64KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TIDWBCAK.TXT"
+        },
+        "SOUS65KWBC": {
+            "productIdentifier": "SOUS65KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TIDWBCHI.TXT"
+        },
+        "SPHA31KWBC": {
+            "productIdentifier": "SPHA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFSPCHA.TXT"
+        },
+        "SPTO31NFTF": {
+            "productIdentifier": "SPTO31NFTF",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAF031TG.TXT"
+        },
+        "SPZS31NSTU": {
+            "productIdentifier": "SPZS31NSTU",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFS31AS.TXT"
+        },
+        "SRHW70PHFO": {
+            "productIdentifier": "SRHW70PHFO",
+            "nnn": "RR7",
+            "priority": "2",
+            "filename": "RR5HFOHI.TXT"
+        },
+        "SRUS71KBTV": {
+            "productIdentifier": "SRUS71KBTV",
+            "nnn": "RR7",
+            "priority": "2",
+            "filename": "RR71V4VT.TXT"
+        },
+        "SXBA40KWAL": {
+            "productIdentifier": "SXBA40KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OBSYNNBA.TXT"
+        },
+        "SXCA01KNHC": {
+            "productIdentifier": "SXCA01KNHC",
+            "nnn": "TPT",
+            "priority": "2",
+            "filename": "TPTPANUS.TXT"
+        },
+        "SXHN40KWAL": {
+            "productIdentifier": "SXHN40KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISDCPHN.TXT"
+        },
+        "SXMG40KWAL": {
+            "productIdentifier": "SXMG40KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISDCPMG.TXT"
+        },
+        "SXMN20KWAL": {
+            "productIdentifier": "SXMN20KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISDCPNI.TXT"
+        },
+        "SXMS50KWAL": {
+            "productIdentifier": "SXMS50KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISDCPSV.TXT"
+        },
+        "SXMT40KWAL": {
+            "productIdentifier": "SXMT40KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISDCPSV.TXT"
+        },
+        "SXPA50KWAL": {
+            "productIdentifier": "SXPA50KWAL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "MISA50US.TXT"
+        },
+        "SXUS40KNMW": {
+            "productIdentifier": "SXUS40KNMW",
+            "nnn": null,
+            "priority": "2",
+            "filename": "OMRNMWOR.TXT"
+        },
+        "SXUS52KTAE": {
+            "productIdentifier": "SXUS52KTAE",
+            "nnn": "OSO",
+            "priority": "2",
+            "filename": "OSOTEAFL.TXT"
+        },
+        "SXUS54KBMX": {
+            "productIdentifier": "SXUS54KBMX",
+            "nnn": "OSO",
+            "priority": "2",
+            "filename": "OSOBMXAL.TXT"
+        },
+        "SXUS54KHUN": {
+            "productIdentifier": "SXUS54KHUN",
+            "nnn": "OSO",
+            "priority": "2",
+            "filename": "OSOHUNAL.TXT"
+        },
+        "SXUS56KLOX": {
+            "productIdentifier": "SXUS56KLOX",
+            "nnn": "OSO",
+            "priority": "2",
+            "filename": "OSOSMXCA.TXT"
+        },
+        "TBUS01KNES": {
+            "productIdentifier": "TBUS01KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHS01US.TXT"
+        },
+        "TBUS02KNES": {
+            "productIdentifier": "TBUS02KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHAT2US.TXT"
+        },
+        "TBUS03KNES": {
+            "productIdentifier": "TBUS03KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHAT3US.TXT"
+        },
+        "TBUS04KNES": {
+            "productIdentifier": "TBUS04KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHAT4US.TXT"
+        },
+        "TBUS05KNES": {
+            "productIdentifier": "TBUS05KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHAT5US.TXT"
+        },
+        "TBUS06KNES": {
+            "productIdentifier": "TBUS06KNES",
+            "nnn": "SAT",
+            "priority": "1",
+            "filename": "EPHAT6US.TXT"
+        },
+        "TPPN10PGTW": {
+            "productIdentifier": "TPPN10PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN10US.TXT"
+        },
+        "TPPN11PGTW": {
+            "productIdentifier": "TPPN11PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN11US.TXT"
+        },
+        "TPPN12PGTW": {
+            "productIdentifier": "TPPN12PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN12US.TXT"
+        },
+        "TPPN13PGTW": {
+            "productIdentifier": "TPPN13PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN13US.TXT"
+        },
+        "TPPN14PGTW": {
+            "productIdentifier": "TPPN14PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN14US.TXT"
+        },
+        "TPPN15PGTW": {
+            "productIdentifier": "TPPN15PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN15US.TXT"
+        },
+        "TPPN16PGTW": {
+            "productIdentifier": "TPPN16PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN16US.TXT"
+        },
+        "TPPN17PGTW": {
+            "productIdentifier": "TPPN17PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN17US.TXT"
+        },
+        "TPPN18PGTW": {
+            "productIdentifier": "TPPN18PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN18US.TXT"
+        },
+        "TPPN19PGTW": {
+            "productIdentifier": "TPPN19PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TPPN19US.TXT"
+        },
+        "TPPS10PGTW": {
+            "productIdentifier": "TPPS10PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACGTWAU.TXT"
+        },
+        "TPPS11PGTW": {
+            "productIdentifier": "TPPS11PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS11US.TXT"
+        },
+        "TPPS12PGTW": {
+            "productIdentifier": "TPPS12PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS12US.TXT"
+        },
+        "TPPS13PGTW": {
+            "productIdentifier": "TPPS13PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS13US.TXT"
+        },
+        "TPPS14PGTW": {
+            "productIdentifier": "TPPS14PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS14US.TXT"
+        },
+        "TPPS15PGTW": {
+            "productIdentifier": "TPPS15PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS15US.TXT"
+        },
+        "TPPS16PGTW": {
+            "productIdentifier": "TPPS16PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS16US.TXT"
+        },
+        "TPPS17PGTW": {
+            "productIdentifier": "TPPS17PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS17US.TXT"
+        },
+        "TPPS18PGTW": {
+            "productIdentifier": "TPPS18PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS18US.TXT"
+        },
+        "TPPS19PGTW": {
+            "productIdentifier": "TPPS19PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS19US.TXT"
+        },
+        "TPXS10PGTW": {
+            "productIdentifier": "TPXS10PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSAS10US.TXT"
+        },
+        "TPXS11PGTW": {
+            "productIdentifier": "TPXS11PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSAS11US.TXT"
+        },
+        "TPXS12PGTW": {
+            "productIdentifier": "TPXS12PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSAS12US.TXT"
+        },
+        "TPXS13PGTW": {
+            "productIdentifier": "TPXS13PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSAS13US.TXT"
+        },
+        "TPXS14PGTW": {
+            "productIdentifier": "TPXS14PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSAS14US.TXT"
+        },
+        "TXPN41PHFO": {
+            "productIdentifier": "TXPN41PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSNP1US.TXT"
+        },
+        "TXPN42PHFO": {
+            "productIdentifier": "TXPN42PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSNP2US.TXT"
+        },
+        "TXPN43PHFO": {
+            "productIdentifier": "TXPN43PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSNP3US.TXT"
+        },
+        "TXPN44PHFO": {
+            "productIdentifier": "TXPN44PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSNP4US.TXT"
+        },
+        "TXPN45PHFO": {
+            "productIdentifier": "TXPN45PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSNP5US.TXT"
+        },
+        "TXPQ20KNES": {
+            "productIdentifier": "TXPQ20KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ0US.TXT"
+        },
+        "TXPQ21KNES": {
+            "productIdentifier": "TXPQ21KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ1US.TXT"
+        },
+        "TXPQ22KNES": {
+            "productIdentifier": "TXPQ22KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ2US.TXT"
+        },
+        "TXPQ23KNES": {
+            "productIdentifier": "TXPQ23KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ3US.TXT"
+        },
+        "TXPQ24KNES": {
+            "productIdentifier": "TXPQ24KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ4US.TXT"
+        },
+        "TXPQ25KNES": {
+            "productIdentifier": "TXPQ25KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ5US.TXT"
+        },
+        "TXPQ26KNES": {
+            "productIdentifier": "TXPQ26KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ6US.TXT"
+        },
+        "TXPQ27KNES": {
+            "productIdentifier": "TXPQ27KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ7US.TXT"
+        },
+        "TXPQ28KNES": {
+            "productIdentifier": "TXPQ28KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ8US.TXT"
+        },
+        "TXPQ29KNES": {
+            "productIdentifier": "TXPQ29KNES",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "HWFPQ9US.TXT"
+        },
+        "TXPS41PHFO": {
+            "productIdentifier": "TXPS41PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSSP1US.TXT"
+        },
+        "TXPS42PHFO": {
+            "productIdentifier": "TXPS42PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSSP2US.TXT"
+        },
+        "TXPS43PHFO": {
+            "productIdentifier": "TXPS43PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSSP3US.TXT"
+        },
+        "TXPS44PHFO": {
+            "productIdentifier": "TXPS44PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSSP4US.TXT"
+        },
+        "TXPS45PHFO": {
+            "productIdentifier": "TXPS45PHFO",
+            "nnn": "TCS",
+            "priority": "2",
+            "filename": "TCSSP5US.TXT"
+        },
+        "TXUS20KNES": {
+            "productIdentifier": "TXUS20KNES",
+            "nnn": "SPE",
+            "priority": "1",
+            "filename": "SPENESUS.TXT"
+        },
+        "UACA31KWBC": {
+            "productIdentifier": "UACA31KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "UAAA31CA.TXT"
+        },
+        "UACA98KARP": {
+            "productIdentifier": "UACA98KARP",
+            "nnn": null,
+            "priority": "2",
+            "filename": "UAAA98CA.TXT"
+        },
+        "UAFJ01NFFN": {
+            "productIdentifier": "UAFJ01NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "TAFJ01FJ.TXT"
+        },
+        "UECA01KWBC": {
+            "productIdentifier": "UECA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPS01CA.TXT"
+        },
+        "UECA02KWBC": {
+            "productIdentifier": "UECA02KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPS02CA.TXT"
+        },
+        "UECA03KWBC": {
+            "productIdentifier": "UECA03KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPS03CA.TXT"
+        },
+        "UGFJ20NFFN": {
+            "productIdentifier": "UGFJ20NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRJ20FJ.TXT"
+        },
+        "UHFJ01NFFN": {
+            "productIdentifier": "UHFJ01NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRJ01FJ.TXT"
+        },
+        "UKCA01KWBC": {
+            "productIdentifier": "UKCA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPB01CA.TXT"
+        },
+        "UKCA02KWBC": {
+            "productIdentifier": "UKCA02KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPB02CA.TXT"
+        },
+        "UKCA03KWBC": {
+            "productIdentifier": "UKCA03KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPB03CA.TXT"
+        },
+        "ULCA01KWBC": {
+            "productIdentifier": "ULCA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPC01CA.TXT"
+        },
+        "ULCA02KWBC": {
+            "productIdentifier": "ULCA02KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPC02CA.TXT"
+        },
+        "ULCA03KWBC": {
+            "productIdentifier": "ULCA03KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPC03CA.TXT"
+        },
+        "UPFJ01NFFN": {
+            "productIdentifier": "UPFJ01NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRF01FJ.TXT"
+        },
+        "UQFJ20NFFN": {
+            "productIdentifier": "UQFJ20NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRF20FJ.TXT"
+        },
+        "URNT15KBIX": {
+            "productIdentifier": "URNT15KBIX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHONT1US.TXT"
+        },
+        "URNT15KNHC": {
+            "productIdentifier": "URNT15KNHC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHONT1US.TXT"
+        },
+        "URNT15KWBC": {
+            "productIdentifier": "URNT15KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHONT1US.TXT"
+        },
+        "URPA15KWBC": {
+            "productIdentifier": "URPA15KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHOPA1US.TXT"
+        },
+        "URPN15KBIX": {
+            "productIdentifier": "URPN15KBIX",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHOPN1US.TXT"
+        },
+        "URPN15KNHC": {
+            "productIdentifier": "URPN15KNHC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHOPN1US.TXT"
+        },
+        "URPN15KWBC": {
+            "productIdentifier": "URPN15KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AHOPN1US.TXT"
+        },
+        "USCA01KWBC": {
+            "productIdentifier": "USCA01KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPA01CA.TXT"
+        },
+        "USCA02KWBC": {
+            "productIdentifier": "USCA02KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPA02CA.TXT"
+        },
+        "USCA03KWBC": {
+            "productIdentifier": "USCA03KWBC",
+            "nnn": null,
+            "priority": "2",
+            "filename": "ULPA03CA.TXT"
+        },
+        "USFJ01NFFN": {
+            "productIdentifier": "USFJ01NFFN",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRFF2FJ.TXT"
+        },
+        "USNZ02NZKL": {
+            "productIdentifier": "USNZ02NZKL",
+            "nnn": null,
+            "priority": "2",
+            "filename": "AIRZ02NZ.TXT"
+        },
+        "WCFJ01NFFN": {
+            "productIdentifier": "WCFJ01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPJO1US.TXT"
+        },
+        "WCFJ02NFFN": {
+            "productIdentifier": "WCFJ02NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPJO2US.TXT"
+        },
+        "WCFJ03NFFN": {
+            "productIdentifier": "WCFJ03NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPJO3US.TXT"
+        },
+        "WCFJ04NFFN": {
+            "productIdentifier": "WCFJ04NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPJO4US.TXT"
+        },
+        "WCPS21NZKL": {
+            "productIdentifier": "WCPS21NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "AIRS21NZ.TXT"
+        },
+        "WDPN31PGTW": {
+            "productIdentifier": "WDPN31PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN31US.TXT"
+        },
+        "WDPN32PGTW": {
+            "productIdentifier": "WDPN32PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN32US.TXT"
+        },
+        "WDPN33PGTW": {
+            "productIdentifier": "WDPN33PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN33US.TXT"
+        },
+        "WDPN34PGTW": {
+            "productIdentifier": "WDPN34PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN34US.TXT"
+        },
+        "WDPN35PGTW": {
+            "productIdentifier": "WDPN35PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN35US.TXT"
+        },
+        "WDPN36PGTW": {
+            "productIdentifier": "WDPN36PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TCDN36US.TXT"
+        },
+        "WEAK51PAAQ": {
+            "productIdentifier": "WEAK51PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUK51US.TXT"
+        },
+        "WEAK53PAAQ": {
+            "productIdentifier": "WEAK53PAAQ",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TSUK53US.TXT"
+        },
+        "WEAK61PAAQ": {
+            "productIdentifier": "WEAK61PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUSPNUS.TXT"
+        },
+        "WEAK63PAAQ": {
+            "productIdentifier": "WEAK63PAAQ",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBSPNUS.TXT"
+        },
+        "WECA40PHEB": {
+            "productIdentifier": "WECA40PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUCARUS.TXT"
+        },
+        "WECA41PHEB": {
+            "productIdentifier": "WECA41PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUCAXUS.TXT"
+        },
+        "WECA42PHEB": {
+            "productIdentifier": "WECA42PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TSUA42US.TXT"
+        },
+        "WECA43PHEB": {
+            "productIdentifier": "WECA43PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBCAXUS.TXT"
+        },
+        "WECA50PHEB": {
+            "productIdentifier": "WECA50PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUSP1US.TXT"
+        },
+        "WECA52PHEB": {
+            "productIdentifier": "WECA52PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBSP1US.TXT"
+        },
+        "WECA60PHEB": {
+            "productIdentifier": "WECA60PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUCA1US.TXT"
+        },
+        "WEGM40PHEB": {
+            "productIdentifier": "WEGM40PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUGUMUS.TXT"
+        },
+        "WEGM42PHEB": {
+            "productIdentifier": "WEGM42PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBGUMUS.TXT"
+        },
+        "WEHW40PHEB": {
+            "productIdentifier": "WEHW40PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUW40US.TXT"
+        },
+        "WEHW42PHEB": {
+            "productIdentifier": "WEHW42PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TSUW42US.TXT"
+        },
+        "WEPA40PHEB": {
+            "productIdentifier": "WEPA40PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUA40US.TXT"
+        },
+        "WEPA40RJTD": {
+            "productIdentifier": "WEPA40RJTD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACA40US.TXT"
+        },
+        "WEPA40RKSL": {
+            "productIdentifier": "WEPA40RKSL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACKSLUS.TXT"
+        },
+        "WEPA40RUHB": {
+            "productIdentifier": "WEPA40RUHB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACUHBUS.TXT"
+        },
+        "WEPA41PAAQ": {
+            "productIdentifier": "WEPA41PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUAQ4US.TXT"
+        },
+        "WEPA42PHEB": {
+            "productIdentifier": "WEPA42PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBA42US.TXT"
+        },
+        "WEXX20PAAQ": {
+            "productIdentifier": "WEXX20PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUAT1US.TXT"
+        },
+        "WEXX30PAAQ": {
+            "productIdentifier": "WEXX30PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUATEUS.TXT"
+        },
+        "WEXX32PAAQ": {
+            "productIdentifier": "WEXX32PAAQ",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBATEUS.TXT"
+        },
+        "WEXX40PAAQ": {
+            "productIdentifier": "WEXX40PAAQ",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUSPNUS.TXT"
+        },
+        "WEXX42PAAQ": {
+            "productIdentifier": "WEXX42PAAQ",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBSPNUS.TXT"
+        },
+        "WEZS40PHEB": {
+            "productIdentifier": "WEZS40PHEB",
+            "nnn": "TSU",
+            "priority": "1",
+            "filename": "TSUPPGUS.TXT"
+        },
+        "WEZS42PHEB": {
+            "productIdentifier": "WEZS42PHEB",
+            "nnn": "TIB",
+            "priority": "1",
+            "filename": "TIBPPGUS.TXT"
+        },
+        "WFCN10CWUL": {
+            "productIdentifier": "WFCN10CWUL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORU10CN.TXT"
+        },
+        "WFCN11CWTO": {
+            "productIdentifier": "WFCN11CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORT11CN.TXT"
+        },
+        "WFCN11CWWG": {
+            "productIdentifier": "WFCN11CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORW11CN.TXT"
+        },
+        "WFCN13CWTO": {
+            "productIdentifier": "WFCN13CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORWTOCN.TXT"
+        },
+        "WFCN13CWWG": {
+            "productIdentifier": "WFCN13CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORW13CN.TXT"
+        },
+        "WFCN14CWHX": {
+            "productIdentifier": "WFCN14CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORH14CN.TXT"
+        },
+        "WFCN15CWWG": {
+            "productIdentifier": "WFCN15CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORW15CN.TXT"
+        },
+        "WFCN16CWWG": {
+            "productIdentifier": "WFCN16CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TORW16CN.TXT"
+        },
+        "WGZS60NSTU": {
+            "productIdentifier": "WGZS60NSTU",
+            "nnn": "FFA",
+            "priority": "1",
+            "filename": "FFAPPGAS.TXT"
+        },
+        "WHBA31MYNN": {
+            "productIdentifier": "WHBA31MYNN",
+            "nnn": "CFW",
+            "priority": "1",
+            "filename": "CFWBA3BA.TXT"
+        },
+        "WHCA31MDSD": {
+            "productIdentifier": "WHCA31MDSD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3DR.TXT"
+        },
+        "WHCA31MGGT": {
+            "productIdentifier": "WHCA31MGGT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3GU.TXT"
+        },
+        "WHCA31MHTG": {
+            "productIdentifier": "WHCA31MHTG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3HO.TXT"
+        },
+        "WHCA31MKJP": {
+            "productIdentifier": "WHCA31MKJP",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3JM.TXT"
+        },
+        "WHCA31MNMG": {
+            "productIdentifier": "WHCA31MNMG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3NK.TXT"
+        },
+        "WHCA31MPTO": {
+            "productIdentifier": "WHCA31MPTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3PM.TXT"
+        },
+        "WHCA31MRSJ": {
+            "productIdentifier": "WHCA31MRSJ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3CS.TXT"
+        },
+        "WHCA31MUHV": {
+            "productIdentifier": "WHCA31MUHV",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3CU.TXT"
+        },
+        "WHCA31MZBZ": {
+            "productIdentifier": "WHCA31MZBZ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3BH.TXT"
+        },
+        "WHCA31TAPA": {
+            "productIdentifier": "WHCA31TAPA",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3AT.TXT"
+        },
+        "WHCA31TBPB": {
+            "productIdentifier": "WHCA31TBPB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3BR.TXT"
+        },
+        "WHCA31TTPP": {
+            "productIdentifier": "WHCA31TTPP",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWCA3TD.TXT"
+        },
+        "WHCI28BCGZ": {
+            "productIdentifier": "WHCI28BCGZ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPI28US.TXT"
+        },
+        "WHCO01SKBO": {
+            "productIdentifier": "WHCO01SKBO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HCDIR1CO.TXT"
+        },
+        "WHMF31TFFR": {
+            "productIdentifier": "WHMF31TFFR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWMF3MF.TXT"
+        },
+        "WHMR31TFFF": {
+            "productIdentifier": "WHMR31TFFF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWMR3MR.TXT"
+        },
+        "WHMX01MMMX": {
+            "productIdentifier": "WHMX01MMMX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWMX1MX.TXT"
+        },
+        "WHMX02MMMX": {
+            "productIdentifier": "WHMX02MMMX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "CFWMX2MX.TXT"
+        },
+        "WHNC01NWBB": {
+            "productIdentifier": "WHNC01NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC01NN.TXT"
+        },
+        "WHNC02NWBB": {
+            "productIdentifier": "WHNC02NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC02US.TXT"
+        },
+        "WHNZ41NZKL": {
+            "productIdentifier": "WHNZ41NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFZ41US.TXT"
+        },
+        "WHPS01NFFN": {
+            "productIdentifier": "WHPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFSO1US.TXT"
+        },
+        "WHPS02NFFN": {
+            "productIdentifier": "WHPS02NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFS02US.TXT"
+        },
+        "WHZS40NSTU": {
+            "productIdentifier": "WHZS40NSTU",
+            "nnn": "CFW",
+            "priority": "1",
+            "filename": "CFWPPGAS.TXT"
+        },
+        "WOAU01ABRF": {
+            "productIdentifier": "WOAU01ABRF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACU01US.TXT"
+        },
+        "WOBA31MYNN": {
+            "productIdentifier": "WOBA31MYNN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSBA3BA.TXT"
+        },
+        "WOCA31MDSD": {
+            "productIdentifier": "WOCA31MDSD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3DR.TXT"
+        },
+        "WOCA31MGGT": {
+            "productIdentifier": "WOCA31MGGT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3GU.TXT"
+        },
+        "WOCA31MHTG": {
+            "productIdentifier": "WOCA31MHTG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3HO.TXT"
+        },
+        "WOCA31MKJP": {
+            "productIdentifier": "WOCA31MKJP",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3JM.TXT"
+        },
+        "WOCA31MNMG": {
+            "productIdentifier": "WOCA31MNMG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3NK.TXT"
+        },
+        "WOCA31MPTO": {
+            "productIdentifier": "WOCA31MPTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3PM.TXT"
+        },
+        "WOCA31MRSJ": {
+            "productIdentifier": "WOCA31MRSJ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3CS.TXT"
+        },
+        "WOCA31MUHV": {
+            "productIdentifier": "WOCA31MUHV",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3CU.TXT"
+        },
+        "WOCA31MZBZ": {
+            "productIdentifier": "WOCA31MZBZ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3BH.TXT"
+        },
+        "WOCA31TAPA": {
+            "productIdentifier": "WOCA31TAPA",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3AT.TXT"
+        },
+        "WOCA31TBPB": {
+            "productIdentifier": "WOCA31TBPB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3BR.TXT"
+        },
+        "WOCA31TTPP": {
+            "productIdentifier": "WOCA31TTPP",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCA3TD.TXT"
+        },
+        "WOCN10CWUL": {
+            "productIdentifier": "WOCN10CWUL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWULCN.TXT"
+        },
+        "WOCN11CWHX": {
+            "productIdentifier": "WOCN11CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSW11CN.TXT"
+        },
+        "WOCN11CWNT": {
+            "productIdentifier": "WOCN11CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWNTCN.TXT"
+        },
+        "WOCN13CWHX": {
+            "productIdentifier": "WOCN13CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "WSWWHXCN.TXT"
+        },
+        "WOCN13CWTO": {
+            "productIdentifier": "WOCN13CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWT2CN.TXT"
+        },
+        "WOCN15CWHX": {
+            "productIdentifier": "WOCN15CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWHXCN.TXT"
+        },
+        "WOCN21CWQT": {
+            "productIdentifier": "WOCN21CWQT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWQ2CN.TXT"
+        },
+        "WOCN31CWHX": {
+            "productIdentifier": "WOCN31CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN31CN.TXT"
+        },
+        "WOCN32CWHX": {
+            "productIdentifier": "WOCN32CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN32CN.TXT"
+        },
+        "WOCN33CWHX": {
+            "productIdentifier": "WOCN33CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN33CN.TXT"
+        },
+        "WOCN41CWHX": {
+            "productIdentifier": "WOCN41CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN41CN.TXT"
+        },
+        "WOCN42CWHX": {
+            "productIdentifier": "WOCN42CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN42CN.TXT"
+        },
+        "WOCN43CWHX": {
+            "productIdentifier": "WOCN43CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN43CN.TXT"
+        },
+        "WOCO01SKBO": {
+            "productIdentifier": "WOCO01SKBO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSCO1CB.TXT"
+        },
+        "WOMF31TFFR": {
+            "productIdentifier": "WOMF31TFFR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSMF3MF.TXT"
+        },
+        "WOMR31TFFF": {
+            "productIdentifier": "WOMR31TFFF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSMR3MR.TXT"
+        },
+        "WOMX01MMMX": {
+            "productIdentifier": "WOMX01MMMX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSMX1MX.TXT"
+        },
+        "WOMX02MMMX": {
+            "productIdentifier": "WOMX02MMMX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSMX2MX.TXT"
+        },
+        "WONT41KNHC": {
+            "productIdentifier": "WONT41KNHC",
+            "nnn": "DSA",
+            "priority": "1",
+            "filename": "HADDS1US.TXT"
+        },
+        "WONT50LFPW": {
+            "productIdentifier": "WONT50LFPW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HFFT50US.TXT"
+        },
+        "WOPF10NTAA": {
+            "productIdentifier": "WOPF10NTAA",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFF10FP.TXT"
+        },
+        "WOPS01NFFN": {
+            "productIdentifier": "WOPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS01US.TXT"
+        },
+        "WOPS02NFFN": {
+            "productIdentifier": "WOPS02NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS02US.TXT"
+        },
+        "WOPS03NFFN": {
+            "productIdentifier": "WOPS03NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS03US.TXT"
+        },
+        "WOPZ41KNHC": {
+            "productIdentifier": "WOPZ41KNHC",
+            "nnn": "DSA",
+            "priority": "1",
+            "filename": "HEPDS1US.TXT"
+        },
+        "WSDR31MDSD": {
+            "productIdentifier": "WSDR31MDSD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHR31US.TXT"
+        },
+        "WSFJ01NFFN": {
+            "productIdentifier": "WSFJ01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFJ01FJ.TXT"
+        },
+        "WSFJ02NFFN": {
+            "productIdentifier": "WSFJ02NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFJ02FJ.TXT"
+        },
+        "WSFJ03NFFN": {
+            "productIdentifier": "WSFJ03NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFJ03FJ.TXT"
+        },
+        "WSNZ21NZKL": {
+            "productIdentifier": "WSNZ21NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "TAFZ21NZ.TXT"
+        },
+        "WTAU01ABRF": {
+            "productIdentifier": "WTAU01ABRF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPU01US.TXT"
+        },
+        "WTAU02ABRF": {
+            "productIdentifier": "WTAU02ABRF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPU02US.TXT"
+        },
+        "WTCA41TJSJ": {
+            "productIdentifier": "WTCA41TJSJ",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPSP1PR.TXT"
+        },
+        "WTCA42TJSJ": {
+            "productIdentifier": "WTCA42TJSJ",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPA42PR.TXT"
+        },
+        "WTCA43TJSJ": {
+            "productIdentifier": "WTCA43TJSJ",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPA43PR.TXT"
+        },
+        "WTCA44TJSJ": {
+            "productIdentifier": "WTCA44TJSJ",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPA44PR.TXT"
+        },
+        "WTCA45TJSJ": {
+            "productIdentifier": "WTCA45TJSJ",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPA45PR.TXT"
+        },
+        "WTCN31CWHX": {
+            "productIdentifier": "WTCN31CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN31CN.TXT"
+        },
+        "WTCN32CWHX": {
+            "productIdentifier": "WTCN32CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN32CN.TXT"
+        },
+        "WTCN33CWHX": {
+            "productIdentifier": "WTCN33CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN33CN.TXT"
+        },
+        "WTCN41CWHX": {
+            "productIdentifier": "WTCN41CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN41CN.TXT"
+        },
+        "WTCN42CWHX": {
+            "productIdentifier": "WTCN42CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN42CN.TXT"
+        },
+        "WTCN43CWHX": {
+            "productIdentifier": "WTCN43CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAFN43CN.TXT"
+        },
+        "WTNC01NWBB": {
+            "productIdentifier": "WTNC01NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC02NN.TXT"
+        },
+        "WTNC02NWBB": {
+            "productIdentifier": "WTNC02NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC03NN.TXT"
+        },
+        "WTNT21KNHC": {
+            "productIdentifier": "WTNT21KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HAFT21US.TXT"
+        },
+        "WTNT22KNHC": {
+            "productIdentifier": "WTNT22KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HAFT22US.TXT"
+        },
+        "WTNT23KNHC": {
+            "productIdentifier": "WTNT23KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HAFT23US.TXT"
+        },
+        "WTNT24KNHC": {
+            "productIdentifier": "WTNT24KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HAFT24US.TXT"
+        },
+        "WTNT25KNHC": {
+            "productIdentifier": "WTNT25KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HAFT25US.TXT"
+        },
+        "WTNT31KNHC": {
+            "productIdentifier": "WTNT31KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HAPT31US.TXT"
+        },
+        "WTNT31KWNH": {
+            "productIdentifier": "WTNT31KWNH",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPAT1US.TXT"
+        },
+        "WTNT32KNHC": {
+            "productIdentifier": "WTNT32KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HAPT32US.TXT"
+        },
+        "WTNT32KWNH": {
+            "productIdentifier": "WTNT32KWNH",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPAT2US.TXT"
+        },
+        "WTNT33KNHC": {
+            "productIdentifier": "WTNT33KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HAPT33US.TXT"
+        },
+        "WTNT33KWNH": {
+            "productIdentifier": "WTNT33KWNH",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPAT3US.TXT"
+        },
+        "WTNT34KNHC": {
+            "productIdentifier": "WTNT34KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HAPT34US.TXT"
+        },
+        "WTNT34KWNH": {
+            "productIdentifier": "WTNT34KWNH",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPAT4US.TXT"
+        },
+        "WTNT35KNHC": {
+            "productIdentifier": "WTNT35KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HAPT35US.TXT"
+        },
+        "WTNT35KWNH": {
+            "productIdentifier": "WTNT35KWNH",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "TCPAT5US.TXT"
+        },
+        "WTNT41KNHC": {
+            "productIdentifier": "WTNT41KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HADT41US.TXT"
+        },
+        "WTNT42KNHC": {
+            "productIdentifier": "WTNT42KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HADT42US.TXT"
+        },
+        "WTNT43KNHC": {
+            "productIdentifier": "WTNT43KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HADT43US.TXT"
+        },
+        "WTNT44KNHC": {
+            "productIdentifier": "WTNT44KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HADT44US.TXT"
+        },
+        "WTNT45KNHC": {
+            "productIdentifier": "WTNT45KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HADT45US.TXT"
+        },
+        "WTNT61KNHC": {
+            "productIdentifier": "WTNT61KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUAT1US.TXT"
+        },
+        "WTNT62KNHC": {
+            "productIdentifier": "WTNT62KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUAT2US.TXT"
+        },
+        "WTNT63KNHC": {
+            "productIdentifier": "WTNT63KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUAT3US.TXT"
+        },
+        "WTNT64KNHC": {
+            "productIdentifier": "WTNT64KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUAT4US.TXT"
+        },
+        "WTNT65KNHC": {
+            "productIdentifier": "WTNT65KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUAT5US.TXT"
+        },
+        "WTPA21PHFO": {
+            "productIdentifier": "WTPA21PHFO",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HNFA21US.TXT"
+        },
+        "WTPA22PHFO": {
+            "productIdentifier": "WTPA22PHFO",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HNFA22US.TXT"
+        },
+        "WTPA23PHFO": {
+            "productIdentifier": "WTPA23PHFO",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HNFA23US.TXT"
+        },
+        "WTPA24PHFO": {
+            "productIdentifier": "WTPA24PHFO",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HNFA24US.TXT"
+        },
+        "WTPA25PHFO": {
+            "productIdentifier": "WTPA25PHFO",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HNFA25US.TXT"
+        },
+        "WTPA31PHFO": {
+            "productIdentifier": "WTPA31PHFO",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HNPA31US.TXT"
+        },
+        "WTPA32PHFO": {
+            "productIdentifier": "WTPA32PHFO",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HNPA32US.TXT"
+        },
+        "WTPA33PHFO": {
+            "productIdentifier": "WTPA33PHFO",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HNPA33US.TXT"
+        },
+        "WTPA34PHFO": {
+            "productIdentifier": "WTPA34PHFO",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HNPA34US.TXT"
+        },
+        "WTPA35PHFO": {
+            "productIdentifier": "WTPA35PHFO",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HNPA35US.TXT"
+        },
+        "WTPA41PHFO": {
+            "productIdentifier": "WTPA41PHFO",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HNDA41US.TXT"
+        },
+        "WTPA42PHFO": {
+            "productIdentifier": "WTPA42PHFO",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HNDA42US.TXT"
+        },
+        "WTPA43PHFO": {
+            "productIdentifier": "WTPA43PHFO",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HNDA43US.TXT"
+        },
+        "WTPA44PHFO": {
+            "productIdentifier": "WTPA44PHFO",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HNDA44US.TXT"
+        },
+        "WTPA45PHFO": {
+            "productIdentifier": "WTPA45PHFO",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HNDA45US.TXT"
+        },
+        "WTPA61PHFO": {
+            "productIdentifier": "WTPA61PHFO",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUCP1US.TXT"
+        },
+        "WTPA62PHFO": {
+            "productIdentifier": "WTPA62PHFO",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUCP2US.TXT"
+        },
+        "WTPA63PHFO": {
+            "productIdentifier": "WTPA63PHFO",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUCP3US.TXT"
+        },
+        "WTPA64PHFO": {
+            "productIdentifier": "WTPA64PHFO",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUCP4US.TXT"
+        },
+        "WTPA65PHFO": {
+            "productIdentifier": "WTPA65PHFO",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUCP5US.TXT"
+        },
+        "WTPN21PGTW": {
+            "productIdentifier": "WTPN21PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN21US.TXT"
+        },
+        "WTPN21PHNC": {
+            "productIdentifier": "WTPN21PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEDHNCUS.TXT"
+        },
+        "WTPN22PGTW": {
+            "productIdentifier": "WTPN22PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN22US.TXT"
+        },
+        "WTPN22PHNC": {
+            "productIdentifier": "WTPN22PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HNDN22US.TXT"
+        },
+        "WTPN23PGTW": {
+            "productIdentifier": "WTPN23PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN23US.TXT"
+        },
+        "WTPN23PHNC": {
+            "productIdentifier": "WTPN23PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HNDN23US.TXT"
+        },
+        "WTPN24PGTW": {
+            "productIdentifier": "WTPN24PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN24US.TXT"
+        },
+        "WTPN24PHNC": {
+            "productIdentifier": "WTPN24PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HNDN24US.TXT"
+        },
+        "WTPN25PGTW": {
+            "productIdentifier": "WTPN25PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN25US.TXT"
+        },
+        "WTPN25PHNC": {
+            "productIdentifier": "WTPN25PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HNDN25US.TXT"
+        },
+        "WTPN26PGTW": {
+            "productIdentifier": "WTPN26PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWPN26US.TXT"
+        },
+        "WTPN31PGTW": {
+            "productIdentifier": "WTPN31PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN31US.TXT"
+        },
+        "WTPN31PHNC": {
+            "productIdentifier": "WTPN31PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEPN31US.TXT"
+        },
+        "WTPN32PGTW": {
+            "productIdentifier": "WTPN32PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN32US.TXT"
+        },
+        "WTPN32PHNC": {
+            "productIdentifier": "WTPN32PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEPN32US.TXT"
+        },
+        "WTPN33PGTW": {
+            "productIdentifier": "WTPN33PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN33US.TXT"
+        },
+        "WTPN33PHNC": {
+            "productIdentifier": "WTPN33PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEPN33US.TXT"
+        },
+        "WTPN34PGTW": {
+            "productIdentifier": "WTPN34PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN34US.TXT"
+        },
+        "WTPN34PHNC": {
+            "productIdentifier": "WTPN34PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEPN34US.TXT"
+        },
+        "WTPN35PGTW": {
+            "productIdentifier": "WTPN35PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN34US.TXT"
+        },
+        "WTPN35PHNC": {
+            "productIdentifier": "WTPN35PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HEPN35US.TXT"
+        },
+        "WTPN36PGTW": {
+            "productIdentifier": "WTPN36PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HWFN36US.TXT"
+        },
+        "WTPQ31PGUM": {
+            "productIdentifier": "WTPQ31PGUM",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HWPQ31US.TXT"
+        },
+        "WTPQ32PGUM": {
+            "productIdentifier": "WTPQ32PGUM",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HWPQ32US.TXT"
+        },
+        "WTPQ33PGUM": {
+            "productIdentifier": "WTPQ33PGUM",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HWPQ33US.TXT"
+        },
+        "WTPQ34PGUM": {
+            "productIdentifier": "WTPQ34PGUM",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HWPQ34US.TXT"
+        },
+        "WTPQ35PGUM": {
+            "productIdentifier": "WTPQ35PGUM",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HWPQ35US.TXT"
+        },
+        "WTPQ61PGUM": {
+            "productIdentifier": "WTPQ61PGUM",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUPQ1GU.TXT"
+        },
+        "WTPQ62PGUM": {
+            "productIdentifier": "WTPQ62PGUM",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUPQ2GU.TXT"
+        },
+        "WTPQ63PGUM": {
+            "productIdentifier": "WTPQ63PGUM",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUPQ3GU.TXT"
+        },
+        "WTPQ64PGUM": {
+            "productIdentifier": "WTPQ64PGUM",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUPQ4GU.TXT"
+        },
+        "WTPQ65PGUM": {
+            "productIdentifier": "WTPQ65PGUM",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUPQ5GU.TXT"
+        },
+        "WTPS01NFFN": {
+            "productIdentifier": "WTPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS01US.TXT"
+        },
+        "WTPS02NFFN": {
+            "productIdentifier": "WTPS02NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS02US.TXT"
+        },
+        "WTPS03NFFN": {
+            "productIdentifier": "WTPS03NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS03US.TXT"
+        },
+        "WTPS04NFFN": {
+            "productIdentifier": "WTPS04NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS04US.TXT"
+        },
+        "WTPS11NFFN": {
+            "productIdentifier": "WTPS11NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS11US.TXT"
+        },
+        "WTPS12NFFN": {
+            "productIdentifier": "WTPS12NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS12US.TXT"
+        },
+        "WTPS13NFFN": {
+            "productIdentifier": "WTPS13NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS13US.TXT"
+        },
+        "WTPS21PGTW": {
+            "productIdentifier": "WTPS21PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS21US.TXT"
+        },
+        "WTPS21PHNC": {
+            "productIdentifier": "WTPS21PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPT21US.TXT"
+        },
+        "WTPS22PGTW": {
+            "productIdentifier": "WTPS22PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS22US.TXT"
+        },
+        "WTPS22PHNC": {
+            "productIdentifier": "WTPS22PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPT22US.TXT"
+        },
+        "WTPS23PGTW": {
+            "productIdentifier": "WTPS23PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS23US.TXT"
+        },
+        "WTPS23PHNC": {
+            "productIdentifier": "WTPS23PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPT23US.TXT"
+        },
+        "WTPS24PGTW": {
+            "productIdentifier": "WTPS24PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS24US.TXT"
+        },
+        "WTPS24PHNC": {
+            "productIdentifier": "WTPS24PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPT24US.TXT"
+        },
+        "WTPS25PGTW": {
+            "productIdentifier": "WTPS25PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS25US.TXT"
+        },
+        "WTPS25PHNC": {
+            "productIdentifier": "WTPS25PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPT25US.TXT"
+        },
+        "WTPS31PGTW": {
+            "productIdentifier": "WTPS31PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS31US.TXT"
+        },
+        "WTPS31PHNC": {
+            "productIdentifier": "WTPS31PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS31US.TXT"
+        },
+        "WTPS32PGTW": {
+            "productIdentifier": "WTPS32PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS32US.TXT"
+        },
+        "WTPS32PHNC": {
+            "productIdentifier": "WTPS32PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS32US.TXT"
+        },
+        "WTPS33PGTW": {
+            "productIdentifier": "WTPS33PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS33US.TXT"
+        },
+        "WTPS33PHNC": {
+            "productIdentifier": "WTPS33PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS33US.TXT"
+        },
+        "WTPS34PGTW": {
+            "productIdentifier": "WTPS34PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS34US.TXT"
+        },
+        "WTPS34PHNC": {
+            "productIdentifier": "WTPS34PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS34US.TXT"
+        },
+        "WTPS35PGTW": {
+            "productIdentifier": "WTPS35PGTW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS35US.TXT"
+        },
+        "WTPS35PHNC": {
+            "productIdentifier": "WTPS35PHNC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSFS35US.TXT"
+        },
+        "WTPZ21KNHC": {
+            "productIdentifier": "WTPZ21KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HEFZ21US.TXT"
+        },
+        "WTPZ22KNHC": {
+            "productIdentifier": "WTPZ22KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HEFZ22US.TXT"
+        },
+        "WTPZ23KNHC": {
+            "productIdentifier": "WTPZ23KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HEFZ23US.TXT"
+        },
+        "WTPZ24KNHC": {
+            "productIdentifier": "WTPZ24KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HEFZ24US.TXT"
+        },
+        "WTPZ25KNHC": {
+            "productIdentifier": "WTPZ25KNHC",
+            "nnn": "TCM",
+            "priority": "1",
+            "filename": "HEFZ25US.TXT"
+        },
+        "WTPZ31KNHC": {
+            "productIdentifier": "WTPZ31KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HEPZ31US.TXT"
+        },
+        "WTPZ32KNHC": {
+            "productIdentifier": "WTPZ32KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HEPZ32US.TXT"
+        },
+        "WTPZ33KNHC": {
+            "productIdentifier": "WTPZ33KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HEPZ33US.TXT"
+        },
+        "WTPZ34KNHC": {
+            "productIdentifier": "WTPZ34KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HEPZ34US.TXT"
+        },
+        "WTPZ35KNHC": {
+            "productIdentifier": "WTPZ35KNHC",
+            "nnn": "TCP",
+            "priority": "1",
+            "filename": "HEPZ35US.TXT"
+        },
+        "WTPZ41KNHC": {
+            "productIdentifier": "WTPZ41KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HEDZ41US.TXT"
+        },
+        "WTPZ42KNHC": {
+            "productIdentifier": "WTPZ42KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HEDZ42US.TXT"
+        },
+        "WTPZ43KNHC": {
+            "productIdentifier": "WTPZ43KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HEDZ43US.TXT"
+        },
+        "WTPZ44KNHC": {
+            "productIdentifier": "WTPZ44KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HEDZ44US.TXT"
+        },
+        "WTPZ45KNHC": {
+            "productIdentifier": "WTPZ45KNHC",
+            "nnn": "TCD",
+            "priority": "1",
+            "filename": "HEDZ45US.TXT"
+        },
+        "WTPZ61KNHC": {
+            "productIdentifier": "WTPZ61KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUEP1US.TXT"
+        },
+        "WTPZ62KNHC": {
+            "productIdentifier": "WTPZ62KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUEP2US.TXT"
+        },
+        "WTPZ63KNHC": {
+            "productIdentifier": "WTPZ63KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUEP3US.TXT"
+        },
+        "WTPZ64KNHC": {
+            "productIdentifier": "WTPZ64KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUEP4US.TXT"
+        },
+        "WTPZ65KNHC": {
+            "productIdentifier": "WTPZ65KNHC",
+            "nnn": "TCU",
+            "priority": "1",
+            "filename": "TCUEP5US.TXT"
+        },
+        "WUCN10CWUL": {
+            "productIdentifier": "WUCN10CWUL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRU10CN.TXT"
+        },
+        "WUCN11CWHX": {
+            "productIdentifier": "WUCN11CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRH11CN.TXT"
+        },
+        "WUCN11CWLW": {
+            "productIdentifier": "WUCN11CWLW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRL11CN.TXT"
+        },
+        "WUCN11CWNT": {
+            "productIdentifier": "WUCN11CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRN11CN.TXT"
+        },
+        "WUCN11CWTO": {
+            "productIdentifier": "WUCN11CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRT11CN.TXT"
+        },
+        "WUCN11CWVR": {
+            "productIdentifier": "WUCN11CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRWVRCN.TXT"
+        },
+        "WUCN11CWWG": {
+            "productIdentifier": "WUCN11CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW11CN.TXT"
+        },
+        "WUCN12CWTO": {
+            "productIdentifier": "WUCN12CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRT12CN.TXT"
+        },
+        "WUCN12CWWG": {
+            "productIdentifier": "WUCN12CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW12CN.TXT"
+        },
+        "WUCN13CWNT": {
+            "productIdentifier": "WUCN13CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRN13CN.TXT"
+        },
+        "WUCN13CWTO": {
+            "productIdentifier": "WUCN13CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRWTOCN.TXT"
+        },
+        "WUCN13CWVR": {
+            "productIdentifier": "WUCN13CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRV13CN.TXT"
+        },
+        "WUCN13CWWG": {
+            "productIdentifier": "WUCN13CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW13CN.TXT"
+        },
+        "WUCN14CWHX": {
+            "productIdentifier": "WUCN14CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRH14CN.TXT"
+        },
+        "WUCN14CWWG": {
+            "productIdentifier": "WUCN14CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW14CN.TXT"
+        },
+        "WUCN15CWHX": {
+            "productIdentifier": "WUCN15CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRH15CN.TXT"
+        },
+        "WUCN15CWWG": {
+            "productIdentifier": "WUCN15CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW15CN.TXT"
+        },
+        "WUCN16CWHX": {
+            "productIdentifier": "WUCN16CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRH16CN.TXT"
+        },
+        "WUCN16CWWG": {
+            "productIdentifier": "WUCN16CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRW16CN.TXT"
+        },
+        "WUCN17CWHX": {
+            "productIdentifier": "WUCN17CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRH17CN.TXT"
+        },
+        "WUCN19CWVR": {
+            "productIdentifier": "WUCN19CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SVRV19CN.TXT"
+        },
+        "WUUS48KWNS": {
+            "productIdentifier": "WUUS48KWNS",
+            "nnn": "PTS",
+            "priority": "1",
+            "filename": "PTSD48US.TXT"
+        },
+        "WVAU01ADRM": {
+            "productIdentifier": "WVAU01ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHDRMUS.TXT"
+        },
+        "WVCA31MHTG": {
+            "productIdentifier": "WVCA31MHTG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTA31US.TXT"
+        },
+        "WVCA31TTPP": {
+            "productIdentifier": "WVCA31TTPP",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHA31US.TXT"
+        },
+        "WVFJ01NFFN": {
+            "productIdentifier": "WVFJ01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHJ01US.TXT"
+        },
+        "WVFR31LFPW": {
+            "productIdentifier": "WVFR31LFPW",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHR31US.TXT"
+        },
+        "WVIL31BICC": {
+            "productIdentifier": "WVIL31BICC",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHICCUS.TXT"
+        },
+        "WVMX31MMEX": {
+            "productIdentifier": "WVMX31MMEX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTX31US.TXT"
+        },
+        "WVOC31ADRM": {
+            "productIdentifier": "WVOC31ADRM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ASHDR2US.TXT"
+        },
+        "WWAA01SAWB": {
+            "productIdentifier": "WWAA01SAWB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTA01US.TXT"
+        },
+        "WWAA02SAWB": {
+            "productIdentifier": "WWAA02SAWB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "ANTARTIC.TXT"
+        },
+        "WWBA01MYNN": {
+            "productIdentifier": "WWBA01MYNN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HAAYNNBA.TXT"
+        },
+        "WWCN01CYQQ": {
+            "productIdentifier": "WWCN01CYQQ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSQ01CN.TXT"
+        },
+        "WWCN01CYZX": {
+            "productIdentifier": "WWCN01CYZX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSQZ1CN.TXT"
+        },
+        "WWCN02CYQQ": {
+            "productIdentifier": "WWCN02CYQQ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSQ02CN.TXT"
+        },
+        "WWCN02CYTR": {
+            "productIdentifier": "WWCN02CYTR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPST02CN.TXT"
+        },
+        "WWCN02CYZX": {
+            "productIdentifier": "WWCN02CYZX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSZ02CN.TXT"
+        },
+        "WWCN03CYQQ": {
+            "productIdentifier": "WWCN03CYQQ",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSY03CN.TXT"
+        },
+        "WWCN03CYTR": {
+            "productIdentifier": "WWCN03CYTR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPST03CN.TXT"
+        },
+        "WWCN03CYZX": {
+            "productIdentifier": "WWCN03CYZX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSZ03CN.TXT"
+        },
+        "WWCN10CWUL": {
+            "productIdentifier": "WWCN10CWUL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWULCN.TXT"
+        },
+        "WWCN11CWHX": {
+            "productIdentifier": "WWCN11CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSHU2CN.TXT"
+        },
+        "WWCN11CWNT": {
+            "productIdentifier": "WWCN11CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN11CN.TXT"
+        },
+        "WWCN11CWTO": {
+            "productIdentifier": "WWCN11CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN11CN.TXT"
+        },
+        "WWCN11CWVR": {
+            "productIdentifier": "WWCN11CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSV11CN.TXT"
+        },
+        "WWCN11CWWG": {
+            "productIdentifier": "WWCN11CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWW8CN.TXT"
+        },
+        "WWCN12CWNT": {
+            "productIdentifier": "WWCN12CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN12CN.TXT"
+        },
+        "WWCN12CWTO": {
+            "productIdentifier": "WWCN12CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPST12CN.TXT"
+        },
+        "WWCN12CWWG": {
+            "productIdentifier": "WWCN12CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWWGCN.TXT"
+        },
+        "WWCN13CWHX": {
+            "productIdentifier": "WWCN13CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWHXCN.TXT"
+        },
+        "WWCN13CWNT": {
+            "productIdentifier": "WWCN13CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWNTCN.TXT"
+        },
+        "WWCN13CWTO": {
+            "productIdentifier": "WWCN13CWTO",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWTOCN.TXT"
+        },
+        "WWCN13CWVR": {
+            "productIdentifier": "WWCN13CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSV13CN.TXT"
+        },
+        "WWCN13CWWG": {
+            "productIdentifier": "WWCN13CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSW13CN.TXT"
+        },
+        "WWCN14CWHX": {
+            "productIdentifier": "WWCN14CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSH14CN.TXT"
+        },
+        "WWCN14CWNT": {
+            "productIdentifier": "WWCN14CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN14CN.TXT"
+        },
+        "WWCN14CWWG": {
+            "productIdentifier": "WWCN14CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSW14CN.TXT"
+        },
+        "WWCN15CWHX": {
+            "productIdentifier": "WWCN15CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSHU4CN.TXT"
+        },
+        "WWCN15CWNT": {
+            "productIdentifier": "WWCN15CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN15CN.TXT"
+        },
+        "WWCN15CWUL": {
+            "productIdentifier": "WWCN15CWUL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSU15CN.TXT"
+        },
+        "WWCN15CWWG": {
+            "productIdentifier": "WWCN15CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSW15CN.TXT"
+        },
+        "WWCN16CWHX": {
+            "productIdentifier": "WWCN16CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSH16CN.TXT"
+        },
+        "WWCN16CWNT": {
+            "productIdentifier": "WWCN16CWNT",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSN16CN.TXT"
+        },
+        "WWCN16CWWG": {
+            "productIdentifier": "WWCN16CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSW16CN.TXT"
+        },
+        "WWCN17CWHX": {
+            "productIdentifier": "WWCN17CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSH17CN.TXT"
+        },
+        "WWCN19CWVR": {
+            "productIdentifier": "WWCN19CWVR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSV19CN.TXT"
+        },
+        "WWCN20CWWG": {
+            "productIdentifier": "WWCN20CWWG",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSWWGCN.TXT"
+        },
+        "WWCN20CWXK": {
+            "productIdentifier": "WWCN20CWXK",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSX20CN.TXT"
+        },
+        "WWCN31CWHX": {
+            "productIdentifier": "WWCN31CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN31CN.TXT"
+        },
+        "WWCN32CWHX": {
+            "productIdentifier": "WWCN32CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN32CN.TXT"
+        },
+        "WWCN33CWHX": {
+            "productIdentifier": "WWCN33CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN33CN.TXT"
+        },
+        "WWCN41CWHX": {
+            "productIdentifier": "WWCN41CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN41CN.TXT"
+        },
+        "WWCN42CWHX": {
+            "productIdentifier": "WWCN42CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN42CN.TXT"
+        },
+        "WWCN43CWHX": {
+            "productIdentifier": "WWCN43CWHX",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SUMN43CN.TXT"
+        },
+        "WWFJ40NFFN": {
+            "productIdentifier": "WWFJ40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNFJ.TXT"
+        },
+        "WWFJ41NFFN": {
+            "productIdentifier": "WWFJ41NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNFJ.TXT"
+        },
+        "WWFW40NFFN": {
+            "productIdentifier": "WWFW40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNWF.TXT"
+        },
+        "WWJP25RJTD": {
+            "productIdentifier": "WWJP25RJTD",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSJTDJP.TXT"
+        },
+        "WWKB40NFFN": {
+            "productIdentifier": "WWKB40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNKI.TXT"
+        },
+        "WWKU40NFFN": {
+            "productIdentifier": "WWKU40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNCI.TXT"
+        },
+        "WWKU41NFFN": {
+            "productIdentifier": "WWKU41NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNCI.TXT"
+        },
+        "WWNC01NWBB": {
+            "productIdentifier": "WWNC01NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC01NN.TXT"
+        },
+        "WWNC02NWBB": {
+            "productIdentifier": "WWNC02NWBB",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFC02NN.TXT"
+        },
+        "WWNE40NFFN": {
+            "productIdentifier": "WWNE40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNUE.TXT"
+        },
+        "WWNT30KNGU": {
+            "productIdentifier": "WWNT30KNGU",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSNGUUK.TXT"
+        },
+        "WWNT31KNGU": {
+            "productIdentifier": "WWNT31KNGU",
+            "nnn": null,
+            "priority": "1",
+            "filename": "SPSNG2UK.TXT"
+        },
+        "WWNV40NFFN": {
+            "productIdentifier": "WWNV40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNVU.TXT"
+        },
+        "WWNZ40NZKL": {
+            "productIdentifier": "WWNZ40NZKL",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PMFZ40NZ.TXT"
+        },
+        "WWPS01NFFN": {
+            "productIdentifier": "WWPS01NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSPS01US.TXT"
+        },
+        "WWPS21NFFN": {
+            "productIdentifier": "WWPS21NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSDS21US.TXT"
+        },
+        "WWPS22ABRF": {
+            "productIdentifier": "WWPS22ABRF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PACS22US.TXT"
+        },
+        "WWSO21ABRF": {
+            "productIdentifier": "WWSO21ABRF",
+            "nnn": null,
+            "priority": "1",
+            "filename": "HSDO21US.TXT"
+        },
+        "WWST01SBBR": {
+            "productIdentifier": "WWST01SBBR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTT01US.TXT"
+        },
+        "WWST02SABM": {
+            "productIdentifier": "WWST02SABM",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTABMUS.TXT"
+        },
+        "WWST02SBBR": {
+            "productIdentifier": "WWST02SBBR",
+            "nnn": null,
+            "priority": "1",
+            "filename": "INTBBRUS.TXT"
+        },
+        "WWTK40NFFN": {
+            "productIdentifier": "WWTK40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTK.TXT"
+        },
+        "WWTO40NFFN": {
+            "productIdentifier": "WWTO40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTG.TXT"
+        },
+        "WWTV40NFFN": {
+            "productIdentifier": "WWTV40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNTU.TXT"
+        },
+        "WWUS40KWNS": {
+            "productIdentifier": "WWUS40KWNS",
+            "nnn": "WWP",
+            "priority": "1",
+            "filename": "WWPWNSUS.TXT"
+        },
+        "WWZM40NFFN": {
+            "productIdentifier": "WWZM40NFFN",
+            "nnn": null,
+            "priority": "1",
+            "filename": "PCFFFNWS.TXT"
         }
     }
 }

@@ -56,7 +56,8 @@ header_dict = {
          (-1, 'chr', 'unknown_data'))
 }
 with open(r'dictionaries.json', 'r') as dicts:
-    metadata_dicts = loads("".join(dicts.readlines()))
+    metadata_dicts = loads(''.join(dicts.readlines()))
+
 
 def parse_flags(flags: int) -> str:
     """
@@ -336,14 +337,6 @@ def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
 
     data_start = headers[0]['total_header_length']
     with open(file_path, 'w', encoding='utf-8') as text_file:
-        text_file.write(f'{filename}\n')
-        text_file.write('==================== BEGIN HEADER ====================\n')
-        for head in headers:
-            text_file.write(f'----- {head["type"]} -----\n')
-            for k in head:
-                if k != 'type':
-                    text_file.write(f'\t{k}: {head[k]}\n')
-        text_file.write('====================  END  HEADER ====================\n')
         text_file.write(''.join([chr(i) for i in file[data_start:]]))
     if directory is not None and directory not in manifest_updates:
         manifest_updates.append(directory)
@@ -516,51 +509,66 @@ def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
 
 
 def writeManifest(manifest_dir: str):
-    encoder = JSONEncoder(indent=None, separators=(',', ':'))
+    encoder = JSONEncoder(indent=4, separators=(',', ':'))
     split = manifest_dir.split('\\')
     category = split[-4]
     json_arr = {'files': []}
-    for f in [*scandir(manifest_dir)]:
-        meta = {'filename': f.name, 'filesize': f.stat().st_size, 'timestamp': None, 'type': None, 'properties': {}}
+    for file in [*scandir(manifest_dir)]:
+        meta = {'filename': file.name, 'filesize': file.stat().st_size, 'timestamp': None, 'type': None, 'properties': {}}
         if category == 'Imagery':
-            if f.name[:2] == 'OR':  # ABI Imagery
-                split = f.name.split('-')
+            if file.name[:2] == 'OR':  # ABI Imagery
+                split = file.name.split('-')
                 meta['type'] = 'abi'
                 meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], '%Y%j%H%M%S').timestamp())
                 meta['properties']['imageType'] = 'fulldisk' if split[2][-1] == 'F' else 'mesoscale'
                 meta['properties']['channel'] = None if split[2][:4] != 'CMIP' else split[3][3:]
                 meta['properties']['productID'] = split[2][:-1] if split[2][-1] == 'F' else split[2][:-2]
-            elif f.name[:1] == 'Z':  # NOAA Graphic
-                split = f.name.split('_')
+            elif file.name[:1] == 'Z':  # NOAA Graphic
+                split = file.name.split('_')
                 meta['type'] = 'graphic'
                 meta['timestamp'] = int(datetime.strptime(split[4][:-1], '%Y%m%d%H%M%S').timestamp())
+                meta['properties']['messageSequenceNumber'] = split[5][0:6]
                 try:
-                    meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][split[5][9:12]]
+                    meta['properties']['AWDSIdentifier'] = metadata_dicts['awds'][split[1][0:10]]
                 except KeyError:
-                    meta['properties']['NNNIdentifier'] = None
+                    logfile.write(f'WARN Unknown identifier ({split[1][0:10]}) for file {file.name}\n')
                 try:
-                    meta['properties']['centerInformation'] = metadata_dicts['cccc'][split[1][6:10]]
+                    meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][meta['properties']['AWDSIdentifier']['nnn']]
                 except KeyError:
-                    meta['properties']['centerInformation'] = None
+                    logfile.write(f"WARN Unknown nnn ({split[5][9:12]}) for file {file.name}\n")
+                    meta['properties']['NNNIdentifier'] = metadata_dicts['nnn']['default']
+                try:
+                    meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc'][split[1][6:10]]
+                except KeyError:
+                    logfile.write(f"WARN Unknown cccc ({split[1][6:10]}) for file {file.name}\n")
+                    meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc']['default']
             else:  # Top of NOAA Hour Graphic
                 split = manifest_dir.split('\\')
                 meta['type'] = 'hourly'
                 meta['timestamp'] = int(
                     datetime.strptime(''.join([split[-3], split[-2], split[-1]]), '%Y%j%H').timestamp())
         if category == 'Text':
-            split = f.name.split('_')
+            split = file.name.split('_')
             meta['type'] = 'text'
             meta['timestamp'] = int(datetime.strptime(split[4][:-1], '%Y%m%d%H%M%S').timestamp())
+            meta['properties']['messageSequenceNumber'] = split[5][0:6]
+            meta['properties']['productPriority'] = split[5][7]
             try:
-                meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][split[5][9:12]]
+                meta['properties']['AWDSIdentifier'] = metadata_dicts['awds'][split[1][0:10]]
             except KeyError:
-                meta['properties']['NNNIdentifier'] = None
+                logfile.write(f'WARN Unknown identifier ({split[1][0:10]}) for file {file.name}\n')
             try:
-                meta['properties']['centerInformation'] = metadata_dicts['cccc'][split[1][6:10]]
+                meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][meta['properties']['AWDSIdentifier']['nnn']]
             except KeyError:
-                meta['properties']['centerInformation'] = None
+                logfile.write(f"WARN Unknown nnn ({split[5][9:12]}) for file {file.name}\n")
+                meta['properties']['NNNIdentifier'] = metadata_dicts['nnn']['default']
+            try:
+                meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc'][split[1][6:10]]
+            except KeyError:
+                logfile.write(f"WARN Unknown cccc ({split[1][6:10]}) for file {file.name}\n")
+                meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc']['default']
         if category == 'DCS':
-            split = f.name.split('-')
+            split = file.name.split('-')
             meta['type'] = 'dcs'
             meta['timestamp'] = int(datetime.strptime(split[1], '%y%j%H%M%S').timestamp())
         json_arr['files'].append(meta)
@@ -652,53 +660,65 @@ if __name__ == '__main__':
     source_path = str(args.in_path)
     dest_path = str(args.out_path)
     start = perf_counter()
-    for lrit_file in listdir(source_path):
-        f_start = perf_counter()
-        f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
-        h = getHeaders(f)
-        result = writeData(lrit_file.split('.')[0], f, h)
-        f_end = perf_counter()
+    with open(rf'{dest_path}\log.txt', 'w') as logfile:
+        for lrit_file in listdir(source_path):
+            f_start = perf_counter()
+            f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
+            h = getHeaders(f)
+            result = writeData(lrit_file.split('.')[0], f, h)
+            f_end = perf_counter()
 
-        # conditionally remove LRIT files based on remove arguments
-        if args.remove_nuclear:
-            if args.recycle:
-                send2trash(f'{source_path}\\{lrit_file}')
+            # conditionally remove LRIT files based on remove arguments
+            if args.remove_nuclear:
+                if args.recycle:
+                    send2trash(f'{source_path}\\{lrit_file}')
+                else:
+                    remove(f'{source_path}\\{lrit_file}')
+            if args.remove_unsafe:
+                if result != 'Filetype not processed':
+                    if args.recycle:
+                        send2trash(f'{source_path}\\{lrit_file}')
+                    else:
+                        remove(f'{source_path}\\{lrit_file}')
+            if args.remove:
+                if result in ('Success', 'Skipped'):
+                    if args.recycle:
+                        send2trash(f'{source_path}\\{lrit_file}')
+                    else:
+                        remove(f'{source_path}\\{lrit_file}')
+
+            if result in ('Success', 'Skipped', 'Filetype not processed'):
+                log = f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
+                logfile.write(f'{log}\n')
+                if args.verbose:
+                    print(log)
             else:
-                remove(f'{source_path}\\{lrit_file}')
-        if args.remove_unsafe:
-            if result != 'Filetype not processed':
-                if args.recycle:
-                    send2trash(f'{source_path}\\{lrit_file}')
-                else:
-                    remove(f'{source_path}\\{lrit_file}')
-        if args.remove:
-            if result in ('Success', 'Skipped'):
-                if args.recycle:
-                    send2trash(f'{source_path}\\{lrit_file}')
-                else:
-                    remove(f'{source_path}\\{lrit_file}')
+                log = f'!!ERROR!! {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
+                logfile.write(f'{log}\n')
+                if not args.quiet:
+                    print(log)
+        end = perf_counter()
+        log = f'All LRIT files successfully processed in {end - start:.4f} seconds'
+        logfile.write(f'{log}\n')
+        if not args.quiet:
+            print(log)
+        if path.isdir(f'{dest_path}\\tmp'):
+            rmdir(f'{dest_path}\\tmp')
 
-        if result in ('Success', 'Skipped', 'Filetype not processed'):
+        start = perf_counter()
+        for manifest_dir in manifest_updates:
+            f_start = perf_counter()
+            try:
+                writeManifest(manifest_dir)
+            except ValueError as e:
+                print(f'ValueError for {manifest_dir}; {e}')
+            f_end = perf_counter()
+            log = f'Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |'
+            logfile.write(f'{log}\n')
             if args.verbose:
-                print(f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
-        elif not args.quiet:
-            print(f'!!ERROR!! {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
-    end = perf_counter()
-    if not args.quiet:
-        print(f'All LRIT files successfully processed in {end - start:.4f} seconds')
-    if path.isdir(f'{dest_path}\\tmp'):
-        rmdir(f'{dest_path}\\tmp')
-
-    start = perf_counter()
-    for manifest_dir in manifest_updates:
-        f_start = perf_counter()
-        try:
-            writeManifest(manifest_dir)
-        except ValueError as e:
-            print(f'ValueError for {manifest_dir}; {e}')
-        f_end = perf_counter()
-        if args.verbose:
-            print(f'Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |')
-    end = perf_counter()
-    if not args.quiet:
-        print(f'All Manifests successfully generated in {end - start:.4f} seconds')
+                print(log)
+        end = perf_counter()
+        log = f'All Manifests successfully generated in {end - start:.4f} seconds'
+        logfile.write(f'{log}\n')
+        if not args.quiet:
+            print(log)
