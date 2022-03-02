@@ -515,58 +515,34 @@ def writeManifest(manifest_dir: str):
     json_arr = {'files': []}
     for file in [*scandir(manifest_dir)]:
         meta = {'filename': file.name, 'filesize': file.stat().st_size, 'timestamp': None, 'type': None, 'properties': {}}
-        if category == 'Imagery':
-            if file.name[:2] == 'OR':  # ABI Imagery
-                split = file.name.split('-')
-                meta['type'] = 'abi'
-                meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], '%Y%j%H%M%S').timestamp())
-                meta['properties']['imageType'] = 'fulldisk' if split[2][-1] == 'F' else 'mesoscale'
-                meta['properties']['channel'] = None if split[2][:4] != 'CMIP' else split[3][3:]
-                meta['properties']['productID'] = split[2][:-1] if split[2][-1] == 'F' else split[2][:-2]
-            elif file.name[:1] == 'Z':  # NOAA Graphic
-                split = file.name.split('_')
-                meta['type'] = 'graphic'
-                meta['timestamp'] = int(datetime.strptime(split[4][:-1], '%Y%m%d%H%M%S').timestamp())
-                meta['properties']['messageSequenceNumber'] = split[5][0:6]
-                try:
-                    meta['properties']['AWDSIdentifier'] = metadata_dicts['awds'][split[1][0:10]]
-                except KeyError:
-                    logfile.write(f'WARN Unknown identifier ({split[1][0:10]}) for file {file.name}\n')
-                try:
-                    meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][meta['properties']['AWDSIdentifier']['nnn']]
-                except KeyError:
-                    logfile.write(f"WARN Unknown nnn ({split[5][9:12]}) for file {file.name}\n")
-                    meta['properties']['NNNIdentifier'] = metadata_dicts['nnn']['default']
-                try:
-                    meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc'][split[1][6:10]]
-                except KeyError:
-                    logfile.write(f"WARN Unknown cccc ({split[1][6:10]}) for file {file.name}\n")
-                    meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc']['default']
-            else:  # Top of NOAA Hour Graphic
-                split = manifest_dir.split('\\')
-                meta['type'] = 'hourly'
-                meta['timestamp'] = int(
-                    datetime.strptime(''.join([split[-3], split[-2], split[-1]]), '%Y%j%H').timestamp())
-        if category == 'Text':
+
+        if category == 'Imagery' and file.name[:2] == 'OR':
+            split = file.name.split('-')
+            meta['type'] = 'abi'
+            meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], '%Y%j%H%M%S').timestamp())
+            meta['properties']['imageType'] = 'fulldisk' if split[2][-1] == 'F' else 'mesoscale'
+            meta['properties']['channel'] = None if split[2][:4] != 'CMIP' else split[3][3:]
+            meta['properties']['productID'] = split[2][:-1] if split[2][-1] == 'F' else split[2][:-2]
+
+        if category == 'Imagery' and not (file.name[:1] in [*'OZ']):  # Top of NOAA Hour Graphic
+            split = manifest_dir.split('\\')
+            meta['type'] = 'hourly'
+            meta['timestamp'] = int(
+                datetime.strptime(''.join([split[-3], split[-2], split[-1]]), '%Y%j%H').timestamp())
+
+        if file.name[:1] in [*'AZ']:
             split = file.name.split('_')
-            meta['type'] = 'text'
+            if file.name[:1] == 'A':
+                meta['type'] = 'text'
+            else:
+                meta['type'] = 'imagery'
             meta['timestamp'] = int(datetime.strptime(split[4][:-1], '%Y%m%d%H%M%S').timestamp())
-            meta['properties']['messageSequenceNumber'] = split[5][0:6]
-            meta['properties']['productPriority'] = split[5][7]
-            try:
-                meta['properties']['AWDSIdentifier'] = metadata_dicts['awds'][split[1][0:10]]
-            except KeyError:
-                logfile.write(f'WARN Unknown identifier ({split[1][0:10]}) for file {file.name}\n')
-            try:
-                meta['properties']['NNNIdentifier'] = metadata_dicts['nnn'][meta['properties']['AWDSIdentifier']['nnn']]
-            except KeyError:
-                logfile.write(f"WARN Unknown nnn ({split[5][9:12]}) for file {file.name}\n")
-                meta['properties']['NNNIdentifier'] = metadata_dicts['nnn']['default']
-            try:
-                meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc'][split[1][6:10]]
-            except KeyError:
-                logfile.write(f"WARN Unknown cccc ({split[1][6:10]}) for file {file.name}\n")
-                meta['properties']['CCCCIdentifier'] = metadata_dicts['cccc']['default']
+            meta['properties']['messageSequenceNumber'] = int(split[5][0:6])
+            meta['properties']['awds'] = metadata_dicts['awds'][split[1][0:10]] if split[1][0:10] in metadata_dicts['awds'] else metadata_dicts['awds']['default']
+            meta['properties']['nnn'] = metadata_dicts['nnn'][split[5][9:12]] if split[5][9:12] in metadata_dicts['nnn'] else metadata_dicts['nnn']['default']
+            meta['properties']['cccc'] = metadata_dicts['cccc'][split[1][6:10]] if split[1][6:10] in metadata_dicts['cccc'] else metadata_dicts['cccc']['default']
+            meta['properties']['tt'] = metadata_dicts['tt'][split[1][0:2]] if split[1][0:2] in metadata_dicts['tt'] else metadata_dicts['tt']['default']
+            meta['properties']['aa'] = metadata_dicts['aa'][split[1][2:4]] if split[1][2:4] in metadata_dicts['aa'] else metadata_dicts['aa']['default']
         if category == 'DCS':
             split = file.name.split('-')
             meta['type'] = 'dcs'
