@@ -1,0 +1,35 @@
+A,Aircraft reports,"FM 41 (CODAR), ICAO (AIREP)"
+D,Aircraft reports,FM 42 (AMDAR)
+E,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (TEMP SHIP)/
+"",humidity and wind (Part D),FM 38 (TEMP MOBIL)
+F,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (TEMP SHIP)/
+"",humidity and wind (Parts C and D),FM 38 (TEMP MOBIL)
+"",[National and bilateral option],
+G,Upper wind (Part B),FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",,FM 34 (TEMP MOBIL)
+H,Upper wind (Part C),FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",,FM 34 (TEMP MOBIL)
+I,Upper wind (Parts A and B) [National and,FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",bilateral option],FM 34 (TEMP MOBIL)
+K,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (TEMP SHIP)/
+"",humidity and wind (Part B),FM 38 (TEMP MOBIL)
+L,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (TEMP SHIP)/
+"",humidity and wind (Part C),FM 38 (TEMP MOBIL)
+M,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (TEMP SHIP)/
+"",humidity and wind (Parts A and B),FM 38 (TEMP MOBIL)
+"",[National and bilateral option],
+N,Rocketsonde reports,FM 39 (ROCOB)/FM 40 (ROCOB SHIP)
+P,Upper wind (Part A),FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",,FM 34 (PILOT MOBIL)
+Q,Upper wind (Part D),FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",,FM 34 (PILOT MOBIL)
+R,Aircraft report,[NATIONAL*] (RECCO)
+S,"Upper­level pressure, temperature,",FM 35 (TEMP)/FM 36 (PILOT SHIP)/
+"",humidity and wind (Part A),FM 38 (TEMP MOBIL)
+T,Aircraft report,FM 41 (CODAR)
+X,Miscellaneous,[TEXT]
+Y,Upper wind (Parts C and D) [National and,FM 32 (PILOT)/FM 33 (PILOT SHIP)/
+"",bilateral option],FM 34 (PILOT MOBIL)
+Z,"Upper­level pressure, temperature, humidity",FM 37 (TEMP DROP)
+"",and wind from a sonde released by carrier,
+"","balloon or aircraft (Parts A, B, C, D)",

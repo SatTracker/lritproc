@@ -1,0 +1,8 @@
+G,Hydrological,[TEXT]
+H,Marine,[TEXT]
+N,Nuclear emergency response,[TEXT]
+O,METNO/WIFMA,[TEXT]
+P,Product generation delay,[TEXT]
+T,TEST MSG [System related],[TEXT]
+W,Warning related and/or,[TEXT]
+"",cancellation,

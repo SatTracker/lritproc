@@ -1,0 +1,20 @@
+A,Radar data
+B,Cloud
+C,Vorticity
+D,Thickness (relative topography)
+E,Precipitation
+G,Divergence
+H,Height
+J,Wave height + combinations
+K,Swell height + combinations
+M,For national use
+N,Radiation
+O,Vertical velocity
+P,Pressure
+Q,Wet bulb potential temperature
+R,Relative humidity
+T,Temperature
+U,Eastward wind component
+V,Northward wind component
+W,Wind
+Z,Not assigned

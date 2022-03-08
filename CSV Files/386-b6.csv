@@ -1,0 +1,26 @@
+A,Radar data
+B,Cloud
+C,Clear air turbulence
+D,Thickness (relative topography)
+E,Precipitation
+F,Aerological diagrams (Ash cloud)
+G,Significant weather
+H,Height
+I,Ice flow
+J,Wave height + combinations
+K,Swell height + combinations
+L,Plain language
+M,For national use
+N,Radiation
+O,Vertical velocity
+P,Pressure
+Q,Wet bulb potential temperature
+R,Relative humidity
+S,Snow cover
+T,Temperature
+U,Eastward wind component
+V,Northward wind component
+W,Wind
+X,Lifted index
+Y,Observational plotted chart
+Z,Not assigned

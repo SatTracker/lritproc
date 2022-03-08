@@ -1,0 +1,143 @@
+IN,A,,Satellite data (AMSUA),,003/003
+IN,B,,Satellite data (AMSUB),,003/004
+IN,C,,CrIS (selected channels),,003/030
+IN,H,,Satellite data (HIRS),,003/005
+IN,I,,IRAS,,003/020
+IN,J,,HIRAS,,003/030
+IN,K,,MWHS/MWHS­2,,003/040
+IN,M,,Satellite data (MHS),,003/006
+IN,Q,,IASI (Principle component scores),,003/007
+IN,S,,ATMS,,003/040
+IN,T,,MWTS/MWTS­2,,003/040
+IO,B,,Buoy observations,BUOY,001/025
+IO,I,,Sea ice,,
+IO,P,,Sub­surface profiling floats,TESAC,031/004
+IO,R,,Sea surface observations,TRACKOB,031/001
+IO,S,,Sea surface and below soundings,"BATHY, TESAC",031/005
+IO,T,,Sea surface temperature,,
+IO,W,,Sea surface waves,WAVEOB,031/002
+IO,X,,Other sea environmental,,
+IO,Z,,Deep ocean tsunameter,,031/007
+IP,C,,Radar composite imagery data,,
+IP,I,,Satellite imagery data,,
+IP,R,,Radar imagery data,,
+IP,X,,Not defined,,
+IS,A,01–29,Routinely scheduled observations for distribution,n/a,000/006
+,,,from automatic (fixed or mobile) land stations,,
+,,,"(e.g. 0000, 0100, ... or 0220, 0240, 0300, ..., or",,
+,,,"0715, 0745, ... UTC)",,
+IS,A,30–59,N­minute observations from automatic (fixed or,n/a,000/007
+,,,mobile) land stations,,
+IS,B,,Radar reports (parts A and B),RADOB,006/003
+IS,C,01–45,Climatic observations from land stations,CLIMAT,000/020
+IS,C,46–59,Climatic observations from marine stations,CLIMAT SHIP,001/020
+IS,C,60,Climatic observations (monthly reports of daily,n/a,001/021
+,,,climate data),,
+IS,D,,Radiological observation,RADREP,010/001
+IS,E,,Measurement of surface ozone,n/a,008/000
+IS,F,,Source of atmospherics,"SFAZI, SFLOC,",000/030
+,,,,SFAZU,
+IS,I,01–45,Intermediate synoptic observations from fixed,SYNOP (SIxx),000/001
+,,,land stations,,000/051
+IS,I,46–59,Intermediate synoptic observations from mobile,SYNOP MOBIL,000/004
+,,,land stations,,
+IS,M,01–45,Main synoptic observations from fixed land,SYNOP (SMxx),000/002
+,,,stations,,000/052
+IS,M,46–59,Main synoptic observations from mobile land,SYNOP MOBIL,000/005
+,,,stations,,
+IS,N,01–45,Synoptic observations from fixed land stations at,SYNOP (SNxx),000/000
+,,,"non­standard time (i.e. 0100, 0200, 0400, 0500,",,000/050
+,,,... UTC),,
+IS,N,46–59,Synoptic observations from mobile land stations,SYNOP MOBIL,000/003
+,,,"at non­standard time (i.e. 0100, 0200, 0400, 0500,",,
+,,,... UTC),,
+IS,R,,Hydrologic reports,HYDRA,000/040
+IS,S,01–19,Synoptic observations from marine stations,SHIP,001/000
+IS,S,20–39,One­hour observations from automatic marine,n/a,001/006
+,,,stations,,
+IS,S,40–59,N­minute observations from automatic marine,n/a,001/007
+,,,stations,,
+IS,T,01–19,Tide gauge observations,n/a,001/030
+IS,T,20–39,Observed water level time series,n/a,001/031
+IS,V,,Special aeronautical observations (SPECI),SPECI,000/011
+IS,W,,Aviation routine weather observations (METAR),METAR,000/010
+IS,X,,Other surface data,"IAC, IAC FLEET",
+IT,A,,Administrative message,,
+IT,B,,Service message,,
+IT,R,,Request for data (inclusive of type),,
+IT,X,,Other text messages or information,,
+IU,A,,Single level aircraft reports (automatic),AMDAR,004/000
+IU,A,,Single level aircraft reports (manual),AIREP/PIREP,004/001
+IU,B,,Single level balloon reports,n/a,
+IU,C,,(used for single level satellite­derived reports –,SAREP/SATOB,005/000
+,,,see Note 3),,
+IU,D,,Dropsonde/Dropwindsondes,TEMP DROP,002/007
+IU,E,,Ozone vertical sounding,n/a,008/001
+IU,I,,Dispersal and transport analysis,n/a,009/000
+IU,J,01–19,Upper wind from fixed land stations (entire,"PILOT (parts A, B,",002/001
+,,,sounding),"C, D)",
+IU,J,20–39,Upper wind from mobile land stations (entire,PILOT MOBIL,002/003
+,,,sounding),"(parts A, B, C, D)",
+IU,J,40–59,Upper wind from marine stations (entire,PILOT SHIP,002/002
+,,,sounding),"(parts A, B, C, D)",
+IU,K,01–19,Radio soundings from fixed land stations (up to,"TEMP (parts A, B)",002/004
+,,,100 hPa),,
+IU,K,20–39,Radio soundings from mobile land stations (up to,TEMP MOBIL,002/006
+,,,100 hPa),"(parts A, B)",
+IU,K,40–59,Radio soundings from marine stations (up to,TEMP SHIP,002/005
+,,,100 hPa),"(parts A, B)",
+IU,L,,Total ozone,,008/002
+IU,M,,Model derived sondes,,
+IU,N,,Rocketsondes,,
+IU,O,,Profiles of aircraft observations in ascending/,AMDAR,002/020
+,,,descending,,
+IU,P,,Profilers,PILOT,002/010
+IU,Q,,RASS temperature profilers,TEMP,002/011
+IU,R,,(used for radiance data – see Note 3),,
+IU,S,01–19,Radiosondes/pibal reports from fixed land,"TEMP (parts A, B,",002/004
+,,,stations (entire sounding),"C, D)",
+IU,S,20–39,Radio soundings from mobile land stations (entire,TEMP MOBIL,002/006
+,,,sounding),"(parts A, B, C, D)",
+IU,S,40–59,Radio soundings from marine stations (entire,TEMP SHIP,002/005
+,,,sounding),"(parts A, B, C, D)",
+IU,T,,(used for satellite­derived sondes – see Note 3),"SATEM, SARAD,",
+,,,,SATOB,
+IU,U,46–59,Monthly statistics of data from marine stations,SHIP,002/026
+IU,W,01–19,Upper wind from fixed land stations (up to,"PILOT (parts A, B)",002/001
+,,,100 hPa),,
+IU,W,20–39,Upper wind from mobile land stations (up to,PILOT MOBIL,002/003
+,,,100 hPa),"(parts A, B)",
+IU,W,40–59,Upper wind from marine stations (up to 100 hPa),PILOT SHIP,002/002
+,,,,"(parts A, B)",
+IU,X,,Other upper­air reports,,
+JO,I,,Sea ice,,
+JO,S,,Sea surface and below soundings,,
+JO,T,,Sea surface temperature,,
+JO,W,,Sea surface waves,,
+JO,X,,Other sea environmental data,,
+JS,A,,Surface area forecast (e.g. airways),,
+JS,D,,Radiological forecast,RADOF,
+JS,M,,Surface forecasts (e.g. MOS),,
+JS,O,,Maritime forecast,MAFOR,
+JS,P,,Forecast amendments (airways),,
+JS,R,,Hydrologic forecast,HYFOR,
+JS,S,,Forecast amendments (TAF),,
+JS,T,,Aerodrome forecast (TAF),,
+JS,X,,Other surface forecasts,,
+JT,E,,Tsunami,,
+JT,H,,"Hurricane, typhoon, tropical storm warning",,
+JT,S,,"Severe weather, SIGMET",,
+JT,T,,Tornado warning,,
+JT,X,,Other warnings,,
+JU,A,,Forecast at single levels,,
+JU,B,,"Binary coded SIGWX, Embedded Cumulonimbus",,
+JU,C,,"Binary coded SIGWX, Clear­air turbulence",,
+JU,F,,"Binary coded SIGWX, Fronts",,
+JU,N,,"Binary coded SIGWX, Other SIGWX parameters",,
+JU,O,,"Binary coded SIGWX, Turbulence",,
+JU,S,,Forecast soundings,,
+JU,T,,"Binary coded SIGWX, Icing/Tropopause",,
+JU,V,,"Binary coded SIGWX, Tropical storms,",,
+,,,"sandstorms, volcanoes",,
+JU,W,,"Binary coded SIGWX, High­level winds",,
+JU,X,,Other upper­air forecasts,,

@@ -1,0 +1,26 @@
+A,Analyses,B1,C1,C1,**,3
+B,Addressed message,***,***,***,***,1/2/4*
+C,Climatic data,B1,C1,C1,**,4
+D,Grid point information (GRID),B2,C3,C4,D2,3
+E,Satellite imagery,B5,C1,C1,**,3
+F,Forecasts,B1,C1,C1,**,3
+G,Grid point information (GRID),B2,C3,C4,D2,3
+H,Grid point information (GRIB),B2,C3,C4,D2,3
+I,Observational data (Binary coded) – BUFR,B3,C6,C3,**,2
+J,Forecast information (Binary coded) – BUFR,B3,C6,C4,D2,3
+K,CREX,B3,C7,C3,**,2
+L,Aviation information in XML,B7,C1,C1,**,1/2/3
+M,–,,,,,
+N,Notices,B1,C1,C1,**,4
+O,Oceanographic information (GRIB),B4,C3,C4,D1,3
+P,Pictorial information (Binary coded),B6,C3,C4,D2,3
+Q,Pictorial information regional (Binary coded),B6,C3,C5,D2,3
+R,–,,,,,
+S,Surface data,B1,C1/C2,C1/C2,**,2/4*
+T,Satellite data,B1,C3,C4,**,2
+U,Upper­air data,B1,C1/C2,C1/C2,**,2
+V,National data,(1),C1,C1,**,(2)
+W,Warnings,B1,C1,C1,**,1
+X,Common Alert Protocol (CAP) messages,,,,,
+Y,GRIB regional use,B2,C3,C5,D2,3
+Z,–,,,,,

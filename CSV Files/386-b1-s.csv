@@ -1,0 +1,25 @@
+A,Aviation routine reports,FM 15 (METAR)
+B,Radar reports (Part A),FM 20 (RADOB)
+C,Radar reports (Part B),FM 20 (RADOB)
+D,Radar reports (Parts A & B),FM 20 (RADOB)
+E,Seismic data,* (SEISMIC)
+F,Atmospherics reports,FM 81 (SFAZI)/FM 82 (SFLOC)/FM 83 (SFAZU)
+G,Radiological data report,FM 22 (RADREP)
+H,Reports from DCP stations,(any format)
+I,Intermediate synoptic hour,FM 12 (SYNOP)/FM 13 (SHIP)
+L,–,–
+M,Main synoptic hour,FM 12 (SYNOP)/FM 13 (SHIP)
+N,Non­standard synoptic hour,FM 12 (SYNOP)/FM 13 (SHIP)
+O,Oceanographic data,FM 63 (BATHY)/FM 64 (TESAC)/
+"",,FM 62 (TRACKOB)
+P,Special aviation weather reports,FM 16 (SPECI)
+R,Hydrological (river) reports,FM 67 (HYDRA)
+S,Drifting buoy reports,FM 18 (DRIFTER)
+T,Sea ice,[TEXT]
+U,Snow depth,[TEXT]
+V,Lake ice,[TEXT]
+W,Wave information,FM 65 (WAVEOB)
+X,Miscellaneous,[TEXT]
+Y,Seismic waveform data,(any format)
+Z,Sea­level data and deep­ocean,(any alphanumeric format)
+"",tsunami data,

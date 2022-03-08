@@ -1,4 +1,8 @@
+import csv
 import json
+import os
+
+from JSONManager import JSONManager
 
 out_path = r'.\dictionaries.json'
 
@@ -5738,269 +5742,53 @@ SHE	ZYTX	Shenyang	Shenyang Taoxian Intl Airport	China - Peoples Republic
 YNJ	ZYYJ	Yanji	Yanji Airport	China - Peoples Republic
 """
 
-table_a = """
-A Analyses B1 C1 C1 ** 3
-B Addressed message *** *** *** *** 1/2/4*
-C Climatic data B1 C1 C1 ** 4
-D Grid point information (GRID) B2 C3 C4 D2 3
-E Satellite imagery B5 C1 C1 ** 3
-F Forecasts B1 C1 C1 ** 3
-G Grid point information (GRID) B2 C3 C4 D2 3
-H Grid point information (GRIB) B2 C3 C4 D2 3
-I Observational data (Binary coded) – BUFR B3 C6 C3 ** 2
-J Forecast information (Binary coded) – BUFR B3 C6 C4 D2 3
-K CREX B3 C7 C3 ** 2
-L Aviation information in XML B7 C1 C1 ** 1/2/3
-M –
-N Notices B1 C1 C1 ** 4
-O Oceanographic information (GRIB) B4 C3 C4 D1 3
-P Pictorial information (Binary coded) B6 C3 C4 D2 3
-Q Pictorial information regional (Binary coded) B6 C3 C5 D2 3
-R –
-S Surface data B1 C1/C2 C1/C2 ** 2/4*
-T Satellite data B1 C3 C4 ** 2
-U Upper-air data B1 C1/C2 C1/C2 ** 2
-V National data (1) C1 C1 ** (2)
-W Warnings B1 C1 C1 ** 1
-X Common Alert Protocol (CAP) messages
-Y GRIB regional use B2 C3 C5 D2 3
-Z -
-"""
 
-table_b1 = {
-    'A': {
-        'C': ['Cyclone', '[TEXT]'],
-        'G': ['Hydrological/marine', '[TEXT]'],
-        'H': ['Thickness', '[TEXT]'],
-        'I': ['Ice', 'FM 44 (ICEAN)'],
-        'O': ['Ozone layer', '[TEXT]'],
-        'R': ['Radar', '[TEXT]'],
-        'S': ['Surface', 'FM 45 (IAC)/FM 46 (IAC FLEET)'],
-        'U': ['Upper air', 'FM 45 (IAC)'],
-        'W': ['Weather summary', '[TEXT]'],
-        'X': ['Miscellaneous', '[TEXT]']
-    }, 'C': {
-        'A': ['Climatic anomalies', '[TEXT]'],
-        'E': ['Monthly means (upper air)', 'FM 76 (SHIP)'],
-        'H': ['Monthly means (surface)', 'FM 72 (CLIMAT SHIP)'],
-        'O': ['Monthly means (ocean areas)', 'FM 73 (NACLI, CLINP, SPCLI, CLISA, INCLI)'],
-        'S': ['Monthly means (surface)', 'FM 71 (CLIMAT)']
-    }, 'F': {
-        'A': ['Aviation area/GAMET/advisories', 'FM 53 (ARFOR)/[TEXT]'],
-        'B': ['Upper winds and temperatures', 'FM 50 (WINTEM)'],
-        'C': ['Aerodrome (VT < 12 hours)', 'FM 51 (TAF)'],
-        'D': ['Radiological trajectory dose', 'FM 57 (RADOF)'],
-        'E': ['Extended', '[TEXT]'],
-        'F': ['Shipping', 'FM 46 (IAC FLEET)'],
-        'G': ['Hydrological', 'FM 68 (HYFOR)'],
-        'H': ['Upper-air thickness', '[TEXT]'],
-        'I': ['Iceberg', '[TEXT]'],
-        'J': ['Radio warning service (including IUWDS data)', '[TEXT]'],
-        'K': ['Tropical cyclone advisories', '[TEXT]'],
-        'L': ['Local/area', '[TEXT]'],
-        'M': ['Temperature extremes', '[TEXT]'],
-        'N': ['Space weather advisories', '[TEXT]'],
-        'O': ['Guidance', '[TEXT]'],
-        'P': ['Public', '[TEXT]'],
-        'Q': ['Other shipping', '[TEXT]'],
-        'R': ['Aviation route', 'FM 54 (ROFOR)'],
-        'S': ['Surface', 'FM 45 (IAC)/FM 46 (IAC FLEET)'],
-        'T': ['Aerodrome (VT ≥ 12 hours)', 'FM 51 (TAF)'],
-        'U': ['Upper air', 'FM 45 (IAC)'],
-        'V': ['Volcanic ash advisories', '[TEXT]'],
-        'W': ['Winter sports', '[TEXT]'],
-        'X': ['Miscellaneous', '[TEXT]'],
-        'Z': ['Shipping area', 'FM 61 (MAFOR)']
-    }, 'N': {
-        'G': ['Hydrological', '[TEXT]'],
-        'H': ['Marine', '[TEXT]'],
-        'N': ['Nuclear emergency response', '[TEXT]'],
-        'O': ['METNO/WIFMA', '[TEXT]'],
-        'P': ['Product generation delay', '[TEXT]'],
-        'T': ['TEST MSG [System related]', '[TEXT]'],
-        'W': ['Warning related and/or cancellation', '[TEXT]']
-    }, 'S': {
-        'A': ['Aviation routine reports', 'FM 15 (METAR)'],
-        'B': ['Radar reports (Part A)', 'FM 20 (RADOB)'],
-        'C': ['Radar reports (Part B)', 'FM 20 (RADOB)'],
-        'D': ['Radar reports (Parts A & B)', 'FM 20 (RADOB)'],
-        'E': ['Seismic data', '* (SEISMIC)'],
-        'F': ['Atmospherics reports', 'FM 81 (SFAZI)/FM 82 (SFLOC)/FM 83 (SFAZU)'],
-        'G': ['Radiological data report', 'FM 22 (RADREP)'],
-        'H': ['Reports from DCP stations', '(any format)'],
-        'I': ['Intermediate synoptic hour', 'FM 12 (SYNOP)/FM 13 (SHIP)'],
-        'L': ['-', '-'],
-        'M': ['Main synoptic hour', 'FM 12 (SYNOP)/FM 13 (SHIP)'],
-        'N': ['Non-standard synoptic hour', 'FM 12 (SYNOP)/FM 13 (SHIP)'],
-        'O': ['Oceanographic data', 'FM 63 (BATHY)/FM 64 (TESAC)/ FM 62 (TRACKOB)'],
-        'P': ['Special aviation weather reports', 'FM 16 (SPECI)'],
-        'R': ['Hydrological (river) reports', 'FM 67 (HYDRA)'],
-        'S': ['Drifting buoy reports', 'FM 18 (DRIFTER)'],
-        'T': ['Sea ice', '[TEXT]'],
-        'U': ['Snow depth', '[TEXT]'],
-        'V': ['Lake ice', '[TEXT]'],
-        'W': ['Wave information', 'FM 65 (WAVEOB)'],
-        'X': ['Miscellaneous', '[TEXT]'],
-        'Y': ['Seismic waveform data', '(any format)'],
-        'Z': ['Sea-level data and deep-ocean tsunami data', '(any alphanumeric format)']
-    }, 'T': {
-        'G': ['Hydrological', '[TEXT]'],
-        'H': ['Marine', '[TEXT]'],
-        'N': ['Nuclear emergency response', '[TEXT]'],
-        'O': ['METNO/WIFMA', '[TEXT]'],
-        'P': ['Product generation delay', '[TEXT]'],
-        'T': ['TEST MSG [System related]', '[TEXT]'],
-        'W': ['Warning related and/or cancellation', '[TEXT]']
-    }, 'U': {
-        'A': ['Aircraft reports', 'FM 41 (CODAR), ICAO (AIREP)'],
-        'D': ['Aircraft reports', 'FM 42 (AMDAR)'],
-        'E': ['Upper-level pressure, temperature, humidity and wind (Part D)',
-              'FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)'],
-        'F': ['Upper-level pressure, temperature, humidity and wind (Parts C and D) [National and bilateral option]',
-              'FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)'],
-        'G': ['Upper wind (Part B)', 'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)'],
-        'H': ['Upper wind (Part C)', 'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)'],
-        'I': ['Upper wind (Parts A and B) [National and bilateral option]',
-              'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)'],
-        'K': ['Upper-level pressure, temperature, humidity and wind (Part B)',
-              'FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)'],
-        'L': ['Upper-level pressure, temperature, humidity and wind (Part C)',
-              'FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)'],
-        'M': ['Upper-level pressure, temperature, humidity and wind (Parts A and B) [National and bilateral option]',
-              'FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)'],
-        'N': ['Rocketsonde reports', 'FM 39 (ROCOB)/FM 40 (ROCOB SHIP)'],
-        'P': ['Upper wind (Part A)', 'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)'],
-        'Q': ['Upper wind (Part D)', 'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)'],
-        'R': ['Aircraft report', '[NATIONAL*] (RECCO)'],
-        'S': ['Upper-level pressure, temperature, humidity and wind (Part A)',
-              'FM 35 (TEMP)/FM 36 (PILOT SHIP)/ FM 38 (TEMP MOBIL)'],
-        'T': ['Aircraft report', 'FM 41 (CODAR)'],
-        'X': ['Miscellaneous', '[TEXT]'],
-        'Y': ['Upper wind (Parts C and D) [National and bilateral option]',
-              'FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)'],
-        'Z': [
-            'Upper-level pressure, temperature, humidity and wind from a sonde released by carrier balloon or aircraft (Parts A, B, C, D)',
-            'FM 37 (TEMP DROP)']
-    }, 'W': {
-        'A': ["AIRMET", "[TEXT]"],
-        'C': ["Tropical cyclone (SIGMET)", "[TEXT]"],
-        'E': ["Tsunami", "[TEXT]"],
-        'F': ["Tornado", "[TEXT]"],
-        'G': ["Hydrological/river flood", "[TEXT]"],
-        'H': ["Marine/coastal flood", "[TEXT]"],
-        'O': ["Other", "[TEXT]"],
-        'R': ["Humanitarian activities", "(any format)"],
-        'S': ["SIGMET", "[TEXT]"],
-        'T': ["Tropical cyclone (Typhoon/hurricane)", "[TEXT]"],
-        'U': ["Severe thunderstorm", "[TEXT]"],
-        'V': ["Volcanic ash clouds (SIGMET)", "[TEXT]"],
-        'W': ["Warnings and weather summary", "[TEXT]"]
-    }
-}
+def format_table(table: list[list], key_index=None, keys: list[str] = None, max_cols: int = None) -> dict[int, dict]:
+    if max_cols is None:
+        max_cols = 0
+        for row in table:
+            if len(row) > max_cols:
+                max_cols = len(row)
+    if keys is None:
+        keys = range(max_cols)
+    for i in range(len(table)):
+        try:
+            while table[i][0] == '' or table[i][0] is None:
+                print(len(table[i]), max_cols)
+                for j in range(max_cols):
+                    table[i - 1][j] = f'{table[i - 1][j]} {table[i][j]}'
+                table.pop(i)
+        except IndexError:
+            break
+    out = {}
+    index = 0
+    for row in table:
+        row_dict = dict([(k, v) for k, v in zip(keys, row)])
+        if key_index is None:
+            out[index] = row_dict
+        else:
+            out["".join(row[key_index[0]:key_index[1]])] = row_dict
+        index += 1
+    return out
 
-table_b2 = {
-    'A': 'Radar data',
-    'B': 'Cloud',
-    'C': 'Vorticity',
-    'D': 'Thickness (relative topography)',
-    'E': 'Precipitation',
-    'G': 'Divergence',
-    'H': 'Height',
-    'J': 'Wave height + combinations',
-    'K': 'Swell height + combinations',
-    'M': 'For national use',
-    'N': 'Radiation',
-    'O': 'Vertical velocity',
-    'P': 'Pressure',
-    'Q': 'Wet bulb potential temperature',
-    'R': 'Relative humidity',
-    'T': 'Temperature',
-    'U': 'Eastward wind component',
-    'V': 'Northward wind component',
-    'W': 'Wind',
-    'Z': 'Not assigned'
-}
 
-table_b3 = {
-    'N': 'Satellite data',
-    'O': 'Oceanographic/limnographic (water property)',
-    'P': 'Pictorial',
-    'S': 'Surface/sea level',
-    'T': 'Text (plain language information)',
-    'U': 'Upper-air data',
-    'X': 'Other data types'
-}
+# with open(r'.\CSV Files\386-a.csv', 'r', newline='') as table_a:
+#     reader = csv.reader(table_a, dialect='excel')
+#     rows = []
+#     max_cols = 0
+#     for row in reader:
+#         if len(row) > max_cols:
+#             max_cols = len(row)
+#         rows.append(row)
+#     print(format_table(rows, keys=['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'], key_index=(0, 1)))
 
-table_b4 = {
-    'D': 'Depth',
-    'E': 'Ice concentration',
-    'F': 'Ice thickness',
-    'G': 'Ice drift',
-    'H': 'Ice growth',
-    'I': 'Ice convergence/divergence',
-    'Q': 'Temperature anomaly',
-    'R': 'Depth anomaly',
-    'S': 'Salinity',
-    'T': 'Temperature',
-    'U': 'Current component',
-    'V': 'Current component',
-    'W': 'Temperature warming',
-    'X': 'Mixed data'
-}
-
-table_b5 = {
-    'C': 'Cloud top temperature',
-    'F': 'Fog',
-    'I': 'Infrared',
-    'S': 'Surface temperature',
-    'V': 'Visible',
-    'W': 'Water vapour',
-    'Y': 'User specified',
-    'Z': 'unspecified'
-}
-
-table_b6 = {
-    'A': 'Radar data',
-    'B': 'Cloud',
-    'C': 'Clear air turbulence',
-    'D': 'Thickness (relative topography)',
-    'E': 'Precipitation',
-    'F': 'Aerological diagrams (Ash cloud)',
-    'G': 'Significant weather',
-    'H': 'Height',
-    'I': 'Ice flow',
-    'J': 'Wave height + combinations',
-    'K': 'Swell height + combinations',
-    'L': 'Plain language',
-    'M': 'For national use',
-    'N': 'Radiation',
-    'O': 'Vertical velocity',
-    'P': 'Pressure',
-    'Q': 'Wet bulb potential temperature',
-    'R': 'Relative humidity',
-    'S': 'Snow cover',
-    'T': 'Temperature',
-    'U': 'Eastward wind component',
-    'V': 'Northward wind component',
-    'W': 'Wind',
-    'X': 'Lifted index',
-    'Y': 'Observational plotted chart',
-    'Z': 'Not assigned'
-}
-
-table_b7 = {
-    'A': 'Aviation routine reports (“METAR”) 2',
-    'C': 'Aerodrome Forecast (“TAF”) (VT < 12 hours) 3',
-    'K': 'Tropical cyclone advisories 3',
-    'N': 'Space weather advisories 3',
-    'P': 'Special aviation weather reports (“SPECI”) 2',
-    'S': 'Aviation general warning (“SIGMET”) 1',
-    'T': 'Aerodrome forecast (“TAF”)) (VT ≥ 12 hours) 3',
-    'U': 'Volcanic ash advisory 3',
-    'V': 'Aviation volcanic ash warning (“SIGMET”) 1',
-    'W': 'AIRMET 1',
-    'Y': 'Aviation tropical cyclone warning (“SIGMET”) 1'
-}
+for file in os.listdir(r'.\CSV Files'):
+    if file.split('.')[-1].lower() != 'csv':
+        continue
+    with open(rf'.\CSV Files\{file}', 'r', newline='') as table:
+        reader = csv.reader(table, dialect='excel')
+        format_table([*reader])
+    print(file)
 
 dicts = {
     'cccc': {
@@ -6095,63 +5883,6 @@ for line in icao.splitlines():
         'country': keys[4]
     }
 
-for line in table_a.splitlines():
-    keys = [s.strip() for s in line.split(' ')]
-    generalDataType = " ".join(keys[1:-5])
-    if keys[0] == '':
-        continue
-    if keys[0] in [*'ACFNSTUW']:
-        for key in table_b1[keys[0]].keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b1[keys[0]][key][0],
-                'codeForm': table_b1[keys[0]][key][1]
-            }
-    if keys[0] in [*'DGHXY']:
-        for key in table_b2.keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b2[key],
-                'codeForm': None
-            }
-    if keys[0] in [*'IJ']:
-        for key in table_b3.keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b3[key],
-                'codeForm': None
-            }
-    if keys[0] == 'O':
-        for key in table_b4.keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b4[key],
-                'codeForm': None
-            }
-    if keys[0] == 'E':
-        for key in table_b5.keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b5[key],
-                'codeForm': None
-            }
-    if keys[0] in [*'PQ']:
-        for key in table_b6.keys():
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b6[key],
-                'codeForm': None
-            }
-    if keys[0] == 'L':
-        for key in table_b7.keys():
-            codeForm = "IWXXM (FM-205)" if key in [*'ACKPSTUVWY'] else None
-            dicts['tt'][f'{keys[0]}{key}'] = {
-                'generalDataType': generalDataType,
-                'specificDataType': table_b7[key],
-                'codeForm': codeForm
-            }
-
-enc = json.JSONEncoder(indent=4)
-
-with open(out_path, 'w') as output:
-    output.writelines(enc.encode(dicts))
+manager = JSONManager(r'./dictionaries.json')
+manager.overwrite(dicts)
+manager.save()

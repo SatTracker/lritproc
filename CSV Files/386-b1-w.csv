@@ -1,0 +1,13 @@
+A,AIRMET,[TEXT]
+C,Tropical cyclone (SIGMET),[TEXT]
+E,Tsunami,[TEXT]
+F,Tornado,[TEXT]
+G,Hydrological/river flood,[TEXT]
+H,Marine/coastal flood,[TEXT]
+O,Other,[TEXT]
+R,Humanitarian activities,(any format)
+S,SIGMET,[TEXT]
+T,Tropical cyclone (Typhoon/hurricane),[TEXT]
+U,Severe thunderstorm,[TEXT]
+V,Volcanic ash clouds (SIGMET),[TEXT]
+W,Warnings and weather summary,[TEXT]

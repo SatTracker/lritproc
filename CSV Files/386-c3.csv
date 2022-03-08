@@ -1,0 +1,16 @@
+A,0° – 90°W,northern hemisphere
+B,90°W –180°,northern hemisphere
+C,180° – 90°E,northern hemisphere
+D,90°E – 0°,northern hemisphere
+E,0° – 90°W,tropical belt
+F,90°W – 180°,tropical belt
+G,180° – 90°E,tropical belt
+H,90°E – 0°,tropical belt
+I,0° – 90°W,southern hemisphere
+J,90°W – 180°,southern hemisphere
+K,180° – 90°E,southern hemisphere
+L,90°E – 0°,southern hemisphere
+N,,Northern hemisphere
+S,,Southern hemisphere
+T,45°W – 180°,northern hemisphere
+X,,Global area (area not definable)

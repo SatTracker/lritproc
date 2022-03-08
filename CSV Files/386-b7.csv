@@ -1,0 +1,11 @@
+A,Aviation routine reports (“METAR”),2
+C,Aerodrome Forecast (“TAF”) (VT < 12 hours),3
+K,Tropical cyclone advisories,3
+N,Space weather advisories,3
+P,Special aviation weather reports (“SPECI”),2
+S,Aviation general warning (“SIGMET”),1
+T,Aerodrome forecast (“TAF”)) (VT ≥ 12 hours),3
+U,Volcanic ash advisory,3
+V,Aviation volcanic ash warning (“SIGMET”),1
+W,AIRMET,1
+Y,Aviation tropical cyclone warning (“SIGMET”),1

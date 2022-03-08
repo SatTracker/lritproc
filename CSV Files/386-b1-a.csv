@@ -1,0 +1,10 @@
+C,Cyclone,[TEXT]
+G,Hydrological/marine,[TEXT]
+H,Thickness,[TEXT]
+I,Ice,FM 44 (ICEAN)
+O,Ozone layer,[TEXT]
+R,Radar,[TEXT]
+S,Surface,FM 45 (IAC)/FM 46 (IAC FLEET)
+U,Upper air,FM 45 (IAC)
+W,Weather summary,[TEXT]
+X,Miscellaneous,[TEXT]

@@ -1,0 +1,8 @@
+B,Satellite orbit parameters,[TEXT]
+C,Satellite cloud interpretations,FM 85 (SAREP)
+H,Satellite remote upper­air,FM 86 (SATEM)
+"",soundings,
+R,Clear radiance observations,FM 87 (SARAD)
+T,Sea surface temperatures,FM 88 (SATOB)
+W,Winds and cloud temperatures,FM 88 (SATOB)
+X,Miscellaneous,[TEXT]

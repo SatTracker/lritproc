@@ -1,0 +1,119 @@
+KF,A,,Surface area forecast (e.g. airways),,
+KF,D,,Radiological forecast,RADOF,
+KF,M,,Surface forecasts (e.g. MOS),,
+KF,O,,Maritime forecast,MAFOR,
+KF,P,,Forecast amendments (airways),,
+KF,R,,Hydrologic forecast,HYFOR,
+KF,S,,Forecast amendments (TAF),,
+KF,T,,Aerodrome forecast (TAF),,
+KF,X,,Other surface forecasts,,
+KO,B,,Buoy observations,BUOY,001/025
+KO,I,,Sea ice,,
+KO,P,,Sub­surface profiling floats,TESAC,031/004
+KO,R,,Sea surface observations,TRACKOB,031/001
+KO,S,,Sea surface and below soundings,"BATHY, TESAC",031/005
+KO,T,,Sea surface temperature,,
+KO,W,,Sea surface waves,WAVEOB,031/002
+KO,X,,Other sea environmental,WAVEOB,031/002
+KP,I,,Sea ice,,
+KP,S,,Sea surface and below soundings,,
+KP,T,,Sea surface temperature,,
+KP,W,,Sea surface waves,,
+KP,X,,Other sea environmental,,
+KS,A,01–29,Routinely scheduled observations for,n/a,000/006
+,,,distribution from automatic (fixed or mobile),,
+,,,"land stations (e.g. 0000, 0100, ... or 0220,",,
+,,,"0240, 0300, ..., or 0715, 0745, ... UTC)",,
+KS,A,30–59,N­minute observations from automatic (fixed,n/a,000/007
+,,,or mobile) land stations,,
+KS,B,,Radar reports (parts A and B),RADOB,006/003
+KS,C,01–45,Climatic observations from land stations,CLIMAT,000/020
+KS,C,46–59,Climatic observations from marine stations,CLIMAT SHIP,001/020
+KS,D,,Radiological observation,RADREP,010/001
+KS,E,,Measurement of surface ozone,n/a,008/000
+KS,F,,Source of atmospherics,"SFAZI, SFLOC,",000/030
+,,,,SFAZU,
+KS,I,01–45,Intermediate synoptic observations from fixed,SYNOP (SIxx),000/001
+,,,land stations,,000/051
+KS,I,46–59,Intermediate synoptic observations from,SYNOP MOBIL,000/004
+,,,mobile fixed land stations,,
+KS,M,01–45,Main synoptic observations from fixed land,SYNOP (SMxx),000/002
+,,,stations,,000/052
+KS,M,46–59,Main synoptic observations from mobile land,SYNOP MOBIL,000/005
+,,,stations,,
+KS,N,01–45,Synoptic observations from fixed land stations,SYNOP (SNxx),000/000
+,,,"at non­standard time (i.e. 0100, 0200, 0400,",,000/050
+,,,"0500,..., UTC)",,
+KS,N,46–59,Synoptic observations from mobile land stations,SYNOP MOBIL,000/003
+,,,"at non­standard time (i.e. 0100, 0200, 0400,",,
+,,,"0500, 0700, 0800, 1000, 1100, 1300, ... UTC)",,
+KS,R,,Hydrologic reports,HYDRA,000/040
+KS,S,01–19,Synoptic observations from marine stations,SHIP,001/000
+KS,S,20–39,One­hour observations from automatic marine,n/a,001/006
+,,,stations,,
+KS,S,40–59,N­minute observations from automatic marine,n/a,001/007
+,,,stations,,
+KS,V,,Special aeronautical observations (SPECI),SPECI,000/011
+KS,W,,Aviation routine weather observations (METAR),METAR,000/010
+KS,X,,Other surface data,"IAC, IAC FLEET",
+KT,E,,Tsunami,,
+KT,H,,"Hurricane, typhoon, tropical storm warning",,
+KT,S,,"Severe weather, SIGMET",,
+KT,T,,Tornado warning,,
+KT,X,,Other warnings,,
+KU,A,,Single level aircraft reports (automatic),AMDAR,004/000
+KU,A,,Single level aircraft reports (manual),AIREP/PIREP,004/001
+KU,B,,Single level balloon reports,n/a,
+KU,C,,Single level satellite­derived reports,SAREP,005/000
+KU,D,,Dropsonde/dropwindsondes,TEMP DROP,002/007
+KU,E,,Ozone vertical sounding,,008/001
+KU,I,,Dispersal and transport analysis,n/a,009/000
+KU,J,01–19,Upper wind from fixed land stations,"PILOT (parts A,",002/001
+,,,,"B, C and D)",
+KU,J,20–39,Upper wind from mobile land stations,PILOT MOBIL,002/003
+,,,,"(parts A, B, C",
+,,,,and D),
+KU,J,40–59,Upper wind from marine stations,PILOT SHIP,002/002
+,,,,"(parts A, B, C",
+,,,,and D),
+KU,K,01–19,Radio soundings from fixed land stations,TEMP (parts A,002/004
+,,,,and B),
+KU,K,20–39,Radio soundings from mobile land stations,TEMP MOBIL,002/006
+,,,,(parts A and B),
+KU,K,40–59,Radio soundings from marine stations,TEMP SHIP,002/005
+,,,,(parts A and B),
+KU,L,,Total ozone,n/a,008/002
+KU,M,,Model derived sondes,,
+KU,N,,Rocketsondes,,
+KU,O,,Profiles of aircraft observations in ascending/,AMDAR,002/020
+,,,descending,,
+KU,P,,Profilers,PILOT,002/010
+KU,Q,,RASS temperature profilers,TEMP,002/011
+KU,S,01–19,Radiosondes/pibal reports from fixed land,"TEMP (parts A,",002/004
+,,,stations,"B, C and D)",
+KU,S,20–39,Radio soundings from mobile land stations,TEMP MOBIL,002/006
+,,,,"(parts A, B, C",
+,,,,and D),
+KU,S,40–59,Radio soundings from marine stations,TEMP SHIP,002/005
+,,,,"(parts A, B, C",
+,,,,and D),
+KU,T,,Satellite derived sondes,,
+KU,U,46–59,Monthly statistics of data from marine stations,SHIP,002/026
+KU,W,01–19,Upper wind from fixed land stations,PILOT (parts A,002/001
+,,,,and B),
+KU,W,20–39,Upper wind from mobile land stations,PILOT MOBIL,002/003
+,,,,(parts A and B),
+KU,W,40–59,Upper wind from marine stations,PILOT SHIP,002/002
+KU,X,,Other upper­air reports,(parts A and B),
+KV,A,,Forecast at single levels,,
+KV,B,,"Coded SIGWX, Embedded Cumulonimbus",,
+KV,C,,"CREX coded SIGWX, Clear air turbulence",,
+KV,F,,"CREX coded SIGWX, Fronts",,
+KV,N,,"CREX coded SIGWX, Other SIGWX parameters",,
+KV,O,,"CREX coded SIGWX, Turbulence",,
+KV,S,,Forecast soundings,,
+KV,T,,"CREX coded SIGWX, Icing/Tropopause",,
+KV,V,,"CREX coded SIGWX, Tropical storms,",,
+,,,"sandstorms, volcanoes",,
+KV,W,,"CREX coded SIGWX, High­level winds",,
+KV,X,,Other upper­air forecasts,,

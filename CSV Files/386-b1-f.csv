@@ -1,0 +1,25 @@
+A,Aviation area/GAMET/advisories,FM 53 (ARFOR)/[TEXT]
+B,Upper winds and temperatures,FM 50 (WINTEM)
+C,Aerodrome (VT < 12 hours),FM 51 (TAF)
+D,Radiological trajectory dose,FM 57 (RADOF)
+E,Extended,[TEXT]
+F,Shipping,FM 46 (IAC FLEET)
+G,Hydrological,FM 68 (HYFOR)
+H,Upper-air thickness,[TEXT]
+I,Iceberg,[TEXT]
+J,Radio warning service (including IUWDS data),[TEXT]
+K,Tropical cyclone advisories,[TEXT]
+L,Local/area,[TEXT]
+M,Temperature extremes,[TEXT]
+N,Space weather advisories,[TEXT]
+O,Guidance,[TEXT]
+P,Public,[TEXT]
+Q,Other shipping,[TEXT]
+R,Aviation route,FM 54 (ROFOR)
+S,Surface,FM 45 (IAC)/FM 46 (IAC FLEET)
+T,Aerodrome (VT ≥ 12 hours),FM 51 (TAF)
+U,Upper air,FM 45 (IAC)
+V,Volcanic ash advisories,[TEXT]
+W,Winter sports,[TEXT]
+X,Miscellaneous,[TEXT]
+Z,Shipping area,FM 61 (MAFOR)
