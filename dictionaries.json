@@ -26117,1551 +26117,1170 @@
             "country": "China - Peoples Republic"
         }
     },
-    "tt": {
-        "default": {
-            "generalDataType": null,
-            "specificDataType": null,
-            "codeForm": null
-        },
-        "AC": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Cyclone",
-            "codeForm": "[TEXT]"
-        },
-        "AG": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Hydrological/marine",
-            "codeForm": "[TEXT]"
-        },
-        "AH": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Thickness",
-            "codeForm": "[TEXT]"
-        },
-        "AI": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Ice",
-            "codeForm": "FM 44 (ICEAN)"
-        },
-        "AO": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Ozone layer",
-            "codeForm": "[TEXT]"
-        },
-        "AR": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Radar",
-            "codeForm": "[TEXT]"
-        },
-        "AS": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Surface",
-            "codeForm": "FM 45 (IAC)/FM 46 (IAC FLEET)"
-        },
-        "AU": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Upper air",
-            "codeForm": "FM 45 (IAC)"
-        },
-        "AW": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Weather summary",
-            "codeForm": "[TEXT]"
-        },
-        "AX": {
-            "generalDataType": "Analyses",
-            "specificDataType": "Miscellaneous",
-            "codeForm": "[TEXT]"
-        },
-        "CA": {
-            "generalDataType": "Climatic data",
-            "specificDataType": "Climatic anomalies",
-            "codeForm": "[TEXT]"
-        },
-        "CE": {
-            "generalDataType": "Climatic data",
-            "specificDataType": "Monthly means (upper air)",
-            "codeForm": "FM 76 (SHIP)"
-        },
-        "CH": {
-            "generalDataType": "Climatic data",
-            "specificDataType": "Monthly means (surface)",
-            "codeForm": "FM 72 (CLIMAT SHIP)"
-        },
-        "CO": {
-            "generalDataType": "Climatic data",
-            "specificDataType": "Monthly means (ocean areas)",
-            "codeForm": "FM 73 (NACLI, CLINP, SPCLI, CLISA, INCLI)"
-        },
-        "CS": {
-            "generalDataType": "Climatic data",
-            "specificDataType": "Monthly means (surface)",
-            "codeForm": "FM 71 (CLIMAT)"
-        },
-        "DA": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "DB": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "DC": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Vorticity",
-            "codeForm": null
-        },
-        "DD": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "DE": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "DG": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Divergence",
-            "codeForm": null
-        },
-        "DH": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "DJ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "DK": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "DM": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "DN": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "DO": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "DP": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "DQ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "DR": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "DT": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "DU": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "DV": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "DW": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "DZ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "EC": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Cloud top temperature",
-            "codeForm": null
-        },
-        "EF": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Fog",
-            "codeForm": null
-        },
-        "EI": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Infrared",
-            "codeForm": null
-        },
-        "ES": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Surface temperature",
-            "codeForm": null
-        },
-        "EV": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Visible",
-            "codeForm": null
-        },
-        "EW": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "Water vapour",
-            "codeForm": null
-        },
-        "EY": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "User specified",
-            "codeForm": null
-        },
-        "EZ": {
-            "generalDataType": "Satellite imagery",
-            "specificDataType": "unspecified",
-            "codeForm": null
-        },
-        "FA": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Aviation area/GAMET/advisories",
-            "codeForm": "FM 53 (ARFOR)/[TEXT]"
-        },
-        "FB": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Upper winds and temperatures",
-            "codeForm": "FM 50 (WINTEM)"
-        },
-        "FC": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Aerodrome (VT < 12 hours)",
-            "codeForm": "FM 51 (TAF)"
-        },
-        "FD": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Radiological trajectory dose",
-            "codeForm": "FM 57 (RADOF)"
-        },
-        "FE": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Extended",
-            "codeForm": "[TEXT]"
-        },
-        "FF": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Shipping",
-            "codeForm": "FM 46 (IAC FLEET)"
-        },
-        "FG": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Hydrological",
-            "codeForm": "FM 68 (HYFOR)"
-        },
-        "FH": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Upper-air thickness",
-            "codeForm": "[TEXT]"
-        },
-        "FI": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Iceberg",
-            "codeForm": "[TEXT]"
-        },
-        "FJ": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Radio warning service (including IUWDS data)",
-            "codeForm": "[TEXT]"
-        },
-        "FK": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Tropical cyclone advisories",
-            "codeForm": "[TEXT]"
-        },
-        "FL": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Local/area",
-            "codeForm": "[TEXT]"
-        },
-        "FM": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Temperature extremes",
-            "codeForm": "[TEXT]"
-        },
-        "FN": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Space weather advisories",
-            "codeForm": "[TEXT]"
-        },
-        "FO": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Guidance",
-            "codeForm": "[TEXT]"
-        },
-        "FP": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Public",
-            "codeForm": "[TEXT]"
-        },
-        "FQ": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Other shipping",
-            "codeForm": "[TEXT]"
-        },
-        "FR": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Aviation route",
-            "codeForm": "FM 54 (ROFOR)"
-        },
-        "FS": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Surface",
-            "codeForm": "FM 45 (IAC)/FM 46 (IAC FLEET)"
-        },
-        "FT": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Aerodrome (VT \u2265 12 hours)",
-            "codeForm": "FM 51 (TAF)"
-        },
-        "FU": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Upper air",
-            "codeForm": "FM 45 (IAC)"
-        },
-        "FV": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Volcanic ash advisories",
-            "codeForm": "[TEXT]"
-        },
-        "FW": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Winter sports",
-            "codeForm": "[TEXT]"
-        },
-        "FX": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Miscellaneous",
-            "codeForm": "[TEXT]"
-        },
-        "FZ": {
-            "generalDataType": "Forecasts",
-            "specificDataType": "Shipping area",
-            "codeForm": "FM 61 (MAFOR)"
-        },
-        "GA": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "GB": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "GC": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Vorticity",
-            "codeForm": null
-        },
-        "GD": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "GE": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "GG": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Divergence",
-            "codeForm": null
-        },
-        "GH": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "GJ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "GK": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "GM": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "GN": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "GO": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "GP": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "GQ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "GR": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "GT": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "GU": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "GV": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "GW": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "GZ": {
-            "generalDataType": "Grid point information (GRID)",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "HA": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "HB": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "HC": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Vorticity",
-            "codeForm": null
-        },
-        "HD": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "HE": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "HG": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Divergence",
-            "codeForm": null
-        },
-        "HH": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "HJ": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "HK": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "HM": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "HN": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "HO": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "HP": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "HQ": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "HR": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "HT": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "HU": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "HV": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "HW": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "HZ": {
-            "generalDataType": "Grid point information (GRIB)",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "IN": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Satellite data",
-            "codeForm": null
-        },
-        "IO": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Oceanographic/limnographic (water property)",
-            "codeForm": null
-        },
-        "IP": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Pictorial",
-            "codeForm": null
-        },
-        "IS": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Surface/sea level",
-            "codeForm": null
-        },
-        "IT": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Text (plain language information)",
-            "codeForm": null
-        },
-        "IU": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Upper-air data",
-            "codeForm": null
-        },
-        "IX": {
-            "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
-            "specificDataType": "Other data types",
-            "codeForm": null
-        },
-        "JN": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Satellite data",
-            "codeForm": null
-        },
-        "JO": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Oceanographic/limnographic (water property)",
-            "codeForm": null
-        },
-        "JP": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Pictorial",
-            "codeForm": null
-        },
-        "JS": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Surface/sea level",
-            "codeForm": null
-        },
-        "JT": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Text (plain language information)",
-            "codeForm": null
-        },
-        "JU": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Upper-air data",
-            "codeForm": null
-        },
-        "JX": {
-            "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
-            "specificDataType": "Other data types",
-            "codeForm": null
-        },
-        "LA": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aviation routine reports (\u201cMETAR\u201d) 2",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LC": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aerodrome Forecast (\u201cTAF\u201d) (VT < 12 hours) 3",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LK": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Tropical cyclone advisories 3",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LN": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Space weather advisories 3",
-            "codeForm": null
-        },
-        "LP": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Special aviation weather reports (\u201cSPECI\u201d) 2",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LS": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aviation general warning (\u201cSIGMET\u201d) 1",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LT": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aerodrome forecast (\u201cTAF\u201d)) (VT \u2265 12 hours) 3",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LU": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Volcanic ash advisory 3",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LV": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aviation volcanic ash warning (\u201cSIGMET\u201d) 1",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LW": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "AIRMET 1",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "LY": {
-            "generalDataType": "Aviation information in XML",
-            "specificDataType": "Aviation tropical cyclone warning (\u201cSIGMET\u201d) 1",
-            "codeForm": "IWXXM (FM-205)"
-        },
-        "NG": {
-            "generalDataType": "Notices",
-            "specificDataType": "Hydrological",
-            "codeForm": "[TEXT]"
-        },
-        "NH": {
-            "generalDataType": "Notices",
-            "specificDataType": "Marine",
-            "codeForm": "[TEXT]"
-        },
-        "NN": {
-            "generalDataType": "Notices",
-            "specificDataType": "Nuclear emergency response",
-            "codeForm": "[TEXT]"
-        },
-        "NO": {
-            "generalDataType": "Notices",
-            "specificDataType": "METNO/WIFMA",
-            "codeForm": "[TEXT]"
-        },
-        "NP": {
-            "generalDataType": "Notices",
-            "specificDataType": "Product generation delay",
-            "codeForm": "[TEXT]"
-        },
-        "NT": {
-            "generalDataType": "Notices",
-            "specificDataType": "TEST MSG [System related]",
-            "codeForm": "[TEXT]"
-        },
-        "NW": {
-            "generalDataType": "Notices",
-            "specificDataType": "Warning related and/or cancellation",
-            "codeForm": "[TEXT]"
-        },
-        "OD": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Depth",
-            "codeForm": null
-        },
-        "OE": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Ice concentration",
-            "codeForm": null
-        },
-        "OF": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Ice thickness",
-            "codeForm": null
-        },
-        "OG": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Ice drift",
-            "codeForm": null
-        },
-        "OH": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Ice growth",
-            "codeForm": null
-        },
-        "OI": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Ice convergence/divergence",
-            "codeForm": null
-        },
-        "OQ": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Temperature anomaly",
-            "codeForm": null
-        },
-        "OR": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Depth anomaly",
-            "codeForm": null
-        },
-        "OS": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Salinity",
-            "codeForm": null
-        },
-        "OT": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "OU": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Current component",
-            "codeForm": null
-        },
-        "OV": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Current component",
-            "codeForm": null
-        },
-        "OW": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Temperature warming",
-            "codeForm": null
-        },
-        "OX": {
-            "generalDataType": "Oceanographic information (GRIB)",
-            "specificDataType": "Mixed data",
-            "codeForm": null
-        },
-        "PA": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "PB": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "PC": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Clear air turbulence",
-            "codeForm": null
-        },
-        "PD": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "PE": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "PF": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Aerological diagrams (Ash cloud)",
-            "codeForm": null
-        },
-        "PG": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Significant weather",
-            "codeForm": null
-        },
-        "PH": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "PI": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Ice flow",
-            "codeForm": null
-        },
-        "PJ": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "PK": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "PL": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Plain language",
-            "codeForm": null
-        },
-        "PM": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "PN": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "PO": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "PP": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "PQ": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "PR": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "PS": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Snow cover",
-            "codeForm": null
-        },
-        "PT": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "PU": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "PV": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "PW": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "PX": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Lifted index",
-            "codeForm": null
-        },
-        "PY": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Observational plotted chart",
-            "codeForm": null
-        },
-        "PZ": {
-            "generalDataType": "Pictorial information (Binary coded)",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "QA": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "QB": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "QC": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Clear air turbulence",
-            "codeForm": null
-        },
-        "QD": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "QE": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "QF": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Aerological diagrams (Ash cloud)",
-            "codeForm": null
-        },
-        "QG": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Significant weather",
-            "codeForm": null
-        },
-        "QH": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "QI": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Ice flow",
-            "codeForm": null
-        },
-        "QJ": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "QK": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "QL": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Plain language",
-            "codeForm": null
-        },
-        "QM": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "QN": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "QO": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "QP": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "QQ": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "QR": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "QS": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Snow cover",
-            "codeForm": null
-        },
-        "QT": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "QU": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "QV": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "QW": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "QX": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Lifted index",
-            "codeForm": null
-        },
-        "QY": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Observational plotted chart",
-            "codeForm": null
-        },
-        "QZ": {
-            "generalDataType": "Pictorial information regional (Binary coded)",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "SA": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Aviation routine reports",
-            "codeForm": "FM 15 (METAR)"
-        },
-        "SB": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Radar reports (Part A)",
-            "codeForm": "FM 20 (RADOB)"
-        },
-        "SC": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Radar reports (Part B)",
-            "codeForm": "FM 20 (RADOB)"
-        },
-        "SD": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Radar reports (Parts A & B)",
-            "codeForm": "FM 20 (RADOB)"
-        },
-        "SE": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Seismic data",
-            "codeForm": "* (SEISMIC)"
-        },
-        "SF": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Atmospherics reports",
-            "codeForm": "FM 81 (SFAZI)/FM 82 (SFLOC)/FM 83 (SFAZU)"
-        },
-        "SG": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Radiological data report",
-            "codeForm": "FM 22 (RADREP)"
-        },
-        "SH": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Reports from DCP stations",
-            "codeForm": "(any format)"
-        },
-        "SI": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Intermediate synoptic hour",
-            "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
-        },
-        "SL": {
-            "generalDataType": "Surface data",
-            "specificDataType": "-",
-            "codeForm": "-"
-        },
-        "SM": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Main synoptic hour",
-            "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
-        },
-        "SN": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Non-standard synoptic hour",
-            "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
-        },
-        "SO": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Oceanographic data",
-            "codeForm": "FM 63 (BATHY)/FM 64 (TESAC)/ FM 62 (TRACKOB)"
-        },
-        "SP": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Special aviation weather reports",
-            "codeForm": "FM 16 (SPECI)"
-        },
-        "SR": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Hydrological (river) reports",
-            "codeForm": "FM 67 (HYDRA)"
-        },
-        "SS": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Drifting buoy reports",
-            "codeForm": "FM 18 (DRIFTER)"
-        },
-        "ST": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Sea ice",
-            "codeForm": "[TEXT]"
-        },
-        "SU": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Snow depth",
-            "codeForm": "[TEXT]"
-        },
-        "SV": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Lake ice",
-            "codeForm": "[TEXT]"
-        },
-        "SW": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Wave information",
-            "codeForm": "FM 65 (WAVEOB)"
-        },
-        "SX": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Miscellaneous",
-            "codeForm": "[TEXT]"
-        },
-        "SY": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Seismic waveform data",
-            "codeForm": "(any format)"
-        },
-        "SZ": {
-            "generalDataType": "Surface data",
-            "specificDataType": "Sea-level data and deep-ocean tsunami data",
-            "codeForm": "(any alphanumeric format)"
-        },
-        "TG": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "Hydrological",
-            "codeForm": "[TEXT]"
-        },
-        "TH": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "Marine",
-            "codeForm": "[TEXT]"
-        },
-        "TN": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "Nuclear emergency response",
-            "codeForm": "[TEXT]"
-        },
-        "TO": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "METNO/WIFMA",
-            "codeForm": "[TEXT]"
-        },
-        "TP": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "Product generation delay",
-            "codeForm": "[TEXT]"
-        },
-        "TT": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "TEST MSG [System related]",
-            "codeForm": "[TEXT]"
-        },
-        "TW": {
-            "generalDataType": "Satellite data",
-            "specificDataType": "Warning related and/or cancellation",
-            "codeForm": "[TEXT]"
-        },
-        "UA": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Aircraft reports",
-            "codeForm": "FM 41 (CODAR), ICAO (AIREP)"
-        },
-        "UD": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Aircraft reports",
-            "codeForm": "FM 42 (AMDAR)"
-        },
-        "UE": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Part D)",
-            "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UF": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Parts C and D) [National and bilateral option]",
-            "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UG": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Part B)",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
-        },
-        "UH": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Part C)",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
-        },
-        "UI": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Parts A and B) [National and bilateral option]",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
-        },
-        "UK": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Part B)",
-            "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UL": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Part C)",
-            "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UM": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Parts A and B) [National and bilateral option]",
-            "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UN": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Rocketsonde reports",
-            "codeForm": "FM 39 (ROCOB)/FM 40 (ROCOB SHIP)"
-        },
-        "UP": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Part A)",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
-        },
-        "UQ": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Part D)",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
-        },
-        "UR": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Aircraft report",
-            "codeForm": "[NATIONAL*] (RECCO)"
-        },
-        "US": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind (Part A)",
-            "codeForm": "FM 35 (TEMP)/FM 36 (PILOT SHIP)/ FM 38 (TEMP MOBIL)"
-        },
-        "UT": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Aircraft report",
-            "codeForm": "FM 41 (CODAR)"
-        },
-        "UX": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Miscellaneous",
-            "codeForm": "[TEXT]"
-        },
-        "UY": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper wind (Parts C and D) [National and bilateral option]",
-            "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
-        },
-        "UZ": {
-            "generalDataType": "Upper-air data",
-            "specificDataType": "Upper-level pressure, temperature, humidity and wind from a sonde released by carrier balloon or aircraft (Parts A, B, C, D)",
-            "codeForm": "FM 37 (TEMP DROP)"
-        },
-        "WA": {
-            "generalDataType": "Warnings",
-            "specificDataType": "AIRMET",
-            "codeForm": "[TEXT]"
-        },
-        "WC": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Tropical cyclone (SIGMET)",
-            "codeForm": "[TEXT]"
-        },
-        "WE": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Tsunami",
-            "codeForm": "[TEXT]"
-        },
-        "WF": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Tornado",
-            "codeForm": "[TEXT]"
-        },
-        "WG": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Hydrological/river flood",
-            "codeForm": "[TEXT]"
-        },
-        "WH": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Marine/coastal flood",
-            "codeForm": "[TEXT]"
-        },
-        "WO": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Other",
-            "codeForm": "[TEXT]"
-        },
-        "WR": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Humanitarian activities",
-            "codeForm": "(any format)"
-        },
-        "WS": {
-            "generalDataType": "Warnings",
-            "specificDataType": "SIGMET",
-            "codeForm": "[TEXT]"
-        },
-        "WT": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Tropical cyclone (Typhoon/hurricane)",
-            "codeForm": "[TEXT]"
-        },
-        "WU": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Severe thunderstorm",
-            "codeForm": "[TEXT]"
-        },
-        "WV": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Volcanic ash clouds (SIGMET)",
-            "codeForm": "[TEXT]"
-        },
-        "WW": {
-            "generalDataType": "Warnings",
-            "specificDataType": "Warnings and weather summary",
-            "codeForm": "[TEXT]"
-        },
-        "XA": {
-            "generalDataType": "",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "XB": {
-            "generalDataType": "",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "XC": {
-            "generalDataType": "",
-            "specificDataType": "Vorticity",
-            "codeForm": null
-        },
-        "XD": {
-            "generalDataType": "",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "XE": {
-            "generalDataType": "",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "XG": {
-            "generalDataType": "",
-            "specificDataType": "Divergence",
-            "codeForm": null
-        },
-        "XH": {
-            "generalDataType": "",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "XJ": {
-            "generalDataType": "",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "XK": {
-            "generalDataType": "",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "XM": {
-            "generalDataType": "",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "XN": {
-            "generalDataType": "",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "XO": {
-            "generalDataType": "",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "XP": {
-            "generalDataType": "",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "XQ": {
-            "generalDataType": "",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "XR": {
-            "generalDataType": "",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "XT": {
-            "generalDataType": "",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "XU": {
-            "generalDataType": "",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "XV": {
-            "generalDataType": "",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "XW": {
-            "generalDataType": "",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "XZ": {
-            "generalDataType": "",
-            "specificDataType": "Not assigned",
-            "codeForm": null
-        },
-        "YA": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Radar data",
-            "codeForm": null
-        },
-        "YB": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Cloud",
-            "codeForm": null
-        },
-        "YC": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Vorticity",
-            "codeForm": null
-        },
-        "YD": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Thickness (relative topography)",
-            "codeForm": null
-        },
-        "YE": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Precipitation",
-            "codeForm": null
-        },
-        "YG": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Divergence",
-            "codeForm": null
-        },
-        "YH": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Height",
-            "codeForm": null
-        },
-        "YJ": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Wave height + combinations",
-            "codeForm": null
-        },
-        "YK": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Swell height + combinations",
-            "codeForm": null
-        },
-        "YM": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "For national use",
-            "codeForm": null
-        },
-        "YN": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Radiation",
-            "codeForm": null
-        },
-        "YO": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Vertical velocity",
-            "codeForm": null
-        },
-        "YP": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Pressure",
-            "codeForm": null
-        },
-        "YQ": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Wet bulb potential temperature",
-            "codeForm": null
-        },
-        "YR": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Relative humidity",
-            "codeForm": null
-        },
-        "YT": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Temperature",
-            "codeForm": null
-        },
-        "YU": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Eastward wind component",
-            "codeForm": null
-        },
-        "YV": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Northward wind component",
-            "codeForm": null
-        },
-        "YW": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Wind",
-            "codeForm": null
-        },
-        "YZ": {
-            "generalDataType": "GRIB regional use",
-            "specificDataType": "Not assigned",
-            "codeForm": null
+    "386": {
+        "a": {
+            "A": {
+                "T1": "A",
+                "dataType": "Analyses",
+                "T2": "B1",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "3"
+            },
+            "B": {
+                "T1": "B",
+                "dataType": "Addressed message",
+                "T2": "***",
+                "A1": "***",
+                "A2": "***",
+                "ii": "***",
+                "priority": "1/2/4*"
+            },
+            "C": {
+                "T1": "C",
+                "dataType": "Climatic data",
+                "T2": "B1",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "4"
+            },
+            "D": {
+                "T1": "D",
+                "dataType": "Grid point information (GRID)",
+                "T2": "B2",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "E": {
+                "T1": "E",
+                "dataType": "Satellite imagery",
+                "T2": "B5",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "3"
+            },
+            "F": {
+                "T1": "F",
+                "dataType": "Forecasts",
+                "T2": "B1",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "3"
+            },
+            "G": {
+                "T1": "G",
+                "dataType": "Grid point information (GRID)",
+                "T2": "B2",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "H": {
+                "T1": "H",
+                "dataType": "Grid point information (GRIB)",
+                "T2": "B2",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "I": {
+                "T1": "I",
+                "dataType": "Observational data (Binary coded) \u2013 BUFR",
+                "T2": "B3",
+                "A1": "C6",
+                "A2": "C3",
+                "ii": "**",
+                "priority": "2"
+            },
+            "J": {
+                "T1": "J",
+                "dataType": "Forecast information (Binary coded) \u2013 BUFR",
+                "T2": "B3",
+                "A1": "C6",
+                "A2": "C4",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "K": {
+                "T1": "K",
+                "dataType": "CREX",
+                "T2": "B3",
+                "A1": "C7",
+                "A2": "C3",
+                "ii": "**",
+                "priority": "2"
+            },
+            "L": {
+                "T1": "L",
+                "dataType": "Aviation information in XML",
+                "T2": "B7",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "1/2/3"
+            },
+            "M": {
+                "T1": "M",
+                "dataType": "\u2013",
+                "T2": "",
+                "A1": "",
+                "A2": "",
+                "ii": "",
+                "priority": ""
+            },
+            "N": {
+                "T1": "N",
+                "dataType": "Notices",
+                "T2": "B1",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "4"
+            },
+            "O": {
+                "T1": "O",
+                "dataType": "Oceanographic information (GRIB)",
+                "T2": "B4",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "D1",
+                "priority": "3"
+            },
+            "P": {
+                "T1": "P",
+                "dataType": "Pictorial information (Binary coded)",
+                "T2": "B6",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "Q": {
+                "T1": "Q",
+                "dataType": "Pictorial information regional (Binary coded)",
+                "T2": "B6",
+                "A1": "C3",
+                "A2": "C5",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "R": {
+                "T1": "R",
+                "dataType": "\u2013",
+                "T2": "",
+                "A1": "",
+                "A2": "",
+                "ii": "",
+                "priority": ""
+            },
+            "S": {
+                "T1": "S",
+                "dataType": "Surface data",
+                "T2": "B1",
+                "A1": "C1/C2",
+                "A2": "C1/C2",
+                "ii": "**",
+                "priority": "2/4*"
+            },
+            "T": {
+                "T1": "T",
+                "dataType": "Satellite data",
+                "T2": "B1",
+                "A1": "C3",
+                "A2": "C4",
+                "ii": "**",
+                "priority": "2"
+            },
+            "U": {
+                "T1": "U",
+                "dataType": "Upper\u00adair data",
+                "T2": "B1",
+                "A1": "C1/C2",
+                "A2": "C1/C2",
+                "ii": "**",
+                "priority": "2"
+            },
+            "V": {
+                "T1": "V",
+                "dataType": "National data",
+                "T2": "(1)",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "(2)"
+            },
+            "W": {
+                "T1": "W",
+                "dataType": "Warnings",
+                "T2": "B1",
+                "A1": "C1",
+                "A2": "C1",
+                "ii": "**",
+                "priority": "1"
+            },
+            "X": {
+                "T1": "X",
+                "dataType": "Common Alert Protocol (CAP) messages",
+                "T2": "",
+                "A1": "",
+                "A2": "",
+                "ii": "",
+                "priority": ""
+            },
+            "Y": {
+                "T1": "Y",
+                "dataType": "GRIB regional use",
+                "T2": "B2",
+                "A1": "C3",
+                "A2": "C5",
+                "ii": "D2",
+                "priority": "3"
+            },
+            "Z": {
+                "T1": "Z",
+                "dataType": "\u2013",
+                "T2": "",
+                "A1": "",
+                "A2": "",
+                "ii": "",
+                "priority": ""
+            }
+        },
+        "b1-a": {
+            "C": {
+                "T2": "C",
+                "dataType": "Cyclone",
+                "codeForm": "[TEXT]"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Hydrological/marine",
+                "codeForm": "[TEXT]"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Thickness",
+                "codeForm": "[TEXT]"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Ice",
+                "codeForm": "FM 44 (ICEAN)"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Ozone layer",
+                "codeForm": "[TEXT]"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Radar",
+                "codeForm": "[TEXT]"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Surface",
+                "codeForm": "FM 45 (IAC)/FM 46 (IAC FLEET)"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Upper air",
+                "codeForm": "FM 45 (IAC)"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Weather summary",
+                "codeForm": "[TEXT]"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Miscellaneous",
+                "codeForm": "[TEXT]"
+            }
+        },
+        "b1-c": {
+            "A": {
+                "T2": "A",
+                "dataType": "Climatic anomalies",
+                "codeForm": "[TEXT]"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Monthly means (upper air)",
+                "codeForm": "FM 76 (SHIP)"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Monthly means (surface)",
+                "codeForm": "FM 72 (CLIMAT SHIP)"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Monthly means (ocean areas)",
+                "codeForm": "FM 73 (NACLI, CLINP, SPCLI, CLISA, INCLI)"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Monthly means (surface)",
+                "codeForm": "FM 71 (CLIMAT)"
+            }
+        },
+        "b1-f": {
+            "A": {
+                "T2": "A",
+                "dataType": "Aviation area/GAMET/advisories",
+                "codeForm": "FM 53 (ARFOR)/[TEXT]"
+            },
+            "B": {
+                "T2": "B",
+                "dataType": "Upper winds and temperatures",
+                "codeForm": "FM 50 (WINTEM)"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Aerodrome (VT < 12 hours)",
+                "codeForm": "FM 51 (TAF)"
+            },
+            "D": {
+                "T2": "D",
+                "dataType": "Radiological trajectory dose",
+                "codeForm": "FM 57 (RADOF)"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Extended",
+                "codeForm": "[TEXT]"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Shipping",
+                "codeForm": "FM 46 (IAC FLEET)"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Hydrological",
+                "codeForm": "FM 68 (HYFOR)"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Upper-air thickness",
+                "codeForm": "[TEXT]"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Iceberg",
+                "codeForm": "[TEXT]"
+            },
+            "J": {
+                "T2": "J",
+                "dataType": "Radio warning service (including IUWDS data)",
+                "codeForm": "[TEXT]"
+            },
+            "K": {
+                "T2": "K",
+                "dataType": "Tropical cyclone advisories",
+                "codeForm": "[TEXT]"
+            },
+            "L": {
+                "T2": "L",
+                "dataType": "Local/area",
+                "codeForm": "[TEXT]"
+            },
+            "M": {
+                "T2": "M",
+                "dataType": "Temperature extremes",
+                "codeForm": "[TEXT]"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Space weather advisories",
+                "codeForm": "[TEXT]"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Guidance",
+                "codeForm": "[TEXT]"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Public",
+                "codeForm": "[TEXT]"
+            },
+            "Q": {
+                "T2": "Q",
+                "dataType": "Other shipping",
+                "codeForm": "[TEXT]"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Aviation route",
+                "codeForm": "FM 54 (ROFOR)"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Surface",
+                "codeForm": "FM 45 (IAC)/FM 46 (IAC FLEET)"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Aerodrome (VT \u2265 12 hours)",
+                "codeForm": "FM 51 (TAF)"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Upper air",
+                "codeForm": "FM 45 (IAC)"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Volcanic ash advisories",
+                "codeForm": "[TEXT]"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Winter sports",
+                "codeForm": "[TEXT]"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Miscellaneous",
+                "codeForm": "[TEXT]"
+            },
+            "Z": {
+                "T2": "Z",
+                "dataType": "Shipping area",
+                "codeForm": "FM 61 (MAFOR)"
+            }
+        },
+        "b1-n": {
+            "G": {
+                "T2": "G",
+                "dataType": "Hydrological",
+                "codeForm": "[TEXT]"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Marine",
+                "codeForm": "[TEXT]"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Nuclear emergency response",
+                "codeForm": "[TEXT]"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "METNO/WIFMA",
+                "codeForm": "[TEXT]"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Product generation delay",
+                "codeForm": "[TEXT]"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "TEST MSG [System related]",
+                "codeForm": "[TEXT]"
+            },
+            "W ": {
+                "T2": "W ",
+                "dataType": "Warning related and/or cancellation",
+                "codeForm": "[TEXT] "
+            }
+        },
+        "b1-s": {
+            "A": {
+                "T2": "A",
+                "dataType": "Aviation routine reports",
+                "codeForm": "FM 15 (METAR)"
+            },
+            "B": {
+                "T2": "B",
+                "dataType": "Radar reports (Part A)",
+                "codeForm": "FM 20 (RADOB)"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Radar reports (Part B)",
+                "codeForm": "FM 20 (RADOB)"
+            },
+            "D": {
+                "T2": "D",
+                "dataType": "Radar reports (Parts A & B)",
+                "codeForm": "FM 20 (RADOB)"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Seismic data",
+                "codeForm": "* (SEISMIC)"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Atmospherics reports",
+                "codeForm": "FM 81 (SFAZI)/FM 82 (SFLOC)/FM 83 (SFAZU)"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Radiological data report",
+                "codeForm": "FM 22 (RADREP)"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Reports from DCP stations",
+                "codeForm": "(any format)"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Intermediate synoptic hour",
+                "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
+            },
+            "L": {
+                "T2": "L",
+                "dataType": "\u2013",
+                "codeForm": "\u2013"
+            },
+            "M": {
+                "T2": "M",
+                "dataType": "Main synoptic hour",
+                "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Non\u00adstandard synoptic hour",
+                "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
+            },
+            "O ": {
+                "T2": "O ",
+                "dataType": "Oceanographic data ",
+                "codeForm": "FM 63 (BATHY)/FM 64 (TESAC)/ FM 62 (TRACKOB)"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Special aviation weather reports",
+                "codeForm": "FM 16 (SPECI)"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Hydrological (river) reports",
+                "codeForm": "FM 67 (HYDRA)"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Drifting buoy reports",
+                "codeForm": "FM 18 (DRIFTER)"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Sea ice",
+                "codeForm": "[TEXT]"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Snow depth",
+                "codeForm": "[TEXT]"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Lake ice",
+                "codeForm": "[TEXT]"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Wave information",
+                "codeForm": "FM 65 (WAVEOB)"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Miscellaneous",
+                "codeForm": "[TEXT]"
+            },
+            "Y": {
+                "T2": "Y",
+                "dataType": "Seismic waveform data",
+                "codeForm": "(any format)"
+            },
+            "Z ": {
+                "T2": "Z ",
+                "dataType": "Sea\u00adlevel data and deep\u00adocean tsunami data",
+                "codeForm": "(any alphanumeric format) "
+            }
+        },
+        "b1-t": {
+            "B": {
+                "T2": "B",
+                "dataType": "Satellite orbit parameters",
+                "codeForm": "[TEXT]"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Satellite cloud interpretations",
+                "codeForm": "FM 85 (SAREP)"
+            },
+            "H ": {
+                "T2": "H ",
+                "dataType": "Satellite remote upper\u00adair soundings",
+                "codeForm": "FM 86 (SATEM) "
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Clear radiance observations",
+                "codeForm": "FM 87 (SARAD)"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Sea surface temperatures",
+                "codeForm": "FM 88 (SATOB)"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Winds and cloud temperatures",
+                "codeForm": "FM 88 (SATOB)"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Miscellaneous",
+                "codeForm": "[TEXT]"
+            }
+        },
+        "b1-u": {
+            "A": {
+                "T2": "A",
+                "dataType": "Aircraft reports",
+                "codeForm": "FM 41 (CODAR), ICAO (AIREP)"
+            },
+            "D": {
+                "T2": "D",
+                "dataType": "Aircraft reports",
+                "codeForm": "FM 42 (AMDAR)"
+            },
+            "E ": {
+                "T2": "E ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part D)",
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
+            },
+            "F  ": {
+                "T2": "F  ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Parts C and D) [National and bilateral option]",
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL) "
+            },
+            "G ": {
+                "T2": "G ",
+                "dataType": "Upper wind (Part B) ",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
+            },
+            "H ": {
+                "T2": "H ",
+                "dataType": "Upper wind (Part C) ",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
+            },
+            "I ": {
+                "T2": "I ",
+                "dataType": "Upper wind (Parts A and B) [National and bilateral option]",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
+            },
+            "K ": {
+                "T2": "K ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part B)",
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
+            },
+            "L ": {
+                "T2": "L ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part C)",
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
+            },
+            "M  ": {
+                "T2": "M  ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Parts A and B) [National and bilateral option]",
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL) "
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Rocketsonde reports",
+                "codeForm": "FM 39 (ROCOB)/FM 40 (ROCOB SHIP)"
+            },
+            "P ": {
+                "T2": "P ",
+                "dataType": "Upper wind (Part A) ",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
+            },
+            "Q ": {
+                "T2": "Q ",
+                "dataType": "Upper wind (Part D) ",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Aircraft report",
+                "codeForm": "[NATIONAL*] (RECCO)"
+            },
+            "S ": {
+                "T2": "S ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part A)",
+                "codeForm": "FM 35 (TEMP)/FM 36 (PILOT SHIP)/ FM 38 (TEMP MOBIL)"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Aircraft report",
+                "codeForm": "FM 41 (CODAR)"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Miscellaneous",
+                "codeForm": "[TEXT]"
+            },
+            "Y ": {
+                "T2": "Y ",
+                "dataType": "Upper wind (Parts C and D) [National and bilateral option]",
+                "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
+            },
+            "Z  ": {
+                "T2": "Z  ",
+                "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind from a sonde released by carrier balloon or aircraft (Parts A, B, C, D)",
+                "codeForm": "FM 37 (TEMP DROP)  "
+            }
+        },
+        "b1-w": {
+            "A": {
+                "T2": "A",
+                "dataType": "AIRMET",
+                "codeForm": "[TEXT]"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Tropical cyclone (SIGMET)",
+                "codeForm": "[TEXT]"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Tsunami",
+                "codeForm": "[TEXT]"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Tornado",
+                "codeForm": "[TEXT]"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Hydrological/river flood",
+                "codeForm": "[TEXT]"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Marine/coastal flood",
+                "codeForm": "[TEXT]"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Other",
+                "codeForm": "[TEXT]"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Humanitarian activities",
+                "codeForm": "(any format)"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "SIGMET",
+                "codeForm": "[TEXT]"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Tropical cyclone (Typhoon/hurricane)",
+                "codeForm": "[TEXT]"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Severe thunderstorm",
+                "codeForm": "[TEXT]"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Volcanic ash clouds (SIGMET)",
+                "codeForm": "[TEXT]"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Warnings and weather summary",
+                "codeForm": "[TEXT]"
+            }
+        },
+        "b2": {
+            "A": {
+                "T2": "A",
+                "dataType": "Radar data"
+            },
+            "B": {
+                "T2": "B",
+                "dataType": "Cloud"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Vorticity"
+            },
+            "D": {
+                "T2": "D",
+                "dataType": "Thickness (relative topography)"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Precipitation"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Divergence"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Height"
+            },
+            "J": {
+                "T2": "J",
+                "dataType": "Wave height + combinations"
+            },
+            "K": {
+                "T2": "K",
+                "dataType": "Swell height + combinations"
+            },
+            "M": {
+                "T2": "M",
+                "dataType": "For national use"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Radiation"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Vertical velocity"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Pressure"
+            },
+            "Q": {
+                "T2": "Q",
+                "dataType": "Wet bulb potential temperature"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Relative humidity"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Temperature"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Eastward wind component"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Northward wind component"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Wind"
+            },
+            "Z": {
+                "T2": "Z",
+                "dataType": "Not assigned"
+            }
+        },
+        "b3": {
+            "N": {
+                "T2": "N",
+                "dataType": "Satellite data"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Oceanographic/limnographic (water property)"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Pictorial"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Surface/sea level"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Text (plain language information)"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Upper\u00adair data"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Other data types"
+            }
+        },
+        "b4": {
+            "D": {
+                "T2": "D",
+                "dataType": "Depth"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Ice concentration"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Ice thickness"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Ice drift"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Ice growth"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Ice convergence/divergence"
+            },
+            "Q": {
+                "T2": "Q",
+                "dataType": "Temperature anomaly"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Depth anomaly"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Salinity"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Temperature"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Current component"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Current component"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Temperature warming"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Mixed data"
+            }
+        },
+        "b5": {
+            "C": {
+                "T2": "C",
+                "dataType": "Cloud top temperature"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Fog"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Infrared"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Surface temperature"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Visible"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Water vapour"
+            },
+            "Y": {
+                "T2": "Y",
+                "dataType": "User specified"
+            },
+            "Z": {
+                "T2": "Z",
+                "dataType": "Unspecified"
+            }
+        },
+        "b6": {
+            "A": {
+                "T2": "A",
+                "dataType": "Radar data"
+            },
+            "B": {
+                "T2": "B",
+                "dataType": "Cloud"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Clear air turbulence"
+            },
+            "D": {
+                "T2": "D",
+                "dataType": "Thickness (relative topography)"
+            },
+            "E": {
+                "T2": "E",
+                "dataType": "Precipitation"
+            },
+            "F": {
+                "T2": "F",
+                "dataType": "Aerological diagrams (Ash cloud)"
+            },
+            "G": {
+                "T2": "G",
+                "dataType": "Significant weather"
+            },
+            "H": {
+                "T2": "H",
+                "dataType": "Height"
+            },
+            "I": {
+                "T2": "I",
+                "dataType": "Ice flow"
+            },
+            "J": {
+                "T2": "J",
+                "dataType": "Wave height + combinations"
+            },
+            "K": {
+                "T2": "K",
+                "dataType": "Swell height + combinations"
+            },
+            "L": {
+                "T2": "L",
+                "dataType": "Plain language"
+            },
+            "M": {
+                "T2": "M",
+                "dataType": "For national use"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Radiation"
+            },
+            "O": {
+                "T2": "O",
+                "dataType": "Vertical velocity"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Pressure"
+            },
+            "Q": {
+                "T2": "Q",
+                "dataType": "Wet bulb potential temperature"
+            },
+            "R": {
+                "T2": "R",
+                "dataType": "Relative humidity"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Snow cover"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Temperature"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Eastward wind component"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Northward wind component"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "Wind"
+            },
+            "X": {
+                "T2": "X",
+                "dataType": "Lifted index"
+            },
+            "Y": {
+                "T2": "Y",
+                "dataType": "Observational plotted chart"
+            },
+            "Z": {
+                "T2": "Z",
+                "dataType": "Not assigned"
+            }
+        },
+        "b7": {
+            "A": {
+                "T2": "A",
+                "dataType": "Aviation routine reports (\u201cMETAR\u201d)",
+                "GTSPriority": "2"
+            },
+            "C": {
+                "T2": "C",
+                "dataType": "Aerodrome Forecast (\u201cTAF\u201d) (VT < 12 hours)",
+                "GTSPriority": "3"
+            },
+            "K": {
+                "T2": "K",
+                "dataType": "Tropical cyclone advisories",
+                "GTSPriority": "3"
+            },
+            "N": {
+                "T2": "N",
+                "dataType": "Space weather advisories",
+                "GTSPriority": "3"
+            },
+            "P": {
+                "T2": "P",
+                "dataType": "Special aviation weather reports (\u201cSPECI\u201d)",
+                "GTSPriority": "2"
+            },
+            "S": {
+                "T2": "S",
+                "dataType": "Aviation general warning (\u201cSIGMET\u201d)",
+                "GTSPriority": "1"
+            },
+            "T": {
+                "T2": "T",
+                "dataType": "Aerodrome forecast (\u201cTAF\u201d)) (VT \u2265 12 hours)",
+                "GTSPriority": "3"
+            },
+            "U": {
+                "T2": "U",
+                "dataType": "Volcanic ash advisory",
+                "GTSPriority": "3"
+            },
+            "V": {
+                "T2": "V",
+                "dataType": "Aviation volcanic ash warning (\u201cSIGMET\u201d)",
+                "GTSPriority": "1"
+            },
+            "W": {
+                "T2": "W",
+                "dataType": "AIRMET",
+                "GTSPriority": "1"
+            },
+            "Y": {
+                "T2": "Y",
+                "dataType": "Aviation tropical cyclone warning (\u201cSIGMET\u201d)",
+                "GTSPriority": "1"
+            }
         }
     }
 }

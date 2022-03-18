@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+from typing import Union
 
 from JSONManager import JSONManager
 
@@ -5743,7 +5744,8 @@ YNJ	ZYYJ	Yanji	Yanji Airport	China - Peoples Republic
 """
 
 
-def format_table(table: list[list], key_index=None, keys: list[str] = None, max_cols: int = None) -> dict[int, dict]:
+def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple[str]] = None, max_cols: int = None) -> \
+dict[int, dict]:
     if max_cols is None:
         max_cols = 0
         for row in table:
@@ -5754,7 +5756,7 @@ def format_table(table: list[list], key_index=None, keys: list[str] = None, max_
     for i in range(len(table)):
         try:
             while table[i][0] == '' or table[i][0] is None:
-                print(len(table[i]), max_cols)
+                # print(len(table[i]), max_cols)
                 for j in range(max_cols):
                     table[i - 1][j] = f'{table[i - 1][j]} {table[i][j]}'
                 table.pop(i)
@@ -5782,13 +5784,13 @@ def format_table(table: list[list], key_index=None, keys: list[str] = None, max_
 #         rows.append(row)
 #     print(format_table(rows, keys=['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'], key_index=(0, 1)))
 
-for file in os.listdir(r'.\CSV Files'):
-    if file.split('.')[-1].lower() != 'csv':
-        continue
-    with open(rf'.\CSV Files\{file}', 'r', newline='') as table:
-        reader = csv.reader(table, dialect='excel')
-        format_table([*reader])
-    print(file)
+# for file in os.listdir(r'.\CSV Files'):
+#     if file.split('.')[-1].lower() != 'csv':
+#         continue
+#     with open(rf'.\CSV Files\{file}', 'r', newline='', encoding='utf-8') as table:
+#         reader = csv.reader(table, dialect='excel')
+#         format_table([*reader])
+#     print(file)
 
 dicts = {
     'cccc': {
@@ -5823,13 +5825,7 @@ dicts = {
             'Country': None
         }
     },
-    'tt': {
-        'default': {
-            'generalDataType': None,
-            'specificDataType': None,
-            'codeForm': None
-        }
-    }
+    '386': {},
 }
 
 for line in cccc.splitlines():
@@ -5883,6 +5879,20 @@ for line in icao.splitlines():
         'country': keys[4]
     }
 
-manager = JSONManager(r'./dictionaries.json')
+with open(r'./CSV Files/386-a.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'])
+
+for suffix in [*'acfnstuw']:
+    with open(rf'./CSV Files/386-b1-{suffix}.csv', 'r', newline='', encoding='utf-8') as table:
+        dicts['386'][f'b1-{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'codeForm'])
+
+for suffix in [*'23456']:
+    with open(rf'./CSV Files/386-b{suffix}.csv', 'r', newline='', encoding='utf-8') as table:
+        dicts['386'][f'b{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType'])
+
+with open(rf'./CSV Files/386-b7.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['b7'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'GTSPriority'])
+
+manager = JSONManager(r'./dictionaries.json', encoder=json.JSONEncoder(indent=4))
 manager.overwrite(dicts)
 manager.save()

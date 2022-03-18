@@ -5,7 +5,7 @@ from typing import Union
 
 class JSONManager:
     def __init__(self, path: Union[str, bytes, PathLike[str], PathLike[bytes], int], encoder: json.JSONEncoder = None):
-        if str(path)[-5:].lower != '.json':
+        if str(path).split('.')[-1].lower() != 'json':
             self._path = f'{path}.json'
         else:
             self._path = path
