@@ -26125,17 +26125,21 @@
                 "T2": "B1",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "3"
             },
             "B": {
                 "T1": "B",
                 "dataType": "Addressed message",
-                "T2": "***",
-                "A1": "***",
-                "A2": "***",
-                "ii": "***",
-                "priority": "1/2/4*"
+                "T2": null,
+                "A1": null,
+                "A2": null,
+                "ii": null,
+                "priority": [
+                    "1",
+                    "2",
+                    "4*"
+                ]
             },
             "C": {
                 "T1": "C",
@@ -26143,7 +26147,7 @@
                 "T2": "B1",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "4"
             },
             "D": {
@@ -26161,7 +26165,7 @@
                 "T2": "B5",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "3"
             },
             "F": {
@@ -26170,7 +26174,7 @@
                 "T2": "B1",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "3"
             },
             "G": {
@@ -26197,7 +26201,7 @@
                 "T2": "B3",
                 "A1": "C6",
                 "A2": "C3",
-                "ii": "**",
+                "ii": null,
                 "priority": "2"
             },
             "J": {
@@ -26215,7 +26219,7 @@
                 "T2": "B3",
                 "A1": "C7",
                 "A2": "C3",
-                "ii": "**",
+                "ii": null,
                 "priority": "2"
             },
             "L": {
@@ -26224,17 +26228,21 @@
                 "T2": "B7",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
-                "priority": "1/2/3"
+                "ii": null,
+                "priority": [
+                    "1",
+                    "2",
+                    "3"
+                ]
             },
             "M": {
                 "T1": "M",
                 "dataType": "\u2013",
-                "T2": "",
-                "A1": "",
-                "A2": "",
-                "ii": "",
-                "priority": ""
+                "T2": null,
+                "A1": null,
+                "A2": null,
+                "ii": null,
+                "priority": null
             },
             "N": {
                 "T1": "N",
@@ -26242,7 +26250,7 @@
                 "T2": "B1",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "4"
             },
             "O": {
@@ -26275,20 +26283,29 @@
             "R": {
                 "T1": "R",
                 "dataType": "\u2013",
-                "T2": "",
-                "A1": "",
-                "A2": "",
-                "ii": "",
-                "priority": ""
+                "T2": null,
+                "A1": null,
+                "A2": null,
+                "ii": null,
+                "priority": null
             },
             "S": {
                 "T1": "S",
                 "dataType": "Surface data",
                 "T2": "B1",
-                "A1": "C1/C2",
-                "A2": "C1/C2",
-                "ii": "**",
-                "priority": "2/4*"
+                "A1": [
+                    "C1",
+                    "C2"
+                ],
+                "A2": [
+                    "C1",
+                    "C2"
+                ],
+                "ii": null,
+                "priority": [
+                    "2",
+                    "4*"
+                ]
             },
             "T": {
                 "T1": "T",
@@ -26296,16 +26313,22 @@
                 "T2": "B1",
                 "A1": "C3",
                 "A2": "C4",
-                "ii": "**",
+                "ii": null,
                 "priority": "2"
             },
             "U": {
                 "T1": "U",
                 "dataType": "Upper\u00adair data",
                 "T2": "B1",
-                "A1": "C1/C2",
-                "A2": "C1/C2",
-                "ii": "**",
+                "A1": [
+                    "C1",
+                    "C2"
+                ],
+                "A2": [
+                    "C1",
+                    "C2"
+                ],
+                "ii": null,
                 "priority": "2"
             },
             "V": {
@@ -26314,7 +26337,7 @@
                 "T2": "(1)",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "(2)"
             },
             "W": {
@@ -26323,17 +26346,17 @@
                 "T2": "B1",
                 "A1": "C1",
                 "A2": "C1",
-                "ii": "**",
+                "ii": null,
                 "priority": "1"
             },
             "X": {
                 "T1": "X",
                 "dataType": "Common Alert Protocol (CAP) messages",
-                "T2": "",
-                "A1": "",
-                "A2": "",
-                "ii": "",
-                "priority": ""
+                "T2": null,
+                "A1": null,
+                "A2": null,
+                "ii": null,
+                "priority": null
             },
             "Y": {
                 "T1": "Y",
@@ -26347,14 +26370,14 @@
             "Z": {
                 "T1": "Z",
                 "dataType": "\u2013",
-                "T2": "",
-                "A1": "",
-                "A2": "",
-                "ii": "",
-                "priority": ""
+                "T2": null,
+                "A1": null,
+                "A2": null,
+                "ii": null,
+                "priority": null
             }
         },
-        "b1-a": {
+        "B1-A": {
             "C": {
                 "T2": "C",
                 "dataType": "Cyclone",
@@ -26406,7 +26429,7 @@
                 "codeForm": "[TEXT]"
             }
         },
-        "b1-c": {
+        "B1-C": {
             "A": {
                 "T2": "A",
                 "dataType": "Climatic anomalies",
@@ -26433,7 +26456,7 @@
                 "codeForm": "FM 71 (CLIMAT)"
             }
         },
-        "b1-f": {
+        "B1-F": {
             "A": {
                 "T2": "A",
                 "dataType": "Aviation area/GAMET/advisories",
@@ -26560,7 +26583,7 @@
                 "codeForm": "FM 61 (MAFOR)"
             }
         },
-        "b1-n": {
+        "B1-N": {
             "G": {
                 "T2": "G",
                 "dataType": "Hydrological",
@@ -26597,7 +26620,7 @@
                 "codeForm": "[TEXT] "
             }
         },
-        "b1-s": {
+        "B1-S": {
             "A": {
                 "T2": "A",
                 "dataType": "Aviation routine reports",
@@ -26714,7 +26737,7 @@
                 "codeForm": "(any alphanumeric format) "
             }
         },
-        "b1-t": {
+        "B1-T": {
             "B": {
                 "T2": "B",
                 "dataType": "Satellite orbit parameters",
@@ -26751,7 +26774,7 @@
                 "codeForm": "[TEXT]"
             }
         },
-        "b1-u": {
+        "B1-U": {
             "A": {
                 "T2": "A",
                 "dataType": "Aircraft reports",
@@ -26848,7 +26871,7 @@
                 "codeForm": "FM 37 (TEMP DROP)  "
             }
         },
-        "b1-w": {
+        "B1-W": {
             "A": {
                 "T2": "A",
                 "dataType": "AIRMET",
@@ -26915,7 +26938,7 @@
                 "codeForm": "[TEXT]"
             }
         },
-        "b2": {
+        "B2": {
             "A": {
                 "T2": "A",
                 "dataType": "Radar data"
@@ -26997,7 +27020,7 @@
                 "dataType": "Not assigned"
             }
         },
-        "b3": {
+        "B3": {
             "N": {
                 "T2": "N",
                 "dataType": "Satellite data"
@@ -27027,7 +27050,7 @@
                 "dataType": "Other data types"
             }
         },
-        "b4": {
+        "B4": {
             "D": {
                 "T2": "D",
                 "dataType": "Depth"
@@ -27085,7 +27108,7 @@
                 "dataType": "Mixed data"
             }
         },
-        "b5": {
+        "B5": {
             "C": {
                 "T2": "C",
                 "dataType": "Cloud top temperature"
@@ -27119,7 +27142,7 @@
                 "dataType": "Unspecified"
             }
         },
-        "b6": {
+        "B6": {
             "A": {
                 "T2": "A",
                 "dataType": "Radar data"
@@ -27225,7 +27248,7 @@
                 "dataType": "Not assigned"
             }
         },
-        "b7": {
+        "B7": {
             "A": {
                 "T2": "A",
                 "dataType": "Aviation routine reports (\u201cMETAR\u201d)",
@@ -27280,6 +27303,1380 @@
                 "T2": "Y",
                 "dataType": "Aviation tropical cyclone warning (\u201cSIGMET\u201d)",
                 "GTSPriority": "1"
+            }
+        },
+        "C1-I": {
+            "AB": {
+                "A2": "AB",
+                "Country": "Albania"
+            },
+            "AG": {
+                "A2": "AG",
+                "Country": "Argentina"
+            },
+            "AH": {
+                "A2": "AH",
+                "Country": "Afghanistan"
+            },
+            "AI": {
+                "A2": "AI",
+                "Country": "Ascension Island"
+            },
+            "AJ": {
+                "A2": "AJ",
+                "Country": "Azerbaijan"
+            },
+            "AK": {
+                "A2": "AK",
+                "Country": "Alaska"
+            },
+            "AL": {
+                "A2": "AL",
+                "Country": "Algeria"
+            },
+            "AN": {
+                "A2": "AN",
+                "Country": "Angola"
+            },
+            "AT ": {
+                "A2": "AT ",
+                "Country": "Antigua and Barbuda, Saint Kitts and Nevis, and other British islands in the vicinity"
+            },
+            "AU": {
+                "A2": "AU",
+                "Country": "Australia"
+            },
+            "AY": {
+                "A2": "AY",
+                "Country": "Armenia"
+            },
+            "AZ": {
+                "A2": "AZ",
+                "Country": "Azores"
+            },
+            "BA": {
+                "A2": "BA",
+                "Country": "Bahamas"
+            },
+            "BC": {
+                "A2": "BC",
+                "Country": "Botswana"
+            },
+            "BD": {
+                "A2": "BD",
+                "Country": "Brunei Darussalam"
+            },
+            "BE": {
+                "A2": "BE",
+                "Country": "Bermuda"
+            },
+            "BH": {
+                "A2": "BH",
+                "Country": "Belize"
+            },
+            "BI": {
+                "A2": "BI",
+                "Country": "Burundi"
+            },
+            "BJ": {
+                "A2": "BJ",
+                "Country": "Benin"
+            },
+            "BK": {
+                "A2": "BK",
+                "Country": "Banks Islands"
+            },
+            "BM": {
+                "A2": "BM",
+                "Country": "Myanmar"
+            },
+            "BN": {
+                "A2": "BN",
+                "Country": "Bahrain"
+            },
+            "BO": {
+                "A2": "BO",
+                "Country": "Bolivia (Plurinational State of)"
+            },
+            "BR": {
+                "A2": "BR",
+                "Country": "Barbados"
+            },
+            "BT": {
+                "A2": "BT",
+                "Country": "Bhutan"
+            },
+            "BU": {
+                "A2": "BU",
+                "Country": "Bulgaria"
+            },
+            "BV": {
+                "A2": "BV",
+                "Country": "Bouvet Island"
+            },
+            "BW": {
+                "A2": "BW",
+                "Country": "Bangladesh"
+            },
+            "BX": {
+                "A2": "BX",
+                "Country": "Belgium, Luxembourg"
+            },
+            "BY": {
+                "A2": "BY",
+                "Country": "Belarus"
+            },
+            "BZ": {
+                "A2": "BZ",
+                "Country": "Brazil"
+            },
+            "CD": {
+                "A2": "CD",
+                "Country": "Chad"
+            },
+            "CE": {
+                "A2": "CE",
+                "Country": "Central African Republic"
+            },
+            "CG": {
+                "A2": "CG",
+                "Country": "Congo"
+            },
+            "CH": {
+                "A2": "CH",
+                "Country": "Chile"
+            },
+            "CI": {
+                "A2": "CI",
+                "Country": "China"
+            },
+            "CM": {
+                "A2": "CM",
+                "Country": "Cameroon"
+            },
+            "CN": {
+                "A2": "CN",
+                "Country": "Canada"
+            },
+            "CO": {
+                "A2": "CO",
+                "Country": "Colombia"
+            },
+            "CR": {
+                "A2": "CR",
+                "Country": "Canary Islands (Spain)"
+            },
+            "CS": {
+                "A2": "CS",
+                "Country": "Costa Rica"
+            },
+            "CT": {
+                "A2": "CT",
+                "Country": "Canton Island"
+            },
+            "CU": {
+                "A2": "CU",
+                "Country": "Cuba"
+            },
+            "CV": {
+                "A2": "CV",
+                "Country": "Cabo Verde"
+            },
+            "CY": {
+                "A2": "CY",
+                "Country": "Cyprus"
+            },
+            "CZ": {
+                "A2": "CZ",
+                "Country": "Czechia"
+            },
+            "DC": {
+                "A2": "DC",
+                "Country": "Bonaire, St Eustatius and Saba"
+            },
+            "DJ": {
+                "A2": "DJ",
+                "Country": "Djibouti"
+            },
+            "DL": {
+                "A2": "DL",
+                "Country": "Germany"
+            },
+            "DN": {
+                "A2": "DN",
+                "Country": "Denmark"
+            },
+            "DO": {
+                "A2": "DO",
+                "Country": "Dominica"
+            },
+            "DR": {
+                "A2": "DR",
+                "Country": "Dominican Republic"
+            },
+            "EG": {
+                "A2": "EG",
+                "Country": "Egypt"
+            },
+            "EI": {
+                "A2": "EI",
+                "Country": "Eritrea"
+            },
+            "EO": {
+                "A2": "EO",
+                "Country": "Estonia"
+            },
+            "EQ": {
+                "A2": "EQ",
+                "Country": "Ecuador"
+            },
+            "ER": {
+                "A2": "ER",
+                "Country": "United Arab Emirates"
+            },
+            "ES": {
+                "A2": "ES",
+                "Country": "El Salvador"
+            },
+            "ET": {
+                "A2": "ET",
+                "Country": "Ethiopia"
+            },
+            "FA": {
+                "A2": "FA",
+                "Country": "Faroe Islands"
+            },
+            "FG": {
+                "A2": "FG",
+                "Country": "French Guiana"
+            },
+            "FI": {
+                "A2": "FI",
+                "Country": "Finland"
+            },
+            "FJ": {
+                "A2": "FJ",
+                "Country": "Fiji"
+            },
+            "FK": {
+                "A2": "FK",
+                "Country": "Falkland Islands (Malvinas)"
+            },
+            "FM": {
+                "A2": "FM",
+                "Country": "Federated States of Micronesia"
+            },
+            "FP": {
+                "A2": "FP",
+                "Country": "Saint Pierre and Miquelon"
+            },
+            "FR": {
+                "A2": "FR",
+                "Country": "France"
+            },
+            "FW": {
+                "A2": "FW",
+                "Country": "Wallis and Futuna"
+            },
+            "GB": {
+                "A2": "GB",
+                "Country": "Gambia"
+            },
+            "GC": {
+                "A2": "GC",
+                "Country": "Cayman Islands"
+            },
+            "GD": {
+                "A2": "GD",
+                "Country": "Grenada"
+            },
+            "GE": {
+                "A2": "GE",
+                "Country": "Gough Island"
+            },
+            "GG": {
+                "A2": "GG",
+                "Country": "Georgia"
+            },
+            "GH": {
+                "A2": "GH",
+                "Country": "Ghana"
+            },
+            "GI": {
+                "A2": "GI",
+                "Country": "Gibraltar"
+            },
+            "GL": {
+                "A2": "GL",
+                "Country": "Greenland"
+            },
+            "GM": {
+                "A2": "GM",
+                "Country": "Guam"
+            },
+            "GN": {
+                "A2": "GN",
+                "Country": "Guinea"
+            },
+            "GO": {
+                "A2": "GO",
+                "Country": "Gabon"
+            },
+            "GQ": {
+                "A2": "GQ",
+                "Country": "Equatorial Guinea"
+            },
+            "GR": {
+                "A2": "GR",
+                "Country": "Greece"
+            },
+            "GU": {
+                "A2": "GU",
+                "Country": "Guatemala"
+            },
+            "GW": {
+                "A2": "GW",
+                "Country": "Guinea\u00adBissau"
+            },
+            "GY": {
+                "A2": "GY",
+                "Country": "Guyana"
+            },
+            "HA": {
+                "A2": "HA",
+                "Country": "Haiti"
+            },
+            "HE": {
+                "A2": "HE",
+                "Country": "Saint Helena"
+            },
+            "HK": {
+                "A2": "HK",
+                "Country": "Hong Kong, China"
+            },
+            "HO": {
+                "A2": "HO",
+                "Country": "Honduras"
+            },
+            "HU": {
+                "A2": "HU",
+                "Country": "Hungary"
+            },
+            "HV": {
+                "A2": "HV",
+                "Country": "Burkina Faso"
+            },
+            "HW": {
+                "A2": "HW",
+                "Country": "Hawaiian Islands"
+            },
+            "IC": {
+                "A2": "IC",
+                "Country": "Comoros"
+            },
+            "ID": {
+                "A2": "ID",
+                "Country": "Indonesia"
+            },
+            "IE": {
+                "A2": "IE",
+                "Country": "Ireland"
+            },
+            "IL": {
+                "A2": "IL",
+                "Country": "Iceland"
+            },
+            "IN": {
+                "A2": "IN",
+                "Country": "India"
+            },
+            "IQ": {
+                "A2": "IQ",
+                "Country": "Iraq"
+            },
+            "IR": {
+                "A2": "IR",
+                "Country": "Islamic Republic of Iran"
+            },
+            "IS": {
+                "A2": "IS",
+                "Country": "Israel"
+            },
+            "IV": {
+                "A2": "IV",
+                "Country": "C\u00f4te d\u2019Ivoire"
+            },
+            "IY": {
+                "A2": "IY",
+                "Country": "Italy"
+            },
+            "JD": {
+                "A2": "JD",
+                "Country": "Jordan"
+            },
+            "JM": {
+                "A2": "JM",
+                "Country": "Jamaica"
+            },
+            "JP": {
+                "A2": "JP",
+                "Country": "Japan"
+            },
+            "KA": {
+                "A2": "KA",
+                "Country": "Caroline Islands"
+            },
+            "KB": {
+                "A2": "KB",
+                "Country": "Kiribati"
+            },
+            "KI": {
+                "A2": "KI",
+                "Country": "Christmas Island"
+            },
+            "KK": {
+                "A2": "KK",
+                "Country": "Cocos Islands"
+            },
+            "KN": {
+                "A2": "KN",
+                "Country": "Kenya"
+            },
+            "KO": {
+                "A2": "KO",
+                "Country": "Republic of Korea"
+            },
+            "KP": {
+                "A2": "KP",
+                "Country": "Cambodia"
+            },
+            "KR": {
+                "A2": "KR",
+                "Country": "Democratic People\u2019s Republic of Korea"
+            },
+            "KU": {
+                "A2": "KU",
+                "Country": "Cook Islands"
+            },
+            "KW": {
+                "A2": "KW",
+                "Country": "Kuwait"
+            },
+            "KY": {
+                "A2": "KY",
+                "Country": "Kyrgyzstan"
+            },
+            "KZ": {
+                "A2": "KZ",
+                "Country": "Kazakhstan"
+            },
+            "LA": {
+                "A2": "LA",
+                "Country": "Lao People\u2019s Democratic Republic"
+            },
+            "LB": {
+                "A2": "LB",
+                "Country": "Lebanon"
+            },
+            "LC": {
+                "A2": "LC",
+                "Country": "Saint Lucia"
+            },
+            "LI": {
+                "A2": "LI",
+                "Country": "Liberia"
+            },
+            "LJ": {
+                "A2": "LJ",
+                "Country": "Slovenia"
+            },
+            "LN": {
+                "A2": "LN",
+                "Country": "Southern Line Islands"
+            },
+            "LS": {
+                "A2": "LS",
+                "Country": "Lesotho"
+            },
+            "LT": {
+                "A2": "LT",
+                "Country": "Lithuania"
+            },
+            "LV": {
+                "A2": "LV",
+                "Country": "Latvia"
+            },
+            "LY": {
+                "A2": "LY",
+                "Country": "Libya"
+            },
+            "MA": {
+                "A2": "MA",
+                "Country": "Mauritius"
+            },
+            "MB": {
+                "A2": "MB",
+                "Country": "Marion Island"
+            },
+            "MC": {
+                "A2": "MC",
+                "Country": "Morocco"
+            },
+            "MD": {
+                "A2": "MD",
+                "Country": "Madeira"
+            },
+            "MF ": {
+                "A2": "MF ",
+                "Country": "Saint\u00adMartin, Saint\u00adBarth\u00e9lemy, Guadeloupe and other French islands in the vicinity"
+            },
+            "MG": {
+                "A2": "MG",
+                "Country": "Madagascar"
+            },
+            "MH": {
+                "A2": "MH",
+                "Country": "Marshall Islands"
+            },
+            "MI": {
+                "A2": "MI",
+                "Country": "Mali"
+            },
+            "MJ": {
+                "A2": "MJ",
+                "Country": "The former Yugoslav Republic of Macedonia"
+            },
+            "MK": {
+                "A2": "MK",
+                "Country": "Montenegro"
+            },
+            "ML": {
+                "A2": "ML",
+                "Country": "Malta"
+            },
+            "MN": {
+                "A2": "MN",
+                "Country": "St Maarten"
+            },
+            "MO": {
+                "A2": "MO",
+                "Country": "Mongolia"
+            },
+            "MR": {
+                "A2": "MR",
+                "Country": "Martinique"
+            },
+            "MS": {
+                "A2": "MS",
+                "Country": "Malaysia"
+            },
+            "MT": {
+                "A2": "MT",
+                "Country": "Mauritania"
+            },
+            "MU": {
+                "A2": "MU",
+                "Country": "Macao, China"
+            },
+            "MV": {
+                "A2": "MV",
+                "Country": "Maldives"
+            },
+            "MW": {
+                "A2": "MW",
+                "Country": "Malawi"
+            },
+            "MX": {
+                "A2": "MX",
+                "Country": "Mexico"
+            },
+            "MY": {
+                "A2": "MY",
+                "Country": "Mariana Islands"
+            },
+            "MZ": {
+                "A2": "MZ",
+                "Country": "Mozambique"
+            },
+            "NC": {
+                "A2": "NC",
+                "Country": "New Caledonia"
+            },
+            "NE": {
+                "A2": "NE",
+                "Country": "Niue"
+            },
+            "NG": {
+                "A2": "NG",
+                "Country": "Papua New Guinea"
+            },
+            "NI": {
+                "A2": "NI",
+                "Country": "Nigeria"
+            },
+            "NK": {
+                "A2": "NK",
+                "Country": "Nicaragua"
+            },
+            "NL": {
+                "A2": "NL",
+                "Country": "Netherlands"
+            },
+            "NM": {
+                "A2": "NM",
+                "Country": "Namibia"
+            },
+            "NO": {
+                "A2": "NO",
+                "Country": "Norway"
+            },
+            "NP": {
+                "A2": "NP",
+                "Country": "Nepal"
+            },
+            "NR": {
+                "A2": "NR",
+                "Country": "Niger"
+            },
+            "NU": {
+                "A2": "NU",
+                "Country": "Cura\u00e7ao and Aruba"
+            },
+            "NV": {
+                "A2": "NV",
+                "Country": "Vanuatu"
+            },
+            "NW": {
+                "A2": "NW",
+                "Country": "Nauru"
+            },
+            "NZ": {
+                "A2": "NZ",
+                "Country": "New Zealand"
+            },
+            "OM": {
+                "A2": "OM",
+                "Country": "Oman"
+            },
+            "OO": {
+                "A2": "OO",
+                "Country": "Monaco"
+            },
+            "OR": {
+                "A2": "OR",
+                "Country": "South Orkney Islands"
+            },
+            "OS": {
+                "A2": "OS",
+                "Country": "Austria"
+            },
+            "PF": {
+                "A2": "PF",
+                "Country": "French Polynesia"
+            },
+            "PH": {
+                "A2": "PH",
+                "Country": "Philippines"
+            },
+            "PI": {
+                "A2": "PI",
+                "Country": "Phoenix Islands"
+            },
+            "PK": {
+                "A2": "PK",
+                "Country": "Pakistan"
+            },
+            "PL": {
+                "A2": "PL",
+                "Country": "Poland"
+            },
+            "PM": {
+                "A2": "PM",
+                "Country": "Panama"
+            },
+            "PO": {
+                "A2": "PO",
+                "Country": "Portugal"
+            },
+            "PP": {
+                "A2": "PP",
+                "Country": "Palau"
+            },
+            "PR": {
+                "A2": "PR",
+                "Country": "Peru"
+            },
+            "PT": {
+                "A2": "PT",
+                "Country": "Pitcairn"
+            },
+            "PU": {
+                "A2": "PU",
+                "Country": "Puerto Rico"
+            },
+            "PY": {
+                "A2": "PY",
+                "Country": "Paraguay"
+            },
+            "QB": {
+                "A2": "QB",
+                "Country": "Bosnia and Herzegovina"
+            },
+            "QT": {
+                "A2": "QT",
+                "Country": "Qatar"
+            },
+            "RA": {
+                "A2": "RA",
+                "Country": "Russian Federation (East)"
+            },
+            "RE": {
+                "A2": "RE",
+                "Country": "R\u00e9union and associated islands"
+            },
+            "RH": {
+                "A2": "RH",
+                "Country": "Croatia"
+            },
+            "RM": {
+                "A2": "RM",
+                "Country": "Republic of Moldova"
+            },
+            "RO": {
+                "A2": "RO",
+                "Country": "Romania"
+            },
+            "RS": {
+                "A2": "RS",
+                "Country": "Russian Federation (West)"
+            },
+            "RW": {
+                "A2": "RW",
+                "Country": "Rwanda"
+            },
+            "SB": {
+                "A2": "SB",
+                "Country": "Sri Lanka"
+            },
+            "SC": {
+                "A2": "SC",
+                "Country": "Seychelles"
+            },
+            "SD": {
+                "A2": "SD",
+                "Country": "Saudi Arabia"
+            },
+            "SG": {
+                "A2": "SG",
+                "Country": "Senegal"
+            },
+            "SI": {
+                "A2": "SI",
+                "Country": "Somalia"
+            },
+            "SK": {
+                "A2": "SK",
+                "Country": "Sarawak"
+            },
+            "SL": {
+                "A2": "SL",
+                "Country": "Sierra Leone"
+            },
+            "SM": {
+                "A2": "SM",
+                "Country": "Suriname"
+            },
+            "SN": {
+                "A2": "SN",
+                "Country": "Sweden"
+            },
+            "SO": {
+                "A2": "SO",
+                "Country": "Solomon Islands"
+            },
+            "SP": {
+                "A2": "SP",
+                "Country": "Spain"
+            },
+            "SQ": {
+                "A2": "SQ",
+                "Country": "Slovakia"
+            },
+            "SR": {
+                "A2": "SR",
+                "Country": "Singapore"
+            },
+            "SU": {
+                "A2": "SU",
+                "Country": "Sudan"
+            },
+            "SV": {
+                "A2": "SV",
+                "Country": "Swaziland"
+            },
+            "SW": {
+                "A2": "SW",
+                "Country": "Switzerland"
+            },
+            "SX": {
+                "A2": "SX",
+                "Country": "Santa Cruz Islands"
+            },
+            "SY": {
+                "A2": "SY",
+                "Country": "Syrian Arab Republic"
+            },
+            "SZ": {
+                "A2": "SZ",
+                "Country": "Spitzbergen Islands"
+            },
+            "TA": {
+                "A2": "TA",
+                "Country": "Tajikistan"
+            },
+            "TC": {
+                "A2": "TC",
+                "Country": "Tristan da Cunha"
+            },
+            "TD": {
+                "A2": "TD",
+                "Country": "Trinidad and Tobago"
+            },
+            "TG": {
+                "A2": "TG",
+                "Country": "Togo"
+            },
+            "TH": {
+                "A2": "TH",
+                "Country": "Thailand"
+            },
+            "TI": {
+                "A2": "TI",
+                "Country": "Turks and Caicos Islands"
+            },
+            "TK": {
+                "A2": "TK",
+                "Country": "Tokelau"
+            },
+            "TM": {
+                "A2": "TM",
+                "Country": "Timor\u00adLeste"
+            },
+            "TN": {
+                "A2": "TN",
+                "Country": "United Republic of Tanzania"
+            },
+            "TO": {
+                "A2": "TO",
+                "Country": "Tonga"
+            },
+            "TP": {
+                "A2": "TP",
+                "Country": "Sao Tome and Principe"
+            },
+            "TR": {
+                "A2": "TR",
+                "Country": "Turkmenistan"
+            },
+            "TS": {
+                "A2": "TS",
+                "Country": "Tunisia"
+            },
+            "TU": {
+                "A2": "TU",
+                "Country": "Turkey"
+            },
+            "TV": {
+                "A2": "TV",
+                "Country": "Tuvalu"
+            },
+            "UG": {
+                "A2": "UG",
+                "Country": "Uganda"
+            },
+            "UK ": {
+                "A2": "UK ",
+                "Country": "United Kingdom of Great Britain and Northern Ireland"
+            },
+            "UR": {
+                "A2": "UR",
+                "Country": "Ukraine"
+            },
+            "US": {
+                "A2": "US",
+                "Country": "United States of America"
+            },
+            "UY": {
+                "A2": "UY",
+                "Country": "Uruguay"
+            },
+            "UZ": {
+                "A2": "UZ",
+                "Country": "Uzbekistan"
+            },
+            "VG": {
+                "A2": "VG",
+                "Country": "Saint Vincent and the Grenadines"
+            },
+            "VI": {
+                "A2": "VI",
+                "Country": "Virgin Islands"
+            },
+            "VN": {
+                "A2": "VN",
+                "Country": "Venezuela (Bolivarian Republic of)"
+            },
+            "VS": {
+                "A2": "VS",
+                "Country": "Viet Nam"
+            },
+            "YE": {
+                "A2": "YE",
+                "Country": "Yemen"
+            },
+            "YG": {
+                "A2": "YG",
+                "Country": "Serbia"
+            },
+            "ZA": {
+                "A2": "ZA",
+                "Country": "South Africa"
+            },
+            "ZB": {
+                "A2": "ZB",
+                "Country": "Zambia"
+            },
+            "ZM": {
+                "A2": "ZM",
+                "Country": "Samoa"
+            },
+            "ZR": {
+                "A2": "ZR",
+                "Country": "Democratic Republic of the Congo"
+            },
+            "ZS": {
+                "A2": "ZS",
+                "Country": "South Sudan"
+            },
+            "ZW": {
+                "A2": "ZW",
+                "Country": "Zimbabwe"
+            }
+        },
+        "C1-II": {
+            "AA": {
+                "A2": "AA",
+                "geographicalArea": "Antarctic"
+            },
+            "AC": {
+                "A2": "AC",
+                "geographicalArea": "Arctic"
+            },
+            "AE": {
+                "A2": "AE",
+                "geographicalArea": "South\u00adEast Asia"
+            },
+            "AF": {
+                "A2": "AF",
+                "geographicalArea": "Africa"
+            },
+            "AM": {
+                "A2": "AM",
+                "geographicalArea": "Central Africa"
+            },
+            "AO": {
+                "A2": "AO",
+                "geographicalArea": "West Africa"
+            },
+            "AP": {
+                "A2": "AP",
+                "geographicalArea": "Southern Africa"
+            },
+            "AS": {
+                "A2": "AS",
+                "geographicalArea": "Asia"
+            },
+            "AW": {
+                "A2": "AW",
+                "geographicalArea": "Near East"
+            },
+            "AX": {
+                "A2": "AX",
+                "geographicalArea": "Arabian Sea area"
+            },
+            "BQ": {
+                "A2": "BQ",
+                "geographicalArea": "Baltic Sea area"
+            },
+            "CA": {
+                "A2": "CA",
+                "geographicalArea": "Caribbean and Central America"
+            },
+            "EA": {
+                "A2": "EA",
+                "geographicalArea": "East Africa"
+            },
+            "EC": {
+                "A2": "EC",
+                "geographicalArea": "East China Sea area"
+            },
+            "EE": {
+                "A2": "EE",
+                "geographicalArea": "Eastern Europe"
+            },
+            "EM": {
+                "A2": "EM",
+                "geographicalArea": "Middle Europe"
+            },
+            "EN": {
+                "A2": "EN",
+                "geographicalArea": "Northern Europe"
+            },
+            "EU": {
+                "A2": "EU",
+                "geographicalArea": "Europe"
+            },
+            "EW": {
+                "A2": "EW",
+                "geographicalArea": "Western Europe"
+            },
+            "FE": {
+                "A2": "FE",
+                "geographicalArea": "Far East"
+            },
+            "GA": {
+                "A2": "GA",
+                "geographicalArea": "Gulf of Alaska area"
+            },
+            "GX": {
+                "A2": "GX",
+                "geographicalArea": "Gulf of Mexico area"
+            },
+            "IO": {
+                "A2": "IO",
+                "geographicalArea": "Indian Ocean area"
+            },
+            "ME": {
+                "A2": "ME",
+                "geographicalArea": "Eastern Mediterranean area"
+            },
+            "MM": {
+                "A2": "MM",
+                "geographicalArea": "Mediterranean area"
+            },
+            "MP": {
+                "A2": "MP",
+                "geographicalArea": "Central Mediterranean area"
+            },
+            "MQ": {
+                "A2": "MQ",
+                "geographicalArea": "Western Mediterranean area"
+            },
+            "NA": {
+                "A2": "NA",
+                "geographicalArea": "North America"
+            },
+            "NT": {
+                "A2": "NT",
+                "geographicalArea": "North Atlantic area"
+            },
+            "OC": {
+                "A2": "OC",
+                "geographicalArea": "Oceania"
+            },
+            "OH": {
+                "A2": "OH",
+                "geographicalArea": "Sea of Okhotsk"
+            },
+            "PA": {
+                "A2": "PA",
+                "geographicalArea": "Pacific area"
+            },
+            "PE": {
+                "A2": "PE",
+                "geographicalArea": "Persian Gulf area"
+            },
+            "PN": {
+                "A2": "PN",
+                "geographicalArea": "North Pacific area"
+            },
+            "PQ": {
+                "A2": "PQ",
+                "geographicalArea": "Western North Pacific"
+            },
+            "PS": {
+                "A2": "PS",
+                "geographicalArea": "South Pacific area"
+            },
+            "PW": {
+                "A2": "PW",
+                "geographicalArea": "Western Pacific area"
+            },
+            "PZ": {
+                "A2": "PZ",
+                "geographicalArea": "Eastern Pacific area"
+            },
+            "SA": {
+                "A2": "SA",
+                "geographicalArea": "South America"
+            },
+            "SE": {
+                "A2": "SE",
+                "geographicalArea": "Southern Ocean area"
+            },
+            "SJ": {
+                "A2": "SJ",
+                "geographicalArea": "Sea of Japan area"
+            },
+            "SS": {
+                "A2": "SS",
+                "geographicalArea": "South China Sea area"
+            },
+            "ST": {
+                "A2": "ST",
+                "geographicalArea": "South Atlantic area"
+            },
+            "XE": {
+                "A2": "XE",
+                "geographicalArea": "Eastern hemisphere"
+            },
+            "XN": {
+                "A2": "XN",
+                "geographicalArea": "Northern hemisphere"
+            },
+            "XS": {
+                "A2": "XS",
+                "geographicalArea": "Southern hemisphere"
+            },
+            "XT": {
+                "A2": "XT",
+                "geographicalArea": "Tropical belt"
+            },
+            "XW": {
+                "A2": "XW",
+                "geographicalArea": "Western hemisphere"
+            },
+            "XX ": {
+                "A2": "XX ",
+                "geographicalArea": "For use when other designators are not appropriate"
+            }
+        },
+        "C2": {
+            "A": {
+                "A2": "A",
+                "geographicalArea": "Area between 30\u00b0N\u201360\u00b0S, 35\u00b0W\u201370\u00b0E"
+            },
+            "B": {
+                "A2": "B",
+                "geographicalArea": "Area between 90\u00b0N\u201305\u00b0N, 70\u00b0E\u2013180\u00b0E"
+            },
+            "C": {
+                "A2": "C",
+                "geographicalArea": "Area between 05\u00b0N\u201360\u00b0S, 120\u00b0W\u201335\u00b0W"
+            },
+            "D": {
+                "A2": "D",
+                "geographicalArea": "Area between 90\u00b0N\u201305\u00b0N, 180\u00b0W\u201335\u00b0W"
+            },
+            "E": {
+                "A2": "E",
+                "geographicalArea": "Area between 05\u00b0N\u201360\u00b0S, 70\u00b0E\u2013120\u00b0W"
+            },
+            "F": {
+                "A2": "F",
+                "geographicalArea": "Area between 90\u00b0N\u201330\u00b0N, 35\u00b0W\u201370\u00b0E"
+            },
+            "J": {
+                "A2": "J",
+                "geographicalArea": "Area south of 60\u00b0S"
+            },
+            "X": {
+                "A2": "X",
+                "geographicalArea": "More than one area"
+            }
+        },
+        "C3": {
+            "A": {
+                "A2": "A",
+                "lattitude": "0\u00b0 \u2013 90\u00b0W",
+                "geographicalArea": "northern hemisphere"
+            },
+            "B": {
+                "A2": "B",
+                "lattitude": "90\u00b0W \u2013180\u00b0",
+                "geographicalArea": "northern hemisphere"
+            },
+            "C": {
+                "A2": "C",
+                "lattitude": "180\u00b0 \u2013 90\u00b0E",
+                "geographicalArea": "northern hemisphere"
+            },
+            "D": {
+                "A2": "D",
+                "lattitude": "90\u00b0E \u2013 0\u00b0",
+                "geographicalArea": "northern hemisphere"
+            },
+            "E": {
+                "A2": "E",
+                "lattitude": "0\u00b0 \u2013 90\u00b0W",
+                "geographicalArea": "tropical belt"
+            },
+            "F": {
+                "A2": "F",
+                "lattitude": "90\u00b0W \u2013 180\u00b0",
+                "geographicalArea": "tropical belt"
+            },
+            "G": {
+                "A2": "G",
+                "lattitude": "180\u00b0 \u2013 90\u00b0E",
+                "geographicalArea": "tropical belt"
+            },
+            "H": {
+                "A2": "H",
+                "lattitude": "90\u00b0E \u2013 0\u00b0",
+                "geographicalArea": "tropical belt"
+            },
+            "I": {
+                "A2": "I",
+                "lattitude": "0\u00b0 \u2013 90\u00b0W",
+                "geographicalArea": "southern hemisphere"
+            },
+            "J": {
+                "A2": "J",
+                "lattitude": "90\u00b0W \u2013 180\u00b0",
+                "geographicalArea": "southern hemisphere"
+            },
+            "K": {
+                "A2": "K",
+                "lattitude": "180\u00b0 \u2013 90\u00b0E",
+                "geographicalArea": "southern hemisphere"
+            },
+            "L": {
+                "A2": "L",
+                "lattitude": "90\u00b0E \u2013 0\u00b0",
+                "geographicalArea": "southern hemisphere"
+            },
+            "N": {
+                "A2": "N",
+                "lattitude": null,
+                "geographicalArea": "Northern hemisphere"
+            },
+            "S": {
+                "A2": "S",
+                "lattitude": null,
+                "geographicalArea": "Southern hemisphere"
+            },
+            "T": {
+                "A2": "T",
+                "lattitude": "45\u00b0W \u2013 180\u00b0",
+                "geographicalArea": "northern hemisphere"
+            },
+            "X": {
+                "A2": "X",
+                "lattitude": null,
+                "geographicalArea": "Global area (area not definable)"
+            }
+        },
+        "C4": {
+            "A": {
+                "A2": "A",
+                "referenceTime": "Analysis (00 hour)"
+            },
+            "B": {
+                "A2": "B",
+                "referenceTime": "6 hours forecast"
+            },
+            "C": {
+                "A2": "C",
+                "referenceTime": "12 hours forecast"
+            },
+            "D": {
+                "A2": "D",
+                "referenceTime": "18 hours forecast"
+            },
+            "E": {
+                "A2": "E",
+                "referenceTime": "24 hours forecast"
+            },
+            "F": {
+                "A2": "F",
+                "referenceTime": "30 hours forecast"
+            },
+            "G": {
+                "A2": "G",
+                "referenceTime": "36 hours forecast"
+            },
+            "H": {
+                "A2": "H",
+                "referenceTime": "42 hours forecast"
+            },
+            "I": {
+                "A2": "I",
+                "referenceTime": "48 hours forecast"
+            },
+            "J": {
+                "A2": "J",
+                "referenceTime": "60 hours forecast"
+            },
+            "K": {
+                "A2": "K",
+                "referenceTime": "72 hours forecast"
+            },
+            "L": {
+                "A2": "L",
+                "referenceTime": "84 hours forecast"
+            },
+            "M": {
+                "A2": "M",
+                "referenceTime": "96 hours forecast"
+            },
+            "N": {
+                "A2": "N",
+                "referenceTime": "108 hours forecast"
+            },
+            "O": {
+                "A2": "O",
+                "referenceTime": "120 hours forecast (5 days)"
+            },
+            "P": {
+                "A2": "P",
+                "referenceTime": "132 hours forecast"
+            },
+            "Q": {
+                "A2": "Q",
+                "referenceTime": "144 hours forecast"
+            },
+            "R": {
+                "A2": "R",
+                "referenceTime": "156 hours forecast (7 days)"
+            },
+            "S": {
+                "A2": "S",
+                "referenceTime": "168 hours forecast"
+            },
+            "T": {
+                "A2": "T",
+                "referenceTime": "10 days forecast"
+            },
+            "U": {
+                "A2": "U",
+                "referenceTime": "15 days forecast"
+            },
+            "V": {
+                "A2": "V",
+                "referenceTime": "30 days forecast"
+            },
+            "X": {
+                "A2": "X",
+                "referenceTime": "Not assigned"
+            },
+            "Y": {
+                "A2": "Y",
+                "referenceTime": "Not assigned"
+            },
+            "Z": {
+                "A2": "Z",
+                "referenceTime": "Not assigned"
             }
         }
     }

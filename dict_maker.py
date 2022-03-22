@@ -5744,8 +5744,7 @@ YNJ	ZYYJ	Yanji	Yanji Airport	China - Peoples Republic
 """
 
 
-def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple[str]] = None, max_cols: int = None) -> \
-dict[int, dict]:
+def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple[str]] = None, max_cols: int = None, split: str = None) -> dict[int, dict]:
     if max_cols is None:
         max_cols = 0
         for row in table:
@@ -5771,6 +5770,13 @@ dict[int, dict]:
         else:
             out["".join(row[key_index[0]:key_index[1]])] = row_dict
         index += 1
+    for key in out.keys():
+        for row_key in out[key].keys():
+            if split is not None:
+                if split in out[key][row_key]:
+                    out[key][row_key] = out[key][row_key].split(split)
+            if out[key][row_key] == '':
+                out[key][row_key] = None
     return out
 
 
@@ -5880,18 +5886,35 @@ for line in icao.splitlines():
     }
 
 with open(r'./CSV Files/386-a.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'])
+    dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'], split='/')
 
-for suffix in [*'acfnstuw']:
+for suffix in [*'ACFNSTUW']:
     with open(rf'./CSV Files/386-b1-{suffix}.csv', 'r', newline='', encoding='utf-8') as table:
-        dicts['386'][f'b1-{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'codeForm'])
+        dicts['386'][f'B1-{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'codeForm'])
 
 for suffix in [*'23456']:
     with open(rf'./CSV Files/386-b{suffix}.csv', 'r', newline='', encoding='utf-8') as table:
-        dicts['386'][f'b{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType'])
+        dicts['386'][f'B{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType'])
 
 with open(rf'./CSV Files/386-b7.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['b7'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'GTSPriority'])
+    dicts['386']['B7'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'GTSPriority'])
+
+with open(rf'./CSV Files/386-c1-I.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C1-I'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'Country'])
+
+with open(rf'./CSV Files/386-c1-II.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C1-II'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
+
+with open(rf'./CSV Files/386-c2.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C2'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
+
+with open(rf'./CSV Files/386-c3.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C3'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'lattitude', 'geographicalArea'])
+
+with open(rf'./CSV Files/386-c4.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C4'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'referenceTime'])
+
+
 
 manager = JSONManager(r'./dictionaries.json', encoder=json.JSONEncoder(indent=4))
 manager.overwrite(dicts)
