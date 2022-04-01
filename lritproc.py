@@ -541,8 +541,32 @@ def writeManifest(manifest_dir: str):
             meta['properties']['awds'] = metadata_dicts['awds'][split[1][0:10]] if split[1][0:10] in metadata_dicts['awds'] else metadata_dicts['awds']['default']
             meta['properties']['nnn'] = metadata_dicts['nnn'][split[5][9:12]] if split[5][9:12] in metadata_dicts['nnn'] else metadata_dicts['nnn']['default']
             meta['properties']['cccc'] = metadata_dicts['cccc'][split[1][6:10]] if split[1][6:10] in metadata_dicts['cccc'] else metadata_dicts['cccc']['default']
-            meta['properties']['tt'] = metadata_dicts['tt'][split[1][0:2]] if split[1][0:2] in metadata_dicts['tt'] else metadata_dicts['tt']['default']
-            meta['properties']['aa'] = metadata_dicts['aa'][split[1][2:4]] if split[1][2:4] in metadata_dicts['aa'] else metadata_dicts['aa']['default']
+            t1, t2, a1, a2, i1, i2 = split[1][0:6]
+            ii = int(i1 + i2)
+            table_a = metadata_dicts['386']['a'][t1]
+            meta['properties']['TTAA'] = table_a
+            if table_a['T2'] is not None:
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['T2']][t2]
+
+            if table_a['A1'] == table_a['A2']:
+                aa = a1 + a2
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][aa]
+            elif table_a['A1'] == 'C6':
+                meta['properties']['TTAA'] |= metadata_dicts['386']['C6'][t1 + t2 + a1]
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
+            elif table_a['A1'] == 'C7':
+                meta['properties']['TTAA'] |= metadata_dicts['386']['C7'][t1 + t2 + a1]
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
+            else:
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][a1]
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
+
+            if table_a['ii'] is not None:
+                if isinstance(metadata_dicts['386'][table_a['ii']][ii], list):
+                    # do stuff
+                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['ii']][ii]
+
+
         if category == 'DCS':
             split = file.name.split('-')
             meta['type'] = 'dcs'

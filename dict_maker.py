@@ -5888,7 +5888,10 @@ for line in icao.splitlines():
 with open(r'./CSV Files/386-a.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'], split='/')
 
+
+
 for suffix in [*'ACFNSTUW']:
+    dicts['386']['a'][suffix]['T2'] = f'B1-{suffix}'
     with open(rf'./CSV Files/386-b1-{suffix}.csv', 'r', newline='', encoding='utf-8') as table:
         dicts['386'][f'B1-{suffix}'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'codeForm'])
 
@@ -5899,21 +5902,36 @@ for suffix in [*'23456']:
 with open(rf'./CSV Files/386-b7.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['B7'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T2', 'dataType', 'GTSPriority'])
 
-with open(rf'./CSV Files/386-c1-I.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['C1-I'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'Country'])
-
-with open(rf'./CSV Files/386-c1-II.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['C1-II'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
+with open(rf'./CSV Files/386-c1-I.csv', 'r', newline='', encoding='utf-8') as table1:
+    with open(rf'./CSV Files/386-c1-II.csv', 'r', newline='', encoding='utf-8') as table2:
+        dicts['386']['C1'] = format_table([*csv.reader(table1, dialect='excel')], (0, 1), ['A2', 'Country']) | format_table([*csv.reader(table2, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
 
 with open(rf'./CSV Files/386-c2.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['C2'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
 
 with open(rf'./CSV Files/386-c3.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['C3'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'lattitude', 'geographicalArea'])
+    dicts['386']['C3'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A1', 'lattitude', 'geographicalArea'])
 
 with open(rf'./CSV Files/386-c4.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['C4'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'referenceTime'])
 
+with open(rf'./CSV Files/386-c5.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C5'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'referenceTime'])
+
+with open(rf'./CSV Files/386-c6.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C6'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–')
+
+with open(rf'./CSV Files/386-c7.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['C7'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–')
+
+with open(rf'./CSV Files/386-d1.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['D1'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['ii', 'depthMeters'])
+
+with open(rf'./CSV Files/386-d2.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['D2'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['ii', 'level'])
+
+with open(rf'./CSV Files/386-d3.csv', 'r', newline='', encoding='utf-8') as table:
+    dicts['386']['D3'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['TT', 'ii', 'dataType', 'codeForm'], split='–')
 
 
 manager = JSONManager(r'./dictionaries.json', encoder=json.JSONEncoder(indent=4))

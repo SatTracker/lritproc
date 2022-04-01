@@ -26122,7 +26122,7 @@
             "A": {
                 "T1": "A",
                 "dataType": "Analyses",
-                "T2": "B1",
+                "T2": "B1-A",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
@@ -26144,7 +26144,7 @@
             "C": {
                 "T1": "C",
                 "dataType": "Climatic data",
-                "T2": "B1",
+                "T2": "B1-C",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
@@ -26171,7 +26171,7 @@
             "F": {
                 "T1": "F",
                 "dataType": "Forecasts",
-                "T2": "B1",
+                "T2": "B1-F",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
@@ -26247,7 +26247,7 @@
             "N": {
                 "T1": "N",
                 "dataType": "Notices",
-                "T2": "B1",
+                "T2": "B1-N",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
@@ -26292,7 +26292,7 @@
             "S": {
                 "T1": "S",
                 "dataType": "Surface data",
-                "T2": "B1",
+                "T2": "B1-S",
                 "A1": [
                     "C1",
                     "C2"
@@ -26310,7 +26310,7 @@
             "T": {
                 "T1": "T",
                 "dataType": "Satellite data",
-                "T2": "B1",
+                "T2": "B1-T",
                 "A1": "C3",
                 "A2": "C4",
                 "ii": null,
@@ -26319,7 +26319,7 @@
             "U": {
                 "T1": "U",
                 "dataType": "Upper\u00adair data",
-                "T2": "B1",
+                "T2": "B1-U",
                 "A1": [
                     "C1",
                     "C2"
@@ -26343,7 +26343,7 @@
             "W": {
                 "T1": "W",
                 "dataType": "Warnings",
-                "T2": "B1",
+                "T2": "B1-W",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
@@ -27305,7 +27305,7 @@
                 "GTSPriority": "1"
             }
         },
-        "C1-I": {
+        "C1": {
             "AB": {
                 "A2": "AB",
                 "Country": "Albania"
@@ -28261,9 +28261,7 @@
             "ZW": {
                 "A2": "ZW",
                 "Country": "Zimbabwe"
-            }
-        },
-        "C1-II": {
+            },
             "AA": {
                 "A2": "AA",
                 "geographicalArea": "Antarctic"
@@ -28497,82 +28495,82 @@
         },
         "C3": {
             "A": {
-                "A2": "A",
+                "A1": "A",
                 "lattitude": "0\u00b0 \u2013 90\u00b0W",
                 "geographicalArea": "northern hemisphere"
             },
             "B": {
-                "A2": "B",
+                "A1": "B",
                 "lattitude": "90\u00b0W \u2013180\u00b0",
                 "geographicalArea": "northern hemisphere"
             },
             "C": {
-                "A2": "C",
+                "A1": "C",
                 "lattitude": "180\u00b0 \u2013 90\u00b0E",
                 "geographicalArea": "northern hemisphere"
             },
             "D": {
-                "A2": "D",
+                "A1": "D",
                 "lattitude": "90\u00b0E \u2013 0\u00b0",
                 "geographicalArea": "northern hemisphere"
             },
             "E": {
-                "A2": "E",
+                "A1": "E",
                 "lattitude": "0\u00b0 \u2013 90\u00b0W",
                 "geographicalArea": "tropical belt"
             },
             "F": {
-                "A2": "F",
+                "A1": "F",
                 "lattitude": "90\u00b0W \u2013 180\u00b0",
                 "geographicalArea": "tropical belt"
             },
             "G": {
-                "A2": "G",
+                "A1": "G",
                 "lattitude": "180\u00b0 \u2013 90\u00b0E",
                 "geographicalArea": "tropical belt"
             },
             "H": {
-                "A2": "H",
+                "A1": "H",
                 "lattitude": "90\u00b0E \u2013 0\u00b0",
                 "geographicalArea": "tropical belt"
             },
             "I": {
-                "A2": "I",
+                "A1": "I",
                 "lattitude": "0\u00b0 \u2013 90\u00b0W",
                 "geographicalArea": "southern hemisphere"
             },
             "J": {
-                "A2": "J",
+                "A1": "J",
                 "lattitude": "90\u00b0W \u2013 180\u00b0",
                 "geographicalArea": "southern hemisphere"
             },
             "K": {
-                "A2": "K",
+                "A1": "K",
                 "lattitude": "180\u00b0 \u2013 90\u00b0E",
                 "geographicalArea": "southern hemisphere"
             },
             "L": {
-                "A2": "L",
+                "A1": "L",
                 "lattitude": "90\u00b0E \u2013 0\u00b0",
                 "geographicalArea": "southern hemisphere"
             },
             "N": {
-                "A2": "N",
+                "A1": "N",
                 "lattitude": null,
                 "geographicalArea": "Northern hemisphere"
             },
             "S": {
-                "A2": "S",
+                "A1": "S",
                 "lattitude": null,
                 "geographicalArea": "Southern hemisphere"
             },
             "T": {
-                "A2": "T",
+                "A1": "T",
                 "lattitude": "45\u00b0W \u2013 180\u00b0",
                 "geographicalArea": "northern hemisphere"
             },
             "X": {
-                "A2": "X",
+                "A1": "X",
                 "lattitude": null,
                 "geographicalArea": "Global area (area not definable)"
             }
@@ -28677,6 +28675,2103 @@
             "Z": {
                 "A2": "Z",
                 "referenceTime": "Not assigned"
+            }
+        },
+        "C5": {
+            "A": {
+                "A2": "A",
+                "referenceTime": "Analysis (00 hour)"
+            },
+            "B": {
+                "A2": "B",
+                "referenceTime": "3 hours forecast"
+            },
+            "C": {
+                "A2": "C",
+                "referenceTime": "6 hours forecast"
+            },
+            "D": {
+                "A2": "D",
+                "referenceTime": "9 hours forecast"
+            },
+            "E": {
+                "A2": "E",
+                "referenceTime": "12 hours forecast"
+            },
+            "F": {
+                "A2": "F",
+                "referenceTime": "15 hours forecast"
+            },
+            "G": {
+                "A2": "G",
+                "referenceTime": "18 hours forecast"
+            },
+            "H": {
+                "A2": "H",
+                "referenceTime": "21 hours forecast"
+            },
+            "I": {
+                "A2": "I",
+                "referenceTime": "24 hours forecast"
+            },
+            "J": {
+                "A2": "J",
+                "referenceTime": "27 hours forecast"
+            },
+            "K": {
+                "A2": "K",
+                "referenceTime": "30 hours forecast"
+            },
+            "L": {
+                "A2": "L",
+                "referenceTime": "33 hours forecast"
+            },
+            "M": {
+                "A2": "M",
+                "referenceTime": "36 hours forecast"
+            },
+            "N": {
+                "A2": "N",
+                "referenceTime": "39 hours forecast"
+            },
+            "O": {
+                "A2": "O",
+                "referenceTime": "42 hours forecast"
+            },
+            "P": {
+                "A2": "P",
+                "referenceTime": "45 hours forecast"
+            },
+            "Q": {
+                "A2": "Q",
+                "referenceTime": "48 hours forecast"
+            }
+        },
+        "C6": {
+            "INA": {
+                "TT": "IN",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Satellite data (AMSUA)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/003"
+            },
+            "INB": {
+                "TT": "IN",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Satellite data (AMSUB)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/004"
+            },
+            "INC": {
+                "TT": "IN",
+                "A1": "C",
+                "ii": null,
+                "dataType": "CrIS (selected channels)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/030"
+            },
+            "INH": {
+                "TT": "IN",
+                "A1": "H",
+                "ii": null,
+                "dataType": "Satellite data (HIRS)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/005"
+            },
+            "INI": {
+                "TT": "IN",
+                "A1": "I",
+                "ii": null,
+                "dataType": "IRAS",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/020"
+            },
+            "INJ": {
+                "TT": "IN",
+                "A1": "J",
+                "ii": null,
+                "dataType": "HIRAS",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/030"
+            },
+            "INK": {
+                "TT": "IN",
+                "A1": "K",
+                "ii": null,
+                "dataType": "MWHS/MWHS\u00ad2",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/040"
+            },
+            "INM": {
+                "TT": "IN",
+                "A1": "M",
+                "ii": null,
+                "dataType": "Satellite data (MHS)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/006"
+            },
+            "INQ": {
+                "TT": "IN",
+                "A1": "Q",
+                "ii": null,
+                "dataType": "IASI (Principle component scores)",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/007"
+            },
+            "INS": {
+                "TT": "IN",
+                "A1": "S",
+                "ii": null,
+                "dataType": "ATMS",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/040"
+            },
+            "INT": {
+                "TT": "IN",
+                "A1": "T",
+                "ii": null,
+                "dataType": "MWTS/MWTS\u00ad2",
+                "TACCorrespondence": null,
+                "dataSubcategory": "003/040"
+            },
+            "IOB": {
+                "TT": "IO",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Buoy observations",
+                "TACCorrespondence": "BUOY",
+                "dataSubcategory": "001/025"
+            },
+            "IOI": {
+                "TT": "IO",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Sea ice",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IOP": {
+                "TT": "IO",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Sub\u00adsurface profiling floats",
+                "TACCorrespondence": "TESAC",
+                "dataSubcategory": "031/004"
+            },
+            "IOR": {
+                "TT": "IO",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Sea surface observations",
+                "TACCorrespondence": "TRACKOB",
+                "dataSubcategory": "031/001"
+            },
+            "IOS": {
+                "TT": "IO",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Sea surface and below soundings",
+                "TACCorrespondence": "BATHY, TESAC",
+                "dataSubcategory": "031/005"
+            },
+            "IOT": {
+                "TT": "IO",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Sea surface temperature",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IOW": {
+                "TT": "IO",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Sea surface waves",
+                "TACCorrespondence": "WAVEOB",
+                "dataSubcategory": "031/002"
+            },
+            "IOX": {
+                "TT": "IO",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other sea environmental",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IOZ": {
+                "TT": "IO",
+                "A1": "Z",
+                "ii": null,
+                "dataType": "Deep ocean tsunameter",
+                "TACCorrespondence": null,
+                "dataSubcategory": "031/007"
+            },
+            "IPC": {
+                "TT": "IP",
+                "A1": "C",
+                "ii": null,
+                "dataType": "Radar composite imagery data",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IPI": {
+                "TT": "IP",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Satellite imagery data",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IPR": {
+                "TT": "IP",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Radar imagery data",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IPX": {
+                "TT": "IP",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Not defined",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IS   A   ": {
+                "TT": "IS   ",
+                "A1": "A   ",
+                "ii": [
+                    "01",
+                    "29   "
+                ],
+                "dataType": "Routinely scheduled observations for distribution from automatic (fixed or mobile) land stations (e.g. 0000, 0100, ... or 0220, 0240, 0300, ..., or 0715, 0745, ... UTC)",
+                "TACCorrespondence": "n/a   ",
+                "dataSubcategory": "000/006   "
+            },
+            "IS A ": {
+                "TT": "IS ",
+                "A1": "A ",
+                "ii": [
+                    "30",
+                    "59 "
+                ],
+                "dataType": "N\u00adminute observations from automatic (fixed or mobile) land stations",
+                "TACCorrespondence": "n/a ",
+                "dataSubcategory": "000/007 "
+            },
+            "ISB": {
+                "TT": "IS",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Radar reports (parts A and B)",
+                "TACCorrespondence": "RADOB",
+                "dataSubcategory": "006/003"
+            },
+            "ISC": {
+                "TT": "IS",
+                "A1": "C",
+                "ii": [
+                    "46",
+                    "59"
+                ],
+                "dataType": "Climatic observations from marine stations",
+                "TACCorrespondence": "CLIMAT SHIP",
+                "dataSubcategory": "001/020"
+            },
+            "IS C ": {
+                "TT": "IS ",
+                "A1": "C ",
+                "ii": "60 ",
+                "dataType": "Climatic observations (monthly reports of daily climate data)",
+                "TACCorrespondence": "n/a ",
+                "dataSubcategory": "001/021 "
+            },
+            "ISD": {
+                "TT": "IS",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Radiological observation",
+                "TACCorrespondence": "RADREP",
+                "dataSubcategory": "010/001"
+            },
+            "ISE": {
+                "TT": "IS",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Measurement of surface ozone",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "008/000"
+            },
+            "IS F ": {
+                "TT": "IS ",
+                "A1": "F ",
+                "ii": " ",
+                "dataType": "Source of atmospherics ",
+                "TACCorrespondence": "SFAZI, SFLOC, SFAZU",
+                "dataSubcategory": "000/030 "
+            },
+            "IS I ": {
+                "TT": "IS ",
+                "A1": "I ",
+                "ii": [
+                    "46",
+                    "59 "
+                ],
+                "dataType": "Intermediate synoptic observations from mobile land stations",
+                "TACCorrespondence": "SYNOP MOBIL ",
+                "dataSubcategory": "000/004 "
+            },
+            "IS M ": {
+                "TT": "IS ",
+                "A1": "M ",
+                "ii": [
+                    "46",
+                    "59 "
+                ],
+                "dataType": "Main synoptic observations from mobile land stations",
+                "TACCorrespondence": "SYNOP MOBIL ",
+                "dataSubcategory": "000/005 "
+            },
+            "IS  N  ": {
+                "TT": "IS  ",
+                "A1": "N  ",
+                "ii": [
+                    "46",
+                    "59  "
+                ],
+                "dataType": "Synoptic observations from mobile land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500, ... UTC)",
+                "TACCorrespondence": "SYNOP MOBIL  ",
+                "dataSubcategory": "000/003  "
+            },
+            "ISR": {
+                "TT": "IS",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Hydrologic reports",
+                "TACCorrespondence": "HYDRA",
+                "dataSubcategory": "000/040"
+            },
+            "ISS": {
+                "TT": "IS",
+                "A1": "S",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Synoptic observations from marine stations",
+                "TACCorrespondence": "SHIP",
+                "dataSubcategory": "001/000"
+            },
+            "IS S ": {
+                "TT": "IS ",
+                "A1": "S ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "N\u00adminute observations from automatic marine stations",
+                "TACCorrespondence": "n/a ",
+                "dataSubcategory": "001/007 "
+            },
+            "IST": {
+                "TT": "IS",
+                "A1": "T",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Observed water level time series",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/031"
+            },
+            "ISV": {
+                "TT": "IS",
+                "A1": "V",
+                "ii": null,
+                "dataType": "Special aeronautical observations (SPECI)",
+                "TACCorrespondence": "SPECI",
+                "dataSubcategory": "000/011"
+            },
+            "ISW": {
+                "TT": "IS",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Aviation routine weather observations (METAR)",
+                "TACCorrespondence": "METAR",
+                "dataSubcategory": "000/010"
+            },
+            "ISX": {
+                "TT": "IS",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other surface data",
+                "TACCorrespondence": "IAC, IAC FLEET",
+                "dataSubcategory": null
+            },
+            "ITA": {
+                "TT": "IT",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Administrative message",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "ITB": {
+                "TT": "IT",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Service message",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "ITR": {
+                "TT": "IT",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Request for data (inclusive of type)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "ITX": {
+                "TT": "IT",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other text messages or information",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IUA": {
+                "TT": "IU",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Single level aircraft reports (manual)",
+                "TACCorrespondence": "AIREP/PIREP",
+                "dataSubcategory": "004/001"
+            },
+            "IUB": {
+                "TT": "IU",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Single level balloon reports",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": null
+            },
+            "IU C ": {
+                "TT": "IU ",
+                "A1": "C ",
+                "ii": " ",
+                "dataType": [
+                    "(used for single level satellite\u00adderived reports ",
+                    " see Note 3)"
+                ],
+                "TACCorrespondence": "SAREP/SATOB ",
+                "dataSubcategory": "005/000 "
+            },
+            "IUD": {
+                "TT": "IU",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Dropsonde/Dropwindsondes",
+                "TACCorrespondence": "TEMP DROP",
+                "dataSubcategory": "002/007"
+            },
+            "IUE": {
+                "TT": "IU",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Ozone vertical sounding",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "008/001"
+            },
+            "IUI": {
+                "TT": "IU",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Dispersal and transport analysis",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "009/000"
+            },
+            "IU J ": {
+                "TT": "IU ",
+                "A1": "J ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "Upper wind from marine stations (entire sounding)",
+                "TACCorrespondence": "PILOT SHIP (parts A, B, C, D)",
+                "dataSubcategory": "002/002 "
+            },
+            "IU K ": {
+                "TT": "IU ",
+                "A1": "K ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "Radio soundings from marine stations (up to 100 hPa)",
+                "TACCorrespondence": "TEMP SHIP (parts A, B)",
+                "dataSubcategory": "002/005 "
+            },
+            "IUL": {
+                "TT": "IU",
+                "A1": "L",
+                "ii": null,
+                "dataType": "Total ozone",
+                "TACCorrespondence": null,
+                "dataSubcategory": "008/002"
+            },
+            "IUM": {
+                "TT": "IU",
+                "A1": "M",
+                "ii": null,
+                "dataType": "Model derived sondes",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IUN": {
+                "TT": "IU",
+                "A1": "N",
+                "ii": null,
+                "dataType": "Rocketsondes",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IU O ": {
+                "TT": "IU ",
+                "A1": "O ",
+                "ii": " ",
+                "dataType": "Profiles of aircraft observations in ascending/ descending",
+                "TACCorrespondence": "AMDAR ",
+                "dataSubcategory": "002/020 "
+            },
+            "IUP": {
+                "TT": "IU",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Profilers",
+                "TACCorrespondence": "PILOT",
+                "dataSubcategory": "002/010"
+            },
+            "IUQ": {
+                "TT": "IU",
+                "A1": "Q",
+                "ii": null,
+                "dataType": "RASS temperature profilers",
+                "TACCorrespondence": "TEMP",
+                "dataSubcategory": "002/011"
+            },
+            "IUR": {
+                "TT": "IU",
+                "A1": "R",
+                "ii": null,
+                "dataType": [
+                    "(used for radiance data ",
+                    " see Note 3)"
+                ],
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "IU S ": {
+                "TT": "IU ",
+                "A1": "S ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "Radio soundings from marine stations (entire sounding)",
+                "TACCorrespondence": "TEMP SHIP (parts A, B, C, D)",
+                "dataSubcategory": "002/005 "
+            },
+            "IU T ": {
+                "TT": "IU ",
+                "A1": "T ",
+                "ii": " ",
+                "dataType": [
+                    "(used for satellite\u00adderived sondes ",
+                    " see Note 3) "
+                ],
+                "TACCorrespondence": "SATEM, SARAD, SATOB",
+                "dataSubcategory": " "
+            },
+            "IUU": {
+                "TT": "IU",
+                "A1": "U",
+                "ii": [
+                    "46",
+                    "59"
+                ],
+                "dataType": "Monthly statistics of data from marine stations",
+                "TACCorrespondence": "SHIP",
+                "dataSubcategory": "002/026"
+            },
+            "IU W ": {
+                "TT": "IU ",
+                "A1": "W ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "Upper wind from marine stations (up to 100 hPa) ",
+                "TACCorrespondence": "PILOT SHIP (parts A, B)",
+                "dataSubcategory": "002/002 "
+            },
+            "IUX": {
+                "TT": "IU",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other upper\u00adair reports",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JOI": {
+                "TT": "JO",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Sea ice",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JOS": {
+                "TT": "JO",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Sea surface and below soundings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JOT": {
+                "TT": "JO",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Sea surface temperature",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JOW": {
+                "TT": "JO",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Sea surface waves",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JOX": {
+                "TT": "JO",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other sea environmental data",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JSA": {
+                "TT": "JS",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Surface area forecast (e.g. airways)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JSD": {
+                "TT": "JS",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Radiological forecast",
+                "TACCorrespondence": "RADOF",
+                "dataSubcategory": null
+            },
+            "JSM": {
+                "TT": "JS",
+                "A1": "M",
+                "ii": null,
+                "dataType": "Surface forecasts (e.g. MOS)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JSO": {
+                "TT": "JS",
+                "A1": "O",
+                "ii": null,
+                "dataType": "Maritime forecast",
+                "TACCorrespondence": "MAFOR",
+                "dataSubcategory": null
+            },
+            "JSP": {
+                "TT": "JS",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Forecast amendments (airways)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JSR": {
+                "TT": "JS",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Hydrologic forecast",
+                "TACCorrespondence": "HYFOR",
+                "dataSubcategory": null
+            },
+            "JSS": {
+                "TT": "JS",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Forecast amendments (TAF)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JST": {
+                "TT": "JS",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Aerodrome forecast (TAF)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JSX": {
+                "TT": "JS",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other surface forecasts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JTE": {
+                "TT": "JT",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Tsunami",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JTH": {
+                "TT": "JT",
+                "A1": "H",
+                "ii": null,
+                "dataType": "Hurricane, typhoon, tropical storm warning",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JTS": {
+                "TT": "JT",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Severe weather, SIGMET",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JTT": {
+                "TT": "JT",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Tornado warning",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JTX": {
+                "TT": "JT",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other warnings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUA": {
+                "TT": "JU",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Forecast at single levels",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUB": {
+                "TT": "JU",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Embedded Cumulonimbus",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUC": {
+                "TT": "JU",
+                "A1": "C",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Clear\u00adair turbulence",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUF": {
+                "TT": "JU",
+                "A1": "F",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Fronts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUN": {
+                "TT": "JU",
+                "A1": "N",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Other SIGWX parameters",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUO": {
+                "TT": "JU",
+                "A1": "O",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Turbulence",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUS": {
+                "TT": "JU",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Forecast soundings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUT": {
+                "TT": "JU",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, Icing/Tropopause",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JU V ": {
+                "TT": "JU ",
+                "A1": "V ",
+                "ii": " ",
+                "dataType": "Binary coded SIGWX, Tropical storms, sandstorms, volcanoes",
+                "TACCorrespondence": " ",
+                "dataSubcategory": " "
+            },
+            "JUW": {
+                "TT": "JU",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Binary coded SIGWX, High\u00adlevel winds",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "JUX": {
+                "TT": "JU",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other upper\u00adair forecasts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            }
+        },
+        "C7": {
+            "KFA": {
+                "TT": "KF",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Surface area forecast (e.g. airways)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KFD": {
+                "TT": "KF",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Radiological forecast",
+                "TACCorrespondence": "RADOF",
+                "dataSubcategory": null
+            },
+            "KFM": {
+                "TT": "KF",
+                "A1": "M",
+                "ii": null,
+                "dataType": "Surface forecasts (e.g. MOS)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KFO": {
+                "TT": "KF",
+                "A1": "O",
+                "ii": null,
+                "dataType": "Maritime forecast",
+                "TACCorrespondence": "MAFOR",
+                "dataSubcategory": null
+            },
+            "KFP": {
+                "TT": "KF",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Forecast amendments (airways)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KFR": {
+                "TT": "KF",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Hydrologic forecast",
+                "TACCorrespondence": "HYFOR",
+                "dataSubcategory": null
+            },
+            "KFS": {
+                "TT": "KF",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Forecast amendments (TAF)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KFT": {
+                "TT": "KF",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Aerodrome forecast (TAF)",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KFX": {
+                "TT": "KF",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other surface forecasts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KOB": {
+                "TT": "KO",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Buoy observations",
+                "TACCorrespondence": "BUOY",
+                "dataSubcategory": "001/025"
+            },
+            "KOI": {
+                "TT": "KO",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Sea ice",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KOP": {
+                "TT": "KO",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Sub\u00adsurface profiling floats",
+                "TACCorrespondence": "TESAC",
+                "dataSubcategory": "031/004"
+            },
+            "KOR": {
+                "TT": "KO",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Sea surface observations",
+                "TACCorrespondence": "TRACKOB",
+                "dataSubcategory": "031/001"
+            },
+            "KOS": {
+                "TT": "KO",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Sea surface and below soundings",
+                "TACCorrespondence": "BATHY, TESAC",
+                "dataSubcategory": "031/005"
+            },
+            "KOT": {
+                "TT": "KO",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Sea surface temperature",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KOW": {
+                "TT": "KO",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Sea surface waves",
+                "TACCorrespondence": "WAVEOB",
+                "dataSubcategory": "031/002"
+            },
+            "KOX": {
+                "TT": "KO",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other sea environmental",
+                "TACCorrespondence": "WAVEOB",
+                "dataSubcategory": "031/002"
+            },
+            "KPI": {
+                "TT": "KP",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Sea ice",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KPS": {
+                "TT": "KP",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Sea surface and below soundings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KPT": {
+                "TT": "KP",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Sea surface temperature",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KPW": {
+                "TT": "KP",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Sea surface waves",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KPX": {
+                "TT": "KP",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other sea environmental",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KS   A   ": {
+                "TT": "KS   ",
+                "A1": "A   ",
+                "ii": [
+                    "01",
+                    "29   "
+                ],
+                "dataType": "Routinely scheduled observations for distribution from automatic (fixed or mobile) land stations (e.g. 0000, 0100, ... or 0220, 0240, 0300, ..., or 0715, 0745, ... UTC)",
+                "TACCorrespondence": "n/a   ",
+                "dataSubcategory": "000/006   "
+            },
+            "KS A ": {
+                "TT": "KS ",
+                "A1": "A ",
+                "ii": [
+                    "30",
+                    "59 "
+                ],
+                "dataType": "N\u00adminute observations from automatic (fixed or mobile) land stations",
+                "TACCorrespondence": "n/a ",
+                "dataSubcategory": "000/007 "
+            },
+            "KSB": {
+                "TT": "KS",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Radar reports (parts A and B)",
+                "TACCorrespondence": "RADOB",
+                "dataSubcategory": "006/003"
+            },
+            "KSC": {
+                "TT": "KS",
+                "A1": "C",
+                "ii": [
+                    "46",
+                    "59"
+                ],
+                "dataType": "Climatic observations from marine stations",
+                "TACCorrespondence": "CLIMAT SHIP",
+                "dataSubcategory": "001/020"
+            },
+            "KSD": {
+                "TT": "KS",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Radiological observation",
+                "TACCorrespondence": "RADREP",
+                "dataSubcategory": "010/001"
+            },
+            "KSE": {
+                "TT": "KS",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Measurement of surface ozone",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "008/000"
+            },
+            "KS F ": {
+                "TT": "KS ",
+                "A1": "F ",
+                "ii": " ",
+                "dataType": "Source of atmospherics ",
+                "TACCorrespondence": "SFAZI, SFLOC, SFAZU",
+                "dataSubcategory": "000/030 "
+            },
+            "KS I ": {
+                "TT": "KS ",
+                "A1": "I ",
+                "ii": [
+                    "46",
+                    "59 "
+                ],
+                "dataType": "Intermediate synoptic observations from mobile fixed land stations",
+                "TACCorrespondence": "SYNOP MOBIL ",
+                "dataSubcategory": "000/004 "
+            },
+            "KS M ": {
+                "TT": "KS ",
+                "A1": "M ",
+                "ii": [
+                    "46",
+                    "59 "
+                ],
+                "dataType": "Main synoptic observations from mobile land stations",
+                "TACCorrespondence": "SYNOP MOBIL ",
+                "dataSubcategory": "000/005 "
+            },
+            "KS  N  ": {
+                "TT": "KS  ",
+                "A1": "N  ",
+                "ii": [
+                    "46",
+                    "59  "
+                ],
+                "dataType": "Synoptic observations from mobile land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500, 0700, 0800, 1000, 1100, 1300, ... UTC)",
+                "TACCorrespondence": "SYNOP MOBIL  ",
+                "dataSubcategory": "000/003  "
+            },
+            "KSR": {
+                "TT": "KS",
+                "A1": "R",
+                "ii": null,
+                "dataType": "Hydrologic reports",
+                "TACCorrespondence": "HYDRA",
+                "dataSubcategory": "000/040"
+            },
+            "KSS": {
+                "TT": "KS",
+                "A1": "S",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Synoptic observations from marine stations",
+                "TACCorrespondence": "SHIP",
+                "dataSubcategory": "001/000"
+            },
+            "KS S ": {
+                "TT": "KS ",
+                "A1": "S ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "N\u00adminute observations from automatic marine stations",
+                "TACCorrespondence": "n/a ",
+                "dataSubcategory": "001/007 "
+            },
+            "KSV": {
+                "TT": "KS",
+                "A1": "V",
+                "ii": null,
+                "dataType": "Special aeronautical observations (SPECI)",
+                "TACCorrespondence": "SPECI",
+                "dataSubcategory": "000/011"
+            },
+            "KSW": {
+                "TT": "KS",
+                "A1": "W",
+                "ii": null,
+                "dataType": "Aviation routine weather observations (METAR)",
+                "TACCorrespondence": "METAR",
+                "dataSubcategory": "000/010"
+            },
+            "KSX": {
+                "TT": "KS",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other surface data",
+                "TACCorrespondence": "IAC, IAC FLEET",
+                "dataSubcategory": null
+            },
+            "KTE": {
+                "TT": "KT",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Tsunami",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KTH": {
+                "TT": "KT",
+                "A1": "H",
+                "ii": null,
+                "dataType": "Hurricane, typhoon, tropical storm warning",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KTS": {
+                "TT": "KT",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Severe weather, SIGMET",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KTT": {
+                "TT": "KT",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Tornado warning",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KTX": {
+                "TT": "KT",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other warnings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KUA": {
+                "TT": "KU",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Single level aircraft reports (manual)",
+                "TACCorrespondence": "AIREP/PIREP",
+                "dataSubcategory": "004/001"
+            },
+            "KUB": {
+                "TT": "KU",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Single level balloon reports",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": null
+            },
+            "KUC": {
+                "TT": "KU",
+                "A1": "C",
+                "ii": null,
+                "dataType": "Single level satellite\u00adderived reports",
+                "TACCorrespondence": "SAREP",
+                "dataSubcategory": "005/000"
+            },
+            "KUD": {
+                "TT": "KU",
+                "A1": "D",
+                "ii": null,
+                "dataType": "Dropsonde/dropwindsondes",
+                "TACCorrespondence": "TEMP DROP",
+                "dataSubcategory": "002/007"
+            },
+            "KUE": {
+                "TT": "KU",
+                "A1": "E",
+                "ii": null,
+                "dataType": "Ozone vertical sounding",
+                "TACCorrespondence": null,
+                "dataSubcategory": "008/001"
+            },
+            "KUI": {
+                "TT": "KU",
+                "A1": "I",
+                "ii": null,
+                "dataType": "Dispersal and transport analysis",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "009/000"
+            },
+            "KU J ": {
+                "TT": "KU ",
+                "A1": "J ",
+                "ii": [
+                    "01",
+                    "19 "
+                ],
+                "dataType": "Upper wind from fixed land stations ",
+                "TACCorrespondence": "PILOT (parts A, B, C and D)",
+                "dataSubcategory": "002/001 "
+            },
+            "KU  J  ": {
+                "TT": "KU  ",
+                "A1": "J  ",
+                "ii": [
+                    "40",
+                    "59  "
+                ],
+                "dataType": "Upper wind from marine stations  ",
+                "TACCorrespondence": "PILOT SHIP (parts A, B, C and D)",
+                "dataSubcategory": "002/002  "
+            },
+            "KU K ": {
+                "TT": "KU ",
+                "A1": "K ",
+                "ii": [
+                    "40",
+                    "59 "
+                ],
+                "dataType": "Radio soundings from marine stations ",
+                "TACCorrespondence": "TEMP SHIP (parts A and B)",
+                "dataSubcategory": "002/005 "
+            },
+            "KUL": {
+                "TT": "KU",
+                "A1": "L",
+                "ii": null,
+                "dataType": "Total ozone",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "008/002"
+            },
+            "KUM": {
+                "TT": "KU",
+                "A1": "M",
+                "ii": null,
+                "dataType": "Model derived sondes",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KUN": {
+                "TT": "KU",
+                "A1": "N",
+                "ii": null,
+                "dataType": "Rocketsondes",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KU O ": {
+                "TT": "KU ",
+                "A1": "O ",
+                "ii": " ",
+                "dataType": "Profiles of aircraft observations in ascending/ descending",
+                "TACCorrespondence": "AMDAR ",
+                "dataSubcategory": "002/020 "
+            },
+            "KUP": {
+                "TT": "KU",
+                "A1": "P",
+                "ii": null,
+                "dataType": "Profilers",
+                "TACCorrespondence": "PILOT",
+                "dataSubcategory": "002/010"
+            },
+            "KUQ": {
+                "TT": "KU",
+                "A1": "Q",
+                "ii": null,
+                "dataType": "RASS temperature profilers",
+                "TACCorrespondence": "TEMP",
+                "dataSubcategory": "002/011"
+            },
+            "KU S ": {
+                "TT": "KU ",
+                "A1": "S ",
+                "ii": [
+                    "01",
+                    "19 "
+                ],
+                "dataType": "Radiosondes/pibal reports from fixed land stations",
+                "TACCorrespondence": "TEMP (parts A, B, C and D)",
+                "dataSubcategory": "002/004 "
+            },
+            "KU  S  ": {
+                "TT": "KU  ",
+                "A1": "S  ",
+                "ii": [
+                    "40",
+                    "59  "
+                ],
+                "dataType": "Radio soundings from marine stations  ",
+                "TACCorrespondence": "TEMP SHIP (parts A, B, C and D)",
+                "dataSubcategory": "002/005  "
+            },
+            "KUT": {
+                "TT": "KU",
+                "A1": "T",
+                "ii": null,
+                "dataType": "Satellite derived sondes",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KUU": {
+                "TT": "KU",
+                "A1": "U",
+                "ii": [
+                    "46",
+                    "59"
+                ],
+                "dataType": "Monthly statistics of data from marine stations",
+                "TACCorrespondence": "SHIP",
+                "dataSubcategory": "002/026"
+            },
+            "KU W ": {
+                "TT": "KU ",
+                "A1": "W ",
+                "ii": [
+                    "20",
+                    "39 "
+                ],
+                "dataType": "Upper wind from mobile land stations ",
+                "TACCorrespondence": "PILOT MOBIL (parts A and B)",
+                "dataSubcategory": "002/003 "
+            },
+            "KUW": {
+                "TT": "KU",
+                "A1": "W",
+                "ii": [
+                    "40",
+                    "59"
+                ],
+                "dataType": "Upper wind from marine stations",
+                "TACCorrespondence": "PILOT SHIP",
+                "dataSubcategory": "002/002"
+            },
+            "KUX": {
+                "TT": "KU",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other upper\u00adair reports",
+                "TACCorrespondence": "(parts A and B)",
+                "dataSubcategory": null
+            },
+            "KVA": {
+                "TT": "KV",
+                "A1": "A",
+                "ii": null,
+                "dataType": "Forecast at single levels",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVB": {
+                "TT": "KV",
+                "A1": "B",
+                "ii": null,
+                "dataType": "Coded SIGWX, Embedded Cumulonimbus",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVC": {
+                "TT": "KV",
+                "A1": "C",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, Clear air turbulence",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVF": {
+                "TT": "KV",
+                "A1": "F",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, Fronts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVN": {
+                "TT": "KV",
+                "A1": "N",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, Other SIGWX parameters",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVO": {
+                "TT": "KV",
+                "A1": "O",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, Turbulence",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVS": {
+                "TT": "KV",
+                "A1": "S",
+                "ii": null,
+                "dataType": "Forecast soundings",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVT": {
+                "TT": "KV",
+                "A1": "T",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, Icing/Tropopause",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KV V ": {
+                "TT": "KV ",
+                "A1": "V ",
+                "ii": " ",
+                "dataType": "CREX coded SIGWX, Tropical storms, sandstorms, volcanoes",
+                "TACCorrespondence": " ",
+                "dataSubcategory": " "
+            },
+            "KVW": {
+                "TT": "KV",
+                "A1": "W",
+                "ii": null,
+                "dataType": "CREX coded SIGWX, High\u00adlevel winds",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            },
+            "KVX": {
+                "TT": "KV",
+                "A1": "X",
+                "ii": null,
+                "dataType": "Other upper\u00adair forecasts",
+                "TACCorrespondence": null,
+                "dataSubcategory": null
+            }
+        },
+        "D1": {
+            "98": {
+                "ii": "98",
+                "depthMeters": "Surface"
+            },
+            "96": {
+                "ii": "96",
+                "depthMeters": "2.5"
+            },
+            "94": {
+                "ii": "94",
+                "depthMeters": "5.0"
+            },
+            "92": {
+                "ii": "92",
+                "depthMeters": "7.5"
+            },
+            "90": {
+                "ii": "90",
+                "depthMeters": "12.5"
+            },
+            "88": {
+                "ii": "88",
+                "depthMeters": "17.5"
+            },
+            "86": {
+                "ii": "86",
+                "depthMeters": "25.0"
+            },
+            "84": {
+                "ii": "84",
+                "depthMeters": "32.5"
+            },
+            "82": {
+                "ii": "82",
+                "depthMeters": "40.0"
+            },
+            "80": {
+                "ii": "80",
+                "depthMeters": "50.0"
+            },
+            "78": {
+                "ii": "78",
+                "depthMeters": "62.5"
+            },
+            "76": {
+                "ii": "76",
+                "depthMeters": "75.0"
+            },
+            "74": {
+                "ii": "74",
+                "depthMeters": "100"
+            },
+            "72": {
+                "ii": "72",
+                "depthMeters": "125"
+            },
+            "70": {
+                "ii": "70",
+                "depthMeters": "150"
+            },
+            "68": {
+                "ii": "68",
+                "depthMeters": "200"
+            },
+            "66": {
+                "ii": "66",
+                "depthMeters": "300"
+            },
+            "64": {
+                "ii": "64",
+                "depthMeters": "400"
+            },
+            "62": {
+                "ii": "62",
+                "depthMeters": "500"
+            },
+            "60": {
+                "ii": "60",
+                "depthMeters": "600"
+            },
+            "58": {
+                "ii": "58",
+                "depthMeters": "700"
+            },
+            "56": {
+                "ii": "56",
+                "depthMeters": "800"
+            },
+            "54": {
+                "ii": "54",
+                "depthMeters": "900"
+            },
+            "52": {
+                "ii": "52",
+                "depthMeters": "1 000"
+            },
+            "50": {
+                "ii": "50",
+                "depthMeters": "1 100"
+            },
+            "48": {
+                "ii": "48",
+                "depthMeters": "1 200"
+            },
+            "46": {
+                "ii": "46",
+                "depthMeters": "1 300"
+            },
+            "44": {
+                "ii": "44",
+                "depthMeters": "1 400"
+            },
+            "42": {
+                "ii": "42",
+                "depthMeters": "1 500"
+            },
+            "40": {
+                "ii": "40",
+                "depthMeters": "1 750"
+            },
+            "38": {
+                "ii": "38",
+                "depthMeters": "2 000"
+            },
+            "36": {
+                "ii": "36",
+                "depthMeters": "2 500"
+            },
+            "34": {
+                "ii": "34",
+                "depthMeters": "3 000"
+            },
+            "32": {
+                "ii": "32",
+                "depthMeters": "4 000"
+            },
+            "30": {
+                "ii": "30",
+                "depthMeters": "5 000"
+            },
+            "01": {
+                "ii": "01",
+                "depthMeters": "Primary layer depth"
+            }
+        },
+        "D2": {
+            "99": {
+                "ii": "99",
+                "level": "1000 hPa"
+            },
+            "98": {
+                "ii": "98",
+                "level": "Air properties for the  Earth\u2019s surface"
+            },
+            "97": {
+                "ii": "97",
+                "level": "Level of the tropopause"
+            },
+            "96": {
+                "ii": "96",
+                "level": "Level of maximum wind"
+            },
+            "95": {
+                "ii": "95",
+                "level": "950 hPa"
+            },
+            "94": {
+                "ii": "94",
+                "level": "Level of 0\u00b0C isotherm"
+            },
+            "93": {
+                "ii": "93",
+                "level": "975 hPa"
+            },
+            "92": {
+                "ii": "92",
+                "level": "925 hPa"
+            },
+            "91": {
+                "ii": "91",
+                "level": "875 hPa"
+            },
+            "90": {
+                "ii": "90",
+                "level": "900 hPa"
+            },
+            "89 ": {
+                "ii": "89 ",
+                "level": "Any parameter reduced to sea level (e.g. MSLP)"
+            },
+            "88  ": {
+                "ii": "88  ",
+                "level": "Ground or water properties for the Earth\u2019s surface (i.e. snow cover, wave and swell)"
+            },
+            "87": {
+                "ii": "87",
+                "level": "1000\u2013500 hPa thickness"
+            },
+            "86": {
+                "ii": "86",
+                "level": "Boundary level"
+            },
+            "85": {
+                "ii": "85",
+                "level": "850 hPa"
+            },
+            "84": {
+                "ii": "84",
+                "level": "840 hPa"
+            },
+            "83": {
+                "ii": "83",
+                "level": "830 hPa"
+            },
+            "82": {
+                "ii": "82",
+                "level": "825 hPa"
+            },
+            "81": {
+                "ii": "81",
+                "level": "810 hPa"
+            },
+            "80": {
+                "ii": "80",
+                "level": "800 hPa"
+            },
+            "79": {
+                "ii": "79",
+                "level": "790 hPa"
+            },
+            "78": {
+                "ii": "78",
+                "level": "780 hPa"
+            },
+            "77": {
+                "ii": "77",
+                "level": "775 hPa"
+            },
+            "76": {
+                "ii": "76",
+                "level": "760 hPa"
+            },
+            "75": {
+                "ii": "75",
+                "level": "750 hPa"
+            },
+            "74": {
+                "ii": "74",
+                "level": "740 hPa"
+            },
+            "73": {
+                "ii": "73",
+                "level": "730 hPa"
+            },
+            "72": {
+                "ii": "72",
+                "level": "725 hPa"
+            },
+            "71": {
+                "ii": "71",
+                "level": "710 hPa"
+            },
+            "70": {
+                "ii": "70",
+                "level": "700 hPa"
+            },
+            "69": {
+                "ii": "69",
+                "level": "690 hPa"
+            },
+            "68": {
+                "ii": "68",
+                "level": "680 hPa"
+            },
+            "67": {
+                "ii": "67",
+                "level": "675 hPa"
+            },
+            "66": {
+                "ii": "66",
+                "level": "660 hPa"
+            },
+            "65": {
+                "ii": "65",
+                "level": "650 hPa"
+            },
+            "64": {
+                "ii": "64",
+                "level": "640 hPa"
+            },
+            "63": {
+                "ii": "63",
+                "level": "630 hPa"
+            },
+            "62": {
+                "ii": "62",
+                "level": "625 hPa"
+            },
+            "61": {
+                "ii": "61",
+                "level": "610 hPa"
+            },
+            "60": {
+                "ii": "60",
+                "level": "600 hPa"
+            },
+            "59": {
+                "ii": "59",
+                "level": "590 hPa"
+            },
+            "58": {
+                "ii": "58",
+                "level": "580 hPa"
+            },
+            "57": {
+                "ii": "57",
+                "level": "570 hPa"
+            },
+            "56": {
+                "ii": "56",
+                "level": "560 hPa"
+            },
+            "55": {
+                "ii": "55",
+                "level": "550 hPa"
+            },
+            "54": {
+                "ii": "54",
+                "level": "540 hPa"
+            },
+            "53": {
+                "ii": "53",
+                "level": "530 hPa"
+            },
+            "52": {
+                "ii": "52",
+                "level": "520 hPa"
+            },
+            "51": {
+                "ii": "51",
+                "level": "510 hPa"
+            },
+            "50": {
+                "ii": "50",
+                "level": "500 hPa"
+            },
+            "49": {
+                "ii": "49",
+                "level": "490 hPa"
+            },
+            "48": {
+                "ii": "48",
+                "level": "480 hPa"
+            },
+            "47": {
+                "ii": "47",
+                "level": "470 hPa"
+            },
+            "46": {
+                "ii": "46",
+                "level": "460 hPa"
+            },
+            "45": {
+                "ii": "45",
+                "level": "450 hPa"
+            },
+            "44": {
+                "ii": "44",
+                "level": "440 hPa"
+            },
+            "43": {
+                "ii": "43",
+                "level": "430 hPa"
+            },
+            "42": {
+                "ii": "42",
+                "level": "420 hPa"
+            },
+            "41": {
+                "ii": "41",
+                "level": "410 hPa"
+            },
+            "40": {
+                "ii": "40",
+                "level": "400 hPa"
+            },
+            "39": {
+                "ii": "39",
+                "level": "390 hPa"
+            },
+            "38": {
+                "ii": "38",
+                "level": "380 hPa"
+            },
+            "37": {
+                "ii": "37",
+                "level": "370 hPa"
+            },
+            "36": {
+                "ii": "36",
+                "level": "360 hPa"
+            },
+            "35": {
+                "ii": "35",
+                "level": "350 hPa"
+            },
+            "34": {
+                "ii": "34",
+                "level": "340 hPa"
+            },
+            "33": {
+                "ii": "33",
+                "level": "330 hPa"
+            },
+            "32": {
+                "ii": "32",
+                "level": "320 hPa"
+            },
+            "31": {
+                "ii": "31",
+                "level": "310 hPa"
+            },
+            "30": {
+                "ii": "30",
+                "level": "300 hPa"
+            },
+            "24": {
+                "ii": "24",
+                "level": "240 hPa"
+            },
+            "23": {
+                "ii": "23",
+                "level": "230 hPa"
+            },
+            "22": {
+                "ii": "22",
+                "level": "220 hPa"
+            },
+            "21": {
+                "ii": "21",
+                "level": "210 hPa"
+            },
+            "20": {
+                "ii": "20",
+                "level": "200 hPa"
+            },
+            "19": {
+                "ii": "19",
+                "level": "190 hPa"
+            },
+            "18": {
+                "ii": "18",
+                "level": "180 hPa"
+            },
+            "17": {
+                "ii": "17",
+                "level": "170 hPa"
+            },
+            "16": {
+                "ii": "16",
+                "level": "160 hPa"
+            },
+            "15": {
+                "ii": "15",
+                "level": "150 hPa"
+            },
+            "14": {
+                "ii": "14",
+                "level": "140 hPa"
+            },
+            "13": {
+                "ii": "13",
+                "level": "130 hPa"
+            },
+            "12": {
+                "ii": "12",
+                "level": "120 hPa"
+            },
+            "11": {
+                "ii": "11",
+                "level": "110 hPa"
+            },
+            "10": {
+                "ii": "10",
+                "level": "100 hPa"
+            },
+            "09": {
+                "ii": "09",
+                "level": "090 hPa"
+            },
+            "08": {
+                "ii": "08",
+                "level": "080 hPa"
+            },
+            "07": {
+                "ii": "07",
+                "level": "070 hPa"
+            },
+            "06": {
+                "ii": "06",
+                "level": "060 hPa"
+            },
+            "05": {
+                "ii": "05",
+                "level": "050 hPa"
+            },
+            "04": {
+                "ii": "04",
+                "level": "040 hPa"
+            },
+            "03": {
+                "ii": "03",
+                "level": "030 hPa"
+            },
+            "02": {
+                "ii": "02",
+                "level": "020 hPa"
+            },
+            "01": {
+                "ii": "01",
+                "level": "010 hPa"
+            },
+            "00 ": {
+                "ii": "00 ",
+                "level": "Entire atmosphere (e.g. precipitable water)"
+            }
+        },
+        "D3": {
+            "FA": {
+                "TT": "FA",
+                "ii": [
+                    "60",
+                    "99"
+                ],
+                "dataType": "Not assigned",
+                "codeForm": "Not assigned"
+            },
+            "UA": {
+                "TT": "UA",
+                "ii": [
+                    "80",
+                    "99"
+                ],
+                "dataType": "Routine aircraft reports",
+                "codeForm": "ICAO AIREP"
             }
         }
     }
