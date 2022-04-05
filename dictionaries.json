@@ -26138,7 +26138,7 @@
                 "priority": [
                     "1",
                     "2",
-                    "4*"
+                    "4"
                 ]
             },
             "C": {
@@ -26304,7 +26304,7 @@
                 "ii": null,
                 "priority": [
                     "2",
-                    "4*"
+                    "4"
                 ]
             },
             "T": {
@@ -26334,11 +26334,11 @@
             "V": {
                 "T1": "V",
                 "dataType": "National data",
-                "T2": "(1)",
+                "T2": "B2",
                 "A1": "C1",
                 "A2": "C1",
                 "ii": null,
-                "priority": "(2)"
+                "priority": null
             },
             "W": {
                 "T1": "W",
@@ -26614,10 +26614,10 @@
                 "dataType": "TEST MSG [System related]",
                 "codeForm": "[TEXT]"
             },
-            "W ": {
-                "T2": "W ",
+            "W": {
+                "T2": "W",
                 "dataType": "Warning related and/or cancellation",
-                "codeForm": "[TEXT] "
+                "codeForm": "[TEXT]"
             }
         },
         "B1-S": {
@@ -26681,9 +26681,9 @@
                 "dataType": "Non\u00adstandard synoptic hour",
                 "codeForm": "FM 12 (SYNOP)/FM 13 (SHIP)"
             },
-            "O ": {
-                "T2": "O ",
-                "dataType": "Oceanographic data ",
+            "O": {
+                "T2": "O",
+                "dataType": "Oceanographic data",
                 "codeForm": "FM 63 (BATHY)/FM 64 (TESAC)/ FM 62 (TRACKOB)"
             },
             "P": {
@@ -26731,10 +26731,10 @@
                 "dataType": "Seismic waveform data",
                 "codeForm": "(any format)"
             },
-            "Z ": {
-                "T2": "Z ",
+            "Z": {
+                "T2": "Z",
                 "dataType": "Sea\u00adlevel data and deep\u00adocean tsunami data",
-                "codeForm": "(any alphanumeric format) "
+                "codeForm": "(any alphanumeric format)"
             }
         },
         "B1-T": {
@@ -26748,10 +26748,10 @@
                 "dataType": "Satellite cloud interpretations",
                 "codeForm": "FM 85 (SAREP)"
             },
-            "H ": {
-                "T2": "H ",
+            "H": {
+                "T2": "H",
                 "dataType": "Satellite remote upper\u00adair soundings",
-                "codeForm": "FM 86 (SATEM) "
+                "codeForm": "FM 86 (SATEM)"
             },
             "R": {
                 "T2": "R",
@@ -26785,59 +26785,59 @@
                 "dataType": "Aircraft reports",
                 "codeForm": "FM 42 (AMDAR)"
             },
-            "E ": {
-                "T2": "E ",
+            "E": {
+                "T2": "E",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part D)",
                 "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
             },
-            "F  ": {
-                "T2": "F  ",
+            "F": {
+                "T2": "F",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Parts C and D) [National and bilateral option]",
-                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL) "
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
             },
-            "G ": {
-                "T2": "G ",
-                "dataType": "Upper wind (Part B) ",
+            "G": {
+                "T2": "G",
+                "dataType": "Upper wind (Part B)",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
             },
-            "H ": {
-                "T2": "H ",
-                "dataType": "Upper wind (Part C) ",
+            "H": {
+                "T2": "H",
+                "dataType": "Upper wind (Part C)",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
             },
-            "I ": {
-                "T2": "I ",
+            "I": {
+                "T2": "I",
                 "dataType": "Upper wind (Parts A and B) [National and bilateral option]",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (TEMP MOBIL)"
             },
-            "K ": {
-                "T2": "K ",
+            "K": {
+                "T2": "K",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part B)",
                 "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
             },
-            "L ": {
-                "T2": "L ",
+            "L": {
+                "T2": "L",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part C)",
                 "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
             },
-            "M  ": {
-                "T2": "M  ",
+            "M": {
+                "T2": "M",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Parts A and B) [National and bilateral option]",
-                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL) "
+                "codeForm": "FM 35 (TEMP)/FM 36 (TEMP SHIP)/ FM 38 (TEMP MOBIL)"
             },
             "N": {
                 "T2": "N",
                 "dataType": "Rocketsonde reports",
                 "codeForm": "FM 39 (ROCOB)/FM 40 (ROCOB SHIP)"
             },
-            "P ": {
-                "T2": "P ",
-                "dataType": "Upper wind (Part A) ",
+            "P": {
+                "T2": "P",
+                "dataType": "Upper wind (Part A)",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
             },
-            "Q ": {
-                "T2": "Q ",
-                "dataType": "Upper wind (Part D) ",
+            "Q": {
+                "T2": "Q",
+                "dataType": "Upper wind (Part D)",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
             },
             "R": {
@@ -26845,8 +26845,8 @@
                 "dataType": "Aircraft report",
                 "codeForm": "[NATIONAL*] (RECCO)"
             },
-            "S ": {
-                "T2": "S ",
+            "S": {
+                "T2": "S",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind (Part A)",
                 "codeForm": "FM 35 (TEMP)/FM 36 (PILOT SHIP)/ FM 38 (TEMP MOBIL)"
             },
@@ -26860,15 +26860,15 @@
                 "dataType": "Miscellaneous",
                 "codeForm": "[TEXT]"
             },
-            "Y ": {
-                "T2": "Y ",
+            "Y": {
+                "T2": "Y",
                 "dataType": "Upper wind (Parts C and D) [National and bilateral option]",
                 "codeForm": "FM 32 (PILOT)/FM 33 (PILOT SHIP)/ FM 34 (PILOT MOBIL)"
             },
-            "Z  ": {
-                "T2": "Z  ",
+            "Z": {
+                "T2": "Z",
                 "dataType": "Upper\u00adlevel pressure, temperature, humidity and wind from a sonde released by carrier balloon or aircraft (Parts A, B, C, D)",
-                "codeForm": "FM 37 (TEMP DROP)  "
+                "codeForm": "FM 37 (TEMP DROP)"
             }
         },
         "B1-W": {
@@ -27338,8 +27338,8 @@
                 "A2": "AN",
                 "Country": "Angola"
             },
-            "AT ": {
-                "A2": "AT ",
+            "AT": {
+                "A2": "AT",
                 "Country": "Antigua and Barbuda, Saint Kitts and Nevis, and other British islands in the vicinity"
             },
             "AU": {
@@ -27826,8 +27826,8 @@
                 "A2": "MD",
                 "Country": "Madeira"
             },
-            "MF ": {
-                "A2": "MF ",
+            "MF": {
+                "A2": "MF",
                 "Country": "Saint\u00adMartin, Saint\u00adBarth\u00e9lemy, Guadeloupe and other French islands in the vicinity"
             },
             "MG": {
@@ -28194,8 +28194,8 @@
                 "A2": "UG",
                 "Country": "Uganda"
             },
-            "UK ": {
-                "A2": "UK ",
+            "UK": {
+                "A2": "UK",
                 "Country": "United Kingdom of Great Britain and Northern Ireland"
             },
             "UR": {
@@ -28454,8 +28454,8 @@
                 "A2": "XW",
                 "geographicalArea": "Western hemisphere"
             },
-            "XX ": {
-                "A2": "XX ",
+            "XX": {
+                "A2": "XX",
                 "geographicalArea": "For use when other designators are not appropriate"
             }
         },
@@ -28940,27 +28940,27 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "IS   A   ": {
-                "TT": "IS   ",
-                "A1": "A   ",
+            "ISA": {
+                "TT": "IS",
+                "A1": "A",
                 "ii": [
                     "01",
-                    "29   "
+                    "29"
                 ],
                 "dataType": "Routinely scheduled observations for distribution from automatic (fixed or mobile) land stations (e.g. 0000, 0100, ... or 0220, 0240, 0300, ..., or 0715, 0745, ... UTC)",
-                "TACCorrespondence": "n/a   ",
-                "dataSubcategory": "000/006   "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "000/006"
             },
-            "IS A ": {
-                "TT": "IS ",
-                "A1": "A ",
+            "ISA-0": {
+                "TT": "IS",
+                "A1": "A",
                 "ii": [
                     "30",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "N\u00adminute observations from automatic (fixed or mobile) land stations",
-                "TACCorrespondence": "n/a ",
-                "dataSubcategory": "000/007 "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "000/007"
             },
             "ISB": {
                 "TT": "IS",
@@ -28974,6 +28974,17 @@
                 "TT": "IS",
                 "A1": "C",
                 "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Climatic observations from land stations",
+                "TACCorrespondence": "CLIMAT",
+                "dataSubcategory": "000/020"
+            },
+            "ISC-0": {
+                "TT": "IS",
+                "A1": "C",
+                "ii": [
                     "46",
                     "59"
                 ],
@@ -28981,13 +28992,13 @@
                 "TACCorrespondence": "CLIMAT SHIP",
                 "dataSubcategory": "001/020"
             },
-            "IS C ": {
-                "TT": "IS ",
-                "A1": "C ",
-                "ii": "60 ",
+            "ISC-1": {
+                "TT": "IS",
+                "A1": "C",
+                "ii": "60",
                 "dataType": "Climatic observations (monthly reports of daily climate data)",
-                "TACCorrespondence": "n/a ",
-                "dataSubcategory": "001/021 "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/021"
             },
             "ISD": {
                 "TT": "IS",
@@ -29005,46 +29016,79 @@
                 "TACCorrespondence": "n/a",
                 "dataSubcategory": "008/000"
             },
-            "IS F ": {
-                "TT": "IS ",
-                "A1": "F ",
-                "ii": " ",
-                "dataType": "Source of atmospherics ",
+            "ISF": {
+                "TT": "IS",
+                "A1": "F",
+                "ii": null,
+                "dataType": "Source of atmospherics",
                 "TACCorrespondence": "SFAZI, SFLOC, SFAZU",
-                "dataSubcategory": "000/030 "
+                "dataSubcategory": "000/030"
             },
-            "IS I ": {
-                "TT": "IS ",
-                "A1": "I ",
+            "ISI": {
+                "TT": "IS",
+                "A1": "I",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Intermediate synoptic observations from fixed land stations",
+                "TACCorrespondence": "SYNOP (SIxx)",
+                "dataSubcategory": "000/001 000/051"
+            },
+            "ISI-0": {
+                "TT": "IS",
+                "A1": "I",
                 "ii": [
                     "46",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Intermediate synoptic observations from mobile land stations",
-                "TACCorrespondence": "SYNOP MOBIL ",
-                "dataSubcategory": "000/004 "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/004"
             },
-            "IS M ": {
-                "TT": "IS ",
-                "A1": "M ",
+            "ISM": {
+                "TT": "IS",
+                "A1": "M",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Main synoptic observations from fixed land stations",
+                "TACCorrespondence": "SYNOP (SMxx)",
+                "dataSubcategory": "000/002 000/052"
+            },
+            "ISM-0": {
+                "TT": "IS",
+                "A1": "M",
                 "ii": [
                     "46",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Main synoptic observations from mobile land stations",
-                "TACCorrespondence": "SYNOP MOBIL ",
-                "dataSubcategory": "000/005 "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/005"
             },
-            "IS  N  ": {
-                "TT": "IS  ",
-                "A1": "N  ",
+            "ISN": {
+                "TT": "IS",
+                "A1": "N",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Synoptic observations from fixed land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500, ... UTC)",
+                "TACCorrespondence": "SYNOP (SNxx)",
+                "dataSubcategory": "000/000 000/050"
+            },
+            "ISN-0": {
+                "TT": "IS",
+                "A1": "N",
                 "ii": [
                     "46",
-                    "59  "
+                    "59"
                 ],
                 "dataType": "Synoptic observations from mobile land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500, ... UTC)",
-                "TACCorrespondence": "SYNOP MOBIL  ",
-                "dataSubcategory": "000/003  "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/003"
             },
             "ISR": {
                 "TT": "IS",
@@ -29065,18 +29109,40 @@
                 "TACCorrespondence": "SHIP",
                 "dataSubcategory": "001/000"
             },
-            "IS S ": {
-                "TT": "IS ",
-                "A1": "S ",
+            "ISS-0": {
+                "TT": "IS",
+                "A1": "S",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "One\u00adhour observations from automatic marine stations",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/006"
+            },
+            "ISS-1": {
+                "TT": "IS",
+                "A1": "S",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "N\u00adminute observations from automatic marine stations",
-                "TACCorrespondence": "n/a ",
-                "dataSubcategory": "001/007 "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/007"
             },
             "IST": {
+                "TT": "IS",
+                "A1": "T",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Tide gauge observations",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/030"
+            },
+            "IST-0": {
                 "TT": "IS",
                 "A1": "T",
                 "ii": [
@@ -29147,6 +29213,14 @@
                 "TT": "IU",
                 "A1": "A",
                 "ii": null,
+                "dataType": "Single level aircraft reports (automatic)",
+                "TACCorrespondence": "AMDAR",
+                "dataSubcategory": "004/000"
+            },
+            "IUA-0": {
+                "TT": "IU",
+                "A1": "A",
+                "ii": null,
                 "dataType": "Single level aircraft reports (manual)",
                 "TACCorrespondence": "AIREP/PIREP",
                 "dataSubcategory": "004/001"
@@ -29159,16 +29233,16 @@
                 "TACCorrespondence": "n/a",
                 "dataSubcategory": null
             },
-            "IU C ": {
-                "TT": "IU ",
-                "A1": "C ",
-                "ii": " ",
+            "IUC": {
+                "TT": "IU",
+                "A1": "C",
+                "ii": null,
                 "dataType": [
                     "(used for single level satellite\u00adderived reports ",
                     " see Note 3)"
                 ],
-                "TACCorrespondence": "SAREP/SATOB ",
-                "dataSubcategory": "005/000 "
+                "TACCorrespondence": "SAREP/SATOB",
+                "dataSubcategory": "005/000"
             },
             "IUD": {
                 "TT": "IU",
@@ -29194,27 +29268,71 @@
                 "TACCorrespondence": "n/a",
                 "dataSubcategory": "009/000"
             },
-            "IU J ": {
-                "TT": "IU ",
-                "A1": "J ",
+            "IUJ": {
+                "TT": "IU",
+                "A1": "J",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Upper wind from fixed land stations (entire sounding)",
+                "TACCorrespondence": "PILOT (parts A, B, C, D)",
+                "dataSubcategory": "002/001"
+            },
+            "IUJ-0": {
+                "TT": "IU",
+                "A1": "J",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Upper wind from mobile land stations (entire sounding)",
+                "TACCorrespondence": "PILOT MOBIL (parts A, B, C, D)",
+                "dataSubcategory": "002/003"
+            },
+            "IUJ-1": {
+                "TT": "IU",
+                "A1": "J",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Upper wind from marine stations (entire sounding)",
                 "TACCorrespondence": "PILOT SHIP (parts A, B, C, D)",
-                "dataSubcategory": "002/002 "
+                "dataSubcategory": "002/002"
             },
-            "IU K ": {
-                "TT": "IU ",
-                "A1": "K ",
+            "IUK": {
+                "TT": "IU",
+                "A1": "K",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Radio soundings from fixed land stations (up to 100 hPa)",
+                "TACCorrespondence": "TEMP (parts A, B)",
+                "dataSubcategory": "002/004"
+            },
+            "IUK-0": {
+                "TT": "IU",
+                "A1": "K",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Radio soundings from mobile land stations (up to 100 hPa)",
+                "TACCorrespondence": "TEMP MOBIL (parts A, B)",
+                "dataSubcategory": "002/006"
+            },
+            "IUK-1": {
+                "TT": "IU",
+                "A1": "K",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Radio soundings from marine stations (up to 100 hPa)",
                 "TACCorrespondence": "TEMP SHIP (parts A, B)",
-                "dataSubcategory": "002/005 "
+                "dataSubcategory": "002/005"
             },
             "IUL": {
                 "TT": "IU",
@@ -29240,13 +29358,13 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "IU O ": {
-                "TT": "IU ",
-                "A1": "O ",
-                "ii": " ",
+            "IUO": {
+                "TT": "IU",
+                "A1": "O",
+                "ii": null,
                 "dataType": "Profiles of aircraft observations in ascending/ descending",
-                "TACCorrespondence": "AMDAR ",
-                "dataSubcategory": "002/020 "
+                "TACCorrespondence": "AMDAR",
+                "dataSubcategory": "002/020"
             },
             "IUP": {
                 "TT": "IU",
@@ -29275,27 +29393,49 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "IU S ": {
-                "TT": "IU ",
-                "A1": "S ",
+            "IUS": {
+                "TT": "IU",
+                "A1": "S",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Radiosondes/pibal reports from fixed land stations (entire sounding)",
+                "TACCorrespondence": "TEMP (parts A, B, C, D)",
+                "dataSubcategory": "002/004"
+            },
+            "IUS-0": {
+                "TT": "IU",
+                "A1": "S",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Radio soundings from mobile land stations (entire sounding)",
+                "TACCorrespondence": "TEMP MOBIL (parts A, B, C, D)",
+                "dataSubcategory": "002/006"
+            },
+            "IUS-1": {
+                "TT": "IU",
+                "A1": "S",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Radio soundings from marine stations (entire sounding)",
                 "TACCorrespondence": "TEMP SHIP (parts A, B, C, D)",
-                "dataSubcategory": "002/005 "
+                "dataSubcategory": "002/005"
             },
-            "IU T ": {
-                "TT": "IU ",
-                "A1": "T ",
-                "ii": " ",
+            "IUT": {
+                "TT": "IU",
+                "A1": "T",
+                "ii": null,
                 "dataType": [
                     "(used for satellite\u00adderived sondes ",
-                    " see Note 3) "
+                    " see Note 3)"
                 ],
                 "TACCorrespondence": "SATEM, SARAD, SATOB",
-                "dataSubcategory": " "
+                "dataSubcategory": null
             },
             "IUU": {
                 "TT": "IU",
@@ -29308,16 +29448,38 @@
                 "TACCorrespondence": "SHIP",
                 "dataSubcategory": "002/026"
             },
-            "IU W ": {
-                "TT": "IU ",
-                "A1": "W ",
+            "IUW": {
+                "TT": "IU",
+                "A1": "W",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Upper wind from fixed land stations (up to 100 hPa)",
+                "TACCorrespondence": "PILOT (parts A, B)",
+                "dataSubcategory": "002/001"
+            },
+            "IUW-0": {
+                "TT": "IU",
+                "A1": "W",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Upper wind from mobile land stations (up to 100 hPa)",
+                "TACCorrespondence": "PILOT MOBIL (parts A, B)",
+                "dataSubcategory": "002/003"
+            },
+            "IUW-1": {
+                "TT": "IU",
+                "A1": "W",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
-                "dataType": "Upper wind from marine stations (up to 100 hPa) ",
+                "dataType": "Upper wind from marine stations (up to 100 hPa)",
                 "TACCorrespondence": "PILOT SHIP (parts A, B)",
-                "dataSubcategory": "002/002 "
+                "dataSubcategory": "002/002"
             },
             "IUX": {
                 "TT": "IU",
@@ -29543,13 +29705,13 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "JU V ": {
-                "TT": "JU ",
-                "A1": "V ",
-                "ii": " ",
+            "JUV": {
+                "TT": "JU",
+                "A1": "V",
+                "ii": null,
                 "dataType": "Binary coded SIGWX, Tropical storms, sandstorms, volcanoes",
-                "TACCorrespondence": " ",
-                "dataSubcategory": " "
+                "TACCorrespondence": null,
+                "dataSubcategory": null
             },
             "JUW": {
                 "TT": "JU",
@@ -29745,27 +29907,27 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "KS   A   ": {
-                "TT": "KS   ",
-                "A1": "A   ",
+            "KSA": {
+                "TT": "KS",
+                "A1": "A",
                 "ii": [
                     "01",
-                    "29   "
+                    "29"
                 ],
                 "dataType": "Routinely scheduled observations for distribution from automatic (fixed or mobile) land stations (e.g. 0000, 0100, ... or 0220, 0240, 0300, ..., or 0715, 0745, ... UTC)",
-                "TACCorrespondence": "n/a   ",
-                "dataSubcategory": "000/006   "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "000/006"
             },
-            "KS A ": {
-                "TT": "KS ",
-                "A1": "A ",
+            "KSA-0": {
+                "TT": "KS",
+                "A1": "A",
                 "ii": [
                     "30",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "N\u00adminute observations from automatic (fixed or mobile) land stations",
-                "TACCorrespondence": "n/a ",
-                "dataSubcategory": "000/007 "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "000/007"
             },
             "KSB": {
                 "TT": "KS",
@@ -29776,6 +29938,17 @@
                 "dataSubcategory": "006/003"
             },
             "KSC": {
+                "TT": "KS",
+                "A1": "C",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Climatic observations from land stations",
+                "TACCorrespondence": "CLIMAT",
+                "dataSubcategory": "000/020"
+            },
+            "KSC-0": {
                 "TT": "KS",
                 "A1": "C",
                 "ii": [
@@ -29802,46 +29975,79 @@
                 "TACCorrespondence": "n/a",
                 "dataSubcategory": "008/000"
             },
-            "KS F ": {
-                "TT": "KS ",
-                "A1": "F ",
-                "ii": " ",
-                "dataType": "Source of atmospherics ",
+            "KSF": {
+                "TT": "KS",
+                "A1": "F",
+                "ii": null,
+                "dataType": "Source of atmospherics",
                 "TACCorrespondence": "SFAZI, SFLOC, SFAZU",
-                "dataSubcategory": "000/030 "
+                "dataSubcategory": "000/030"
             },
-            "KS I ": {
-                "TT": "KS ",
-                "A1": "I ",
+            "KSI": {
+                "TT": "KS",
+                "A1": "I",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Intermediate synoptic observations from fixed land stations",
+                "TACCorrespondence": "SYNOP (SIxx)",
+                "dataSubcategory": "000/001 000/051"
+            },
+            "KSI-0": {
+                "TT": "KS",
+                "A1": "I",
                 "ii": [
                     "46",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Intermediate synoptic observations from mobile fixed land stations",
-                "TACCorrespondence": "SYNOP MOBIL ",
-                "dataSubcategory": "000/004 "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/004"
             },
-            "KS M ": {
-                "TT": "KS ",
-                "A1": "M ",
+            "KSM": {
+                "TT": "KS",
+                "A1": "M",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Main synoptic observations from fixed land stations",
+                "TACCorrespondence": "SYNOP (SMxx)",
+                "dataSubcategory": "000/002 000/052"
+            },
+            "KSM-0": {
+                "TT": "KS",
+                "A1": "M",
                 "ii": [
                     "46",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "Main synoptic observations from mobile land stations",
-                "TACCorrespondence": "SYNOP MOBIL ",
-                "dataSubcategory": "000/005 "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/005"
             },
-            "KS  N  ": {
-                "TT": "KS  ",
-                "A1": "N  ",
+            "KSN": {
+                "TT": "KS",
+                "A1": "N",
+                "ii": [
+                    "01",
+                    "45"
+                ],
+                "dataType": "Synoptic observations from fixed land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500,..., UTC)",
+                "TACCorrespondence": "SYNOP (SNxx)",
+                "dataSubcategory": "000/000 000/050"
+            },
+            "KSN-0": {
+                "TT": "KS",
+                "A1": "N",
                 "ii": [
                     "46",
-                    "59  "
+                    "59"
                 ],
                 "dataType": "Synoptic observations from mobile land stations at non\u00adstandard time (i.e. 0100, 0200, 0400, 0500, 0700, 0800, 1000, 1100, 1300, ... UTC)",
-                "TACCorrespondence": "SYNOP MOBIL  ",
-                "dataSubcategory": "000/003  "
+                "TACCorrespondence": "SYNOP MOBIL",
+                "dataSubcategory": "000/003"
             },
             "KSR": {
                 "TT": "KS",
@@ -29862,16 +30068,27 @@
                 "TACCorrespondence": "SHIP",
                 "dataSubcategory": "001/000"
             },
-            "KS S ": {
-                "TT": "KS ",
-                "A1": "S ",
+            "KSS-0": {
+                "TT": "KS",
+                "A1": "S",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "One\u00adhour observations from automatic marine stations",
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/006"
+            },
+            "KSS-1": {
+                "TT": "KS",
+                "A1": "S",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
                 "dataType": "N\u00adminute observations from automatic marine stations",
-                "TACCorrespondence": "n/a ",
-                "dataSubcategory": "001/007 "
+                "TACCorrespondence": "n/a",
+                "dataSubcategory": "001/007"
             },
             "KSV": {
                 "TT": "KS",
@@ -29941,6 +30158,14 @@
                 "TT": "KU",
                 "A1": "A",
                 "ii": null,
+                "dataType": "Single level aircraft reports (automatic)",
+                "TACCorrespondence": "AMDAR",
+                "dataSubcategory": "004/000"
+            },
+            "KUA-0": {
+                "TT": "KU",
+                "A1": "A",
+                "ii": null,
                 "dataType": "Single level aircraft reports (manual)",
                 "TACCorrespondence": "AIREP/PIREP",
                 "dataSubcategory": "004/001"
@@ -29985,38 +30210,71 @@
                 "TACCorrespondence": "n/a",
                 "dataSubcategory": "009/000"
             },
-            "KU J ": {
-                "TT": "KU ",
-                "A1": "J ",
+            "KUJ": {
+                "TT": "KU",
+                "A1": "J",
                 "ii": [
                     "01",
-                    "19 "
+                    "19"
                 ],
-                "dataType": "Upper wind from fixed land stations ",
+                "dataType": "Upper wind from fixed land stations",
                 "TACCorrespondence": "PILOT (parts A, B, C and D)",
-                "dataSubcategory": "002/001 "
+                "dataSubcategory": "002/001"
             },
-            "KU  J  ": {
-                "TT": "KU  ",
-                "A1": "J  ",
+            "KUJ-0": {
+                "TT": "KU",
+                "A1": "J",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Upper wind from mobile land stations",
+                "TACCorrespondence": "PILOT MOBIL (parts A, B, C and D)",
+                "dataSubcategory": "002/003"
+            },
+            "KUJ-1": {
+                "TT": "KU",
+                "A1": "J",
                 "ii": [
                     "40",
-                    "59  "
+                    "59"
                 ],
-                "dataType": "Upper wind from marine stations  ",
+                "dataType": "Upper wind from marine stations",
                 "TACCorrespondence": "PILOT SHIP (parts A, B, C and D)",
-                "dataSubcategory": "002/002  "
+                "dataSubcategory": "002/002"
             },
-            "KU K ": {
-                "TT": "KU ",
-                "A1": "K ",
+            "KUK": {
+                "TT": "KU",
+                "A1": "K",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Radio soundings from fixed land stations",
+                "TACCorrespondence": "TEMP (parts A and B)",
+                "dataSubcategory": "002/004"
+            },
+            "KUK-0": {
+                "TT": "KU",
+                "A1": "K",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Radio soundings from mobile land stations",
+                "TACCorrespondence": "TEMP MOBIL (parts A and B)",
+                "dataSubcategory": "002/006"
+            },
+            "KUK-1": {
+                "TT": "KU",
+                "A1": "K",
                 "ii": [
                     "40",
-                    "59 "
+                    "59"
                 ],
-                "dataType": "Radio soundings from marine stations ",
+                "dataType": "Radio soundings from marine stations",
                 "TACCorrespondence": "TEMP SHIP (parts A and B)",
-                "dataSubcategory": "002/005 "
+                "dataSubcategory": "002/005"
             },
             "KUL": {
                 "TT": "KU",
@@ -30042,13 +30300,13 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "KU O ": {
-                "TT": "KU ",
-                "A1": "O ",
-                "ii": " ",
+            "KUO": {
+                "TT": "KU",
+                "A1": "O",
+                "ii": null,
                 "dataType": "Profiles of aircraft observations in ascending/ descending",
-                "TACCorrespondence": "AMDAR ",
-                "dataSubcategory": "002/020 "
+                "TACCorrespondence": "AMDAR",
+                "dataSubcategory": "002/020"
             },
             "KUP": {
                 "TT": "KU",
@@ -30066,27 +30324,38 @@
                 "TACCorrespondence": "TEMP",
                 "dataSubcategory": "002/011"
             },
-            "KU S ": {
-                "TT": "KU ",
-                "A1": "S ",
+            "KUS": {
+                "TT": "KU",
+                "A1": "S",
                 "ii": [
                     "01",
-                    "19 "
+                    "19"
                 ],
                 "dataType": "Radiosondes/pibal reports from fixed land stations",
                 "TACCorrespondence": "TEMP (parts A, B, C and D)",
-                "dataSubcategory": "002/004 "
+                "dataSubcategory": "002/004"
             },
-            "KU  S  ": {
-                "TT": "KU  ",
-                "A1": "S  ",
+            "KUS-0": {
+                "TT": "KU",
+                "A1": "S",
+                "ii": [
+                    "20",
+                    "39"
+                ],
+                "dataType": "Radio soundings from mobile land stations",
+                "TACCorrespondence": "TEMP MOBIL (parts A, B, C and D)",
+                "dataSubcategory": "002/006"
+            },
+            "KUS-1": {
+                "TT": "KU",
+                "A1": "S",
                 "ii": [
                     "40",
-                    "59  "
+                    "59"
                 ],
-                "dataType": "Radio soundings from marine stations  ",
+                "dataType": "Radio soundings from marine stations",
                 "TACCorrespondence": "TEMP SHIP (parts A, B, C and D)",
-                "dataSubcategory": "002/005  "
+                "dataSubcategory": "002/005"
             },
             "KUT": {
                 "TT": "KU",
@@ -30107,18 +30376,29 @@
                 "TACCorrespondence": "SHIP",
                 "dataSubcategory": "002/026"
             },
-            "KU W ": {
-                "TT": "KU ",
-                "A1": "W ",
+            "KUW": {
+                "TT": "KU",
+                "A1": "W",
+                "ii": [
+                    "01",
+                    "19"
+                ],
+                "dataType": "Upper wind from fixed land stations",
+                "TACCorrespondence": "PILOT (parts A and B)",
+                "dataSubcategory": "002/001"
+            },
+            "KUW-0": {
+                "TT": "KU",
+                "A1": "W",
                 "ii": [
                     "20",
-                    "39 "
+                    "39"
                 ],
-                "dataType": "Upper wind from mobile land stations ",
+                "dataType": "Upper wind from mobile land stations",
                 "TACCorrespondence": "PILOT MOBIL (parts A and B)",
-                "dataSubcategory": "002/003 "
+                "dataSubcategory": "002/003"
             },
-            "KUW": {
+            "KUW-1": {
                 "TT": "KU",
                 "A1": "W",
                 "ii": [
@@ -30201,13 +30481,13 @@
                 "TACCorrespondence": null,
                 "dataSubcategory": null
             },
-            "KV V ": {
-                "TT": "KV ",
-                "A1": "V ",
-                "ii": " ",
+            "KVV": {
+                "TT": "KV",
+                "A1": "V",
+                "ii": null,
                 "dataType": "CREX coded SIGWX, Tropical storms, sandstorms, volcanoes",
-                "TACCorrespondence": " ",
-                "dataSubcategory": " "
+                "TACCorrespondence": null,
+                "dataSubcategory": null
             },
             "KVW": {
                 "TT": "KV",
@@ -30413,12 +30693,12 @@
                 "ii": "90",
                 "level": "900 hPa"
             },
-            "89 ": {
-                "ii": "89 ",
+            "89": {
+                "ii": "89",
                 "level": "Any parameter reduced to sea level (e.g. MSLP)"
             },
-            "88  ": {
-                "ii": "88  ",
+            "88": {
+                "ii": "88",
                 "level": "Ground or water properties for the Earth\u2019s surface (i.e. snow cover, wave and swell)"
             },
             "87": {
@@ -30749,8 +31029,8 @@
                 "ii": "01",
                 "level": "010 hPa"
             },
-            "00 ": {
-                "ii": "00 ",
+            "00": {
+                "ii": "00",
                 "level": "Entire atmosphere (e.g. precipitable water)"
             }
         },

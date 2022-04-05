@@ -5744,7 +5744,7 @@ YNJ	ZYYJ	Yanji	Yanji Airport	China - Peoples Republic
 """
 
 
-def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple[str]] = None, max_cols: int = None, split: str = None) -> dict[int, dict]:
+def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple[str]] = None, max_cols: int = None, split: str = None, make_unique: bool = False) -> dict[int, dict]:
     if max_cols is None:
         max_cols = 0
         for row in table:
@@ -5764,11 +5764,19 @@ def format_table(table: list[list], key_index=None, keys: Union[list[str], tuple
     out = {}
     index = 0
     for row in table:
-        row_dict = dict([(k, v) for k, v in zip(keys, row)])
+        row_dict = dict([(k, v.strip()) for k, v in zip(keys, row)])
         if key_index is None:
             out[index] = row_dict
         else:
-            out["".join(row[key_index[0]:key_index[1]])] = row_dict
+            key = "".join([s.strip() for s in row[key_index[0]:key_index[1]]])
+            append = ""
+            append_num = 0
+            if make_unique:
+                while f'{key}{append}' in out:
+                    append = f'-{append_num}'
+                    append_num += 1
+                key = f'{key}{append}'
+            out[key] = row_dict
         index += 1
     for key in out.keys():
         for row_key in out[key].keys():
@@ -5919,10 +5927,10 @@ with open(rf'./CSV Files/386-c5.csv', 'r', newline='', encoding='utf-8') as tabl
     dicts['386']['C5'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'referenceTime'])
 
 with open(rf'./CSV Files/386-c6.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['C6'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–')
+    dicts['386']['C6'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–', make_unique=True)
 
 with open(rf'./CSV Files/386-c7.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['C7'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–')
+    dicts['386']['C7'] = format_table([*csv.reader(table, dialect='excel')], (0, 2), ['TT', 'A1', 'ii', 'dataType', 'TACCorrespondence', 'dataSubcategory'], split='–', make_unique=True)
 
 with open(rf'./CSV Files/386-d1.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['D1'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['ii', 'depthMeters'])

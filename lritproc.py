@@ -11,6 +11,8 @@ from cv2 import cv2 as cv
 from pyexiv2 import Image, ImageData
 from send2trash import send2trash
 
+from logger import logger
+
 # -- Global Variables --
 dest_path = None
 source_path = None
@@ -57,6 +59,8 @@ header_dict = {
 }
 with open(r'dictionaries.json', 'r') as dicts:
     metadata_dicts = loads(''.join(dicts.readlines()))
+
+logger = logger(logfile_path=rf'{dest_path}\log.txt')
 
 
 def parse_flags(flags: int) -> str:
@@ -549,24 +553,27 @@ def writeManifest(manifest_dir: str):
                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['T2']][t2]
 
             if table_a['A1'] == table_a['A2']:
-                aa = a1 + a2
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][aa]
-            elif table_a['A1'] == 'C6':
-                meta['properties']['TTAA'] |= metadata_dicts['386']['C6'][t1 + t2 + a1]
+                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][a1 + a2]
+            elif table_a['A1'] == 'C6' or table_a['A1'] == 'C7':
+                table = metadata_dicts['386'][table_a['A1']][t1 + t2 + a1]
                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
-            elif table_a['A1'] == 'C7':
-                meta['properties']['TTAA'] |= metadata_dicts['386']['C7'][t1 + t2 + a1]
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
-            else:
+                table_index = 0
+                while (not table['ii'][0] <= ii <= table['ii'][1]) and table_index <= 2:
+                    table = metadata_dicts['386'][table_a['A1']][f'{t1}{t2}{a1}-{table_index}']
+                    table_index += 1
+                meta['properties']['TTAA'] |= table
+            elif table_a['A1'] is not None:
                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][a1]
                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
 
             if table_a['ii'] is not None:
                 if isinstance(metadata_dicts['386'][table_a['ii']][ii], list):
-                    # do stuff
-                 meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['ii']][ii]
-
-
+                    for key in metadata_dicts['386'][table_a['ii']].keys():
+                        table = metadata_dicts['386'][table_a['ii']][key]
+                        if table['TT'] == t1 + t2 and table['ii'][0] <= ii <= table['ii'][1]:
+                            meta['properties']['TTAA'] |= table
+                else:
+                    meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['ii']][ii]
         if category == 'DCS':
             split = file.name.split('-')
             meta['type'] = 'dcs'
@@ -618,6 +625,10 @@ if __name__ == '__main__':
                         help='silences all prints',
                         action='store_true',
                         required=False)
+    parser.add_argument('--debug',
+                        help='prints debug information',
+                        action='store_true',
+                        required=False)
     parser.add_argument('--mkdir',
                         help='make output directory if it doesn\'t exist (not recommended). lazy bastard',
                         action='store_true',
@@ -660,65 +671,61 @@ if __name__ == '__main__':
     source_path = str(args.in_path)
     dest_path = str(args.out_path)
     start = perf_counter()
-    with open(rf'{dest_path}\log.txt', 'w') as logfile:
-        for lrit_file in listdir(source_path):
-            f_start = perf_counter()
-            f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
-            h = getHeaders(f)
-            result = writeData(lrit_file.split('.')[0], f, h)
-            f_end = perf_counter()
 
-            # conditionally remove LRIT files based on remove arguments
-            if args.remove_nuclear:
+    logger.set_level('DEBUG', args.debug and not args.quiet)
+    logger.set_level('INFO', args.verbose and not args.quiet)
+    logger.set_level('WARN', args.verbose and not args.quiet)
+    logger.set_level('ERROR', not args.quiet)
+    logger.set_level('SUCCESS', not args.quiet)
+    
+    for lrit_file in listdir(source_path):
+        f_start = perf_counter()
+        f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
+        h = getHeaders(f)
+        result = writeData(lrit_file.split('.')[0], f, h)
+        f_end = perf_counter()
+
+        # conditionally remove LRIT files based on remove arguments
+        if args.remove_nuclear:
+            if args.recycle:
+                send2trash(f'{source_path}\\{lrit_file}')
+            else:
+                remove(f'{source_path}\\{lrit_file}')
+        if args.remove_unsafe:
+            if result != 'Filetype not processed':
                 if args.recycle:
                     send2trash(f'{source_path}\\{lrit_file}')
                 else:
                     remove(f'{source_path}\\{lrit_file}')
-            if args.remove_unsafe:
-                if result != 'Filetype not processed':
-                    if args.recycle:
-                        send2trash(f'{source_path}\\{lrit_file}')
-                    else:
-                        remove(f'{source_path}\\{lrit_file}')
-            if args.remove:
-                if result in ('Success', 'Skipped'):
-                    if args.recycle:
-                        send2trash(f'{source_path}\\{lrit_file}')
-                    else:
-                        remove(f'{source_path}\\{lrit_file}')
+        if args.remove:
+            if result in ('Success', 'Skipped'):
+                if args.recycle:
+                    send2trash(f'{source_path}\\{lrit_file}')
+                else:
+                    remove(f'{source_path}\\{lrit_file}')
 
-            if result in ('Success', 'Skipped', 'Filetype not processed'):
-                log = f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
-                logfile.write(f'{log}\n')
-                if args.verbose:
-                    print(log)
-            else:
-                log = f'!!ERROR!! {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
-                logfile.write(f'{log}\n')
-                if not args.quiet:
-                    print(log)
-        end = perf_counter()
-        log = f'All LRIT files successfully processed in {end - start:.4f} seconds'
-        logfile.write(f'{log}\n')
-        if not args.quiet:
-            print(log)
-        if path.isdir(f'{dest_path}\\tmp'):
-            rmdir(f'{dest_path}\\tmp')
+        if result in ('Success', 'Skipped', 'Filetype not processed'):
+            log = f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
+            logger.info(log)
+        else:
+            log = f'{lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
+            logger.error(log)
+    end = perf_counter()
+    log = f'All LRIT files successfully processed in {end - start:.4f} seconds'
+    logger.success(log)
+    if path.isdir(f'{dest_path}\\tmp'):
+        rmdir(f'{dest_path}\\tmp')
 
-        start = perf_counter()
-        for manifest_dir in manifest_updates:
-            f_start = perf_counter()
-            try:
-                writeManifest(manifest_dir)
-            except ValueError as e:
-                print(f'ValueError for {manifest_dir}; {e}')
-            f_end = perf_counter()
-            log = f'Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |'
-            logfile.write(f'{log}\n')
-            if args.verbose:
-                print(log)
-        end = perf_counter()
-        log = f'All Manifests successfully generated in {end - start:.4f} seconds'
-        logfile.write(f'{log}\n')
-        if not args.quiet:
-            print(log)
+    start = perf_counter()
+    for manifest_dir in manifest_updates:
+        f_start = perf_counter()
+        try:
+            writeManifest(manifest_dir)
+        except ValueError as e:
+            print(f'ValueError for {manifest_dir}; {e}')
+        f_end = perf_counter()
+        log = f'Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |'
+        logger.info(log)
+    end = perf_counter()
+    log = f'All Manifests successfully generated in {end - start:.4f} seconds'
+    logger.success(log)
