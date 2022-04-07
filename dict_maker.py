@@ -5894,9 +5894,7 @@ for line in icao.splitlines():
     }
 
 with open(r'./CSV Files/386-a.csv', 'r', newline='', encoding='utf-8') as table:
-    dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'dataType', 'T2', 'A1', 'A2', 'ii', 'priority'], split='/')
-
-
+    dicts['386']['a'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['T1', 'generalDataType', 'T2', 'A1', 'A2', 'ii', 'priority'], split='/')
 
 for suffix in [*'ACFNSTUW']:
     dicts['386']['a'][suffix]['T2'] = f'B1-{suffix}'

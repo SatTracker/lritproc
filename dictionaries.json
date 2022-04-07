@@ -26121,7 +26121,7 @@
         "a": {
             "A": {
                 "T1": "A",
-                "dataType": "Analyses",
+                "generalDataType": "Analyses",
                 "T2": "B1-A",
                 "A1": "C1",
                 "A2": "C1",
@@ -26130,7 +26130,7 @@
             },
             "B": {
                 "T1": "B",
-                "dataType": "Addressed message",
+                "generalDataType": "Addressed message",
                 "T2": null,
                 "A1": null,
                 "A2": null,
@@ -26143,7 +26143,7 @@
             },
             "C": {
                 "T1": "C",
-                "dataType": "Climatic data",
+                "generalDataType": "Climatic data",
                 "T2": "B1-C",
                 "A1": "C1",
                 "A2": "C1",
@@ -26152,7 +26152,7 @@
             },
             "D": {
                 "T1": "D",
-                "dataType": "Grid point information (GRID)",
+                "generalDataType": "Grid point information (GRID)",
                 "T2": "B2",
                 "A1": "C3",
                 "A2": "C4",
@@ -26161,7 +26161,7 @@
             },
             "E": {
                 "T1": "E",
-                "dataType": "Satellite imagery",
+                "generalDataType": "Satellite imagery",
                 "T2": "B5",
                 "A1": "C1",
                 "A2": "C1",
@@ -26170,7 +26170,7 @@
             },
             "F": {
                 "T1": "F",
-                "dataType": "Forecasts",
+                "generalDataType": "Forecasts",
                 "T2": "B1-F",
                 "A1": "C1",
                 "A2": "C1",
@@ -26179,7 +26179,7 @@
             },
             "G": {
                 "T1": "G",
-                "dataType": "Grid point information (GRID)",
+                "generalDataType": "Grid point information (GRID)",
                 "T2": "B2",
                 "A1": "C3",
                 "A2": "C4",
@@ -26188,7 +26188,7 @@
             },
             "H": {
                 "T1": "H",
-                "dataType": "Grid point information (GRIB)",
+                "generalDataType": "Grid point information (GRIB)",
                 "T2": "B2",
                 "A1": "C3",
                 "A2": "C4",
@@ -26197,7 +26197,7 @@
             },
             "I": {
                 "T1": "I",
-                "dataType": "Observational data (Binary coded) \u2013 BUFR",
+                "generalDataType": "Observational data (Binary coded) \u2013 BUFR",
                 "T2": "B3",
                 "A1": "C6",
                 "A2": "C3",
@@ -26206,7 +26206,7 @@
             },
             "J": {
                 "T1": "J",
-                "dataType": "Forecast information (Binary coded) \u2013 BUFR",
+                "generalDataType": "Forecast information (Binary coded) \u2013 BUFR",
                 "T2": "B3",
                 "A1": "C6",
                 "A2": "C4",
@@ -26215,7 +26215,7 @@
             },
             "K": {
                 "T1": "K",
-                "dataType": "CREX",
+                "generalDataType": "CREX",
                 "T2": "B3",
                 "A1": "C7",
                 "A2": "C3",
@@ -26224,7 +26224,7 @@
             },
             "L": {
                 "T1": "L",
-                "dataType": "Aviation information in XML",
+                "generalDataType": "Aviation information in XML",
                 "T2": "B7",
                 "A1": "C1",
                 "A2": "C1",
@@ -26237,7 +26237,7 @@
             },
             "M": {
                 "T1": "M",
-                "dataType": "\u2013",
+                "generalDataType": "\u2013",
                 "T2": null,
                 "A1": null,
                 "A2": null,
@@ -26246,7 +26246,7 @@
             },
             "N": {
                 "T1": "N",
-                "dataType": "Notices",
+                "generalDataType": "Notices",
                 "T2": "B1-N",
                 "A1": "C1",
                 "A2": "C1",
@@ -26255,7 +26255,7 @@
             },
             "O": {
                 "T1": "O",
-                "dataType": "Oceanographic information (GRIB)",
+                "generalDataType": "Oceanographic information (GRIB)",
                 "T2": "B4",
                 "A1": "C3",
                 "A2": "C4",
@@ -26264,7 +26264,7 @@
             },
             "P": {
                 "T1": "P",
-                "dataType": "Pictorial information (Binary coded)",
+                "generalDataType": "Pictorial information (Binary coded)",
                 "T2": "B6",
                 "A1": "C3",
                 "A2": "C4",
@@ -26273,7 +26273,7 @@
             },
             "Q": {
                 "T1": "Q",
-                "dataType": "Pictorial information regional (Binary coded)",
+                "generalDataType": "Pictorial information regional (Binary coded)",
                 "T2": "B6",
                 "A1": "C3",
                 "A2": "C5",
@@ -26282,7 +26282,7 @@
             },
             "R": {
                 "T1": "R",
-                "dataType": "\u2013",
+                "generalDataType": "\u2013",
                 "T2": null,
                 "A1": null,
                 "A2": null,
@@ -26291,7 +26291,7 @@
             },
             "S": {
                 "T1": "S",
-                "dataType": "Surface data",
+                "generalDataType": "Surface data",
                 "T2": "B1-S",
                 "A1": [
                     "C1",
@@ -26309,7 +26309,7 @@
             },
             "T": {
                 "T1": "T",
-                "dataType": "Satellite data",
+                "generalDataType": "Satellite data",
                 "T2": "B1-T",
                 "A1": "C3",
                 "A2": "C4",
@@ -26318,7 +26318,7 @@
             },
             "U": {
                 "T1": "U",
-                "dataType": "Upper\u00adair data",
+                "generalDataType": "Upper\u00adair data",
                 "T2": "B1-U",
                 "A1": [
                     "C1",
@@ -26333,7 +26333,7 @@
             },
             "V": {
                 "T1": "V",
-                "dataType": "National data",
+                "generalDataType": "National data",
                 "T2": "B2",
                 "A1": "C1",
                 "A2": "C1",
@@ -26342,7 +26342,7 @@
             },
             "W": {
                 "T1": "W",
-                "dataType": "Warnings",
+                "generalDataType": "Warnings",
                 "T2": "B1-W",
                 "A1": "C1",
                 "A2": "C1",
@@ -26351,7 +26351,7 @@
             },
             "X": {
                 "T1": "X",
-                "dataType": "Common Alert Protocol (CAP) messages",
+                "generalDataType": "Common Alert Protocol (CAP) messages",
                 "T2": null,
                 "A1": null,
                 "A2": null,
@@ -26360,7 +26360,7 @@
             },
             "Y": {
                 "T1": "Y",
-                "dataType": "GRIB regional use",
+                "generalDataType": "GRIB regional use",
                 "T2": "B2",
                 "A1": "C3",
                 "A2": "C5",
@@ -26369,7 +26369,7 @@
             },
             "Z": {
                 "T1": "Z",
-                "dataType": "\u2013",
+                "generalDataType": "\u2013",
                 "T2": null,
                 "A1": null,
                 "A2": null,

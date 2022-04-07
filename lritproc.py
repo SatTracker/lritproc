@@ -1,4 +1,5 @@
 import argparse
+import copy
 from json import JSONEncoder, loads
 from binascii import crc_hqx
 from datetime import datetime
@@ -11,7 +12,7 @@ from cv2 import cv2 as cv
 from pyexiv2 import Image, ImageData
 from send2trash import send2trash
 
-from logger import logger
+import logger
 
 # -- Global Variables --
 dest_path = None
@@ -58,14 +59,13 @@ header_dict = {
          (-1, 'chr', 'unknown_data'))
 }
 with open(r'dictionaries.json', 'r') as dicts:
-    metadata_dicts = loads(''.join(dicts.readlines()))
+    lookup = loads(''.join(dicts.readlines()))
 
-logger = logger(logfile_path=rf'{dest_path}\log.txt')
+logger = logger.logger(do_print=True)
 
 
 def parse_flags(flags: int) -> str:
     """
-
     :param flags:
     :return:
     """
@@ -542,38 +542,91 @@ def writeManifest(manifest_dir: str):
                 meta['type'] = 'imagery'
             meta['timestamp'] = int(datetime.strptime(split[4][:-1], '%Y%m%d%H%M%S').timestamp())
             meta['properties']['messageSequenceNumber'] = int(split[5][0:6])
-            meta['properties']['awds'] = metadata_dicts['awds'][split[1][0:10]] if split[1][0:10] in metadata_dicts['awds'] else metadata_dicts['awds']['default']
-            meta['properties']['nnn'] = metadata_dicts['nnn'][split[5][9:12]] if split[5][9:12] in metadata_dicts['nnn'] else metadata_dicts['nnn']['default']
-            meta['properties']['cccc'] = metadata_dicts['cccc'][split[1][6:10]] if split[1][6:10] in metadata_dicts['cccc'] else metadata_dicts['cccc']['default']
-            t1, t2, a1, a2, i1, i2 = split[1][0:6]
-            ii = int(i1 + i2)
-            table_a = metadata_dicts['386']['a'][t1]
-            meta['properties']['TTAA'] = table_a
+
+            try:
+                meta['properties']['awds'] = lookup['awds'][split[1][0:10]]
+            except KeyError:
+                logger.debug(f'{split[1][0:10]} not found in AWDS lookup')
+                meta['properties']['awds'] = lookup['awds']['default']
+
+            try:
+                meta['properties']['nnn'] = lookup['nnn'][split[5][9:12]]
+            except KeyError:
+                logger.debug(f'{split[5][9:12]} not found in NNN lookup')
+                meta['properties']['nnn'] = lookup['nnn']['default']
+
+            try:
+                meta['properties']['cccc'] = lookup['cccc'][split[1][6:10]]
+            except KeyError:
+                logger.debug(f'{split[1][6:10]} not found in CCCC lookup')
+                meta['properties']['cccc'] = lookup['cccc']['default']
+
+            t1, t2, a1, a2, i1, i2 = split[1][0:6].upper()
+            ii = str(int(i1 + i2)).rjust(2, '0')
+            try:
+                table_a = lookup['386']['a'][t1]
+            except KeyError:
+                logger.error(f'{t1} not found in 386-a lookup')
+                continue
+            meta['properties']['TTAA'] = {
+                'generalDataType': table_a['generalDataType']
+            }
+
+            # logger.debug(f'[{split[1][0:10]}] {table_a}')
+
             if table_a['T2'] is not None:
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['T2']][t2]
+                try:
+                    meta['properties']['TTAA'] |= lookup['386'][table_a['T2']][t2]
+                except:
+                    logger.warn(f'[{split[1][0:10]}] Key \'{t2}\' not found in table {table_a["T2"]}')
 
             if table_a['A1'] == table_a['A2']:
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][a1 + a2]
+                try:
+                    if isinstance(table_a['A1'], list):
+                        pass
+                    else:
+                        meta['properties']['TTAA'] |= lookup['386'][table_a['A1']][a1 + a2]
+                except KeyError:
+                    logger.warn(f'[{split[1][0:10]}] Key \'{a1 + a2}\' not found in table {table_a["A1"]}')
             elif table_a['A1'] == 'C6' or table_a['A1'] == 'C7':
-                table = metadata_dicts['386'][table_a['A1']][t1 + t2 + a1]
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
-                table_index = 0
-                while (not table['ii'][0] <= ii <= table['ii'][1]) and table_index <= 2:
-                    table = metadata_dicts['386'][table_a['A1']][f'{t1}{t2}{a1}-{table_index}']
-                    table_index += 1
-                meta['properties']['TTAA'] |= table
+                try:
+                    table = copy.copy(lookup['386'][table_a['A1']][t1 + t2 + a1])
+                    try:
+                        meta['properties']['TTAA'] |= lookup['386'][table_a['A2']][a2]
+                        table_index = 0
+                        while (not table['ii'][0] <= ii <= table['ii'][1]) and table_index <= 2:
+                            table = copy.copy(lookup['386'][table_a['A1']][f'{t1}{t2}{a1}-{table_index}'])
+                            table_index += 1
+                        meta['properties']['TTAA'] |= table
+                    except KeyError:
+                        logger.warn(f'[{split[1][0:10]}] invalid ii value for TTAAii {t1 + t2 + a1 + a1}{ii}')
+                except KeyError:
+                    logger.warn(f'[{split[1][0:10]}] Key \'{t1 + t2 + a1}\' not found in table {table_a["A1"]}')
             elif table_a['A1'] is not None:
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A1']][a1]
-                meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['A2']][a2]
+                try:
+                    meta['properties']['TTAA'] |= lookup['386'][table_a['A1']][a1]
+                except KeyError:
+                    logger.warn(f'[{split[1][0:10]}] Key \'{a1}\' not found in table {table_a["A1"]}')
+                try:
+                    meta['properties']['TTAA'] |= lookup['386'][table_a['A2']][a2]
+                except KeyError:
+                    logger.warn(f'[{split[1][0:10]}] Key \'{a2}\' not found in table {table_a["A2"]}')
 
             if table_a['ii'] is not None:
-                if isinstance(metadata_dicts['386'][table_a['ii']][ii], list):
-                    for key in metadata_dicts['386'][table_a['ii']].keys():
-                        table = metadata_dicts['386'][table_a['ii']][key]
-                        if table['TT'] == t1 + t2 and table['ii'][0] <= ii <= table['ii'][1]:
-                            meta['properties']['TTAA'] |= table
-                else:
-                    meta['properties']['TTAA'] |= metadata_dicts['386'][table_a['ii']][ii]
+                try:
+                    if isinstance(lookup['386'][table_a['ii']][ii], list):
+                        for key in lookup['386'][table_a['ii']].keys():
+                            table = copy.copy(lookup['386'][table_a['ii']][key])
+                            if table['TT'] == t1 + t2 and table['ii'][0] <= ii <= table['ii'][1]:
+                                meta['properties']['TTAA'] |= table
+                                break
+                    else:
+                        try:
+                            meta['properties']['TTAA'] |= lookup['386'][table_a['ii']][ii]
+                        except KeyError:
+                            logger.warn(f'invalid ii value for TTAAii {t1 + t2 + a1 + a2}{ii}')
+                except:
+                    logger.warn(f'[{split[1][0:10]}] invalid ii value for TTAAii {t1 + t2 + a1 + a1}{ii}')
         if category == 'DCS':
             split = file.name.split('-')
             meta['type'] = 'dcs'
@@ -584,6 +637,10 @@ def writeManifest(manifest_dir: str):
 
 
 if __name__ == '__main__':
+
+    from colorama import init
+    init()
+
     parser = argparse.ArgumentParser(prog='lritproc',
                                      usage='%(prog)s [options] in_path out_path',
                                      description='process GOES LRIT files',
@@ -629,6 +686,10 @@ if __name__ == '__main__':
                         help='prints debug information',
                         action='store_true',
                         required=False)
+    parser.add_argument('--progress',
+                        help='creates a progress bar while processing files',
+                        action='store_true',
+                        required=False)
     parser.add_argument('--mkdir',
                         help='make output directory if it doesn\'t exist (not recommended). lazy bastard',
                         action='store_true',
@@ -665,20 +726,40 @@ if __name__ == '__main__':
         args.graphics = True
         args.dcs = True
     if not (args.text | args.imagery | args.graphics | args.dcs):
-        print(f'No output filetypes specified')
+        logger.error('No output file types specified')
         exit(-1)
 
     source_path = str(args.in_path)
     dest_path = str(args.out_path)
     start = perf_counter()
 
-    logger.set_level('DEBUG', args.debug and not args.quiet)
+    logger.set_file(rf'{dest_path}/log.txt')
+
+    logger.set_level('DEBUG', args.debug and not args.quiet and not args.progress)
     logger.set_level('INFO', args.verbose and not args.quiet)
-    logger.set_level('WARN', args.verbose and not args.quiet)
-    logger.set_level('ERROR', not args.quiet)
-    logger.set_level('SUCCESS', not args.quiet)
+    logger.set_level('WARN', (args.verbose | args.debug) and not args.quiet and not args.progress)
+    logger.set_level('ERROR', not args.quiet and not args.progress)
+    logger.set_level('SUCCESS', not args.quiet and not args.progress)
+
+    tick = 0
+    files = 0
+    files_reset = 0
+
+    lrit_files = []
+
+    hist = [0]
+
+    for file in listdir(source_path):
+        if file.split('.')[-1].lower() == 'lrit':
+            lrit_files.append(file)
+
+    file_count = len(lrit_files)
+
+    logger.info(f'{file_count} lrit files found')
+
+    logger.set_level('INFO', args.verbose and not args.quiet and not args.progress)
     
-    for lrit_file in listdir(source_path):
+    for lrit_file in lrit_files:
         f_start = perf_counter()
         f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
         h = getHeaders(f)
@@ -705,27 +786,75 @@ if __name__ == '__main__':
                     remove(f'{source_path}\\{lrit_file}')
 
         if result in ('Success', 'Skipped', 'Filetype not processed'):
-            log = f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
-            logger.info(log)
+            logger.debug(f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
         else:
-            log = f'{lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}'
-            logger.error(log)
+            logger.error(f'{lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
+        files += 1
+        files_reset += 1
+
+        if (perf_counter() - start) > tick:
+            if args.progress:
+                if len(hist) >= 15:
+                    eta = int((file_count - files) / (sum(hist[-15:]) / 15))
+                    logger.progress_bar(30, files, len(lrit_files), 'Processing files', f'{files} / {len(lrit_files)} [{eta // 60:02}:{eta % 60:02} remaining] {lrit_file:30}')
+                else:
+                    logger.progress_bar(30, files, len(lrit_files), 'Processing files', f'{files} / {len(lrit_files)} [calculating... ] {lrit_file:30}')
+                hist.append(files_reset / 0.2)
+                files_reset = 0
+                tick += 0.2
+            else:
+                logger.info(f'{files:5} files processed in {tick // 60:02}:{tick % 60:02} [{files_reset:4} in the last second]')
+                files_reset = 0
+                tick += 1
+
+    if args.progress:
+        logger.progress_bar(30, files, len(lrit_files), 'Processing files  ', f'{files:5} / {len(lrit_files):5} [finished]')
+        print()
+
+    logger.set_level('DEBUG', args.debug and not args.quiet)
+    logger.set_level('INFO', args.verbose and not args.quiet)
+    logger.set_level('WARN', (args.verbose | args.debug) and not args.quiet)
+    logger.set_level('ERROR', not args.quiet)
+    logger.set_level('SUCCESS', not args.quiet)
+
     end = perf_counter()
-    log = f'All LRIT files successfully processed in {end - start:.4f} seconds'
-    logger.success(log)
+    logger.success(f'All LRIT files successfully processed in {end - start:.4f} seconds')
     if path.isdir(f'{dest_path}\\tmp'):
         rmdir(f'{dest_path}\\tmp')
 
     start = perf_counter()
+    tick = 0
+    manifests = 0
+    total_manifests = len(manifest_updates)
+
+    logger.info(f'{total_manifests} manifests to generate')
+
+    logger.set_level('DEBUG', args.debug and not args.quiet and not args.progress)
+    logger.set_level('INFO', args.verbose and not args.quiet)
+    logger.set_level('WARN', (args.verbose | args.debug) and not args.quiet and not args.progress)
+    logger.set_level('ERROR', not args.quiet and not args.progress)
+    logger.set_level('SUCCESS', not args.quiet and not args.progress)
+
     for manifest_dir in manifest_updates:
         f_start = perf_counter()
-        try:
-            writeManifest(manifest_dir)
-        except ValueError as e:
-            print(f'ValueError for {manifest_dir}; {e}')
+        writeManifest(manifest_dir)
         f_end = perf_counter()
-        log = f'Created manifest for {manifest_dir[-71:]:^71} | {(f_end - f_start) * 1000:5.1f}ms |'
-        logger.info(log)
+        manifests += 1
+        if args.progress:
+            logger.progress_bar(30, manifests, total_manifests, 'Creating manifests', f'{manifests:3} / {total_manifests:3}')
+        else:
+            dir_string = manifest_dir.replace(dest_path, "").replace(r'\\', '/')
+            logger.info(f'Created manifest for {manifest_dir.replace(dest_path, ""):20} in {(f_end - f_start) * 1000:5.1f}ms')
+
+    if args.progress:
+        print()
+
+    logger.set_level('DEBUG', args.debug and not args.quiet)
+    logger.set_level('INFO', args.verbose and not args.quiet)
+    logger.set_level('WARN', (args.verbose | args.debug) and not args.quiet)
+    logger.set_level('ERROR', not args.quiet)
+    logger.set_level('SUCCESS', not args.quiet)
+
     end = perf_counter()
-    log = f'All Manifests successfully generated in {end - start:.4f} seconds'
-    logger.success(log)
+    logger.success(f'All Manifests generated in {end - start:.4f} seconds')
+    logger.close()
