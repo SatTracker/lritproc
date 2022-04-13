@@ -5910,7 +5910,8 @@ with open(rf'./CSV Files/386-b7.csv', 'r', newline='', encoding='utf-8') as tabl
 
 with open(rf'./CSV Files/386-c1-I.csv', 'r', newline='', encoding='utf-8') as table1:
     with open(rf'./CSV Files/386-c1-II.csv', 'r', newline='', encoding='utf-8') as table2:
-        dicts['386']['C1'] = format_table([*csv.reader(table1, dialect='excel')], (0, 1), ['A2', 'Country']) | format_table([*csv.reader(table2, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])
+        d = format_table([*csv.reader(table1, dialect='excel')], (0, 1), ['AA', 'Country']) | format_table([*csv.reader(table2, dialect='excel')], (0, 1), ['AA', 'geographicalArea'])
+        dicts['386']['C1'] = {k:d[k] for k in sorted(d.keys())}
 
 with open(rf'./CSV Files/386-c2.csv', 'r', newline='', encoding='utf-8') as table:
     dicts['386']['C2'] = format_table([*csv.reader(table, dialect='excel')], (0, 1), ['A2', 'geographicalArea'])

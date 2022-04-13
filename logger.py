@@ -83,7 +83,7 @@ class logger:
         if self._print and self._levels[level.strip()]:
             print(self.format_colors(f'&2{bg}{time_str} | {fg}{level:7}&2 | {fg}{message}&r'))
         if self._file is not None:
-            self._file.write(self.format_colors(f'{time_str} | {level} | {message}', strip=True))
+            self._file.write(self.format_colors(f'{time_str} | {level} | {message}\n', strip=True))
 
     def warn(self, message):
         self._write_message(message, 'WARN   ', '&e')
@@ -135,13 +135,13 @@ class logger:
 
     @staticmethod
     def progress_bar(length, progress, max_progress, prefix, suffix, empty_char=' ', fill_char=' ', bookend=('[', ']'), empty_fg='&f', empty_bg='^f', fill_fg='&a', fill_bg='^a'):
-        print(logger.format_colors(f'&2\r{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | &aPROG    &2|&r&f {prefix} {bookend[0]}{fill_fg}{fill_bg}{"".ljust(int((progress / max_progress) * length), empty_char)}{empty_fg}{empty_bg}{"".ljust(length - int((progress / max_progress) * length), fill_char)}&r&f{bookend[1]} {suffix}', length=300), end='')
+        print(logger.format_colors(f'&2\r{datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")} | &aPROG    &2|&r&f {prefix} {bookend[0]}{fill_fg}{fill_bg}{"".ljust(int((progress / max_progress) * length), empty_char)}{empty_fg}{empty_bg}{"".ljust(length - int((progress / max_progress) * length), fill_char)}&r&f{bookend[1]} {suffix}', length=190), end='')
 
 
 if __name__ == '__main__':
     from colorama import init
     init()
-    print(' ',end='')
+    print(' ', end='')
     for fg in [*'0123456789abcdef']:
         for bg in [*'0123456789abcdef']:
             print(logger.format_colors(f'&{fg}^{bg}\u2592\u2592&r'), end='')
