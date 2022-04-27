@@ -5,6 +5,7 @@ from binascii import crc_hqx
 from datetime import datetime
 from os import listdir, makedirs, path, remove, rename, rmdir, scandir
 from time import perf_counter
+from typing import Optional
 from zipfile import ZipFile
 
 import numpy as np
@@ -132,75 +133,123 @@ def check_magic(magic: list) -> str:
         return 'gif87'
     if all([magic[i] == gif89_magic[i] for i in range(6)]):
         return 'gif89'
-    return 'mundane'  # mundane files have no (identifiable) magic in them
+    return 'mundane'  # mundane files have no (identifiable) magic in them\
 
 
-def getHeaders(file: np.array) -> list[dict]:
-    out = []
+def signed(val: int, bits: int) -> int:
+    max_val = 2 ** (bits - 1)
+    return (val % max_val) - (max_val * ((val // max_val) % 2))
+
+
+def get_header_record(file: np.array) -> list[tuple]:
+    record = []
     ptr = 0
     length = 16
     while ptr < length:
-        d = {}
         h_type = file[ptr]
-        try:
-            d['type'] = header_dict[h_type][0]
-        except KeyError:
-            h_type = -1
-            d['type'] = header_dict[h_type][0]
-        for field in header_dict[h_type][1:]:
-            f_len = field[0]
-            f_type = field[1]
-            f_key = field[2]
-            if f_type == 'uint':
-                d[f_key] = 0
-                for i in range(f_len):
-                    d[f_key] += file[ptr + i] * (2 ** (8 * (f_len - i - 1)))
-            elif f_type == 'int':
-                d[f_key] = 0
-                if file[ptr] > 0x7F:
-                    d[f_key] += ((file[ptr] ^ 0xFF) + 1) * (2 ** (8 * (f_len - 1)))
-                for i in range(1, f_len):
-                    d[f_key] += file[ptr + i] * (2 ** (8 * (f_len - i - 1)))
-            elif f_type == 'chr':
-                if f_len < 0:
-                    f_len = d['header_length'] - 3
-                d[f_key] = ''.join([chr(i) for i in file[ptr: ptr + f_len]])
-            elif f_type == 'time':
-                d[f_key] = 0
-                for i in range(f_len):
-                    d[f_key] += file[ptr + i] * (2 ** (8 * (f_len - i - 1)))
-            else:
-                raise ValueError(
-                    f'Unrecognized data type \'{f_type}\'. Must be type \'int\', \'uint\', \'chr\', or \'time\'')
-            ptr += f_len
+        h_len = (file[ptr + 1] * 256) | file[ptr + 2]
         if h_type == 0:
-            length = d['total_header_length']
-        out.append(d)
-    return out
+            length = (file[ptr + 5] * (256 ** 3)) | (file[ptr + 5] * (256 ** 2)) | (file[ptr + 6] * (256 ** 1)) | file[ptr + 7]
+        record.append((h_type, ptr, h_len))
+        ptr += h_len
+    return record
 
 
-def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
+def get_primary(file: np.array) -> dict:
+    return {
+        'type': 'primary',
+        'header_type': 0,
+        'header_length': 16,
+        'file_type_code': file[3],
+        'total_header_length': (file[4] * (256 ** 3)) + (file[5] * (256 ** 2)) + (file[6] * (256 ** 1)) + (file[7] * (256 ** 0)),
+        'data_field_length': sum([file[8 + k] * (256 ** (7 - k)) for k in range(8)])
+    }
+
+
+def get_image_structure(file: np.array, record: list[tuple]) -> Optional[dict]:
+    has_correct_header = False
+    h_index = None
+    for h, i, _ in record:
+        if h == 1:
+            has_correct_header = True
+            h_index = i
+            continue
+    if not has_correct_header:
+        return None
+    return {
+        'type': 'image structure',
+        'header_type': 1,
+        'header_length': 9,
+        'bits_per_pixel': file[h_index + 3],
+        'columns': (file[h_index + 4] * 256) + file[h_index + 5],
+        'rows': (file[h_index + 6] * 256) + file[h_index + 7],
+        'compression_flag': file[h_index + 8]
+    }
+
+
+def get_image_navigation(file: np.array, record: list[tuple]) -> Optional[dict]:
+    has_correct_header = False
+    h_index = None
+    for h, i, _ in record:
+        if h == 2:
+            has_correct_header = True
+            h_index = i
+            continue
+    if not has_correct_header:
+        return None
+    return {
+        'type': 'image structure',
+        'header_type': 2,
+        'header_length': 50,
+        'projection_name': ''.join(chr(v) for v in file[h_index + 3:h_index + 35]),
+        'column_scaling_factor': signed(sum([file[35 + k] * (256 ** (3 - k)) for k in range(4)]), 32),
+        'line_scaling_factor': signed(sum([file[39 + k] * (256 ** (3 - k)) for k in range(4)]), 32),
+        'column_offset': signed(sum([file[43 + k] * (256 ** (3 - k)) for k in range(4)]), 32),
+        'line_offset': signed(sum([file[47 + k] * (256 ** (3 - k)) for k in range(4)]), 32)
+    }
+
+
+def get_sequencing(file: np.array, record: list[tuple]) -> Optional[dict]:
+    has_correct_header = False
+    h_index = None
+    for h, i, _ in record:
+        if h == 128:
+            has_correct_header = True
+            h_index = i
+            continue
+    if not has_correct_header:
+        return None
+    return {
+        'type': 'sequencing Header',
+        'header_type': 128,
+        'header_length': 17,
+        'image_id': sum([file[h_index + 3 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'sequence': sum([file[h_index + 5 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'start_column': sum([file[h_index + 7 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'start_row': sum([file[h_index + 9 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'max_segments': sum([file[h_index + 11 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'max_columns': sum([file[h_index + 13 + k] * (256 ** (1 - k)) for k in range(2)]),
+        'max_rows': sum([file[h_index + 15 + k] * (256 ** (1 - k)) for k in range(2)]),
+    }
+
+
+def write_image_file(filename: str, file: np.array, record: list[tuple]) -> str:
     """
     Writes a file of LRIT filetype '0' to the Imagery directory
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
+    :param record: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
-    structure, sequence = None, None
-    for head in headers:
-        h_type = head['header_type']
-        if h_type == 1:
-            structure = head
-        if h_type == 128:
-            sequence = head
+    structure = get_image_structure(file, record)
+    sequence = get_sequencing(file, record)
     if structure is None:
         return f'bad input for file {filename}: Missing or broken Image Structure Header.'
     if structure['bits_per_pixel'] != 8:
         return f'bad input for file {filename}: Invalid bits per pixel value'
 
-    data_start = headers[0]['total_header_length']
+    data_start = get_primary(file)['total_header_length']
     magic = check_magic(file[data_start:data_start + 6])
     if magic == 'gif87' or magic == 'gif89':
         if args:
@@ -244,7 +293,6 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
         structure = [structure]
         sequence = [sequence]
         file = [file]
-        headers = [headers]
         directory = f'{dest_path}\\Imagery\\{timestamp}'
         try:
             file_path = f'{directory}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split("_")[0]}-{seg[3].split("_")[3][1:]}-{sequence[0]["image_id"]}.png'
@@ -279,28 +327,22 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
                 break
             if path.exists(name):
                 new_file = np.fromfile(name, dtype=np.uint8)
-                new_header = getHeaders(new_file)
-                new_structure, new_sequence = None, None
-                for head in new_header:
-                    h_type = head['header_type']
-                    if h_type == 1:
-                        new_structure = head
-                    if h_type == 128:
-                        new_sequence = head
+                new_record = get_header_record(new_file)
+                new_structure = get_image_structure(new_file, new_record)
+                new_sequence = get_sequencing(new_file, new_record)
                 if new_structure is None:
-                    break
+                    continue
                 if new_sequence is None:
-                    break
+                    continue
                 file.append(new_file)
-                headers.append(new_header)
                 structure.append(new_structure)
                 sequence.append(new_sequence)
                 chunks_found.append(new_sequence['sequence'])
 
         # use file data to assemble image
-        for struct, seq, file_, head in zip(structure, sequence, file, headers):
+        for struct, seq, file_ in zip(structure, sequence, file):
             if seq['sequence'] not in chunks:
-                data_start = head[0]['total_header_length']
+                data_start = get_primary(file_)['total_header_length']
                 shape = (struct['rows'], struct['columns'])
                 file_img = np.reshape(file_[data_start:], shape)
                 chunks.append(seq['sequence'])
@@ -315,13 +357,13 @@ def writeImageFile(filename: str, file: np.array, headers: list[dict]) -> str:
     return 'Success'
 
 
-def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
+def write_text_file(filename: str, file: np.array) -> str:
     """
     Writes a file of LRIT filetype '2' to the Text directory. Assumes files are uncompressed plaintext
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
+    :param record: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
     directory = None
@@ -339,7 +381,8 @@ def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
     elif path.exists(file_path):
         return 'Skipped'
 
-    data_start = headers[0]['total_header_length']
+    primary = get_primary(file)
+    data_start = primary['total_header_length']
     with open(file_path, 'w', encoding='utf-8') as text_file:
         text_file.write(''.join([chr(i) for i in file[data_start:]]))
     if directory is not None and directory not in manifest_updates:
@@ -347,7 +390,7 @@ def writeTextFile(filename: str, file: np.array, headers: list[dict]) -> str:
     return 'Success'
 
 
-def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
+def write_dcs_file(filename: str, file: np.array) -> str:
     """
     Writes a file of LRIT filetype '130' to the DCS directory
 
@@ -356,7 +399,7 @@ def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
     :param headers: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
-    data_start = headers[0]['total_header_length']
+    data_start = get_primary(file)['total_header_length']
     block_id = 0
     offset = 64 + data_start
     while block_id != 1:
@@ -434,7 +477,7 @@ def writeDCSFile(filename: str, file: np.array, headers: list[dict]) -> str:
     return 'Success'
 
 
-def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> str:
+def write_compressed_file(filename: str, file: np.array) -> str:
     """
     Decompresses and writes a file of compressed ZIP file to the appropriate directory(ies)
 
@@ -445,7 +488,7 @@ def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> s
     """
     file_dir = f'{dest_path}\\tmp\\{filename}'
     makedirs(file_dir, exist_ok=True)
-    data_start = headers[0]['total_header_length']
+    data_start = get_primary(file)['total_header_length']
     status = 'Success'
     with open(f'{file_dir}.zip', 'wb') as zip_file:
         zip_file.write(bytes(file[data_start:]))
@@ -473,46 +516,46 @@ def writeCompressedFile(filename: str, file: np.array, headers: list[dict]) -> s
     return status
 
 
-def writeData(filename: str, file: np.array, headers: list[dict]) -> str:
+def write_data(filename: str, file: np.array) -> str:
     """
     Writes an LRIT file to an appropriate directory, automatically determining filetype and compression.
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
-    file_type = headers[0]['file_type_code']
-    data_start = headers[0]['total_header_length']
+    primary = get_primary(file)
+    file_type = primary['file_type_code']
+    data_start = primary['total_header_length']
     magic = check_magic(file[data_start:data_start + 6])
     if magic == 'zip':
         if args:
             if not (args.text or args.graphics):
                 return 'Filetype not processed'
-        return writeCompressedFile(filename, file, headers)
+        return write_compressed_file(filename, file)
     if file_type == 0:
         if args:
             if not (args.imagery or args.graphics):
                 return 'Filetype not processed'
         # Image Data File (filename generated automatically, passed argument used for printing warnings)
-        return writeImageFile(filename, file, headers)
+        return write_image_file(filename, file, get_header_record(file))
     elif file_type == 2:
         if args:
             if not args.text:
                 return 'Filetype not processed'
         # Alphanumeric Text File
-        return writeTextFile(filename, file, headers)
+        return write_text_file(filename, file)
     elif file_type == 130:
         if args:
             if not args.dcs:
                 return 'Filetype not processed'
         # DCS File
-        return writeDCSFile(filename, file, headers)
+        return write_dcs_file(filename, file)
     else:
         return 'Unrecognized file type'
 
 
-def writeManifest(manifest_dir: str):
+def write_manifest(manifest_dir: str):
     encoder = JSONEncoder(indent=4, separators=(',', ':'))
     split = manifest_dir.split('\\')
     category = split[-4]
@@ -762,8 +805,7 @@ if __name__ == '__main__':
     for lrit_file in lrit_files:
         f_start = perf_counter()
         f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
-        h = getHeaders(f)
-        result = writeData(lrit_file.split('.')[0], f, h)
+        result = write_data(lrit_file.split('.')[0], f)
         f_end = perf_counter()
 
         # conditionally remove LRIT files based on remove arguments
@@ -837,7 +879,7 @@ if __name__ == '__main__':
 
     for manifest_dir in manifest_updates:
         f_start = perf_counter()
-        writeManifest(manifest_dir)
+        write_manifest(manifest_dir)
         f_end = perf_counter()
         manifests += 1
         if args.progress:
