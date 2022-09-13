@@ -89,7 +89,7 @@ class logger:
         self._write_message(message, 'WARN   ', '&e')
 
     def error(self, message):
-        self._write_message(message, 'ERROR  ', '&1')
+        self._write_message(message, 'ERROR  ', '&c')
 
     def info(self, message):
         self._write_message(message, 'INFO   ', '&f')
@@ -141,8 +141,10 @@ class logger:
 if __name__ == '__main__':
     from colorama import init
     init()
-    print(' ', end='')
+    chars = ['-', '#', '\u2592']
+    sel = 2
+    print('', end='')
     for fg in [*'0123456789abcdef']:
         for bg in [*'0123456789abcdef']:
-            print(logger.format_colors(f'&{fg}^{bg}\u2592\u2592&r'), end='')
+            print(logger.format_colors(f'&{fg}^{bg}{chars[sel]}{chars[sel]}&r'), end='')
         print()

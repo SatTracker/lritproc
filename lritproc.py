@@ -11,7 +11,6 @@ from zipfile import ZipFile
 import numpy as np
 from cv2 import cv2 as cv
 from pyexiv2 import Image, ImageData
-from send2trash import send2trash
 
 import logger
 
@@ -107,7 +106,7 @@ def bcd_to_time_path(data) -> str:
     day = format(data[5], 'x') + format(data[4] >> 4, 'x')
     hour = format(data[4] & 0xF, 'x') + format(data[3] >> 4, 'x')
     # Actuarial tables say that I will not live to see this break.
-    return f'20{year}\\{day}\\{hour}'
+    return f'20{year}./{day}/{hour}'
 
 
 def get_time_path(timestamp: str, month=True) -> str:
@@ -119,14 +118,16 @@ def get_time_path(timestamp: str, month=True) -> str:
         # I don't think the second half of this condition will ever be necessary.
         # hell, I doubt the first half of this condition will ever be necessary.
         if int(year) % 4 == 0 and (int(year) % 100 != 0 or int(year) % 400 == 0):
-            return f'{year}\\{days_ly[month] + day}\\{hour}'
+            return f'{year}/{days_ly[month] + day}/{hour}'
         else:
-            return f'{year}\\{days[month] + day}\\{hour}'
+            return f'{year}/{days[month] + day}/{hour}'
     else:
-        return f'{timestamp[0:4]}\\{timestamp[4:7]}\\{timestamp[7:9]}'
+        return f'{timestamp[0:4]}/{timestamp[4:7]}/{timestamp[7:9]}'
 
 
 def check_magic(magic: list) -> str:
+    if len(magic) < 6:
+        return 'what the hell?'
     if all([magic[i] == zip_magic[i] for i in range(4)]):
         return 'zip'
     if all([magic[i] == gif87_magic[i] for i in range(6)]):
@@ -257,11 +258,11 @@ def write_image_file(filename: str, file: np.array, record: list[tuple]) -> str:
                 return 'Filetype not processed'
         timestamp = get_time_path(filename.split('-')[0])
         filename = filename.split('-')[1]
-        directory = f'{dest_path}\\Imagery\\{timestamp}'
+        directory = f'{dest_path}/Imagery/{timestamp}'
         makedirs(directory, exist_ok=True)
-        if path.isdir(f'{directory}\\{filename}.gif'):
+        if path.isdir(f'{directory}/{filename}.gif'):
             return 'Skipped'
-        with open(f'{directory}\\{filename}.gif', 'wb') as gif_file:
+        with open(f'{directory}/{filename}.gif', 'wb') as gif_file:
             gif_file.write(bytes(file[data_start:]))
         if directory not in manifest_updates:
             manifest_updates.append(directory)
@@ -273,14 +274,14 @@ def write_image_file(filename: str, file: np.array, record: list[tuple]) -> str:
     timestamp = get_time_path(seg[3].split('_')[4][1:], month=False)
 
     # Make image directories if needed
-    makedirs(f'{dest_path}\\Imagery\\{timestamp}', exist_ok=True)
+    makedirs(f'{dest_path}/Imagery/{timestamp}', exist_ok=True)
 
     # sequenced vs. un-sequenced (mesoscale) Imagery
     if sequence is None:
         shape = (structure['rows'], structure['columns'])
         file_img = np.reshape(file[data_start:], shape)
-        directory = f'{dest_path}\\Imagery\\{timestamp}'
-        file_path = f'{directory}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split("_")[0]}-{seg[3].split("_")[4][1:]}.png'
+        directory = f'{dest_path}/Imagery/{timestamp}'
+        file_path = f'{directory}/{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split("_")[0]}-{seg[3].split("_")[4][1:]}.png'
         if path.exists(file_path):
             return 'Skipped'
         else:
@@ -289,13 +290,13 @@ def write_image_file(filename: str, file: np.array, record: list[tuple]) -> str:
             cv.imwrite(file_path, file_img)
             return 'Success'
     else:
-        # image is a multi-part file, get and assemble all LRIT files that make up this image
+        # image is a multipart file, get and assemble all LRIT files that make up this image
         structure = [structure]
         sequence = [sequence]
         file = [file]
-        directory = f'{dest_path}\\Imagery\\{timestamp}'
+        directory = f'{dest_path}/Imagery/{timestamp}'
         try:
-            file_path = f'{directory}\\{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split("_")[0]}-{seg[3].split("_")[3][1:]}-{sequence[0]["image_id"]}.png'
+            file_path = f'{directory}/{seg[0]}-{seg[1]}-{seg[2]}-{seg[3].split("_")[0]}-{seg[3].split("_")[3][1:]}-{sequence[0]["image_id"]}.png'
         except IndexError:
             return f'Index Error'
         search_name = f'{"_".join(filename.split("_")[:-1])}'
@@ -322,7 +323,7 @@ def write_image_file(filename: str, file: np.array, record: list[tuple]) -> str:
 
         # find other LRIT files in sequence matching this image
         for c in chunks_towrite:
-            name = f'{source_path}\\{search_name}_{str(c).rjust(3, "0")}.lrit'
+            name = f'{source_path}/{search_name}_{str(c).rjust(3, "0")}.lrit'
             if name == f'{filename}.lrit':
                 break
             if path.exists(name):
@@ -363,21 +364,20 @@ def write_text_file(filename: str, file: np.array) -> str:
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param record: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
     directory = None
-    file_path = f'{dest_path}\\{filename}.txt'
+    file_path = f'{dest_path}/{filename}.txt'
     if filename[:23] != 'GOES_EAST_Admin_message':
         parts = filename.split('_')
         timestamp = get_time_path(parts[4])
-        directory = f'{dest_path}\\Text\\{timestamp}'
-        file_path = f'{directory}\\{filename}.txt'
+        directory = f'{dest_path}/Text/{timestamp}'
+        file_path = f'{directory}/{filename}.txt'
         if path.exists(file_path):
             return 'Skipped'
 
         # make date directories if necessary
-        makedirs(f'{dest_path}\\Text\\{timestamp}', exist_ok=True)
+        makedirs(f'{dest_path}/Text/{timestamp}', exist_ok=True)
     elif path.exists(file_path):
         return 'Skipped'
 
@@ -396,7 +396,6 @@ def write_dcs_file(filename: str, file: np.array) -> str:
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
     data_start = get_primary(file)['total_header_length']
@@ -408,8 +407,8 @@ def write_dcs_file(filename: str, file: np.array) -> str:
         if block_id != 1:
             offset += block_length
     timestamp = bcd_to_time_path(file[offset + 0x0C:offset + 0x13])
-    directory = f'{dest_path}\\DCS\\{timestamp}'
-    if path.exists(f'{directory}\\{filename}.csv'):
+    directory = f'{dest_path}/DCS/{timestamp}'
+    if path.exists(f'{directory}/{filename}.csv'):
         return 'Skipped'
 
     # make date directories if necessary
@@ -421,7 +420,7 @@ def write_dcs_file(filename: str, file: np.array) -> str:
                   'file_type': ''.join([chr(c) for c in file[data_start + 44:data_start + 48]])}
     # I don't check the CRC because I'm a chad like that.
     offset = 64 + data_start
-    with open(f'{directory}\\{filename}.csv', 'w', encoding='utf-8') as DCS_file:
+    with open(f'{directory}/{filename}.csv', 'w', encoding='utf-8') as DCS_file:
         DCS_file.write(
             'size,seq_num,data_rate,platform,parity_error,ARM_flags,corrected_address,carrier_start,message_end,signal_strength,freq_offset,phs_noise,modulation_index,good_phs,channel,spacecraft,source_code,source_secondary,data,crc_ok\n'
         )
@@ -483,10 +482,9 @@ def write_compressed_file(filename: str, file: np.array) -> str:
 
     :param filename: the name of the file to write; directory and extension are determined automatically
     :param file: numpy array of type uint8 representing the bytes of the file
-    :param headers: list of LRIT headers for the file
     :return: string indicating success, skip, or specific error
     """
-    file_dir = f'{dest_path}\\tmp\\{filename}'
+    file_dir = f'{dest_path}/tmp/{filename}'
     makedirs(file_dir, exist_ok=True)
     data_start = get_primary(file)['total_header_length']
     status = 'Success'
@@ -495,7 +493,7 @@ def write_compressed_file(filename: str, file: np.array) -> str:
     with ZipFile(f'{file_dir}.zip') as zip_ref:
         zip_ref.extractall(file_dir)
     for unpacked in listdir(file_dir):
-        unpacked_dir = f'{file_dir}\\{unpacked}'
+        unpacked_dir = f'{file_dir}/{unpacked}'
         _, ext = unpacked.split('.')
         if args:
             if ext == 'TXT' and not args.text:
@@ -503,14 +501,14 @@ def write_compressed_file(filename: str, file: np.array) -> str:
             elif not args.graphics:
                 status = 'Filetype not processed'
         timestamp = get_time_path(unpacked.split('_')[4])
-        output_dir = f'{dest_path}\\Text\\{timestamp}' if ext == 'TXT' else f'{dest_path}\\Imagery\\{timestamp}'
+        output_dir = f'{dest_path}/Text/{timestamp}' if ext == 'TXT' else f'{dest_path}/Imagery/{timestamp}'
         makedirs(output_dir, exist_ok=True)
-        if path.exists(f'{output_dir}\\{unpacked}'):
+        if path.exists(f'{output_dir}/{unpacked}'):
             remove(unpacked_dir)
             continue
         if output_dir not in manifest_updates:
             manifest_updates.append(output_dir)
-        rename(unpacked_dir, f'{output_dir}\\{unpacked}')
+        rename(unpacked_dir, f'{output_dir}/{unpacked}')
     remove(f'{file_dir}.zip')
     rmdir(file_dir)
     return status
@@ -555,24 +553,28 @@ def write_data(filename: str, file: np.array) -> str:
         return 'Unrecognized file type'
 
 
-def write_manifest(manifest_dir: str):
+def write_manifest(directory: str):
     encoder = JSONEncoder(indent=4, separators=(',', ':'))
-    split = manifest_dir.split('\\')
+    split = directory.split('/')
     category = split[-4]
     json_arr = {'files': []}
-    for file in [*scandir(manifest_dir)]:
+    for file in [*scandir(directory)]:
         meta = {'filename': file.name, 'filesize': file.stat().st_size, 'timestamp': None, 'type': None, 'properties': {}}
 
         if category == 'Imagery' and file.name[:2] == 'OR':
             split = file.name.split('-')
             meta['type'] = 'abi'
-            meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], '%Y%j%H%M%S').timestamp())
+            try:
+                meta['timestamp'] = int(datetime.strptime(split[4].split('.')[0][:-1], '%Y%j%H%M%S').timestamp())
+            except IndexError:
+                split_2 = split[3].split('_')
+                meta['timestamp'] = int(datetime.strptime(split_2[2][1:-1], '%Y%j%H%M%S').timestamp())
             meta['properties']['imageType'] = 'fulldisk' if split[2][-1] == 'F' else 'mesoscale'
             meta['properties']['channel'] = None if split[2][:4] != 'CMIP' else split[3][3:]
             meta['properties']['productID'] = split[2][:-1] if split[2][-1] == 'F' else split[2][:-2]
 
         if category == 'Imagery' and not (file.name[:1] in [*'OZ']):  # Top of NOAA Hour Graphic
-            split = manifest_dir.split('\\')
+            split = directory.split('/')
             meta['type'] = 'hourly'
             meta['timestamp'] = int(
                 datetime.strptime(''.join([split[-3], split[-2], split[-1]]), '%Y%j%H').timestamp())
@@ -620,7 +622,7 @@ def write_manifest(manifest_dir: str):
             if table_a['T2'] is not None:
                 try:
                     meta['properties']['TTAA'] |= lookup['386'][table_a['T2']][t2]
-                except:
+                except KeyError:
                     logger.warn(f'[{split[1][0:10]}] Key \'{t2}\' not found in table {table_a["T2"]}')
 
             if table_a['A1'] == table_a['A2']:
@@ -668,14 +670,14 @@ def write_manifest(manifest_dir: str):
                             meta['properties']['TTAA'] |= lookup['386'][table_a['ii']][ii]
                         except KeyError:
                             logger.warn(f'invalid ii value for TTAAii {t1 + t2 + a1 + a2}{ii}')
-                except:
+                except KeyError:
                     logger.warn(f'[{split[1][0:10]}] invalid ii value for TTAAii {t1 + t2 + a1 + a1}{ii}')
         if category == 'DCS':
             split = file.name.split('-')
             meta['type'] = 'dcs'
             meta['timestamp'] = int(datetime.strptime(split[1], '%y%j%H%M%S').timestamp())
         json_arr['files'].append(meta)
-    with open(f'{manifest_dir}\\manifest.json', 'w') as manifest:
+    with open(f'{directory}/manifest.json', 'w') as manifest:
         manifest.write(encoder.encode(json_arr))
 
 
@@ -749,10 +751,6 @@ if __name__ == '__main__':
                               help='remove all LRIT files regardless of filetypes specified',
                               action='store_true',
                               required=False)
-    remove_help_group.add_argument('--recycle',
-                                   help='move deleted files to recycle bin instead of deleting them permanently',
-                                   action='store_true',
-                                   required=False)
     args = parser.parse_args()
     if not path.isdir(args.in_path):
         print(f'Source path \'{args.in_path}\' does not exist')
@@ -792,45 +790,36 @@ if __name__ == '__main__':
 
     hist = [0]
 
-    for file in listdir(source_path):
-        if file.split('.')[-1].lower() == 'lrit':
-            lrit_files.append(file)
+    for f in listdir(source_path):
+        if f.split('.')[-1].lower() == 'lrit':
+            lrit_files.append(f)
 
     file_count = len(lrit_files)
 
     logger.info(f'{file_count} lrit files found')
 
     logger.set_level('INFO', args.verbose and not args.quiet and not args.progress)
-    
+
     for lrit_file in lrit_files:
         f_start = perf_counter()
-        f = np.fromfile(f'{source_path}\\{lrit_file}', np.uint8)
+        f = np.fromfile(f'{source_path}/{lrit_file}', np.uint8)
         result = write_data(lrit_file.split('.')[0], f)
         f_end = perf_counter()
 
         # conditionally remove LRIT files based on remove arguments
         if args.remove_nuclear:
-            if args.recycle:
-                send2trash(f'{source_path}\\{lrit_file}')
-            else:
-                remove(f'{source_path}\\{lrit_file}')
+            remove(f'{source_path}/{lrit_file}')
         if args.remove_unsafe:
             if result != 'Filetype not processed':
-                if args.recycle:
-                    send2trash(f'{source_path}\\{lrit_file}')
-                else:
-                    remove(f'{source_path}\\{lrit_file}')
+                remove(f'{source_path}/{lrit_file}')
         if args.remove:
             if result in ('Success', 'Skipped'):
-                if args.recycle:
-                    send2trash(f'{source_path}\\{lrit_file}')
-                else:
-                    remove(f'{source_path}\\{lrit_file}')
+                remove(f'{source_path}/{lrit_file}')
 
         if result in ('Success', 'Skipped', 'Filetype not processed'):
-            logger.debug(f'Processed {lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
+            logger.debug(f'Processed {lrit_file:^82} &2| &3{(f_end - f_start) * 1000:5.1f}ms &2| &3{result}')
         else:
-            logger.error(f'{lrit_file:^82} | {(f_end - f_start) * 1000:5.1f}ms | {result}')
+            logger.error(f'{lrit_file:^82} &2| &c{(f_end - f_start) * 1000:5.1f}ms &2| &c{result}')
         files += 1
         files_reset += 1
 
@@ -861,8 +850,8 @@ if __name__ == '__main__':
 
     end = perf_counter()
     logger.success(f'All LRIT files successfully processed in {end - start:.4f} seconds')
-    if path.isdir(f'{dest_path}\\tmp'):
-        rmdir(f'{dest_path}\\tmp')
+    if path.isdir(f'{dest_path}/tmp'):
+        rmdir(f'{dest_path}/tmp')
 
     start = perf_counter()
     tick = 0
@@ -885,7 +874,7 @@ if __name__ == '__main__':
         if args.progress:
             logger.progress_bar(30, manifests, total_manifests, 'Creating manifests', f'{manifests:3} / {total_manifests:3}')
         else:
-            dir_string = manifest_dir.replace(dest_path, "").replace(r'\\', '/')
+            dir_string = manifest_dir.replace(dest_path, "").replace(r'/', '/')
             logger.info(f'Created manifest for {manifest_dir.replace(dest_path, ""):20} in {(f_end - f_start) * 1000:5.1f}ms')
 
     if args.progress:
